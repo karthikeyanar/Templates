@@ -13,30 +13,38 @@
 	<![endif]-->
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container">
+			<div class="container-fluid">
 				<a class="brand" href="#">Project name</a>
-				<div class="nav-collapse collapse user-settings">
-					<ul class="nav pull-right setting">
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i
-							class="icon-cog"></i></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">My Profile</a></li>
-								<li><a href="#">My Tasks</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Logout</a></li>
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+					</span>
+				</button>
+				<div class="nav-collapse collapse menubar">
+					<ul class="nav">
+						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#home">
+							Home<span class="caret pull-right">&nbsp;</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Dashboard</a></li>
 							</ul>
 						</li>
-					</ul>
-					<ul class="nav pull-right setting">
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">John
-							adams
-							<img alt="" src=""></a>
-							<ul class="dropdown-menu pull-right">
-								<li><a href="more-userprofile.html">Edit profile</a> </li>
-								<li><a href="#">Account settings</a> </li>
-								<li><a href="more-login.html">Sign out</a> </li>
+						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#forms">
+							Forms<span class="caret pull-right">&nbsp;</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="form_basic.html">Basic</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="styled_elements.html">Styled Elements</a></li>
+								<li><a href="advanced_elements.html">Advanced Elements</a></li>
+								<li><a href="form_validation.html">Validation</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#tables">
+							Tables<span class="caret pull-right">&nbsp;</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="table.html">Basic</a></li>
+								<li><a href="#">Dynamic</a></li>
+								<li><a href="#">Large</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -45,37 +53,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-menu">
-		<div class="container menu-nav">
-			<ul class="nav">
-				<li><a data-toggle="tabmenu" class="dropdown-toggle" href="#home">Home<span
-					class="caret pull-right">&nbsp;</span></a>
-					<ul class="dropdown-menu">
-						<li><a href="index.html">Dashboard</a></li>
-					</ul>
-				</li>
-				<li class="open"><a data-toggle="tabmenu" class="dropdown-toggle" href="#forms">Forms<span class="caret pull-right">&nbsp;</span></a>
-					<ul class="dropdown-menu">
-						<li><a href="form_basic.html">Basic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-						<li><a href="styled_elements.html">Styled Elements</a></li>
-						<li><a href="advanced_elements.html">Advanced Elements</a></li>
-						<li><a href="form_validation.html">Validation</a></li>
-					</ul>
-				</li>
-				<li><a data-toggle="tabmenu" class="dropdown-toggle" href="#tables">Tables<span class="caret pull-right">&nbsp;</span></a>
-					<ul class="dropdown-menu">
-						<li><a href="table.html">Basic</a></li>
-						<li><a href="#">Dynamic</a></li>
-						<li><a href="#">Large</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<div class="submenu-bar">
-		</div>
-	</div>
-	<div id="container" class="container">
+	<!-- nav bar -->
+	<div id="container" class="container-fluid">
 		<div class="page-header">
 			<div class="pull-left">
 				<h3>

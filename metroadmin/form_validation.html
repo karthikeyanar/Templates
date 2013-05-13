@@ -6,30 +6,38 @@
 	<link href="css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container">
+			<div class="container-fluid">
 				<a class="brand" href="#">Project name</a>
-				<div class="nav-collapse collapse user-settings">
-					<ul class="nav pull-right setting">
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i
-							class="icon-cog"></i></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">My Profile</a></li>
-								<li><a href="#">My Tasks</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Logout</a></li>
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+					</span>
+				</button>
+				<div class="nav-collapse collapse menubar">
+					<ul class="nav">
+						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#home">
+							Home<span class="caret pull-right">&nbsp;</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Dashboard</a></li>
 							</ul>
 						</li>
-					</ul>
-					<ul class="nav pull-right setting">
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">John
-							adams
-							<img alt="" src=""></a>
-							<ul class="dropdown-menu pull-right">
-								<li><a href="more-userprofile.html">Edit profile</a> </li>
-								<li><a href="#">Account settings</a> </li>
-								<li><a href="more-login.html">Sign out</a> </li>
+						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#forms">
+							Forms<span class="caret pull-right">&nbsp;</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="form_basic.html">Basic</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="styled_elements.html">Styled Elements</a></li>
+								<li><a href="advanced_elements.html">Advanced Elements</a></li>
+								<li><a href="form_validation.html">Validation</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#tables">
+							Tables<span class="caret pull-right">&nbsp;</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="table.html">Basic</a></li>
+								<li><a href="#">Dynamic</a></li>
+								<li><a href="#">Large</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -38,37 +46,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-menu">
-		<div class="container menu-nav">
-			<ul class="nav">
-				<li><a data-toggle="tabmenu" class="dropdown-toggle" href="#home">Home<span class="caret pull-right">&nbsp;</span></a>
-					<ul class="dropdown-menu">
-						<li><a href="index.html">Dashboard</a></li>
-					</ul>
-				</li>
-				<li class="open"><a data-toggle="tabmenu" class="dropdown-toggle" href="#forms">Forms<span
-					class="caret pull-right">&nbsp;</span></a>
-					<ul class="dropdown-menu">
-						<li><a href="form_basic.html">Basic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-						<li><a href="styled_elements.html">Styled Elements</a></li>
-						<li><a href="advanced_elements.html">Advanced Elements</a></li>
-						<li class="active"><a href="form_validation.html">Validation</a></li>
-					</ul>
-				</li>
-				<li><a data-toggle="tabmenu" class="dropdown-toggle" href="#tables">Tables<span class="caret pull-right">&nbsp;</span></a>
-					<ul class="dropdown-menu">
-						<li><a href="table.html">Basic</a></li>
-						<li><a href="#">Dynamic</a></li>
-						<li><a href="#">Large</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<div class="submenu-bar">
-		</div>
-	</div>
-	<div id="container" class="container">
+	<!-- nav bar -->
+	<div id="container" class="container-fluid">
 		<div class="page-header">
 			<div class="pull-left">
 				<h3>
@@ -91,11 +70,16 @@
 					<div class="box-content">
 						<form action="#" method="POST" class="form-horizontal form-validate">
 						<div class="control-group">
+							<h4>
+								Login Information</h4>
+						</div>
+						<div class="control-group">
 							<label for="textfield" class="control-label">
 								Email</label>
 							<div class="controls">
 								<input type="text" name="email" id="email" data-rule-required="true" data-rule-email="true"
-									data-rule-message="required" data-placement="bottom" class="input-xlarge" />
+									data-msg-required="You can't leave this empty." data-placement="bottom" data-msg-email="Invalid Email"
+									class="input-xlarge" />
 							</div>
 						</div>
 						<div class="control-group">
@@ -103,7 +87,7 @@
 								Password</label>
 							<div class="controls">
 								<input type="password" name="password" id="password" class="input-xlarge" data-rule-minlength="6"
-									data-rule-required="true" data-placement="bottom"  />
+									data-msg-required="You can't leave this empty." data-rule-required="true" data-placement="bottom" />
 							</div>
 						</div>
 						<div class="control-group">
@@ -111,47 +95,69 @@
 								Cofirm Password</label>
 							<div class="controls">
 								<input type="password" name="confirm_password" id="confirm_password" class="input-xlarge"
-									data-rule-required="true" data-rule-equalto="#password" data-placement="bottom" />
+									data-msg-required="You can't leave this empty." data-rule-required="true" data-rule-equalto="#password"
+									data-msg-equalto="These passwords don't match. Try again?" data-placement="bottom" />
 							</div>
 						</div>
 						<div class="control-group">
-							<label for="password" class="control-label">
-								File Input</label>
+							<h4>
+								Personal Information</h4>
+						</div>
+						<div class="control-group">
+							<label for="textfield" class="control-label">
+								First Name</label>
 							<div class="controls">
-								<input type="file" name="file" id="file" class="input-xlarge" />
+								<input type="text" name="first_name" id="first_name" data-rule-required="true" data-msg-required="You can't leave this empty."
+									data-placement="bottom" class="input-xlarge" />
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label">
-								Check Box</label>
+							<label for="textfield" class="control-label">
+								Last Name</label>
 							<div class="controls">
-								<label class='checkbox'>
-									<input type="checkbox" name="checkbox" />Choice
-								</label>
-								<label class='checkbox'>
-									<input type="checkbox" name="checkbox" />
-									Choice2
-								</label>
+								<input type="text" name="last_name" id="last_name" data-rule-required="true" data-msg-required="You can't leave this empty."
+									data-placement="bottom" class="input-xlarge" />
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label">
-								Radio Button</label>
+							<label for="textfield" class="control-label">
+								Sex</label>
 							<div class="controls">
-								<label class='radio'>
-									<input type="radio" name="radio" />Choice
-								</label>
-								<label class='radio'>
-									<input type="radio" name="radio" />
-									Choice2
-								</label>
+								<select name="sex" id="sex" class="chzn-select" style="width: 110px">
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
 							</div>
 						</div>
 						<div class="control-group">
-							<label for="textarea" class="control-label">
-								Textarea</label>
+							<label for="textfield" class="control-label">
+								Birthday</label>
 							<div class="controls">
-								<textarea name="textarea" id="textarea" rows="5" cols="10" class="input-block-level">test content</textarea>
+								<div class="pull-left separator-right">
+									<select name="Month" id="Month" class="chzn-select" style="width: 110px" data-rule-required="true"
+										data-msg-required="Required" data-placement="bottom">
+										<option value="">Month</option>
+										<option value="1">January</option>
+										<option value="2">February</option>
+										<option value="3">March</option>
+										<option value="4">April</option>
+										<option value="5">May</option>
+										<option value="6">June</option>
+										<option value="7">July</option>
+										<option value="8">August</option>
+										<option value="9">September</option>
+										<option value="10">October</option>
+										<option value="11">November</option>
+										<option value="12">December</option>
+									</select>
+								</div>
+								<div class="pull-left separator-right">
+									<input type="text" name="day" id="day" placeholder="Day" style="width: 50px" data-rule-required="true"
+										data-msg-required="Required" data-placement="bottom" /></div>
+								<div class="pull-left">
+									<input type="text" name="year" id="year" style="width: 50px" placeholder="Year" data-rule-required="true"
+										data-msg-required="Required" data-placement="bottom" />
+								</div>
 							</div>
 						</div>
 						<div class="form-actions">
@@ -176,7 +182,9 @@
 	<script src="js/files/jhelper.js" type="text/javascript"></script>
 	<script>
 		$(function () {
-			$(".form-validate").validate();
+			$(".form-validate").validate({
+				ignore: "input[type='text']:hidden"
+			});
 		});	
 	</script>
 </body>

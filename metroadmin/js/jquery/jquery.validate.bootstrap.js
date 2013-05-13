@@ -51,6 +51,9 @@ $.validator.setDefaults({
 				});
 				$element.data("popover").options.content = value.message;
 				$element.popover('show');
+				if ($element.data("chosen") != undefined) {
+					$element.data("chosen").container.after($element.data("popover").tip());
+				}
 			}
 			$element.data("popover").options.content = value.message;
 			$element.data("popover").tip().show().find('.popover-content').html(value.message);
