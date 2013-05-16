@@ -4,13 +4,6 @@
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="css/site.css" rel="stylesheet" type="text/css" />
-	<!--[if gte IE 9]>
-	<style type="text/css">
-    .gradient {
-       filter: none;
-    }
-	</style>
-	<![endif]-->
 </head>
 <body>
 	<div id="sidebar">
@@ -38,9 +31,10 @@
 					<div class="accordion-inner">
 						<ul>
 							<li><a href="form_basic.html">Basic</a></li>
-							<li><a class="active" href="elements.html">Elements</a></li>
+							<li><a href="elements.html">Elements</a></li>
 							<li><a href="styled_elements.html">Styled Elements</a></li>
 							<li><a href="advanced_elements.html">Advanced Elements</a></li>
+							<li><a class="active" href="file_input.html">File Input</a></li>
 							<li><a href="form_validation.html">Validation</a></li>
 						</ul>
 					</div>
@@ -92,101 +86,78 @@
 		<!-- nav bar -->
 		<div class="container-fluid">
 			<div class="page-header">
-					<h1>
-						Elements</h1>
+				<h1>
+					File Input</h1>
 			</div>
 			<ul class="breadcrumb">
 				<li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
 				<li><a href="form_basic.html">Forms</a> <i class="icon-angle-right"></i></li>
-				<li><a href="elements.html">Elements</a></li>
+				<li><a href="form_basic.html">File Input</a> </li>
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row-fluid">
 				<div class="span12">
-					<div class="box box-bordered">
+					<div class="box">
 						<div class="box-title">
 							<h4>
-								<i class="icon-edit"></i>Elements</h4>
+								<i class="icon-edit"></i>File Input</h4>
 						</div>
-						<div class="box-content no-padding">
-							<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
+						<div class="box-content">
+							<form action="#" method="POST">
 							<div class="control-group">
-								<label class="control-label">
-									Text input</label>
-								<div class="controls">
-									<input id="textinput" type="text" placeholder="Text input">
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label">
-									Text Area</label>
-								<div class="controls">
-									<textarea id="textarea" placeholder="textarea" rows="3" cols="15" class="input-xxlarge"></textarea>
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label">
+								<label for="password" class="control-label">
 								</label>
 								<div class="controls">
-									<label class="checkbox">
-										<input type="checkbox" value="" />
-										Option one is this and that—be sure to include why it's great
-									</label>
+									<div class="fileupload fileupload-new" data-provides="fileupload">
+										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
+												data-dismiss="fileupload" style="float: none">&times</a>
+									</div>
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label">
-								</label>
+								<label for="password" class="control-label">
+									</label>
 								<div class="controls">
-									<label class="radio">
-										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-										Option one is this and that—be sure to include why it's great
-									</label>
-									<label class="radio">
-										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-										Option two can be something else and selecting it will deselect option one
-									</label>
+									<div class="fileupload fileupload-new" data-provides="fileupload">
+										<div class="input-append">
+											<div class="uneditable-input span3">
+												<i class="icon-file fileupload-exists"></i><span class="fileupload-preview"></span>
+											</div>
+											<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+												type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label">
-									Inline checkbox
-								</label>
+								<label for="password" class="control-label">
+									</label>
 								<div class="controls">
-									<label class="checkbox inline">
-										<input type="checkbox" id="inlineCheckbox1" value="option1">
-										1
-									</label>
-									<label class="checkbox inline">
-										<input type="checkbox" id="inlineCheckbox2" value="option2">
-										2
-									</label>
-									<label class="checkbox inline">
-										<input type="checkbox" id="inlineCheckbox3" value="option3">
-										3
-									</label>
+									<div class="fileupload fileupload-new" data-provides="fileupload">
+										<div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;">
+										</div>
+										<div>
+											<span class="btn btn-file"><span class="fileupload-new">Select image</span><span
+												class="fileupload-exists">Change</span><input type="file" /></span> <a href="#" class="btn fileupload-exists"
+													data-dismiss="fileupload">Remove</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label">
-									Selects
-								</label>
+								<label for="password" class="control-label">
+									</label>
 								<div class="controls">
-									<select>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select><div class="clearfix">
-										&nbsp;</div>
-									<select multiple="multiple">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
+									<div class="fileupload fileupload-new" data-provides="fileupload">
+										<div class="fileupload-new thumbnail" style="width: 50px; height: 50px;">
+											<img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA" /></div>
+										<div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;">
+										</div>
+										<span class="btn btn-file"><span class="fileupload-new">Select image</span><span
+											class="fileupload-exists">Change</span><input type="file" /></span> <a href="#" class="btn fileupload-exists"
+												data-dismiss="fileupload">Remove</a>
+									</div>
 								</div>
 							</div>
 							</form>
@@ -199,8 +170,7 @@
 	<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/plugins/bootstrap-tabmenu.js" type="text/javascript"></script>
-	<script src="js/plugins/jquery.icheck.min.js" type="text/javascript"></script>
+	<script src="js/plugins/bootstrap-fileupload.min.js" type="text/javascript"></script>
 	<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 	<script src="js/files/jhelper.js" type="text/javascript"></script>
 </body>

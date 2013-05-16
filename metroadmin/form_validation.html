@@ -6,167 +6,202 @@
 	<link href="css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-		<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container-fluid">
-				<a class="brand" href="#">Project name</a>
-				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
-					</span>
-				</button>
-				<div class="nav-collapse collapse menubar">
-					<ul class="nav">
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#home">
-							Home<span class="caret pull-right">&nbsp;</span></a>
-							<ul class="dropdown-menu">
-								<li><a href="index.html">Dashboard</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#forms">
-							Forms<span class="caret pull-right">&nbsp;</span></a>
-							<ul class="dropdown-menu">
-								<li><a href="form_basic.html">Basic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="styled_elements.html">Styled Elements</a></li>
-								<li><a href="advanced_elements.html">Advanced Elements</a></li>
-								<li><a href="form_validation.html">Validation</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#tables">
-							Tables<span class="caret pull-right">&nbsp;</span></a>
-							<ul class="dropdown-menu">
-								<li><a href="table.html">Basic</a></li>
-								<li><a href="#">Dynamic</a></li>
-								<li><a href="#">Large</a></li>
-							</ul>
-						</li>
-					</ul>
+	<div id="sidebar">
+		<div class="search">
+			<h3>
+				Search</h3>
+			<form class="form-search">
+			<input type="text" class="input-medium search-query">
+			<button type="submit" class="btn btn-primary">
+				Go</button>
+			</form>
+		</div>
+		<div class="accordion" id="accordion">
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" href="index.html">Dashboard</a>
 				</div>
-				<!--/.nav-collapse -->
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle open collapsed" data-toggle="collapse" data-parent="#accordion"
+						href="#forms">Forms</a>
+				</div>
+				<div id="forms" class="accordion-body in collapse">
+					<div class="accordion-inner">
+						<ul>
+							<li><a href="form_basic.html">Basic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li><a href="styled_elements.html">Styled Elements</a></li>
+							<li><a href="advanced_elements.html">Advanced Elements</a></li>
+							<li><a class="active" href="form_validation.html">Validation</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+						href="#tables">Data Tables</a>
+				</div>
+				<div id="tables" class="accordion-body collapse">
+					<div class="accordion-inner">
+						<ul>
+							<li><a href="table.html">Basic</a></li>
+							<li><a href="#">Dynamic</a></li>
+							<li><a href="#">Large</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<!-- nav bar -->
-	<div id="container" class="container-fluid">
-		<div class="page-header">
-			<div class="pull-left">
-				<h3>
-					Form Validation</h3>
+	<!-- sidebar -->
+	<div id="mainbar">
+		<div class="navbar navbar-inverse topbar">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#">Project name</a>
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+						</span>
+					</button>
+					<div class="nav-collapse collapse">
+						<a class="user-info pull-right">
+							<div class="info-block">
+								<h3>
+									John</h3>
+								<h4>
+									Meganchi</h4>
+							</div>
+							<div class="info-block user-img">
+								<span class="icon-user"></span>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<ul class="breadcrumb">
-			<li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
-			<li><a href="form_basic.html">Forms</a> <i class="icon-angle-right"></i></li>
-			<li><a href="form_validation.html">Form Validation</a> </li>
-			<li class="pull-right"><a href="#"><i class="icon-remove"></i></a></li>
-		</ul>
-		<div class="row-fluid">
-			<div class="span12">
-				<div class="box">
-					<div class="box-title">
-						<h4>
-							<i class="icon-edit"></i>Form Validation</h4>
-					</div>
-					<div class="box-content">
-						<form action="#" method="POST" class="form-horizontal form-validate">
-						<div class="control-group">
+		<!-- nav bar -->
+		<div class="container-fluid">
+			<div class="page-header">
+				<h1>
+					Form Validation</h1>
+			</div>
+			<ul class="breadcrumb">
+				<li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
+				<li><a href="form_basic.html">Forms</a> <i class="icon-angle-right"></i></li>
+				<li><a href="form_validation.html">Form Validation</a> </li>
+				<li class="pull-right"><a href="#" class="close">&times</a></li>
+			</ul>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="box">
+						<div class="box-title">
 							<h4>
-								Login Information</h4>
+								<i class="icon-edit"></i>Form Validation</h4>
 						</div>
-						<div class="control-group">
-							<label for="textfield" class="control-label">
-								Email</label>
-							<div class="controls">
-								<input type="text" name="email" id="email" data-rule-required="true" data-rule-email="true"
-									data-msg-required="You can't leave this empty." data-placement="bottom" data-msg-email="Invalid Email"
-									class="input-xlarge" />
+						<div class="box-content">
+							<form action="#" method="POST" class="form-horizontal form-validate">
+							<div class="control-group">
+								<h4>
+									Login Information</h4>
 							</div>
-						</div>
-						<div class="control-group">
-							<label for="password" class="control-label">
-								Password</label>
-							<div class="controls">
-								<input type="password" name="password" id="password" class="input-xlarge" data-rule-minlength="6"
-									data-msg-required="You can't leave this empty." data-rule-required="true" data-placement="bottom" />
+							<div class="control-group">
+								<label for="textfield" class="control-label">
+									Email</label>
+								<div class="controls">
+									<input type="text" name="email" id="email" data-rule-required="true" data-rule-email="true"
+										data-msg-required="You can't leave this empty." data-placement="bottom" data-msg-email="Invalid Email"
+										class="input-xlarge" />
+								</div>
 							</div>
-						</div>
-						<div class="control-group">
-							<label for="password" class="control-label">
-								Cofirm Password</label>
-							<div class="controls">
-								<input type="password" name="confirm_password" id="confirm_password" class="input-xlarge"
-									data-msg-required="You can't leave this empty." data-rule-required="true" data-rule-equalto="#password"
-									data-msg-equalto="These passwords don't match. Try again?" data-placement="bottom" />
+							<div class="control-group">
+								<label for="password" class="control-label">
+									Password</label>
+								<div class="controls">
+									<input type="password" name="password" id="password" class="input-xlarge" data-rule-minlength="6"
+										data-msg-required="You can't leave this empty." data-rule-required="true" data-placement="bottom" />
+								</div>
 							</div>
-						</div>
-						<div class="control-group">
-							<h4>
-								Personal Information</h4>
-						</div>
-						<div class="control-group">
-							<label for="textfield" class="control-label">
-								First Name</label>
-							<div class="controls">
-								<input type="text" name="first_name" id="first_name" data-rule-required="true" data-msg-required="You can't leave this empty."
-									data-placement="bottom" class="input-xlarge" />
+							<div class="control-group">
+								<label for="password" class="control-label">
+									Cofirm Password</label>
+								<div class="controls">
+									<input type="password" name="confirm_password" id="confirm_password" class="input-xlarge"
+										data-msg-required="You can't leave this empty." data-rule-required="true" data-rule-equalto="#password"
+										data-msg-equalto="These passwords don't match. Try again?" data-placement="bottom" />
+								</div>
 							</div>
-						</div>
-						<div class="control-group">
-							<label for="textfield" class="control-label">
-								Last Name</label>
-							<div class="controls">
-								<input type="text" name="last_name" id="last_name" data-rule-required="true" data-msg-required="You can't leave this empty."
-									data-placement="bottom" class="input-xlarge" />
+							<div class="control-group">
+								<h4>
+									Personal Information</h4>
 							</div>
-						</div>
-						<div class="control-group">
-							<label for="textfield" class="control-label">
-								Sex</label>
-							<div class="controls">
-								<select name="sex" id="sex" class="chzn-select" style="width: 110px">
-									<option value="Male">Male</option>
-									<option value="Female">Female</option>
-								</select>
+							<div class="control-group">
+								<label for="textfield" class="control-label">
+									First Name</label>
+								<div class="controls">
+									<input type="text" name="first_name" id="first_name" data-rule-required="true" data-msg-required="You can't leave this empty."
+										data-placement="bottom" class="input-xlarge" />
+								</div>
 							</div>
-						</div>
-						<div class="control-group">
-							<label for="textfield" class="control-label">
-								Birthday</label>
-							<div class="controls">
-								<div class="pull-left separator-right">
-									<select name="Month" id="Month" class="chzn-select" style="width: 110px" data-rule-required="true"
-										data-msg-required="Required" data-placement="bottom">
-										<option value="">Month</option>
-										<option value="1">January</option>
-										<option value="2">February</option>
-										<option value="3">March</option>
-										<option value="4">April</option>
-										<option value="5">May</option>
-										<option value="6">June</option>
-										<option value="7">July</option>
-										<option value="8">August</option>
-										<option value="9">September</option>
-										<option value="10">October</option>
-										<option value="11">November</option>
-										<option value="12">December</option>
+							<div class="control-group">
+								<label for="textfield" class="control-label">
+									Last Name</label>
+								<div class="controls">
+									<input type="text" name="last_name" id="last_name" data-rule-required="true" data-msg-required="You can't leave this empty."
+										data-placement="bottom" class="input-xlarge" />
+								</div>
+							</div>
+							<div class="control-group">
+								<label for="textfield" class="control-label">
+									Sex</label>
+								<div class="controls">
+									<select name="sex" id="sex" class="chzn-select" style="width: 110px">
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
 									</select>
 								</div>
-								<div class="pull-left separator-right">
-									<input type="text" name="day" id="day" placeholder="Day" style="width: 50px" data-rule-required="true"
-										data-msg-required="Required" data-placement="bottom" /></div>
-								<div class="pull-left">
-									<input type="text" name="year" id="year" style="width: 50px" placeholder="Year" data-rule-required="true"
-										data-msg-required="Required" data-placement="bottom" />
+							</div>
+							<div class="control-group">
+								<label for="textfield" class="control-label">
+									Birthday</label>
+								<div class="controls">
+									<div class="pull-left separator-right">
+										<select name="Month" id="Month" class="chzn-select" style="width: 110px" data-rule-required="true"
+											data-msg-required="Required" data-placement="bottom">
+											<option value="">Month</option>
+											<option value="1">January</option>
+											<option value="2">February</option>
+											<option value="3">March</option>
+											<option value="4">April</option>
+											<option value="5">May</option>
+											<option value="6">June</option>
+											<option value="7">July</option>
+											<option value="8">August</option>
+											<option value="9">September</option>
+											<option value="10">October</option>
+											<option value="11">November</option>
+											<option value="12">December</option>
+										</select>
+									</div>
+									<div class="pull-left separator-right">
+										<input type="text" name="day" id="day" placeholder="Day" style="width: 50px" data-rule-required="true"
+											data-msg-required="Required" data-placement="bottom" /></div>
+									<div class="pull-left">
+										<input type="text" name="year" id="year" style="width: 50px" placeholder="Year" data-rule-required="true"
+											data-msg-required="Required" data-placement="bottom" />
+									</div>
 								</div>
 							</div>
+							<div class="form-actions">
+								<button type="submit" class="btn btn-primary input-small">
+									Save</button>
+								<button type="button" class="btn btn-danger">
+									Cancel</button>
+							</div>
+							</form>
 						</div>
-						<div class="form-actions">
-							<button type="submit" class="btn btn-primary input-small">
-								Save</button>
-							<button type="button" class="btn btn-danger">
-								Cancel</button>
-						</div>
-						</form>
 					</div>
 				</div>
 			</div>

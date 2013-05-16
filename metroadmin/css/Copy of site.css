@@ -137,19 +137,19 @@ label.error {
 .navbar-inverse .menubar .nav li.dropdown .caret {
 	margin-left: 7px;
 }
-/* main-bar */
-.main-bar {
+/* mainbar */
+.mainbar {
 	margin-left:200px;
 }
 /* side bar */
-.side-bar {
+#sidebar {
 	width: 200px;
 	 position:absolute;
 	 top:0;
 	 bottom:0;
 	 background-color: #F3F3F3;
 }
-.side-bar .accordion-group {
+#sidebar .accordion-group {
 	border:0;
 	border-radius:0;
 }

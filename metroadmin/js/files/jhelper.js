@@ -75,4 +75,10 @@ $(function () {
 	for (var selector in config) {
 		$(selector).chosen(config[selector]);
 	}
+	$('.accordion').on('shown', function (e) {
+		$(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('open').addClass('collapsed');
+	});
+	$('.accordion').on('hidden', function (e) {
+		$(this).find('.accordion-toggle').not($(e.target)).removeClass('open').addClass('collapsed');
+	});
 });

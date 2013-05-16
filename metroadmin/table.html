@@ -13,414 +13,449 @@
 	<![endif]-->
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container-fluid">
-				<a class="brand" href="#">Project name</a>
-				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
-					</span>
-				</button>
-				<div class="nav-collapse collapse menubar">
-					<ul class="nav">
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#home">
-							Home<span class="caret pull-right">&nbsp;</span></a>
-							<ul class="dropdown-menu">
-								<li><a href="index.html">Dashboard</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#forms">
-							Forms<span class="caret pull-right">&nbsp;</span></a>
-							<ul class="dropdown-menu">
-								<li><a href="form_basic.html">Basic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="styled_elements.html">Styled Elements</a></li>
-								<li><a href="advanced_elements.html">Advanced Elements</a></li>
-								<li><a href="form_validation.html">Validation</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#tables">
-							Tables<span class="caret pull-right">&nbsp;</span></a>
-							<ul class="dropdown-menu">
-								<li><a href="table.html">Basic</a></li>
-								<li><a href="#">Dynamic</a></li>
-								<li><a href="#">Large</a></li>
-							</ul>
-						</li>
-					</ul>
+	<div id="sidebar">
+		<div class="search">
+			<h3>
+				Search</h3>
+			<form class="form-search">
+			<input type="text" class="input-medium search-query">
+			<button type="submit" class="btn btn-primary">
+				Go</button>
+			</form>
+		</div>
+		<div class="accordion" id="accordion">
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" href="index.html">Dashboard</a>
 				</div>
-				<!--/.nav-collapse -->
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+						href="#forms">Forms</a>
+				</div>
+				<div id="forms" class="accordion-body collapse">
+					<div class="accordion-inner">
+						<ul>
+							<li><a href="form_basic.html">Basic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li><a href="styled_elements.html">Styled Elements</a></li>
+							<li><a href="advanced_elements.html">Advanced Elements</a></li>
+							<li><a href="form_validation.html">Validation</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle open collapsed" data-toggle="collapse" data-parent="#accordion"
+						href="#tables">Data Tables</a>
+				</div>
+				<div id="tables" class="accordion-body in collapse">
+					<div class="accordion-inner">
+						<ul>
+							<li><a class="active" href="table.html">Basic</a></li>
+							<li><a href="#">Dynamic</a></li>
+							<li><a href="#">Large</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<!-- nav bar -->
-	<div id="container" class="container-fluid">
-		<div class="page-header">
-			<div class="pull-left">
-				<h3>
-					Tables</h3>
+	<!-- sidebar -->
+	<div id="mainbar">
+		<div class="navbar navbar-inverse topbar">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#">Project name</a>
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+						</span>
+					</button>
+					<div class="nav-collapse collapse">
+						<a class="user-info pull-right">
+							<div class="info-block">
+								<h3>
+									John</h3>
+								<h4>
+									Meganchi</h4>
+							</div>
+							<div class="info-block user-img">
+								<span class="icon-user"></span>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<ul class="breadcrumb">
-			<li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
-			<li><a href="table.html">Tables</a> <i class="icon-angle-right"></i></li>
-			<li class="pull-right"><a href="#"><i class="icon-remove"></i></a></li>
-		</ul>
-		<div class="row-fluid">
-			<div class="span12">
-				<div class="box">
-					<div class="box-title no-border">
-						<h4>
-							<i class="icon-table"></i>Default Style
-						</h4>
+		<!-- nav bar -->
+		<div id="container" class="container-fluid">
+			<div class="page-header">
+					<h1>
+						Tables</h1>
+			</div>
+			<ul class="breadcrumb">
+				<li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
+				<li><a href="table.html">Tables</a> <i class="icon-angle-right"></i></li>
+				<li class="pull-right"><a href="#">&times</a></li>
+			</ul>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="box">
+						<div class="box-title no-border">
+							<h4>
+								<i class="icon-table"></i>Default Style
+							</h4>
+						</div>
+						<div class="box-content">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>
+											#
+										</th>
+										<th>
+											First Name
+										</th>
+										<th>
+											Last Name
+										</th>
+										<th>
+											Username
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											1
+										</td>
+										<td>
+											Mark
+										</td>
+										<td>
+											Otto
+										</td>
+										<td>
+											@mdo
+										</td>
+									</tr>
+									<tr>
+										<td>
+											2
+										</td>
+										<td>
+											Jacob
+										</td>
+										<td>
+											Thornton
+										</td>
+										<td>
+											@fat
+										</td>
+									</tr>
+									<tr>
+										<td>
+											3
+										</td>
+										<td>
+											Larry
+										</td>
+										<td>
+											the Bird
+										</td>
+										<td>
+											@twitter
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-					<div class="box-content">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>
-										#
-									</th>
-									<th>
-										First Name
-									</th>
-									<th>
-										Last Name
-									</th>
-									<th>
-										Username
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										1
-									</td>
-									<td>
-										Mark
-									</td>
-									<td>
-										Otto
-									</td>
-									<td>
-										@mdo
-									</td>
-								</tr>
-								<tr>
-									<td>
-										2
-									</td>
-									<td>
-										Jacob
-									</td>
-									<td>
-										Thornton
-									</td>
-									<td>
-										@fat
-									</td>
-								</tr>
-								<tr>
-									<td>
-										3
-									</td>
-									<td>
-										Larry
-									</td>
-									<td>
-										the Bird
-									</td>
-									<td>
-										@twitter
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="box">
+						<div class="box-title no-border">
+							<h4>
+								<i class="icon-table"></i>Table Striped
+							</h4>
+						</div>
+						<div class="box-content">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>
+											#
+										</th>
+										<th>
+											First Name
+										</th>
+										<th>
+											Last Name
+										</th>
+										<th>
+											Username
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											1
+										</td>
+										<td>
+											Mark
+										</td>
+										<td>
+											Otto
+										</td>
+										<td>
+											@mdo
+										</td>
+									</tr>
+									<tr>
+										<td>
+											2
+										</td>
+										<td>
+											Jacob
+										</td>
+										<td>
+											Thornton
+										</td>
+										<td>
+											@fat
+										</td>
+									</tr>
+									<tr>
+										<td>
+											3
+										</td>
+										<td>
+											Larry
+										</td>
+										<td>
+											the Bird
+										</td>
+										<td>
+											@twitter
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-				</div>
-				<div class="box">
-					<div class="box-title no-border">
-						<h4>
-							<i class="icon-table"></i>Table Striped
-						</h4>
+					<div class="box">
+						<div class="box-title no-border">
+							<h4>
+								<i class="icon-table"></i>Table Bordered
+							</h4>
+						</div>
+						<div class="box-content">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>
+											#
+										</th>
+										<th>
+											First Name
+										</th>
+										<th>
+											Last Name
+										</th>
+										<th>
+											Username
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											1
+										</td>
+										<td>
+											Mark
+										</td>
+										<td>
+											Otto
+										</td>
+										<td>
+											@mdo
+										</td>
+									</tr>
+									<tr>
+										<td>
+											2
+										</td>
+										<td>
+											Jacob
+										</td>
+										<td>
+											Thornton
+										</td>
+										<td>
+											@fat
+										</td>
+									</tr>
+									<tr>
+										<td>
+											3
+										</td>
+										<td>
+											Larry
+										</td>
+										<td>
+											the Bird
+										</td>
+										<td>
+											@twitter
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-					<div class="box-content">
-						<table class="table table-striped">
-							<thead>
-								<tr>
-									<th>
-										#
-									</th>
-									<th>
-										First Name
-									</th>
-									<th>
-										Last Name
-									</th>
-									<th>
-										Username
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										1
-									</td>
-									<td>
-										Mark
-									</td>
-									<td>
-										Otto
-									</td>
-									<td>
-										@mdo
-									</td>
-								</tr>
-								<tr>
-									<td>
-										2
-									</td>
-									<td>
-										Jacob
-									</td>
-									<td>
-										Thornton
-									</td>
-									<td>
-										@fat
-									</td>
-								</tr>
-								<tr>
-									<td>
-										3
-									</td>
-									<td>
-										Larry
-									</td>
-									<td>
-										the Bird
-									</td>
-									<td>
-										@twitter
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="box">
+						<div class="box-title no-border">
+							<h4>
+								<i class="icon-table"></i>Table Hover
+							</h4>
+						</div>
+						<div class="box-content">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>
+											#
+										</th>
+										<th>
+											First Name
+										</th>
+										<th>
+											Last Name
+										</th>
+										<th>
+											Username
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											1
+										</td>
+										<td>
+											Mark
+										</td>
+										<td>
+											Otto
+										</td>
+										<td>
+											@mdo
+										</td>
+									</tr>
+									<tr>
+										<td>
+											2
+										</td>
+										<td>
+											Jacob
+										</td>
+										<td>
+											Thornton
+										</td>
+										<td>
+											@fat
+										</td>
+									</tr>
+									<tr>
+										<td>
+											3
+										</td>
+										<td>
+											Larry
+										</td>
+										<td>
+											the Bird
+										</td>
+										<td>
+											@twitter
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-				</div>
-				<div class="box">
-					<div class="box-title no-border">
-						<h4>
-							<i class="icon-table"></i>Table Bordered
-						</h4>
-					</div>
-					<div class="box-content">
-						<table class="table table-bordered">
-							<thead>
-								<tr>
-									<th>
-										#
-									</th>
-									<th>
-										First Name
-									</th>
-									<th>
-										Last Name
-									</th>
-									<th>
-										Username
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										1
-									</td>
-									<td>
-										Mark
-									</td>
-									<td>
-										Otto
-									</td>
-									<td>
-										@mdo
-									</td>
-								</tr>
-								<tr>
-									<td>
-										2
-									</td>
-									<td>
-										Jacob
-									</td>
-									<td>
-										Thornton
-									</td>
-									<td>
-										@fat
-									</td>
-								</tr>
-								<tr>
-									<td>
-										3
-									</td>
-									<td>
-										Larry
-									</td>
-									<td>
-										the Bird
-									</td>
-									<td>
-										@twitter
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="box">
-					<div class="box-title no-border">
-						<h4>
-							<i class="icon-table"></i>Table Hover
-						</h4>
-					</div>
-					<div class="box-content">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th>
-										#
-									</th>
-									<th>
-										First Name
-									</th>
-									<th>
-										Last Name
-									</th>
-									<th>
-										Username
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										1
-									</td>
-									<td>
-										Mark
-									</td>
-									<td>
-										Otto
-									</td>
-									<td>
-										@mdo
-									</td>
-								</tr>
-								<tr>
-									<td>
-										2
-									</td>
-									<td>
-										Jacob
-									</td>
-									<td>
-										Thornton
-									</td>
-									<td>
-										@fat
-									</td>
-								</tr>
-								<tr>
-									<td>
-										3
-									</td>
-									<td>
-										Larry
-									</td>
-									<td>
-										the Bird
-									</td>
-									<td>
-										@twitter
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="box">
-					<div class="box-title no-border">
-						<h4>
-							<i class="icon-table"></i>Table Condensed
-						</h4>
-					</div>
-					<div class="box-content">
-						<table class="table table-condensed">
-							<thead>
-								<tr>
-									<th>
-										#
-									</th>
-									<th>
-										First Name
-									</th>
-									<th>
-										Last Name
-									</th>
-									<th>
-										Username
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										1
-									</td>
-									<td>
-										Mark
-									</td>
-									<td>
-										Otto
-									</td>
-									<td>
-										@mdo
-									</td>
-								</tr>
-								<tr>
-									<td>
-										2
-									</td>
-									<td>
-										Jacob
-									</td>
-									<td>
-										Thornton
-									</td>
-									<td>
-										@fat
-									</td>
-								</tr>
-								<tr>
-									<td>
-										3
-									</td>
-									<td>
-										Larry
-									</td>
-									<td>
-										the Bird
-									</td>
-									<td>
-										@twitter
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="box">
+						<div class="box-title no-border">
+							<h4>
+								<i class="icon-table"></i>Table Condensed
+							</h4>
+						</div>
+						<div class="box-content">
+							<table class="table table-condensed">
+								<thead>
+									<tr>
+										<th>
+											#
+										</th>
+										<th>
+											First Name
+										</th>
+										<th>
+											Last Name
+										</th>
+										<th>
+											Username
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											1
+										</td>
+										<td>
+											Mark
+										</td>
+										<td>
+											Otto
+										</td>
+										<td>
+											@mdo
+										</td>
+									</tr>
+									<tr>
+										<td>
+											2
+										</td>
+										<td>
+											Jacob
+										</td>
+										<td>
+											Thornton
+										</td>
+										<td>
+											@fat
+										</td>
+									</tr>
+									<tr>
+										<td>
+											3
+										</td>
+										<td>
+											Larry
+										</td>
+										<td>
+											the Bird
+										</td>
+										<td>
+											@twitter
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
