@@ -1,18 +1,38 @@
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
 body, input, button, select, textarea, .navbar-search .search-query, label, input, button, select, textarea {
 	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 13px;
 	font-weight: 400;
-	color: #333;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .chzn-container-single .chzn-search input,
+.input-append input, .input-append select, .input-append .uneditable-input
+,textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .chzn-container-single .chzn-search input,
+.input-append input, .input-append select, .input-append .uneditable-input
+,.navbar-inverse .navbar-inner
+,.btn
+,.btn-group.open .dropdown-toggle
+,.btn-group > .btn:first-child
+,.btn.active, .btn:active
+,.table-bordered
+,.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child > .dropdown-toggle, .input-prepend .add-on:last-child, .input-prepend .btn:first-child, .input-prepend .btn-group:first-child > .dropdown-toggle
+,.control-group.error input, .control-group.error select, .control-group.error textarea, .control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus
+,.dropdown-menu, .dropdown-submenu > .dropdown-menu
+,.breadcrumb
+,.breadcrumb > li
+,.popover
+,.thumbnail
+,.navbar-inverse .menubar .nav > li > a
+,.navbar-inverse .brand
+{
+	box-shadow: none;-webkit-box-shadow:none;-moz-box-shadow:none;
+	border-radius: 0;-webkit-border-radius:0;-moz-border-radius:0;
+	transition: none;
+	text-shadow: none;filter: none;
+	background-image: none;
 }
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .chzn-container-single .chzn-search input,
 .input-append input, .input-append select, .input-append .uneditable-input
 {
 	border: 1px solid #CCCCCC;
-	box-shadow: none;
-	transition: none;
-	text-shadow: none;
-	border-radius: 0;
 	font-size: 14px;
 	color: #333333;
 }
@@ -20,10 +40,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .input-append input:focus, .input-append select:focus, .input-append .uneditable-input:focus
 {
 	border: 1px solid #2672EC;
-	box-shadow: none;
-	transition: none;
-	text-shadow: none;
-	border-radius: 0;
 }
 textarea.error:focus, input.error, input.error:focus {
 	border: 1px solid #E45D5D;
@@ -57,14 +73,10 @@ label.error {
 .navbar-inverse .navbar-inner {
 	background-image: none;
 	border: 0;
-	box-shadow: none;
 	background: #fff;
-	text-shadow: none;
-	filter: none;
 }
 .navbar-inverse .brand {
 	color: #333;
-	text-shadow: none;
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -80,7 +92,6 @@ label.error {
 	transition: color 0.3s ease-in-out 0s;
 }
 .navbar-inverse .menubar .nav > li > a {
-	text-shadow: none;
 	color: #1A1A1A;
 	font-size: 14px;
 }
@@ -94,30 +105,9 @@ label.error {
 /* button */
 .btn {
 	border: 0;
-	box-shadow: none;
-	background-image: none;
-	border-radius: 0;
-	text-shadow: none;
 	font-size: 14px;
 }
-.btn-group.open .dropdown-toggle {
-	border-radius: 0;
-	box-shadow: none;
-}
-.btn-group > .btn:first-child {
-	border-radius: 0;
-}
-.btn.active, .btn:active {
-	box-shadow: none;
-}
-/* table */
-.table-bordered {
-	border-radius: 0;
-}
 /* input */
-.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child > .dropdown-toggle, .input-prepend .add-on:last-child, .input-prepend .btn:first-child, .input-prepend .btn-group:first-child > .dropdown-toggle {
-	border-radius: 0;
-}
 .input-append .btn, .input-append .btn.dropdown-toggle, .input-prepend .btn, .input-prepend .btn.dropdown-toggle {
 	border: 1px solid #d5d5d5;
 }
@@ -130,16 +120,11 @@ label.error {
 .input-append .btn:first-child, .input-prepend .btn:first-child {
 	border-left: 0;
 }
-.control-group.error input, .control-group.error select, .control-group.error textarea, .control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
-	box-shadow: none;
-}
 input.search-query {
 	padding: 4px 6px;
 }
 /* dropdown-menu */
 .dropdown-menu, .dropdown-submenu > .dropdown-menu {
-	border-radius: 0;
-	box-shadow: none;
 	margin: 0;
 }
 /* breadcrumb */
@@ -148,20 +133,21 @@ input.search-query {
   margin: 0 0 20px;
   list-style: none;
   background-color: #f5f5f5;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
 }
 
 .breadcrumb > li {
   display: inline-block;
   *display: inline;
-  text-shadow: none;
   *zoom: 1;
 }
 
 .breadcrumb > li > a:hover {
 	color: #4D90FE;
+}
+.breadcrumb > li > a.close:hover 
+,.close:hover 
+{
+	color:#000; opacity:1; filter:alpha(opacity=100);
 }
 
 .breadcrumb > li > .divider {
@@ -196,8 +182,6 @@ input.search-query {
 }
 /* popover */
 .popover {
-	border-radius: 0;
-	box-shadow: none;
 	border: 1px solid #E65858;
 }
 .popover.error {
@@ -223,7 +207,9 @@ input.search-query {
 .popover.error .popover-content {
 	padding: 3px 5px;
 }
-/* thumbnail */
-.thumbnail {
-	border-radius:0; box-shadow: none;
+/* table */
+.table th {
+	font-weight: 600;  
 }
+/* btn */
+ 

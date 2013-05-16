@@ -81,4 +81,5 @@ $(function () {
 	$('.accordion').on('hidden', function (e) {
 		$(this).find('.accordion-toggle').not($(e.target)).removeClass('open').addClass('collapsed');
 	});
+	
 });

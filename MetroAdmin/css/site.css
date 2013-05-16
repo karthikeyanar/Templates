@@ -1,14 +1,14 @@
 ﻿@import "bootstrap.min.css";
 @import "bootstrap-responsive.min.css";
 @import "bootstrap-fileupload.css";
+@import "wysiwyg-color.css";
+@import "bootstrap-wysihtml5.css";
 @import "bootstrap-metro.css";
 @import "font-awesome.min.css";
 @import "icheck-minimal.css";
 @import "icheck-square.css";
 @import "chosen.css";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
-body {
-}
 .no-padding {
 	padding: 0 !important;
 }
@@ -42,11 +42,16 @@ body {
 .no-border {
 	border: 0 !important;
 }
-.separator-left {
-	margin-left: 5px;
+/* cutter */
+.cutter {
+	padding-left:10px; 
+	padding-right:10px;
 }
-.separator-right {
-	margin-right: 5px;
+.cutter-left {
+	padding-left:10px; 
+}
+.cutter-right {
+	padding-right:10px;
 }
 /* mainbar */
 #mainbar {
@@ -61,10 +66,11 @@ body {
 	background-color: #f2f2f2;
 }
 #sidebar .search {
-	margin-bottom: 20px; padding-left:20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
 }
 #sidebar .search .search-query {
-	margin-right: 10px; 
+	margin-right: 10px;
 }
 #sidebar .accordion-group {
 	border: 0;
@@ -78,19 +84,17 @@ body {
 	color: inherit;
 }
 #sidebar .accordion-toggle {
-	font-size: 16px;
+	font-size: 15px;
 	padding: 8px 0 8px 20px;
 	margin: 0;
-	 color: #3C3C3C;
+	color: #3C3C3C;
 }
 #sidebar .accordion-toggle:focus {
 	border: 0;
 	text-decoration: none;
 	outline: none;
 }
-#sidebar .accordion-toggle:hover:before,
-#sidebar .accordion-toggle.open:before
-{
+#sidebar .accordion-toggle:hover:before, #sidebar .accordion-toggle.open:before {
 	position: absolute;
 	right: 10px;
 	font-family: FontAwesome;
@@ -103,7 +107,7 @@ body {
 #sidebar .accordion-toggle.open:hover:before, #sidebar .accordion-toggle.open:before {
 	content: "\f107";
 }
-#sidebar .accordion-toggle [class^="icon-"], #sidebar .accordion-toggle  [class*=" icon-"] {
+#sidebar .accordion-toggle [class^="icon-"], #sidebar .accordion-toggle [class*=" icon-"] {
 	padding-right: 5px;
 }
 #sidebar .accordion-group {
@@ -125,7 +129,10 @@ body {
 	padding: 8px 8px 8px 40px;
 	font-size: 14px;
 }
-#sidebar .accordion-toggle.active, #sidebar .accordion-body ul li a:hover, #sidebar .accordion-body ul li a.active {
+#sidebar .accordion-toggle:hover,
+#sidebar .accordion-toggle.active, 
+#sidebar .accordion-body ul li a:hover, 
+#sidebar .accordion-body ul li a.active {
 	background: #4D90FE;
 	color: #fff;
 }
@@ -244,6 +251,8 @@ body {
 .box.box-bordered .table {
 	margin-bottom: 0;
 }
+/* winbox */
+
 /* blue box */
 .blue.box-bordered .box-title, .blue.box-bordered .box-content {
 	border: 1px solid #4D90FE;
