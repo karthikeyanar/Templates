@@ -42,6 +42,9 @@
 .no-border {
 	border: 0 !important;
 }
+.no-wrap {
+	white-space: nowrap !important; 
+}
 /* cutter */
 .cutter {
 	padding-left:10px; 
@@ -100,6 +103,7 @@
 	font-family: FontAwesome;
 	font-style: normal;
 	font-weight: normal;
+	font-size:20px;
 }
 #sidebar .accordion-toggle:hover:before {
 	content: "\f105";
@@ -369,123 +373,6 @@
 	top: 8px;
 }
 
-/* colors */
-.fg-white {
-	color: #fff !important;
-}
-.fg-pink {
-	color: #DC4FAD !important;
-}
-.fg-dark-red {
-	color: #AC193D !important;
-}
-.fg-dark-orange {
-	color: #D24726 !important;
-}
-.fg-orange {
-	color: #FF8F32 !important;
-}
-.fg-light-green {
-	color: #82BA00 !important;
-}
-.fg-green {
-	color: #008A17 !important;
-}
-.fg-light-teal {
-	color: #03B3B2 !important;
-}
-.fg-teal {
-	color: #008299 !important;
-}
-.fg-dark-blue {
-	color: #001940 !important;
-}
-.fg-light-blue {
-	color: #5DB2FF !important;
-}
-.fg-blue {
-	color: #0072C6 !important;
-}
-.fg-dark-purple {
-	color: #4617B4 !important;
-}
-.fg-purple {
-	color: #8C0095 !important;
-}
-.fg-dark-cardovan {
-	color: #380000 !important;
-}
-.fg-cardovan {
-	color: #570000 !important;
-}
-.fg-grey {
-	color: #585858 !important;
-}
-.fg-black {
-	color: #000000 !important;
-}
-/* background colors */
-.bg-pink {
-	-webkit-transition: background 1s ease;
-	-moz-transition: background 1s ease;
-	-o-transition: background 1s ease;
-	transition: background 1s ease;
-	cursor: default;
-}
-.bg-white {
-	background: #fff !important;
-}
-.bg-pink {
-	background: #DC4FAD !important;
-}
-.bg-dark-red {
-	background: #AC193D !important;
-}
-.bg-dark-orange {
-	background: #D24726 !important;
-}
-.bg-orange {
-	background: #FF8F32 !important;
-}
-.bg-light-green {
-	background: #82BA00 !important;
-}
-.bg-green {
-	background: #008A17 !important;
-}
-.bg-light-teal {
-	background: #03B3B2 !important;
-}
-.bg-teal {
-	background: #008299 !important;
-}
-.bg-dark-blue {
-	background: #001940 !important;
-}
-.bg-light-blue {
-	background: #5DB2FF !important;
-}
-.bg-blue {
-	background: #0072C6 !important;
-}
-.bg-dark-purple {
-	background: #4617B4 !important;
-}
-.bg-purple {
-	background: #8C0095 !important;
-}
-.bg-dark-cardovan {
-	background: #380000 !important;
-}
-.bg-cardovan {
-	background: #570000 !important;
-}
-.bg-grey {
-	background: #585858 !important;
-}
-.bg-black {
-	background: #000000 !important;
-}
 /* responsive */
 @media (max-width: 767px) {
 }

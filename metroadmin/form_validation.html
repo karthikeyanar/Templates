@@ -92,7 +92,7 @@
 				<li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
 				<li><a href="form_basic.html">Forms</a> <i class="icon-angle-right"></i></li>
 				<li><a href="form_validation.html">Form Validation</a> </li>
-				<li class="pull-right"><a href="#" class="close">&times</a></li>
+				<li class="pull-right"><a href="#" class="close" data-dismiss="breadcrumb">&times</a></li>
 			</ul>
 			<div class="row-fluid">
 				<div class="span12">
@@ -112,7 +112,7 @@
 									Email</label>
 								<div class="controls">
 									<input type="text" name="email" id="email" data-rule-required="true" data-rule-email="true"
-										data-msg-required="You can't leave this empty." data-placement="bottom" data-msg-email="Invalid Email"
+										data-msg-required="Required" data-placement="bottom" data-msg-email="Invalid Email"
 										class="input-xlarge" />
 								</div>
 							</div>
@@ -121,7 +121,7 @@
 									Password</label>
 								<div class="controls">
 									<input type="password" name="password" id="password" class="input-xlarge" data-rule-minlength="6"
-										data-msg-required="You can't leave this empty." data-rule-required="true" data-placement="bottom" />
+										data-msg-required="Required" data-rule-required="true" data-placement="bottom" />
 								</div>
 							</div>
 							<div class="control-group">
@@ -129,7 +129,7 @@
 									Cofirm Password</label>
 								<div class="controls">
 									<input type="password" name="confirm_password" id="confirm_password" class="input-xlarge"
-										data-msg-required="You can't leave this empty." data-rule-required="true" data-rule-equalto="#password"
+										data-msg-required="Required" data-rule-required="true" data-rule-equalto="#password"
 										data-msg-equalto="These passwords don't match. Try again?" data-placement="bottom" />
 								</div>
 							</div>
@@ -141,7 +141,7 @@
 								<label for="textfield" class="control-label">
 									First Name</label>
 								<div class="controls">
-									<input type="text" name="first_name" id="first_name" data-rule-required="true" data-msg-required="You can't leave this empty."
+									<input type="text" name="first_name" id="first_name" data-rule-required="true" data-msg-required="Required"
 										data-placement="bottom" class="input-xlarge" />
 								</div>
 							</div>
@@ -149,7 +149,7 @@
 								<label for="textfield" class="control-label">
 									Last Name</label>
 								<div class="controls">
-									<input type="text" name="last_name" id="last_name" data-rule-required="true" data-msg-required="You can't leave this empty."
+									<input type="text" name="last_name" id="last_name" data-rule-required="true" data-msg-required="Required"
 										data-placement="bottom" class="input-xlarge" />
 								</div>
 							</div>
@@ -157,7 +157,7 @@
 								<label for="textfield" class="control-label">
 									Sex</label>
 								<div class="controls">
-									<select name="sex" id="sex" class="chzn-select" style="width: 110px">
+									<select name="sex" id="sex" class="chzn-select input-medium">
 										<option value="Male">Male</option>
 										<option value="Female">Female</option>
 									</select>
@@ -167,8 +167,8 @@
 								<label for="textfield" class="control-label">
 									Birthday</label>
 								<div class="controls">
-									<div class="pull-left separator-right">
-										<select name="Month" id="Month" class="chzn-select" style="width: 110px" data-rule-required="true"
+									<div class="pull-left cutter-right">
+										<select name="Month" id="Month" class="chzn-select input-medium" data-rule-required="true"
 											data-msg-required="Required" data-placement="bottom">
 											<option value="">Month</option>
 											<option value="1">January</option>
@@ -185,11 +185,11 @@
 											<option value="12">December</option>
 										</select>
 									</div>
-									<div class="pull-left separator-right">
-										<input type="text" name="day" id="day" placeholder="Day" style="width: 50px" data-rule-required="true"
+									<div class="pull-left cutter-right">
+										<input type="text" name="day" id="day" class="input-mini" placeholder="Day" data-rule-required="true"
 											data-msg-required="Required" data-placement="bottom" /></div>
 									<div class="pull-left">
-										<input type="text" name="year" id="year" style="width: 50px" placeholder="Year" data-rule-required="true"
+										<input type="text" name="year" id="year" class="input-mini" placeholder="Year" data-rule-required="true"
 											data-msg-required="Required" data-placement="bottom" />
 									</div>
 								</div>
@@ -209,18 +209,11 @@
 	</div>
 	<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="js/jquery/jquery.validate.extend.js" type="text/javascript"></script>
 	<script src="js/jquery/additional-methods.min.js" type="text/javascript"></script>
-	<script src="js/jquery/jquery.validate.bootstrap.js" type="text/javascript"></script>
 	<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/plugins/bootstrap-tabmenu.js" type="text/javascript"></script>
 	<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 	<script src="js/files/jhelper.js" type="text/javascript"></script>
-	<script>
-		$(function () {
-			$(".form-validate").validate({
-				ignore: "input[type='text']:hidden"
-			});
-		});	
-	</script>
 </body>
 </html>

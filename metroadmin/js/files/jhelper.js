@@ -81,5 +81,7 @@ $(function () {
 	$('.accordion').on('hidden', function (e) {
 		$(this).find('.accordion-toggle').not($(e.target)).removeClass('open').addClass('collapsed');
 	});
-	
+	$(".form-validate").validate({
+		ignore: "input[type='text']:hidden"
+	});
 });
