@@ -2,7 +2,9 @@
 body, input, button, select, textarea, .navbar-search .search-query, label, input, button, select, textarea {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: 400;
+	font-size: 13px;
 }
+/* remove box-shadow, border-radius, text-shadow */
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"]
 , input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"]
 , input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"]
@@ -41,6 +43,15 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 , .dropdown-menu, .dropdown-submenu > .dropdown-menu, .breadcrumb, .breadcrumb > li, .popover
 , .dropup .dropdown-submenu > .dropdown-menu
 , .dropdown-submenu.pull-left > .dropdown-menu
+, .form-search .input-append .search-query
+, .navbar-inverse .btn-navbar
+, .navbar .btn-navbar .icon-bar
+, div.pick-a-color-markup .hex-pound
+, .datepicker td.active
+, .datepicker td.active:hover
+, .datepicker td span.active 
+, .datepicker td
+, .datepicker th 
 {
 	box-shadow: none;
 	-webkit-box-shadow: none;
@@ -57,7 +68,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .input-append input, .input-append select, .input-append .uneditable-input
 {
 	border: 1px solid #CCCCCC;
-	font-size: 14px;
+	font-size: 13px;
 	color: #333333;
 }
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus, .chzn-container-single .chzn-search input:focus,
@@ -97,7 +108,7 @@ label.error {
 }
 
 /* colors */
-.fg-#fff {
+.fg-white {
 	color: #fff !important;
 }
 .fg-pink {
@@ -152,18 +163,14 @@ label.error {
 	color: #000000 !important;
 }
 /* background colors */
-.bg-pink {
-	-webkit-transition: background 1s ease;
-	-moz-transition: background 1s ease;
-	-o-transition: background 1s ease;
-	transition: background 1s ease;
-	cursor: default;
-}
-.bg-#fff {
+.bg-white {
 	background: #fff !important;
 }
 .bg-pink {
 	background: #DC4FAD !important;
+}
+.bg-red {
+	background: #E81123 !important;
 }
 .bg-dark-red {
 	background: #AC193D !important;
@@ -195,6 +202,9 @@ label.error {
 .bg-blue {
 	background: #0072C6 !important;
 }
+.bg-sky-blue {
+	background: #4D90FE !important;
+}
 .bg-dark-purple {
 	background: #4617B4 !important;
 }
@@ -219,14 +229,6 @@ label.error {
 	background-image: none;
 	border: 0;
 	background: #fff;
-}
-.navbar-inverse .brand {
-	color: #333;
-	font-size: 20px;
-	font-weight: 400;
-}
-.navbar-inverse .brand:hover, .navbar-inverse .brand:focus {
-	color: #333;
 }
 .navbar-inverse .menubar .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .menubar .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .menubar .nav li.dropdown.open.active > .dropdown-toggle {
 	background-color: #EEEEEE;
@@ -260,8 +262,50 @@ label.error {
 .input-append .btn:first-child, .input-prepend .btn:first-child {
 	border-left: 0;
 }
-input.search-query {
-	padding: 4px 6px;
+.input-icon {
+    position: relative;
+}
+.input-icon .btn {
+	border: 1px solid #EEEEEE;
+	  height: 24px;
+    line-height: 10px;
+    padding: 0 5px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+} 
+.input-icon .btn-danger {
+	border: 1px solid #d84a38;
+}
+.input-icon .btn-primary {
+	border: 1px solid #4d90fe;
+}
+.input-icon .btn-success {
+	border: 1px solid #35aa47;
+}
+.input-icon .btn-purple {
+	border: 1px solid #35aa47;
+}
+.input-icon .btn-pink {
+	border: 1px solid #DC4FAD;
+}
+.input-icon .btn-teal {
+	border: 1px solid #008299;
+}
+.input-icon .btn-cardovan {
+	border: 1px solid #570000;
+}
+.input-icon .btn-inverse {
+	border: 1px solid #555555;
+}
+.input-icon .btn-info {
+	border: 1px solid #49AFCD;
+}
+.input-icon .btn-warning {
+	border: 1px solid #FAA732;
+}
+.input-icon .btn-warning {
+	border: 1px solid #FAA732;
 }
 /* breadcrumb */
 .breadcrumb {
@@ -641,4 +685,11 @@ input.search-query {
 	background-color: #fff;
 	color: #0072bb;
 }
- 
+/* date-picker */
+.date-picker {
+
+}
+.datepicker th.next,
+.datepicker th.prev {
+  font-size: 15px;
+}

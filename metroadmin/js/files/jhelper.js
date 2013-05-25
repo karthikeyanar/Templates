@@ -33,30 +33,27 @@
 		});
 	}
 	, resizeChosen: function () {
-		$('.chzn-container').each(function () {
-			var $this = $(this);
-			var $select = $("#" + $this.attr("id").replace("_chzn"));
-			var selectWidth = $select.show().width();
-			$select.hide();
-			$this.width(selectWidth);
-		});
+		$(".chzn-container").each(function () {
+			var e = $(this);
+			e.css("width", e.parent().width() + "px");
+			e.find(".chzn-drop").css("width", e.parent().width() - 2 + "px");
+			e.find(".chzn-search input").css("width", e.parent().width() - 37 + "px")
+		})
 	}
-	, resizeMenu: function () {
-		var w = $(window).width();
-		if (w >= 978) {
-			$(".main-menu").show();
-		}
-		var $mainMenu = $(".main-menu");
-		var $dropDownMenu = $(".open .dropdown-menu:first");
-		var $submenuBar = $(".submenu-bar");
-		$submenuBar.height($dropDownMenu.height());
+	, resizeMainBar: function () {
+		var $sidebar = $("#sidebar");
+		var $mainbar = $("#mainbar");
+		var $navbar = $("#navbar");
+		var $window = $(window);
+		var h = $window.height() - $navbar.height();
+		$mainbar.css("min-height", h);
 	}
 }
 $(window).resize(function () {
-	jhelper.resizeMenu();
+	jhelper.resizeMainBar();
 	jhelper.resizeChosen();
 });
-jhelper.resizeMenu();
+jhelper.resizeMainBar();
 var config = {
 	'.chzn-select': {},
 	'.chzn-select-deselect': { allow_single_deselect: true },
@@ -66,22 +63,26 @@ var config = {
 }
 $(function () {
 	var $body = $("body");
-	var $tabmenu = $(".main-menu");
-	$("#show-mobile-menu")
-	.click(function () {
-		$tabmenu.toggle();
-	});
 	jhelper.icheck($body);
 	for (var selector in config) {
 		$(selector).chosen(config[selector]);
 	}
+	$(".form-validate").validate({
+		ignore: "input[type='text']:hidden"
+	});
+	$('.topbar .barmenu').click(function () {
+		var $sidebar = $("#sidebar");
+		$sidebar.toggleClass("show");
+	});
+	$('.sidebar-barmenu').click(function () {
+		var $sidebar = $("#sidebar");
+		$sidebar.toggleClass("show");
+	});
 	$('.accordion').on('shown', function (e) {
 		$(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('open').addClass('collapsed');
 	});
 	$('.accordion').on('hidden', function (e) {
 		$(this).find('.accordion-toggle').not($(e.target)).removeClass('open').addClass('collapsed');
 	});
-	$(".form-validate").validate({
-		ignore: "input[type='text']:hidden"
-	});
+	$(".datepicker").datepicker({ autoclose: true, todayHighlight: true });
 });
