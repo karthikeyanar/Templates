@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<!-- Apple devices fullscreen -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -11,41 +11,65 @@
 	<link href="css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top topbar bg-blue">
-		<div class="navbar-inner">
-			<div class="container-fluid">
-				<button type="button" class="btn btn-navbar bg-sky-blue barmenu">
-					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
-					</span>
-				</button>
-				<a class="brand" href="#">Pepper Metro</a>
-				<div class="nav-collapse collapse">
-					<p class="navbar-text pull-right">
-						Logged in as <a href="#" class="navbar-link">Joe Nilson</a>
-					</p>
-					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
+	<div id="navbar">
+		<div class="navbar navbar-inverse topbar">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#">Pepper Admin</a>
+					<div class="user-nav">
+						<ul class="nav navbar-icon pull-right">
+							<li><a href="#" class="link barmenu visible-phone visible-tablet"><i class="icon-reorder icon-large">
+							</i></a></li>
+							<li><a href="#" class="link"><i class="icon-cog icon-large"></i></a></li>
+							<li><a href="#" class="link"><i class="icon-lock icon-large"></i></a></li>
+							<li class="dropdown user-box pull-right"><a class="dropdown-toggle" data-toggle="dropdown"
+								href="#">
+								<img src="img/nophoto.jpg" /><span>Joe Nilson</span></a>
+								<div class="dropdown-menu">
+									<div class="user-photo">
+										<img src="img/photo.jpg" />
+									</div>
+									<div class="user-info">
+										<p>
+											Joe Nilson<br />
+											test@gmail.com
+										</p>
+										<ul>
+											<li><a href="#">Profile</a></li>
+											<li><a href="#">Settings</a></li>
+										</ul>
+									</div>
+									<div class="clearfix">
+									</div>
+									<div class="pull-right">
+										<button class="btn btn-danger">
+											Sign out</button></div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<!--/.nav-collapse -->
 			</div>
 		</div>
+		<!-- nav bar -->
 	</div>
-	<!-- nav bar -->
 	<div id="sidebar">
 		<div class="search">
 			<form>
-			<div class="input-icon">
-				<input type="text" placeholder="Search" class="input-block-level" />
+			<div class="input-icon pull-left">
+				<input type="text" placeholder="Search" class="search-query" />
 				<button class="btn btn-primary">
 					<i class="icon-search"></i>
 				</button>
 			</div>
+			<div class="pull-right hide-sidebar visible-desktop">
+				<a href="#"><i class="m-icon-big-swapleft"></i></a>
+			</div>
+			<div class="clearfix">
+			</div>
 			</form>
 		</div>
-		<div class="accordion" id="accordion">
+		<div class="accordion" id="sidebar-accordion">
 			<div class="accordion-group">
 				<div class="accordion-heading">
 					<a class="accordion-toggle active" href="index.html"><i class="icon-laptop"></i>Dashboard</a>
@@ -103,13 +127,86 @@
 		</div>
 	</div>
 	<!-- sidebar -->
+	<div class="sidebar-nav-btn">
+		<a href="#" title="show sidebar"><i class="m-icon-big-swapright"></i></a>
+	</div>
+	<!-- show sidebar -->
 	<div id="mainbar">
 		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span4">
+					<div class="page-header">
+						<h1>
+							Dashboard</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="metro-box-group">
+						<div class="metro-box icon bg-red">
+							<div class="metro-box-content">
+								<i class="icon-envelope icon-4x"></i>
+							</div>
+							<div class="title">
+								<div class="status">
+									10</div>
+								<div class="name">
+									Mail</div>
+							</div>
+						</div>
+						<div class="metro-box icon bg-sky-blue">
+							<div class="metro-box-content">
+								<i class="icon-calendar icon-4x"></i>
+							</div>
+							<div class="title">
+								<div class="status">
+									10</div>
+								<div class="name">
+									Events</div>
+							</div>
+						</div>
+						<div class="metro-box icon bg-purple">
+							<div class="metro-box-content">
+								<i class="icon-shopping-cart icon-4x"></i>
+							</div>
+							<div class="title">
+								<div class="status">
+									10</div>
+								<div class="name">
+									Orders</div>
+							</div>
+						</div>
+						<div class="metro-box icon bg-green">
+							<div class="metro-box-content">
+								<i class="icon-briefcase icon-4x"></i>
+							</div>
+							<div class="title">
+								<div class="status">
+									10</div>
+								<div class="name">
+									Products</div>
+							</div>
+						</div>
+						<div class="metro-box double bg-orange">
+							<div class="metro-box-content list">
+								<ul>
+									<li><i class="icon-tags icon-2x"></i><h4>Total Sales 100</h4></li>
+									<li><i class="icon-money icon-2x"></i><h4>Total Profit $342,242</h4></li>
+									<li><i class="icon-group icon-2x"></i><h4>Total Users 125</h4></li>
+									<li><i class="icon-envelope icon-2x"></i><h4>Total Messages 250</h4></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- mainbar -->
 	<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="js/jquery/jquery-ui-1.10.3.effect-slide.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 	<script src="js/plugins/jquery.icheck.min.js" type="text/javascript"></script>
