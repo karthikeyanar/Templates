@@ -14,8 +14,7 @@
 			$(":input[data-style='icheck']",target).each(function() {
 				var $this=$(this);
 				var $parent=$this.parent();
-				if($parent.hasClass("radio")
-			||$parent.hasClass("checkbox")) {
+				if($parent.hasClass("radio")||$parent.hasClass("checkbox")) {
 					$parent.addClass("icheck-label");
 				}
 				if($this.attr("disabled")!=undefined) {
@@ -75,7 +74,6 @@
 	}
 	,resizeSideBar: function() {
 		var $sidebar=$("#sidebar");
-		var $mainbar=$("#mainbar");
 		var $navbar=$("#navbar");
 		var $window=$(window);
 		var $body=$("body");
@@ -85,28 +83,22 @@
 		}
 		h=h-$navbar.height();
 		$sidebar.css("min-height",h);
-		$(".sidebar-nav-btn").removeClass("shown");
-		if($window.width()<=979) {
-			$sidebar.hide();
-		} else {
-			$sidebar.show();
-			$("body").removeClass("hide-side-bar");
-		}
 	}
 	,showSideBar: function() {
 		var $sidebar=$("#sidebar");
-		var $btn=$(".sidebar-nav-btn");
 		var $body=$("body");
-		if(!$body.hasClass("hide-side-bar")) {
-			$sidebar.toggle("slide",function() {
-				$btn.toggleClass("shown");
-				$body.toggleClass("hide-side-bar");
-			});
+		$sidebar.toggle();
+		if($sidebar.css("display")=="none") {
+			$("body").addClass("hide-side-bar");
 		} else {
-			$btn.toggleClass("shown");
-			$body.toggleClass("hide-side-bar");
-			$sidebar.toggle("slide");
+			$("body").removeClass("hide-side-bar");
 		}
+	}
+	,chartToolTip: function(x, y, contents) {
+		$('<div id="tooltip" class="chart-tooltip tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner">' + contents + '</div></div>').css( {
+			top: y - 43,
+			left: x - 15,
+		}).appendTo("body").fadeIn(200);
 	}
 }
 $(window).resize(function() {
@@ -136,4 +128,12 @@ $(function() {
 	$('.accordion').on('hidden',function(e) {
 		$(this).find('.accordion-toggle').not($(e.target)).removeClass('open').addClass('collapsed');
 	});
+
+	// dismiss breadcrumb
+	$(document).on('click.breadcrumb.data-api',"[data-dismiss='breadcrumb']",function() {
+		var $breadcrumb=$(this).parents(".breadcrumb:first");
+		$breadcrumb.fadeOut();
+	});
+
 });
+
