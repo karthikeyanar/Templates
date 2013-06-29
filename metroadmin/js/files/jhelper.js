@@ -72,18 +72,6 @@
 			e.find(".chzn-search input").css("width",e.parent().width()-37+"px")
 		})
 	}
-	,resizeSideBar: function() {
-		var $sidebar=$("#sidebar");
-		var $navbar=$("#navbar");
-		var $window=$(window);
-		var $body=$("body");
-		var h=$window.height();
-		if(h<$body.height()) {
-			h=$body.height();
-		}
-		h=h-$navbar.height();
-		$sidebar.css("min-height",h);
-	}
 	,showSideBar: function() {
 		var $sidebar=$("#sidebar");
 		var $body=$("body");
@@ -102,12 +90,10 @@
 	}
 }
 $(window).resize(function() {
-	jhelper.resizeSideBar();
 	jhelper.resizeChosen();
 });
 $(function() {
 	var $body=$("body");
-	jhelper.resizeSideBar();
 	jhelper.icheck($body);
 	jhelper.chosen();
 	jhelper.formValidate();

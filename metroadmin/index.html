@@ -8,6 +8,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<!-- Apple devices fullscreen -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="css/fullcalendar.css" rel="stylesheet" type="text/css" />
 	<link href="css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -53,232 +54,218 @@
 		</div>
 		<!-- nav bar -->
 	</div>
-	<div id="sidebar">
-		<div class="search">
-			<form>
-			<div class="input-icon pull-left">
-				<input type="text" placeholder="Search" class="search-query" />
-				<button class="btn btn-primary">
-					<i class="icon-search"></i>
-				</button>
+	<div id="container">
+		<div id="sidebar">
+			<div class="search">
+				<form>
+				<div class="input-icon-btn">
+					<input type="text" placeholder="Search" class="input-block-level" />
+					<button class="btn btn-primary">
+						<i class="icon-search"></i>
+					</button>
+				</div>
+				<div class="hide-sidebar visible-desktop">
+					<a href="#"><i class="m-icon-big-swapleft"></i></a>
+				</div>
+				<div class="clearfix">
+				</div>
+				</form>
 			</div>
-			<div class="pull-right hide-sidebar visible-desktop">
-				<a href="#"><i class="m-icon-big-swapleft"></i></a>
+			<div class="accordion" id="sidebar-accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle active" href="index.html"><i class="icon-laptop"></i>Dashboard</a>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#uielements"><i class="icon-briefcase"></i>UI Elements</a>
+					</div>
+					<div id="uielements" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="styled_elements.html">Styled Elements</a></li>
+								<li><a href="advanced_elements.html">Advanced Elements</a></li>
+								<li><a href="buttons.html">Buttons</a></li>
+								<li><a href="button_dropdowns.html">Button Dropdowns</a></li>
+								<li><a href="dropdowns.html">Dropdowns</a></li>
+								<li><a href="file_input.html">File Input</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#forms"><i class="icon-pencil"></i>Forms</a>
+					</div>
+					<div id="forms" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="form_basic.html">Basic</a></li>
+								<li><a href="form_editor.html">Editor</a></li>
+								<li><a href="form_validation.html">Validation</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#tables"><i class="icon-th-list"></i>Tables</a>
+					</div>
+					<div id="tables" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="table.html">Basic</a></li>
+								<li><a href="#">Dynamic</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="clearfix">
-			</div>
-			</form>
 		</div>
-		<div class="accordion" id="sidebar-accordion">
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle active" href="index.html"><i class="icon-laptop"></i>Dashboard</a>
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
-						href="#uielements"><i class="icon-briefcase"></i>UI Elements</a>
-				</div>
-				<div id="uielements" class="accordion-body collapse">
-					<div class="accordion-inner">
-						<ul>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="styled_elements.html">Styled Elements</a></li>
-							<li><a href="advanced_elements.html">Advanced Elements</a></li>
-							<li><a href="buttons.html">Buttons</a></li>
-							<li><a href="button_dropdowns.html">Button Dropdowns</a></li>
-							<li><a href="dropdowns.html">Dropdowns</a></li>
-							<li><a href="file_input.html">File Input</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
-						href="#forms"><i class="icon-pencil"></i>Forms</a>
-				</div>
-				<div id="forms" class="accordion-body collapse">
-					<div class="accordion-inner">
-						<ul>
-							<li><a href="form_basic.html">Basic</a></li>
-							<li><a href="form_editor.html">Editor</a></li>
-							<li><a href="form_validation.html">Validation</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-heading">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
-						href="#tables"><i class="icon-th-list"></i>Data Tables</a>
-				</div>
-				<div id="tables" class="accordion-body collapse">
-					<div class="accordion-inner">
-						<ul>
-							<li><a href="table.html">Basic</a></li>
-							<li><a href="#">Dynamic</a></li>
-							<li><a href="#">Large</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<!-- sidebar -->
+		<div class="sidebar-nav-btn">
+			<a href="#" title="show sidebar"><i class="m-icon-big-swapright"></i></a>
 		</div>
-	</div>
-	<!-- sidebar -->
-	<div class="sidebar-nav-btn">
-		<a href="#" title="show sidebar"><i class="m-icon-big-swapright"></i></a>
-	</div>
-	<!-- show sidebar -->
-	<div id="mainbar">
-		<div class="container-fluid">
-			<div class="row-fluid">
-				<div class="span4">
-					<div class="page-header">
-						<h1>
-							Dashboard</h1>
+		<!-- show sidebar -->
+		<div id="mainbar">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span4">
+						<div class="page-header">
+							<h1>
+								Dashboard</h1>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- metro box -->
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="metro-box-group">
-						<div class="metro-box icon bg-red">
-							<div class="metro-box-content">
-								<i class="icon-envelope icon-4x"></i>
+				<!-- tiles -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="tiles-group">
+							<div class="tiles icon bg-red">
+								<div class="tiles-content">
+									<i class="icon-envelope icon-4x"></i>
+								</div>
+								<div class="title">
+									<div class="status">
+										10</div>
+									<div class="name">
+										Mail</div>
+								</div>
 							</div>
-							<div class="title">
-								<div class="status">
-									10</div>
-								<div class="name">
-									Mail</div>
+							<div class="tiles icon bg-sky-blue">
+								<div class="tiles-content">
+									<i class="icon-calendar icon-4x"></i>
+								</div>
+								<div class="title">
+									<div class="status">
+										10</div>
+									<div class="name">
+										Events</div>
+								</div>
 							</div>
-						</div>
-						<div class="metro-box icon bg-sky-blue">
-							<div class="metro-box-content">
-								<i class="icon-calendar icon-4x"></i>
+							<div class="tiles icon bg-purple">
+								<div class="tiles-content">
+									<i class="icon-shopping-cart icon-4x"></i>
+								</div>
+								<div class="title">
+									<div class="status">
+										10</div>
+									<div class="name">
+										Orders</div>
+								</div>
 							</div>
-							<div class="title">
-								<div class="status">
-									10</div>
-								<div class="name">
-									Events</div>
+							<div class="tiles icon bg-green">
+								<div class="tiles-content">
+									<i class="icon-briefcase icon-4x"></i>
+								</div>
+								<div class="title">
+									<div class="status">
+										10</div>
+									<div class="name">
+										Products</div>
+								</div>
 							</div>
-						</div>
-						<div class="metro-box icon bg-purple">
-							<div class="metro-box-content">
-								<i class="icon-shopping-cart icon-4x"></i>
-							</div>
-							<div class="title">
-								<div class="status">
-									10</div>
-								<div class="name">
-									Orders</div>
-							</div>
-						</div>
-						<div class="metro-box icon bg-green">
-							<div class="metro-box-content">
-								<i class="icon-briefcase icon-4x"></i>
-							</div>
-							<div class="title">
-								<div class="status">
-									10</div>
-								<div class="name">
-									Products</div>
-							</div>
-						</div>
-						<div class="metro-box double bg-orange">
-							<div class="metro-box-content list">
-								<ul>
-									<li><i class="icon-tags icon-2x"></i>
-										<h4>
-											Total Sales 100</h4>
-									</li>
-									<li><i class="icon-money icon-2x"></i>
-										<h4>
-											Total Profit $342,242</h4>
-									</li>
-									<li><i class="icon-group icon-2x"></i>
-										<h4>
-											Total Users 125</h4>
-									</li>
-									<li><i class="icon-envelope icon-2x"></i>
-										<h4>
-											Total Messages 250</h4>
-									</li>
-								</ul>
+							<div class="tiles double bg-orange">
+								<div class="tiles-content list">
+									<ul>
+										<li><i class="icon-tags icon-2x"></i>
+											<h4>
+												Total Sales 100</h4>
+										</li>
+										<li><i class="icon-money icon-2x"></i>
+											<h4>
+												Total Profit $342,242</h4>
+										</li>
+										<li><i class="icon-group icon-2x"></i>
+											<h4>
+												Total Users 125</h4>
+										</li>
+										<li><i class="icon-envelope icon-2x"></i>
+											<h4>
+												Total Messages 250</h4>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- chart -->
-			<div class="row-fluid">
-				<div class="span6">
-					<div class="box box-bordered">
-						<div class="box-title">
-							<h4>
-								Pie Chart</h4>
+				<!-- chart -->
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h4>
+									Pie Chart</h4>
+							</div>
+							<div class="box-content">
+								<div id="pie-chart1" class="chart chart-medium">
+								</div>
+							</div>
 						</div>
-						<div class="box-content">
-							<div id="pie-chart1" class="chart chart-medium">
+					</div>
+					<div class="span6">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h4>
+									Interactivity</h4>
+							</div>
+							<div class="box-content">
+								<div id="interactivity" class="chart chart-medium">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="span6">
-					<div class="box box-bordered">
-						<div class="box-title">
-							<h4>
-								Interactivity</h4>
-						</div>
-						<div class="box-content">
-							<div id="interactivity" class="chart chart-medium">
+				<!--- chat --->
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h4>
+									<i class="icon-comment"></i>Chat</h4>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--- chat --->
-			<div class="row-fluid">
-				<div class="span6">
-					<div class="box box-bordered">
-						<div class="box-title">
-							<h4>
-								<i class="icon-comment"></i>Chat</h4>
-						</div>
-						<div class="box-content">
-							<ul class="media-list chat-log">
-								<li class="media"><a href="#" class="pull-left">
-									<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
-										height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
-								</a>
-									<div class="media-body">
-										<div class="message-body right bg-sky-blue fg-white">
-											<div class="arrow-left">
-											</div>
-											<h4 class="media-heading">
-												Jarge</h4>
-											<p>
-												Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-												commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-										</div>
-										<!-- Nested media object -->
-										<div class="media">
-											<a href="#" class="pull-left">
-												<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
-													height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
-											</a>
+							<div class="box-content">
+								<div class="chat-content">
+									<ul class="media-list">
+										<li class="media"><a href="#" class="pull-left">
+											<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
+												height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
+										</a>
 											<div class="media-body">
-												<div class="message-body right bg-red fg-white">
+												<div class="message-body right bg-sky-blue fg-white">
 													<div class="arrow-left">
 													</div>
 													<h4 class="media-heading">
-														Sam</h4>
-													Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-													commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+														Jarge</h4>
+													<p>
+														Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
+														commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 												</div>
 												<!-- Nested media object -->
 												<div class="media">
@@ -287,63 +274,94 @@
 															height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
 													</a>
 													<div class="media-body">
-														<div class="message-body right bg-dark-orange fg-white">
+														<div class="message-body right bg-red fg-white">
 															<div class="arrow-left">
 															</div>
 															<h4 class="media-heading">
-																Anjelina</h4>
+																Sam</h4>
+															Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
+															commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+														</div>
+														<!-- Nested media object -->
+														<div class="media">
+															<a href="#" class="pull-left">
+																<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
+																	height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
+															</a>
+															<div class="media-body">
+																<div class="message-body right bg-dark-orange fg-white">
+																	<div class="arrow-left">
+																	</div>
+																	<h4 class="media-heading">
+																		Anjelina</h4>
+																	Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
+																	commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Nested media object -->
+												<div class="media">
+													<a href="#" class="pull-left">
+														<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
+															height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
+													</a>
+													<div class="media-body">
+														<div class="message-body right bg-pink fg-white">
+															<div class="arrow-left">
+															</div>
+															<h4 class="media-heading">
+																Adam</h4>
 															Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 															commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-										<!-- Nested media object -->
-										<div class="media">
-											<a href="#" class="pull-left">
-												<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
-													height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
-											</a>
+										</li>
+										<li class="media"><a href="#" class="pull-right">
+											<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
+												height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
+										</a>
 											<div class="media-body">
-												<div class="message-body right bg-pink fg-white">
-													<div class="arrow-left">
+												<div class="message-body left bg-purple fg-white">
+													<div class="arrow-right">
 													</div>
 													<h4 class="media-heading">
-														Adam</h4>
+														Roy</h4>
 													Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 													commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 												</div>
 											</div>
-										</div>
+										</li>
+									</ul>
+								</div>
+								<div class="chat-send">
+									<div class="input-icon-btn">
+										<input type="text" id="msg" name="msg" class="input-block-level" placeholder="Message" />
+										<button id="send" class="btn btn-primary">
+											<i class="icon-share-alt"></i>
+										</button>
 									</div>
-								</li>
-								<li class="media"><a href="#" class="pull-right">
-									<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
-										height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
-								</a>
-									<div class="media-body">
-										<div class="message-body left bg-purple fg-white">
-											<div class="arrow-right">
-											</div>
-											<h4 class="media-heading">
-												Roy</h4>
-											Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-											commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-										</div>
-									</div>
-								</li>
-							</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<div id="calendar">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- mainbar -->
 	</div>
-	<!-- mainbar -->
 	<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 	<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
-	<script src="js/jquery/jquery-ui-1.10.3.effect-slide.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 	<script src="js/plugins/jquery.icheck.min.js" type="text/javascript"></script>
@@ -352,6 +370,8 @@
 	<script src="js/charts/jquery.flot.pie.min.js" type="text/javascript"></script>
 	<script src="js/charts/jquery.flot.navigate.min.js" type="text/javascript"></script>
 	<script src="js/charts/jquery.flot.resize.min.js" type="text/javascript"></script>
+	<script src="js/plugins/fullcalendar.min.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.slimscroll.min.js" type="text/javascript"></script>
 	<script src="js/files/jhelper.js" type="text/javascript"></script>
 	<script src="js/example/dashboard.js" type="text/javascript"></script>
 </body>

@@ -303,51 +303,6 @@ input.search-query {
 .input-append .btn:first-child, .input-prepend .btn:first-child {
 	border-left: 0;
 }
-.input-icon {
-    position: relative;
-}
-.input-icon .btn {
-	border: 1px solid #EEEEEE;
-	height: 24px;
-    line-height: 10px;
-    padding: 0 5px;
-    position: absolute;
-    right: 3px;
-    top: 3px;
-} 
-.input-icon .btn-danger {
-	border: 1px solid #d84a38;
-}
-.input-icon .btn-primary {
-	border: 1px solid #2E7EFC;
-}
-.input-icon .btn-success {
-	border: 1px solid #35aa47;
-}
-.input-icon .btn-purple {
-	border: 1px solid #35aa47;
-}
-.input-icon .btn-pink {
-	border: 1px solid #DC4FAD;
-}
-.input-icon .btn-teal {
-	border: 1px solid #008299;
-}
-.input-icon .btn-cardovan {
-	border: 1px solid #570000;
-}
-.input-icon .btn-inverse {
-	border: 1px solid #555555;
-}
-.input-icon .btn-info {
-	border: 1px solid #49AFCD;
-}
-.input-icon .btn-warning {
-	border: 1px solid #FAA732;
-}
-.input-icon .btn-warning {
-	border: 1px solid #FAA732;
-}
 form {
 	margin: 0;
 }
@@ -1780,28 +1735,6 @@ label.error {
 }
 .m-icon-big-swapup{
   background-position: -78px -28px;
-}
-
-/* common colors */
-.chzn-container-single .chzn-single div,
-.chzn-container-multi .chzn-choices .search-choice,
-.input-append .add-on, .input-prepend .add-on,
-.input-append .btn,
-.input-prepend .btn,
-div.pick-a-color-markup .hex-pound,
-.has-switch label,
-.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child > .dropdown-toggle,
-.input-append .btn:first-child, .input-prepend .btn:first-child
-{
-background: #ffffff;
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  #ffffff 0%, #e6e6e6 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e6e6e6));
-background: -webkit-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
-background: -o-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
-background: -ms-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
-background: linear-gradient(to bottom,  #ffffff 0%,#e6e6e6 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 );
 }
 
 /* action btn */
