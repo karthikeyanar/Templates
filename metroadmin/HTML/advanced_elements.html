@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="css/pick-a-color-1.1.4.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<!-- navbar -->
+	<div id="navbar">
+		<div class="navbar navbar-inverse topbar">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#">Pepper Admin</a>
+					<div class="user-nav">
+						<ul class="nav navbar-icon pull-right">
+							<li><a href="#" class="link barmenu visible-phone visible-tablet"><i class="icon-reorder icon-large">
+							</i></a></li>
+							<li><a href="#" class="link"><i class="icon-cog icon-large"></i></a></li>
+							<li><a href="#" class="link"><i class="icon-lock icon-large"></i></a></li>
+							<li class="dropdown user-box pull-right"><a class="dropdown-toggle" data-toggle="dropdown"
+								href="#">
+								<img src="img/nophoto.jpg" /><span>Joe Nilson</span></a>
+								<div class="dropdown-menu">
+									<div class="user-photo">
+										<img src="img/photo.jpg" />
+									</div>
+									<div class="user-info">
+										<p>
+											Joe Nilson<br />
+											test@gmail.com
+										</p>
+										<ul>
+											<li><a href="#">Profile</a></li>
+											<li><a href="#">Settings</a></li>
+										</ul>
+									</div>
+									<div class="clearfix">
+									</div>
+									<div class="pull-right">
+										<button class="btn btn-danger">
+											Sign out</button></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end navbar -->
+	<!-- container -->
+	<div id="container">
+		<!-- sidebar -->
+		<div id="sidebar">
+			<div class="search">
+				<form>
+				<div class="input-icon-btn">
+					<input type="text" placeholder="Search" class="input-block-level" />
+					<button class="btn btn-primary">
+						<i class="icon-search"></i>
+					</button>
+				</div>
+				<div class="hide-sidebar visible-desktop">
+					<a href="#"><i class="m-icon-big-swapleft"></i></a>
+				</div>
+				<div class="clearfix">
+				</div>
+				</form>
+			</div>
+			<div class="accordion" id="sidebar-accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" href="index.html"><i class="icon-laptop"></i>Dashboard</a>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#uielements"><i class="icon-briefcase"></i>UI Elements</a>
+					</div>
+					<div id="uielements" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="styled_elements.html">Styled Elements</a></li>
+								<li><a href="iphone_style_checkbox.html">iPhone Style CheckBox</a></li>
+								<li><a href="advanced_elements.html" class="active">Advanced Elements</a></li>
+								<li><a href="buttons.html">Buttons</a></li>
+								<li><a href="icons.html">Icons</a></li>
+								<li><a href="file_input.html">File Input</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#components"><i class="icon-briefcase"></i>Components</a>
+					</div>
+					<div id="components" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="chart.html">Chart</a></li>
+								<li><a href="form_editor.html">Editor</a></li>
+								<li><a href="dropdowns.html">Dropdowns</a></li>
+								<li><a href="button_dropdowns.html">Button Dropdowns</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#forms"><i class="icon-pencil"></i>Forms</a>
+					</div>
+					<div id="forms" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="form_basic.html">Basic</a></li>
+								<li><a href="form_validation.html">Validation</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#tables"><i class="icon-th-list"></i>Tables</a>
+					</div>
+					<div id="tables" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="table.html">Basic</a></li>
+								<li><a href="dynamic_table.html">Dynamic</a></li>
+								<li><a href="custom_table.html">Custom</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#samples"><i class="icon-th-list"></i>Samples</a>
+					</div>
+					<div id="samples" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="login.html">Login</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="register.html">Register</a></li>
+								<li><a href="file_manager.html">File Manager</a></li>
+								<li><a href="timesheet.html">Timesheet</a></li>
+								<li><a href="invoice.html">Invoice</a></li>
+								<li><a href="shopping_cart.html">Shopping Cart</a></li>
+								<li><a href="products.html">Products</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end sidebar -->
+		<!-- show sidebar -->
+		<div class="sidebar-nav-btn">
+			<a href="#" title="show sidebar"><i class="m-icon-big-swapright"></i></a>
+		</div>
+		<!-- end show sidebar -->
+		<!-- mainbar -->
+		<div id="mainbar">
+			<div class="container-fluid">
+				<div class="page-header">
+					<h1>
+						Advanced Elements</h1>
+				</div>
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
+					<li><a href="form_basic.html">Forms</a> <i class="icon-angle-right"></i></li>
+					<li><a href="advanced_elements.html">Advanced Elements</a></li>
+					<li class="pull-right"><a href="#" class="close">&times</a></li>
+				</ul>
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box box-bordered">
+							<div class="box-title">
+								<h4>
+									<i class="icon-edit"></i>Advanced Elements</h4>
+							</div>
+							<div class="box-content no-padding">
+								<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
+								<div class="control-group">
+									<label class="control-label">
+										Colorpicker</label>
+									<div class="controls">
+										<div class="pick-a-color">
+										</div>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+										Date Picker</label>
+									<div class="controls">
+										<input type="text" class="input-small datepicker" name="date" id="datepicker">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+										Time Picker</label>
+									<div class="controls">
+										<input type="text" class="input-small datepicker" name="date" id="Text1">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+									</label>
+									<div class="controls">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+												type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
+													data-dismiss="fileupload" style="float: none">&times</a>
+										</div>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+									</label>
+									<div class="controls">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<div class="input-append">
+												<div class="uneditable-input span3">
+													<i class="icon-file fileupload-exists"></i><span class="fileupload-preview"></span>
+												</div>
+												<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+													type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+									</label>
+									<div class="controls">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;">
+											</div>
+											<div>
+												<span class="btn btn-file"><span class="fileupload-new">Select image</span><span
+													class="fileupload-exists">Change</span><input type="file" /></span> <a href="#" class="btn fileupload-exists"
+														data-dismiss="fileupload">Remove</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+									</label>
+									<div class="controls">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<div class="fileupload-new thumbnail" style="width: 50px; height: 50px;">
+												<img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA" /></div>
+											<div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;">
+											</div>
+											<span class="btn btn-file"><span class="fileupload-new">Select image</span><span
+												class="fileupload-exists">Change</span><input type="file" /></span> <a href="#" class="btn fileupload-exists"
+													data-dismiss="fileupload">Remove</a>
+										</div>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+										Input Tags</label>
+									<div class="controls">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">
+										Spinner</label>
+									<div class="controls">
+									</div>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end mainbar -->
+	</div>
+	<!-- end container -->
+	<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/plugins/bootstrap-tabmenu.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.icheck.min.js" type="text/javascript"></script>
+	<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
+	<script src="js/plugins/tinycolor-0.9.14.min.js" type="text/javascript"></script>
+	<script src="js/plugins/pick-a-color-1.1.4.min.js" type="text/javascript"></script>
+	<script src="js/plugins/bootstrap-fileupload.min.js" type="text/javascript"></script>
+	<script src="js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+	<script src="js/files/jhelper.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".pick-a-color").pickAColor({
+				showSpectrum: false,
+				showSavedColors: true,
+				saveColorsPerElement: false,
+				fadeMenuToggle: true,
+				showAdvanced: true,
+				showHexInput: true,
+				showBasicColors: true
+			});
+		});
+	</script>
+</body>
+</html>

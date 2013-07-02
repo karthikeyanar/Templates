@@ -12,6 +12,7 @@
 	<link href="css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+	<!-- navbar -->
 	<div id="navbar">
 		<div class="navbar navbar-inverse topbar">
 			<div class="navbar-inner">
@@ -52,9 +53,11 @@
 				</div>
 			</div>
 		</div>
-		<!-- nav bar -->
 	</div>
+	<!-- end navbar -->
+	<!-- container -->
 	<div id="container">
+		<!-- sidebar -->
 		<div id="sidebar">
 			<div class="search">
 				<form>
@@ -87,11 +90,27 @@
 							<ul>
 								<li><a href="elements.html">Elements</a></li>
 								<li><a href="styled_elements.html">Styled Elements</a></li>
+								<li><a href="iphone_style_checkbox.html">iPhone Style CheckBox</a></li>
 								<li><a href="advanced_elements.html">Advanced Elements</a></li>
 								<li><a href="buttons.html">Buttons</a></li>
-								<li><a href="button_dropdowns.html">Button Dropdowns</a></li>
-								<li><a href="dropdowns.html">Dropdowns</a></li>
+								<li><a href="icons.html">Icons</a></li>
 								<li><a href="file_input.html">File Input</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#components"><i class="icon-briefcase"></i>Components</a>
+					</div>
+					<div id="components" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="chart.html">Chart</a></li>
+								<li><a href="form_editor.html">Editor</a></li>
+								<li><a href="dropdowns.html">Dropdowns</a></li>
+								<li><a href="button_dropdowns.html">Button Dropdowns</a></li>
 							</ul>
 						</div>
 					</div>
@@ -105,7 +124,6 @@
 						<div class="accordion-inner">
 							<ul>
 								<li><a href="form_basic.html">Basic</a></li>
-								<li><a href="form_editor.html">Editor</a></li>
 								<li><a href="form_validation.html">Validation</a></li>
 							</ul>
 						</div>
@@ -120,18 +138,41 @@
 						<div class="accordion-inner">
 							<ul>
 								<li><a href="table.html">Basic</a></li>
-								<li><a href="#">Dynamic</a></li>
+								<li><a href="dynamic_table.html">Dynamic</a></li>
+								<li><a href="custom_table.html">Custom</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
+							href="#samples"><i class="icon-th-list"></i>Samples</a>
+					</div>
+					<div id="samples" class="accordion-body collapse">
+						<div class="accordion-inner">
+							<ul>
+								<li><a href="login.html">Login</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="register.html">Register</a></li>
+								<li><a href="file_manager.html">File Manager</a></li>
+								<li><a href="timesheet.html">Timesheet</a></li>
+								<li><a href="invoice.html">Invoice</a></li>
+								<li><a href="shopping_cart.html">Shopping Cart</a></li>
+								<li><a href="products.html">Products</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- sidebar -->
+		<!-- end sidebar -->
+		<!-- show sidebar -->
 		<div class="sidebar-nav-btn">
 			<a href="#" title="show sidebar"><i class="m-icon-big-swapright"></i></a>
 		</div>
-		<!-- show sidebar -->
+		<!-- end show sidebar -->
+		<!-- mainbar -->
 		<div id="mainbar">
 			<div class="container-fluid">
 				<div class="row-fluid">
@@ -357,8 +398,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- mainbar -->
+		<!-- end mainbar -->
 	</div>
+	<!-- end container -->
 	<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 	<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
