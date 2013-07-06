@@ -9,6 +9,30 @@
 	<!-- Apple devices fullscreen -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 	<link href="css/fullcalendar.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-fileupload.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-metro.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/chosen.css" rel="stylesheet" type="text/css" />
+	<link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome-ie7.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/fullcalendar.css" rel="stylesheet" type="text/css" />
+	<link href="css/fullcalendar.print.css" rel="stylesheet" type="text/css" />
+	<link href="css/icheck-minimal.css" rel="stylesheet" type="text/css" />
+	<link href="css/icheck-square.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+	<link href="css/pick-a-color-1.1.4.css" rel="stylesheet" type="text/css" />
+	<link href="css/pick-a-color-1.1.4.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/site.css" rel="stylesheet" type="text/css" />
+	<link href="css/wysiwyg-color.css" rel="stylesheet" type="text/css" />
 	<link href="css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -22,8 +46,8 @@
 						<ul class="nav navbar-icon pull-right">
 							<li><a href="#" class="link barmenu visible-phone visible-tablet"><i class="icon-reorder icon-large">
 							</i></a></li>
-							<li><a href="#" class="link"><i class="icon-cog icon-large"></i></a></li>
-							<li><a href="#" class="link"><i class="icon-lock icon-large"></i></a></li>
+							<li><a href="#" class="link" title="Settings" data-toggle="tooltip" data-placement="bottom"><i class="icon-cog icon-large"></i></a></li>
+							<li><a href="#" class="link" title="Lock" data-toggle="tooltip" data-placement="bottom"><i class="icon-lock icon-large"></i></a></li>
 							<li class="dropdown user-box pull-right"><a class="dropdown-toggle" data-toggle="dropdown"
 								href="#">
 								<img src="img/nophoto.jpg" /><span>Joe Nilson</span></a>
@@ -61,29 +85,27 @@
 		<div id="sidebar">
 			<div class="search">
 				<form>
-				<div class="input-icon-btn">
+				<div class="input-icon-btn search-box">
 					<input type="text" placeholder="Search" class="input-block-level" />
 					<button class="btn btn-primary">
 						<i class="icon-search"></i>
 					</button>
 				</div>
-				<div class="hide-sidebar visible-desktop">
-					<a href="#"><i class="m-icon-big-swapleft"></i></a>
-				</div>
-				<div class="clearfix">
+				<div class="toggle-sidebar visible-desktop">
+					<a href="#" data-toggle='tooltip' data-placement="right" title="Hide Sidebar"><i class="m-icon-big-swapleft"></i></a>
 				</div>
 				</form>
 			</div>
 			<div class="accordion" id="sidebar-accordion">
 				<div class="accordion-group">
 					<div class="accordion-heading">
-						<a class="accordion-toggle active" href="index.html"><i class="icon-laptop"></i>Dashboard</a>
+						<a class="accordion-toggle active" href="index.html"><i class="icon-laptop"></i><span class="title">Dashboard</span></a>
 					</div>
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
-							href="#uielements"><i class="icon-briefcase"></i>UI Elements</a>
+							href="#uielements"><i class="icon-briefcase"></i><span class="title">UI Elements</span></a>
 					</div>
 					<div id="uielements" class="accordion-body collapse">
 						<div class="accordion-inner">
@@ -102,7 +124,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
-							href="#components"><i class="icon-briefcase"></i>Components</a>
+							href="#components"><i class="icon-cog"></i><span class="title">Components</span></a>
 					</div>
 					<div id="components" class="accordion-body collapse">
 						<div class="accordion-inner">
@@ -118,7 +140,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
-							href="#forms"><i class="icon-pencil"></i>Forms</a>
+							href="#forms"><i class="icon-tasks"></i><span class="title">Forms</span></a>
 					</div>
 					<div id="forms" class="accordion-body collapse">
 						<div class="accordion-inner">
@@ -132,7 +154,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
-							href="#tables"><i class="icon-th-list"></i>Tables</a>
+							href="#tables"><i class="icon-table"></i><span class="title">Tables</span></a>
 					</div>
 					<div id="tables" class="accordion-body collapse">
 						<div class="accordion-inner">
@@ -147,7 +169,7 @@
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#sidebar-accordion"
-							href="#samples"><i class="icon-th-list"></i>Samples</a>
+							href="#samples"><i class="icon-pencil"></i><span class="title">Samples</span></a>
 					</div>
 					<div id="samples" class="accordion-body collapse">
 						<div class="accordion-inner">
@@ -159,7 +181,7 @@
 								<li><a href="timesheet.html">Timesheet</a></li>
 								<li><a href="invoice.html">Invoice</a></li>
 								<li><a href="shopping_cart.html">Shopping Cart</a></li>
-								<li><a href="products.html">Products</a></li>
+								<li><a href="products.html">Productsf asd fasdfjkasdh fjka sdfhajk sdf</a></li>
 							</ul>
 						</div>
 					</div>
@@ -167,11 +189,6 @@
 			</div>
 		</div>
 		<!-- end sidebar -->
-		<!-- show sidebar -->
-		<div class="sidebar-nav-btn">
-			<a href="#" title="show sidebar"><i class="m-icon-big-swapright"></i></a>
-		</div>
-		<!-- end show sidebar -->
 		<!-- mainbar -->
 		<div id="mainbar">
 			<div class="container-fluid">
@@ -198,7 +215,7 @@
 										Mail</div>
 								</div>
 							</div>
-							<div class="tiles icon bg-sky-blue">
+							<div class="tiles icon bg-orange">
 								<div class="tiles-content">
 									<i class="icon-calendar icon-4x"></i>
 								</div>
@@ -209,7 +226,7 @@
 										Events</div>
 								</div>
 							</div>
-							<div class="tiles icon bg-purple">
+							<div class="tiles icon bg-sky-blue">
 								<div class="tiles-content">
 									<i class="icon-shopping-cart icon-4x"></i>
 								</div>
@@ -231,7 +248,7 @@
 										Products</div>
 								</div>
 							</div>
-							<div class="tiles double bg-orange">
+							<div class="tiles double bg-purple">
 								<div class="tiles-content list">
 									<ul>
 										<li><i class="icon-tags icon-2x"></i>
@@ -285,7 +302,7 @@
 				</div>
 				<!--- chat --->
 				<div class="row-fluid">
-					<div class="span6">
+					<div class="span12">
 						<div class="box box-bordered">
 							<div class="box-title">
 								<h4>
@@ -402,7 +419,7 @@
 	</div>
 	<!-- end container -->
 	<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
-	<script src="js/jquery/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>

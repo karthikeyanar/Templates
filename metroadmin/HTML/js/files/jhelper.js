@@ -75,12 +75,10 @@
 	,showSideBar: function() {
 		var $sidebar=$("#sidebar");
 		var $body=$("body");
-		$sidebar.toggle();
-		if($sidebar.css("display")=="none") {
-			$("body").addClass("hide-side-bar");
-		} else {
-			$("body").removeClass("hide-side-bar");
-		}
+		//$sidebar.toggle("slide");
+		$("#mainbar").toggleClass("min-sidebar"); //, 1000, "easeOutSine"); 
+		$("#sidebar").toggleClass("min-sidebar"); //, 1000, "easeOutSine"); 
+		$("#navbar").toggleClass("min-sidebar"); //, 1000, "easeOutSine"); 
 	}
 	,chartToolTip: function(x, y, contents) {
 		$('<div id="tooltip" class="chart-tooltip tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner">' + contents + '</div></div>').css( {
@@ -102,7 +100,7 @@ $(function() {
 	$('.topbar .barmenu').click(function() {
 		jhelper.showSideBar();
 	});
-	$('.hide-sidebar').click(function() {
+	$('.toggle-sidebar').click(function() {
 		jhelper.showSideBar();
 	});
 	$('.sidebar-nav-btn').click(function() {
@@ -120,6 +118,20 @@ $(function() {
 		var $breadcrumb=$(this).parents(".breadcrumb:first");
 		$breadcrumb.fadeOut();
 	});
-
+	$('#sidebar .accordion-group').off('mouseenter').on('mouseenter', function () {
+		var $this = $(this);
+		var $sidebar = $("#sidebar");
+		if($sidebar.hasClass("min-sidebar")){
+			$(".accordion-toggle", $this).addClass("accordion-toggle-hover");
+			$(".accordion-body", $this).addClass("accordion-body-hover");
+			$(".accordion-toggle", $this).css("width",$(".accordion-body", $this).width() + 26);
+		}
+	});
+	$('#sidebar .accordion-group').off('mouseleave').on('mouseleave', function () {
+		var $this = $(this);
+		var $sidebar = $("#sidebar");
+		$(".accordion-toggle", $this).css("width","").removeClass("accordion-toggle-hover");
+		$(".accordion-body", $this).removeClass("accordion-body-hover");
+	});
 });
 
