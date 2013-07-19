@@ -7,6 +7,9 @@
 <!-- bootstrap -->
 <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<!-- bootstrap modal -->
+<script src="js/plugins/bootstrap-modalmanager.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-modal.js" type="text/javascript"></script>
 <!-- chosen -->
 <script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 <!-- icheck -->
@@ -28,6 +31,10 @@
 <!-- pick-a-color -->
 <script src="js/plugins/tinycolor-0.9.14.min.js" type="text/javascript"></script>
 <script src="js/plugins/pick-a-color-1.1.4.min.js" type="text/javascript"></script>
+<!-- bootstrap fileupload -->
+<script src="js/plugins/bootstrap-fileupload.min.js" type="text/javascript"></script>
+<!-- bootstrap timepicker -->
+<script src="js/plugins/bootstrap-timepicker.min.js" type="text/javascript"></script>
 <!-- data-table -->
 <script src="js/plugins/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>

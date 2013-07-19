@@ -28,6 +28,7 @@ function writeclassname($rootname,$classname){
 			|| $file == "styled_elements.php"
 			|| $file == "iphone_style_checkbox.php"
 			|| $file == "advanced_elements.php"
+			|| $file == "modal.php"
 			|| $file == "buttons.php"
 			|| $file == "icons.php"
 			|| $file == "file_input.php"
@@ -106,6 +107,7 @@ function writeclassname($rootname,$classname){
 						<li><a <?php checkactive("styled_elements.php");?> href="styled_elements.php">Styled Elements</a></li>
 						<li><a <?php checkactive("iphone_style_checkbox.php");?> href="iphone_style_checkbox.php">iPhone Style CheckBox</a></li>
 						<li><a <?php checkactive("advanced_elements.php");?> href="advanced_elements.php">Advanced Elements</a></li>
+						<li><a <?php checkactive("modal.php");?> href="modal.php">Modal</a></li>
 						<li><a <?php checkactive("buttons.php");?> href="buttons.php">Buttons</a></li>
 						<li><a <?php checkactive("icons.php");?> href="icons.php">Icons</a></li>
 						<li><a <?php checkactive("file_input.php");?> href="file_input.php">File Input</a></li>
