@@ -10,15 +10,19 @@
 <link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap fileupload -->
 <link href="css/bootstrap-fileupload.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap timepicker -->
+<link href="css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap switch -->
 <link href="css/bootstrap-switch.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datatable -->
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap modal -->
+<link href="css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
 <!-- chosen -->
 <link href="css/chosen.css" rel="stylesheet" type="text/css" />
 <!-- fullcalendar -->
 <link href="css/fullcalendar.css" rel="stylesheet" type="text/css" />
-<link href="css/fullcalendar.print.css" rel="stylesheet" type="text/css" />
+<link href="css/fullcalendar-override.css" rel="stylesheet" type="text/css" />
 <!-- icheck -->
 <link href="css/icheck-minimal.css" rel="stylesheet" type="text/css" />
 <link href="css/icheck-square.css" rel="stylesheet" type="text/css" />

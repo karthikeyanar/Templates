@@ -10,8 +10,7 @@
 					<a class="brand" href="#">Pepper Admin</a>
 					<div class="user-nav">
 						<ul class="nav navbar-icon pull-right">
-							<li><a href="#" class="link barmenu visible-phone visible-tablet"><i class="icon-reorder icon-large">
-							</i></a></li>
+							<li><a href="#" class="link barmenu visible-phone visible-tablet"><i class="icon-reorder icon-large"></i></a></li>
 							<li><a href="#" class="link" title="Settings" data-toggle="tooltip" data-placement="bottom"><i class="icon-cog icon-large"></i></a></li>
 							<li><a href="#" class="link" title="Lock" data-toggle="tooltip" data-placement="bottom"><i class="icon-lock icon-large"></i></a></li>
 							<li class="dropdown user-box pull-right"><a class="dropdown-toggle" data-toggle="dropdown"

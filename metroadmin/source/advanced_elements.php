@@ -41,9 +41,23 @@
 							</div>
 							<div class="control-group">
 								<label class="control-label">
-									Time Picker</label>
+									Default Time Picker</label>
 								<div class="controls">
-									<input type="text" class="input-small datepicker" name="date" id="Text1">
+									  <div class="input-append bootstrap-timepicker">
+									        <input id="timepicker1" class="input-small" type="text"/><span class="add-on"><i class="icon-time"></i></span>
+									   </div>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">
+									Modal Time Picker</label>
+								<div class="controls">
+									 <div class="input-append bootstrap-timepicker">
+							            <input id="timepicker2" type="text" class="input-small">
+							            <span class="add-on">
+							                <i class="icon-time"></i>
+							            </span>
+							        </div>
 								</div>
 							</div>
 							<div class="control-group">
@@ -127,6 +141,13 @@
 <?php include_once 'script.php' ?>
 <script type="text/javascript">
 	$(document).ready(function() {
+		$('#timepicker1').timepicker();
+	    $('#timepicker2').timepicker({
+               minuteStep: 1,
+               template: 'modal',
+               showSeconds: true,
+               showMeridian: false
+        });
 		$(".pick-a-color").pickAColor({
 			showSpectrum: false,
 			showSavedColors: true,
