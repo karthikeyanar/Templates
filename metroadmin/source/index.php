@@ -16,56 +16,68 @@
 			<!-- tiles -->
 			<div class="row-fluid">
 				<div class="span12">
-					<div class="tile-group">
-						<div class="tile icon">
-	                    	<div class="tile-content">
-		                        <i class="icon-envelope icon-4x"></i>
-		                    </div>
-		                    <div class="brand">
-		                        <div class="badge">10</div>
-		                        <div class="name">Mail</div>
-		                    </div>
-			            </div>
-			            <div class="tile icon bg-orange">
-							<div class="tile-content">
+					<div class="tiles-group">
+						<div class="tiles icon bg-red">
+							<div class="tiles-content">
+								<i class="icon-envelope icon-4x"></i>
+							</div>
+							<div class="title">
+								<div class="status">10</div>
+								<div class="name">Mail</div>
+							</div>
+						</div>
+						<div class="tiles icon bg-orange">
+							<div class="tiles-content">
 								<i class="icon-calendar icon-4x"></i>
 							</div>
-							<div class="brand">
-								<div class="badge">
+							<div class="title">
+								<div class="status">
 									10</div>
 								<div class="name">
 									Events</div>
 							</div>
 						</div>
-						<div class="tile icon bg-sky-blue">
-							<div class="tile-content">
+						<div class="tiles icon bg-sky-blue">
+							<div class="tiles-content">
 								<i class="icon-shopping-cart icon-4x"></i>
 							</div>
-							<div class="brand">
-								<div class="badge">
+							<div class="title">
+								<div class="status">
 									10</div>
 								<div class="name">
 									Orders</div>
 							</div>
 						</div>
-						<div class="tile icon bg-green">
-							<div class="tile-content">
+						<div class="tiles icon bg-green">
+							<div class="tiles-content">
 								<i class="icon-briefcase icon-4x"></i>
 							</div>
-							<div class="brand">
-								<div class="badge">
+							<div class="title">
+								<div class="status">
 									10</div>
 								<div class="name">
 									Products</div>
 							</div>
 						</div>
-						<div class="tile double bg-purple">
-							<div class="tile-content list">
+						<div class="tiles double bg-purple">
+							<div class="tiles-content list">
 								<ul>
-									<li><i class="icon-tags"></i><span class="title">Total Sales 100</span></li>
-									<li><i class="icon-money"></i><span class="title">Total Profit $342,242</span></li>
-									<li><i class="icon-group"></i><span class="title">Total Users 125</span></li>
-									<li><i class="icon-envelope"></i><span class="title">Total Messages 250</span></li>
+									<li><i class="icon-tags icon-2x"></i>
+										<h4>
+											Total Sales 100</h4>
+									</li>
+									<li><i class="icon-money icon-2x"></i>
+										<h4>
+											Total Profit $342,242</h4>
+									</li>
+									<li><i class="icon-group icon-2x"></i>
+										<h4>
+											Total Users 125</h4>
+									</li>
+									<li><i class="icon-envelope icon-2x"></i>
+										<h4>
+											Total Messages 250</h4>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -101,7 +113,7 @@
 			</div>
 			<!--- chat --->
 			<div class="row-fluid">
-				<div class="span8">
+				<div class="span6">
 					<div class="box box-bordered">
 						<div class="box-title">
 							<h4>

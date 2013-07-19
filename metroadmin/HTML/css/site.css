@@ -920,11 +920,6 @@ pre {
 .input-icon-btn .btn {
 	 line-height:22px; position:absolute; right:0; top: 0;
 }
-/* btn-icon */
-.btn.btn-icon {
-	background: transparent;
-	padding: 5px;
-}
 /* chat content */
 .chat-content .media-heading{
 	font-size:15px;

@@ -62,22 +62,19 @@
 			e.find(".chzn-search input").css("width",e.parent().width()-37+"px")
 		});
 	}
-	,chartToolTip: function(x,y,contents) {
-		$('<div id="tooltip" class="chart-tooltip tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner">'+contents+'</div></div>').css({
-			top: y-43,
-			left: x-15
+	,showSideBar: function() {
+		var $body=$("body");
+		$body.toggleClass("min-sidebar");  
+	}
+	,chartToolTip: function(x, y, contents) {
+		$('<div id="tooltip" class="chart-tooltip tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner">' + contents + '</div></div>').css( {
+			top: y - 43,
+			left: x - 15
 		}).appendTo("body").fadeIn(200);
 	}
 }
 $(window).resize(function() {
 	jhelper.resizeChosen();
-	var width=$(window).width();
-	if(width>979) {
-		$("#sidebar").show();
-	} else {
-		$("#sidebar").hide();
-		$("body").removeClass("min-sidebar");
-	}
 });
 $(function() {
 	var $body=$("body");
@@ -87,10 +84,13 @@ $(function() {
 	jhelper.datePicker();
 	jhelper.tooltip();
 	$('.topbar .barmenu').click(function() {
-		$("#sidebar").toggle("slide",500);
+		jhelper.showSideBar();
 	});
 	$('.toggle-sidebar').click(function() {
-		$("body").toggleClass("min-sidebar");
+		jhelper.showSideBar();
+	});
+	$('.sidebar-nav-btn').click(function() {
+		jhelper.showSideBar();
 	});
 	$('.accordion').on('shown',function(e) {
 		$(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('open').addClass('collapsed');
@@ -103,18 +103,19 @@ $(function() {
 		var $breadcrumb=$(this).parents(".breadcrumb:first");
 		$breadcrumb.fadeOut();
 	});
-	$('#sidebar .accordion-group').off('mouseenter').on('mouseenter',function() {
-		var $this=$(this);
-		var $body=$("body");
-		if($body.hasClass("min-sidebar")) {
-			$(".accordion-toggle",$this).addClass("accordion-toggle-hover").css("width",$(".accordion-body",$this).width()+26);
-			$(".accordion-body",$this).addClass("accordion-body-hover");
+	$('#sidebar .accordion-group').off('mouseenter').on('mouseenter', function () {
+		var $this = $(this);
+		var $body = $("body");
+		if($body.hasClass("min-sidebar")){
+			$(".accordion-toggle", $this).addClass("accordion-toggle-hover");
+			$(".accordion-body", $this).addClass("accordion-body-hover");
+			$(".accordion-toggle", $this).css("width",$(".accordion-body", $this).width() + 26);
 		}
 	});
-	$('#sidebar .accordion-group').off('mouseleave').on('mouseleave',function() {
-		var $this=$(this);
-		$(".accordion-toggle",$this).css("width","").removeClass("accordion-toggle-hover");
-		$(".accordion-body",$this).removeClass("accordion-body-hover");
+	$('#sidebar .accordion-group').off('mouseleave').on('mouseleave', function () {
+		var $this = $(this);
+		$(".accordion-toggle", $this).css("width","").removeClass("accordion-toggle-hover");
+		$(".accordion-body", $this).removeClass("accordion-body-hover");
 	});
 });
 

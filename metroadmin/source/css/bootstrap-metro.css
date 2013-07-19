@@ -15,8 +15,8 @@ a:hover,a:focus {
 a:focus {
   outline: 0;
   outline-offset: 0px;
-  text-decoration:none;
 }
+ 
 input,
 button,
 select,
@@ -351,9 +351,6 @@ form {
 	border-bottom: 1px solid #DDDDDD;
 	padding: 15px;
 }
-.form-bordered .control-group:last-child{
-	border-bottom:0px;
-	}
 .form-striped .control-group:nth-child(2n+1) {
 	background: #fcfcfc;
 }
@@ -1656,6 +1653,7 @@ label.error {
 .bg-black {
 	background: #000000 !important;
 }
+
 .popover {
 	border: 1px solid #E65858;
 }
