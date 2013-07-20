@@ -46,9 +46,16 @@
 							</div>
 							<div class="control-group">
 								<label class="control-label">
-									Full Width</label>
+									Long modal</label>
 								<div class="controls">
-									<button class="demo btn btn-primary" data-toggle="modal" href="#full-width">View Demo</button>
+									<button class="demo btn btn-primary" data-toggle="modal" href="#long">View Demo</button>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">
+									Different Colors</label>
+								<div class="controls">
+									<button class="demo btn btn-primary" data-toggle="modal" href="#long">View Demo</button>
 								</div>
 							</div>
 							</form>
@@ -116,7 +123,6 @@
     <button type="button" class="btn btn-primary">Ok</button>
   </div>
 </div>
- 
 <div id="stack2" class="modal hide fade" tabindex="-1" data-focus-on="input:first">
   <div class="modal-header">
     <button type="button" class="btn btn-icon pull-right" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
@@ -176,6 +182,35 @@
   <div class="modal-body">
     <button class="btn" data-toggle="modal" href="#notlong" style="position: absolute; top: 50%; right: 12px">Not So Long Modal</button>
     <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg">
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn">Close</button>
+  </div>
+</div>
+<div id="notlong" class="modal hide fade" tabindex="-1" data-replace="true">
+  <div class="modal-header">
+    <button type="button" class="btn btn-icon pull-right" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+    <h3>Not That Long</h3>
+  </div>
+  <div class="modal-body">
+    <button class="btn" data-toggle="modal" href="#verylong" style="position: absolute; top: 50%; right: 12px">Very Long Modal</button>
+    <div style="height: 400px; overflow: hidden;">
+      <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg" />
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn">Close</button>
+  </div>
+</div>
+<div id="verylong" class="modal hide fade" tabindex="-1" data-replace="true">
+  <div class="modal-header">
+    <button type="button" class="btn btn-icon pull-right" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+    <h3>A Very Long</h3>
+  </div>
+  <div class="modal-body">
+    <div style="height: 1000px; overflow: hidden;">
+      <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg" />
+    </div>
   </div>
   <div class="modal-footer">
     <button type="button" data-dismiss="modal" class="btn">Close</button>
