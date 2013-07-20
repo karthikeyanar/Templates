@@ -51,13 +51,6 @@
 									<button class="demo btn btn-primary" data-toggle="modal" href="#long">View Demo</button>
 								</div>
 							</div>
-							<div class="control-group">
-								<label class="control-label">
-									Different Colors</label>
-								<div class="controls">
-									<button class="demo btn btn-primary" data-toggle="modal" href="#long">View Demo</button>
-								</div>
-							</div>
 							</form>
 						</div>
 					</div>

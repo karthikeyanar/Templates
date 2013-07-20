@@ -6,6 +6,8 @@
 <link href="css/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- jquery ui -->
+<link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datepicker -->
 <link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap fileupload -->
@@ -18,8 +20,10 @@
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap modal -->
 <link href="css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
-<!-- chosen -->
-<link href="css/chosen.css" rel="stylesheet" type="text/css" />
+<!-- select2 -->
+<link href="css/jquery.inputlimiter.1.0.css" rel="stylesheet" type="text/css" />
+<!-- select2 -->
+<link href="css/select2.css" rel="stylesheet" type="text/css" />
 <!-- fullcalendar -->
 <link href="css/fullcalendar.css" rel="stylesheet" type="text/css" />
 <link href="css/fullcalendar-override.css" rel="stylesheet" type="text/css" />

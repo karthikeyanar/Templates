@@ -31,18 +31,6 @@
 			});
 		});
 	}
-	,chosen: function() {
-		var config={
-			'.chzn-select': {},
-			'.chzn-select-deselect': { allow_single_deselect: true },
-			'.chzn-select-no-single': { disable_search_threshold: 10 },
-			'.chzn-select-no-results': { no_results_text: 'Oops, nothing found!' },
-			'.chzn-select-width': { width: "100%" }
-		}
-		for(var selector in config) {
-			$(selector).chosen(config[selector]);
-		}
-	}
 	,formValidate: function() {
 		$(".form-validate").validate({
 			ignore: "input[type='text']:hidden"
@@ -82,10 +70,12 @@ $(window).resize(function() {
 $(function() {
 	var $body=$("body");
 	jhelper.icheck($body);
-	jhelper.chosen();
 	jhelper.formValidate();
 	jhelper.datePicker();
 	jhelper.tooltip();
+
+	$(".select2").select2();
+
 	$('.topbar .barmenu').click(function() {
 		$("#sidebar").toggle("slide",500);
 	});

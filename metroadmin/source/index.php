@@ -101,7 +101,7 @@
 			</div>
 			<!--- chat --->
 			<div class="row-fluid">
-				<div class="span8">
+				<div class="span6">
 					<div class="box box-bordered">
 						<div class="box-title">
 							<h4>

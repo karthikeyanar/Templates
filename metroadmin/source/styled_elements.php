@@ -28,7 +28,7 @@
 									Standard Select
 								</label>
 								<div class="controls">
-									<select id="country" name="country" data-placeholder="Choose a Country..." class="chzn-select input-xlarge">
+									<select id="country" name="country" data-placeholder="Choose a Country..." class="select2 input-xlarge">
 										<option value=""></option>
 										<option value="United States">United States</option>
 										<option value="United Kingdom">United Kingdom</option>
@@ -294,7 +294,7 @@
 									Multiple Select
 								</label>
 								<div class="controls">
-									<select data-placeholder="Choose a Country..." class="chzn-select input-block-level"
+									<select data-placeholder="Choose a Country..." class="select2 input-block-level"
 										multiple>
 										<option value=""></option>
 										<option value="United States">United States</option>
@@ -561,7 +561,7 @@
 									Single Select with Groups
 								</label>
 								<div class="controls">
-									<select data-placeholder="Your Favorite Football Team" class="chzn-select input-xlarge">
+									<select data-placeholder="Your Favorite Football Team" class="select2 input-xlarge">
 										<option value=""></option>
 										<optgroup label="NFC EAST">
 											<option>Dallas Cowboys</option>
@@ -619,7 +619,7 @@
 									Multiple Select with Groups
 								</label>
 								<div class="controls">
-									<select data-placeholder="Your Favorite Football Teams" class="chzn-select input-block-level"
+									<select data-placeholder="Your Favorite Football Teams" class="select2 input-block-level"
 										multiple>
 										<option value=""></option>
 										<optgroup label="NFC EAST">
@@ -670,63 +670,6 @@
 											<option>Oakland Raiders</option>
 											<option>San Diego Chargers</option>
 										</optgroup>
-									</select>
-								</div>
-							</div>
-							<div class="control-group no-border no-padding-bottom">
-								<b>Chosen automatically highlights selected options and removes disabled options.</b>
-							</div>
-							<div class="control-group no-border no-padding-bottom">
-								<label class="control-label">
-									Single Select
-								</label>
-								<div class="controls">
-									<select data-placeholder="Your Favorite Type of Bear" class="chzn-select input-xlarge">
-										<option value=""></option>
-										<option>American Black Bear</option>
-										<option>Asiatic Black Bear</option>
-										<option>Brown Bear</option>
-										<option>Giant Panda</option>
-										<option selected>Sloth Bear</option>
-										<option disabled>Sun Bear</option>
-										<option>Polar Bear</option>
-										<option disabled>Spectacled Bear</option>
-									</select>
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label">
-									Multiple Select
-								</label>
-								<div class="controls">
-									<select data-placeholder="Your Favorite Types of Bear" multiple class="chzn-select input-block-level">
-										<option value=""></option>
-										<option>American Black Bear</option>
-										<option>Asiatic Black Bear</option>
-										<option>Brown Bear</option>
-										<option>Giant Panda</option>
-										<option selected>Sloth Bear</option>
-										<option disabled>Sun Bear</option>
-										<option selected>Polar Bear</option>
-										<option disabled>Spectacled Bear</option>
-									</select>
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label">
-									Allow Deselect on Single Selects
-								</label>
-								<div class="controls">
-									<select data-placeholder="Your Favorite Type of Bear" class="chzn-select-deselect input-xlarge">
-										<option value=""></option>
-										<option>American Black Bear</option>
-										<option>Asiatic Black Bear</option>
-										<option>Brown Bear</option>
-										<option>Giant Panda</option>
-										<option selected>Sloth Bear</option>
-										<option>Sun Bear</option>
-										<option>Polar Bear</option>
-										<option>Spectacled Bear</option>
 									</select>
 								</div>
 							</div>

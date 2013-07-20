@@ -102,23 +102,21 @@
 								<label class="control-label">
 									Textarea</label>
 								<div class="controls">
-									<textarea class="span5" rows="5" cols="80"></textarea>
+									<textarea rows="5" cols="80" class="input-xxlarge"></textarea>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label">
 									Textarea with Auto Resize</label>
 								<div class="controls">
-									<textarea style="resize: vertical; height: 117px;" class="span5" rows="5" cols="80"
-										id="autoResizeTA"></textarea>
+									<textarea rows="5" cols="80" id="textareaAR" class="input-xxlarge"></textarea>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label">
 									Textarea with Character Count</label>
 								<div class="controls">
-									<textarea class="span5" id="textarea2" rows="5" cols="80"></textarea><span class="counter">Characters
-										left: 120</span>
+									<textarea id="textareaCC" rows="5" cols="80" class="input-xxlarge"></textarea>
 								</div>
 							</div>
 							<div class="control-group">
@@ -358,7 +356,17 @@
 <!-- end container -->
 <?php include_once 'script.php' ?>
 <script type="text/javascript">
-	$(document).ready(function() {
+	$(function() {
+		// Make it more personal
+		$('#textareaCC').inputlimiter({
+			limit: 50,
+			remText: 'You only have %n character%s remaining...',
+			remFullText: 'Stop typing! You\'re not allowed any more characters!',
+			limitText: 'You\'re allowed to input %n character%s into this field.'
+		});
+		// auto grow text area
+		$('#textareaAR').autoGrow();
+
 		$(".pick-a-color").pickAColor({
 			showSpectrum: false,
 			showSavedColors: true,

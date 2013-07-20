@@ -78,7 +78,7 @@
 								<label for="textfield" class="control-label">
 									Sex</label>
 								<div class="controls">
-									<select name="sex" id="sex" class="chzn-select input-medium">
+									<select name="sex" id="sex" class="select2 input-medium">
 										<option value="Male">Male</option>
 										<option value="Female">Female</option>
 									</select>
@@ -89,7 +89,7 @@
 									Birthday</label>
 								<div class="controls">
 									<div class="pull-left cutter-right">
-										<select name="Month" id="Month" class="chzn-select input-medium" data-rule-required="true"
+										<select name="Month" id="Month" class="select2 input-medium" data-rule-required="true"
 											data-msg-required="Required" data-placement="bottom">
 											<option value="">Month</option>
 											<option value="1">January</option>

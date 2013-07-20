@@ -10,8 +10,12 @@
 <!-- bootstrap modal -->
 <script src="js/plugins/bootstrap-modalmanager.js" type="text/javascript"></script>
 <script src="js/plugins/bootstrap-modal.js" type="text/javascript"></script>
-<!-- chosen -->
-<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
+<!-- select2 -->
+<script src="js/plugins/select2.js" type="text/javascript"></script>
+<!-- inputlimiter -->
+<script src="js/plugins/jquery.inputlimiter.1.3.1.min.js" type="text/javascript"></script>
+<!-- autogrow textarea -->
+<script src="js/plugins/jquery.autogrowtextarea.min.js" type="text/javascript"></script>
 <!-- icheck -->
 <script src="js/plugins/jquery.icheck.min.js" type="text/javascript"></script>
 <!-- flot chart -->

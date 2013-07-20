@@ -2,6 +2,7 @@
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 400;
+  font-size:13px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
@@ -17,6 +18,7 @@ a:focus {
   outline-offset: 0px;
   text-decoration:none;
 }
+label,
 input,
 button,
 select,
@@ -24,7 +26,6 @@ textarea {
  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
  font-size:13px;
 }
-
 select,
 textarea,
 input[type="text"],
@@ -1536,8 +1537,9 @@ a.thumbnail:focus {
 	margin: 4px 8px;
 }
 label.error {
-	margin: 10px 0 0 0;
 	color: #FF0000;
+    font-size: 13px;
+    margin: 5px 0 0;
 }
 .fg-white {
 	color: #fff !important;
