@@ -139,23 +139,6 @@
 														Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 														commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 													</div>
-													<!-- Nested media object -->
-													<div class="media">
-														<a href="#" class="pull-left">
-															<img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px;
-																height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
-														</a>
-														<div class="media-body">
-															<div class="message-body right bg-dark-orange fg-white">
-																<div class="arrow-left">
-																</div>
-																<h4 class="media-heading">
-																	Anjelina</h4>
-																Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-																commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-															</div>
-														</div>
-													</div>
 												</div>
 											</div>
 											<!-- Nested media object -->

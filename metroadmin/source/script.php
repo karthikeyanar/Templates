@@ -44,5 +44,9 @@
 <script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
+<!-- bootstrap popover confirm -->
+<script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
+<!-- bootstrap bootbox -->
+<script src="js/plugins/bootbox.min.js" type="text/javascript"></script>
 <!-- pepper jhelper -->
 <script src="js/files/jhelper.js" type="text/javascript"></script>

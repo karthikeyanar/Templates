@@ -13,7 +13,7 @@ function checkactive($filename){
 		echo "class=\"active\"";
 	}
 }
-function openaccordion(){
+function openaccordion($rootname){
 	writeclassname($rootname," open");
 }
 function openaccordionbody($rootname){
@@ -22,7 +22,6 @@ function openaccordionbody($rootname){
 function writeclassname($rootname,$classname){
 	$path = $_SERVER["REQUEST_URI"];
 	$file = basename($path);    
-	$classname = " in";
 	if($rootname=="uielements"){
 		if($file == "elements.php"
 			|| $file == "styled_elements.php"
@@ -108,6 +107,7 @@ function writeclassname($rootname,$classname){
 						<li><a <?php checkactive("iphone_style_checkbox.php");?> href="iphone_style_checkbox.php">iPhone Style CheckBox</a></li>
 						<li><a <?php checkactive("advanced_elements.php");?> href="advanced_elements.php">Advanced Elements</a></li>
 						<li><a <?php checkactive("modal.php");?> href="modal.php">Modal</a></li>
+						<li><a <?php checkactive("alert_confirm.php");?> href="alert_confirm.php">Alrert & Confirm</a></li>
 						<li><a <?php checkactive("buttons.php");?> href="buttons.php">Buttons</a></li>
 						<li><a <?php checkactive("icons.php");?> href="icons.php">Icons</a></li>
 						<li><a <?php checkactive("file_input.php");?> href="file_input.php">File Input</a></li>
