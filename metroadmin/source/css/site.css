@@ -572,6 +572,10 @@ pre {
 .modal-header .close {
 	font-size: 30px;
 }
+/* popover confirm */
+.popover-confirm-btn {
+	margin-right:10px;
+}
 /* chat content */
 .chat-content .media-heading {
 	font-size: 15px;

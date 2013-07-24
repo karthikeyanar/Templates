@@ -27,6 +27,7 @@ function writeclassname($rootname,$classname){
 			|| $file == "styled_elements.php"
 			|| $file == "iphone_style_checkbox.php"
 			|| $file == "advanced_elements.php"
+			|| $file == "alert_confirm.php"
 			|| $file == "modal.php"
 			|| $file == "buttons.php"
 			|| $file == "icons.php"

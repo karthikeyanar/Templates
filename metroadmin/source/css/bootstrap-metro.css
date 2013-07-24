@@ -1753,3 +1753,33 @@ label.error {
 	background:#333;
 	color:#fff;
 }
+/* alert */
+.alert {
+ background-color: #FFFE7E; border-color: #fff;
+}
+.alert, .alert h4 {
+    color: #333;
+}
+.alert-danger, .alert-error {
+	 background-color: #E81123;
+	 color:#fff;
+}
+.alert-success {
+	 background-color: #008A17;
+	 color:#fff;
+}
+.alert-info {
+	 background-color: #2E7EFC;
+	 color:#fff;
+}
+.alert .close {
+	opacity:0.5;
+	 filter:alpha(opacity=50);
+}
+.alert .close:hover {
+	opacity:1;
+	 filter:alpha(opacity=100);
+}
+.alert-danger .close, .alert-error .close, .alert-success .close, .alert-info .close {	
+	 color:#fff;
+} 

@@ -29,6 +29,29 @@
 				<div class="box box-bordered">
 					<div class="box-title">
 						<h4>
+							<i class="icon-edit"></i>Popup Confirm
+						</h4>
+					</div>
+					<div class="box-content no-padding">
+						<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
+							<div class="control-group">
+								<label class="control-label">
+									Popup Confirm
+								</label>
+								<div class="controls">
+									<a class='btn btn-success' data-placement='bottom' data-title='Confirm order and use selected payment method?'  data-popover-confirm='isconfirm()'>Confirm and Purchase</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="box box-bordered">
+					<div class="box-title">
+						<h4>
 							<i class="icon-edit"></i>Alert & Confirm Dialog
 						</h4>
 					</div>
@@ -80,18 +103,26 @@
 						</h4>
 					</div>
 					<div class="box-content">
+						<h4>Alert</h4>
+						<code>alert</code>
 						<div class="alert">
 							<button type="button" class="close" data-dismiss="alert">&times;</button>
 							<strong>Warning!</strong> Best check yo self, you're not looking too good.
 						</div>
+						<h4>Alert Error</h4>
+						<code>alert alert-error</code>
 						<div class="alert alert-error">
 							<button data-dismiss="alert" class="close" type="button">&times;</button>
 							<strong>Oh snap!</strong> Change a few things up and try submitting again.
 						</div>
+						<h4>Alert Success</h4>
+						<code>alert alert-success</code>
 						<div class="alert alert-success">
 							<button data-dismiss="alert" class="close" type="button">&times;</button>
 							<strong>Well done!</strong> You successfully read this important alert message.
 						</div>
+						<h4>Alert Info</h4>
+						<code>alert alert-info</code>
 						<div class="alert alert-info">
 							<button data-dismiss="alert" class="close" type="button">&times;</button>
 							<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
@@ -107,6 +138,9 @@
 <!-- end container -->
 <?php include_once 'script.php' ?>
 <script>
+	function isconfirm(){
+		//confirm callback
+	}
 	$(function(){
 	$("#alert").click(function(){
 	bootbox.alert("Hello world!", function() {
