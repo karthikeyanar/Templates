@@ -27,11 +27,6 @@ function writeclassname($rootname,$classname){
 			|| $file == "styled_elements.php"
 			|| $file == "iphone_style_checkbox.php"
 			|| $file == "advanced_elements.php"
-			|| $file == "alert_confirm.php"
-			|| $file == "modal.php"
-			|| $file == "buttons.php"
-			|| $file == "icons.php"
-			|| $file == "file_input.php"
 		)
 		{
 			echo $classname;
@@ -41,6 +36,13 @@ function writeclassname($rootname,$classname){
 			|| $file == "form_editor.php"
 			|| $file == "dropdowns.php"
 			|| $file == "button_dropdowns.php"
+			|| $file == "alert_confirm.php"
+			|| $file == "labels_badges.php"
+			|| $file == "modal.php"
+			|| $file == "buttons.php"
+			|| $file == "slider.php"
+			|| $file == "icons.php"
+			|| $file == "file_input.php"
 		)
 		{
 			echo $classname;
@@ -63,12 +65,12 @@ function writeclassname($rootname,$classname){
 	} else if($rootname=="samples"){
 		if($file == "login.php"
 			|| $file == "calendar.php"
-			|| $file == "register.php"
 			|| $file == "file_manager.php"
 			|| $file == "timesheet.php"
 			|| $file == "invoice.php"
 			|| $file == "shopping_cart.php"
 			|| $file == "products.php"
+			|| $file == "blank.php"
 		)
 		{
 			echo $classname;
@@ -107,11 +109,6 @@ function writeclassname($rootname,$classname){
 						<li><a <?php checkactive("styled_elements.php");?> href="styled_elements.php">Styled Elements</a></li>
 						<li><a <?php checkactive("iphone_style_checkbox.php");?> href="iphone_style_checkbox.php">iPhone Style CheckBox</a></li>
 						<li><a <?php checkactive("advanced_elements.php");?> href="advanced_elements.php">Advanced Elements</a></li>
-						<li><a <?php checkactive("modal.php");?> href="modal.php">Modal</a></li>
-						<li><a <?php checkactive("alert_confirm.php");?> href="alert_confirm.php">Alrert & Confirm</a></li>
-						<li><a <?php checkactive("buttons.php");?> href="buttons.php">Buttons</a></li>
-						<li><a <?php checkactive("icons.php");?> href="icons.php">Icons</a></li>
-						<li><a <?php checkactive("file_input.php");?> href="file_input.php">File Input</a></li>
 					</ul>
 				</div>
 			</div>
@@ -124,6 +121,13 @@ function writeclassname($rootname,$classname){
 			<div id="components" class="accordion-body collapse<?php echo openaccordionbody("components");?>">
 				<div class="accordion-inner">
 					<ul>
+						<li><a <?php checkactive("modal.php");?> href="modal.php">Modal</a></li>
+						<li><a <?php checkactive("alert_confirm.php");?> href="alert_confirm.php">Alrert & Confirm</a></li>
+						<li><a <?php checkactive("labels_badges.php");?> href="labels_badges.php">Labels and badges</a></li>
+						<li><a <?php checkactive("buttons.php");?> href="buttons.php">Buttons</a></li>
+						<li><a <?php checkactive("icons.php");?> href="icons.php">Icons</a></li>
+						<li><a <?php checkactive("slider.php");?> href="slider.php">Slider</a></li>
+						<li><a <?php checkactive("file_input.php");?> href="file_input.php">File Input</a></li>
 						<li><a <?php checkactive("chart.php");?> href="chart.php">Chart</a></li>
 						<li><a <?php checkactive("form_editor.php");?> href="form_editor.php">Editor</a></li>
 						<li><a <?php checkactive("dropdowns.php");?> href="dropdowns.php">Dropdowns</a></li>
@@ -172,7 +176,6 @@ function writeclassname($rootname,$classname){
 						<li><a <?php checkactive("login.php");?> href="login.php">Login</a></li>
 						<li><a <?php checkactive("blank.php");?> href="blank.php">Blank</a></li>
 						<li><a <?php checkactive("calendar.php");?> href="calendar.php">Calendar</a></li>
-						<li><a <?php checkactive("register.php");?> href="register.php">Register</a></li>
 						<li><a <?php checkactive("file_manager.php");?> href="file_manager.php">File Manager</a></li>
 						<li><a <?php checkactive("timesheet.php");?> href="timesheet.php">Timesheet</a></li>
 						<li><a <?php checkactive("invoice.php");?> href="invoice.php">Invoice</a></li>

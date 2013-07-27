@@ -5,11 +5,12 @@ $(function() {
 			html: true,
 			placement: $btn.data("placement"),
 			trigger: 'manual',
+			template: '<div class="popover popover-confirm"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
 			content: "<span data-popover-confirm-container> \
-						<span class='btn btn-primary popover-confirm-btn'> \
+						<span class='btn input-mini btn-primary popover-confirm-btn'> \
 						  Ok \
 						</span> \
-						<span class='btn btn-danger popover-cancel-btn'> \
+						<span class='btn input-mini btn-danger popover-cancel-btn'> \
 						  Cancel \
 						</span> \
 					  </span>"

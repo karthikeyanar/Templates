@@ -114,6 +114,7 @@
 										<li><a href="#">Separated link</a></li>
 									</ul>
 								</div>
+								<div class="clearfix">&nbsp;</div>
 								<!-- /btn-group -->
 								<div class="btn-group">
 									<button data-toggle="dropdown" class="btn btn-purple dropdown-toggle">

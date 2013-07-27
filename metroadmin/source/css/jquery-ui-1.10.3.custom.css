@@ -333,6 +333,7 @@ button.ui-button::-moz-focus-inner {
 	padding: 0;
 	vertical-align: middle;
 }
+/*
 .ui-spinner-input {
 	border: none;
 	background: none;
@@ -343,6 +344,7 @@ button.ui-button::-moz-focus-inner {
 	margin-left: .4em;
 	margin-right: 22px;
 }
+*/
 .ui-spinner-button {
 	width: 16px;
 	height: 50%;
@@ -390,14 +392,16 @@ button.ui-button::-moz-focus-inner {
 .ui-widget .ui-widget {
 	font-size: 1em;
 }
+/*
 .ui-widget input,
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
 	font-size: 13px;
 }
+*/
 .ui-widget-content {
-	border: 1px solid #dddddd;
+	border: 1px solid #AAAAAA;
 	background: #eeeeee url(../img/jquery-ui/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
 	color: #333333;
 }
@@ -771,4 +775,18 @@ button.ui-button::-moz-focus-inner {
 	opacity: .2;
 	filter: Alpha(Opacity=20);
 	border-radius: 5px;
+}
+.ui-spinner a.ui-spinner-button {
+	 border: 1px solid #CCCCCC;
+}
+.ui-spinner-up .ui-icon{
+	margin-top: -10px;
+}
+.ui-spinner-down .ui-icon{
+	margin-top: -8px;
+}
+
+.ui-spinner {
+	 border-radius: 0;
+	 border: 0;
 }
