@@ -301,12 +301,14 @@ label.error {
 	text-align: center;
 }
 /* lables , badges */
-label, .label {
-    font-weight: normal;
+.label {
+   border-radius: 0 0 0 0;
+   font-size: 11px;
+   font-weight: normal;
+   text-shadow: none;
 }
 .label, .badge {
-	 padding: 4px;
-	 background-color: #585858;
+	background-color: #585858;
 }
 .label-success, .badge-success {
 	background-color: #008A17;
@@ -322,11 +324,6 @@ label, .label {
 }
 .label-inverse, .badge-inverse {
 	background-color: #333;
-}
-.badge {
-    border-radius: 12px 12px 12px 12px;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 /* navbar */
 .navbar {
@@ -1041,6 +1038,11 @@ select.form-control:focus,
 	color:#333;
 }
 /* end menu */
+/* table */
+.table thead > tr > th {
+	border-bottom:0;
+}
+/* end table */
 /* responsive */
 @media (max-width: 767px) {
 }

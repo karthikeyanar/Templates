@@ -15,7 +15,7 @@
 			</ul>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel">
 						<div class="panel-heading no-border">
 							<h4>
 								<i class="icon-table"></i>Default Style
@@ -86,7 +86,7 @@
 							</table>
 						</div>
 					</div>
-					<div class="box">
+					<div class="panel">
 						<div class="panel-heading no-border">
 							<h4>
 								<i class="icon-table"></i>Table Striped
@@ -157,7 +157,7 @@
 							</table>
 						</div>
 					</div>
-					<div class="box">
+					<div class="panel">
 						<div class="panel-heading no-border">
 							<h4>
 								<i class="icon-table"></i>Table Bordered
@@ -228,7 +228,7 @@
 							</table>
 						</div>
 					</div>
-					<div class="box">
+					<div class="panel">
 						<div class="panel-heading no-border">
 							<h4>
 								<i class="icon-table"></i>Table Hover
@@ -299,7 +299,7 @@
 							</table>
 						</div>
 					</div>
-					<div class="box">
+					<div class="panel">
 						<div class="panel-heading no-border">
 							<h4>
 								<i class="icon-table"></i>Table Condensed

@@ -13,7 +13,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel">
 						<div class="panel-heading">
 							<h4>
 								<i class="icon-table"></i>Table with pagination</h4>

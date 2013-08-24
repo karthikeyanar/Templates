@@ -15,7 +15,7 @@
 			</ul>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel">
 						<div class="panel-heading">
 							<h4>
 								<i class="icon-edit"></i>Basic form</h4>

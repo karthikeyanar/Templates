@@ -49,7 +49,22 @@
 		}).appendTo("body").fadeIn(200);
 	}
 }
+function appendResponsiveStyle(styles) {
+	var windowWidth=$(window).width();
+	$("#responsiveStyle").remove();
+	var css=$("<style id='responsiveStyle' type='text/css'></style>").get(0);
+	if(windowWidth>767) {
+		var styles='.container { max-width: '+(windowWidth-80)+'px;}';
+		if(css.styleSheet) css.styleSheet.cssText=styles;
+		else css.appendChild(document.createTextNode(styles));
+		document.getElementsByTagName("head")[0].appendChild(css);
+	}
+}
+$(window).resize(function() {
+	appendResponsiveStyle();
+});
 $(function() {
+	appendResponsiveStyle();
 	jhelper.icheck();
 	jhelper.formValidate();
 	jhelper.datePicker();

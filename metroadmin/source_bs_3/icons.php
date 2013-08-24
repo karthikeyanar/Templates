@@ -4,6 +4,7 @@
 	.the-icons {
 		list-style-type: none;
 		margin: 0;
+		padding: 0;
 	}
 	.the-icons li [class^="icon-"], .the-icons li [class*=" icon-"] {
 		display: inline-block;
@@ -16,7 +17,7 @@
 		display: block;
 		height: 32px;
 		line-height: 32px;
-		padding-left: 12px;
+		padding: 0px;
 	}
 	.the-icons li a, .the-icons li a:hover {
 		color: #333;
@@ -49,10 +50,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								New Icons in 3.1.1</h4>
+							<h3 class="panel-title">New Icons in 3.1.1</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -144,10 +144,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Web Application Icons</h4>
+							<h3 class="panel-title">Web Application Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -382,10 +381,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Text Editor Icons</h4>
+							<h3 class="panel-title">Text Editor Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -448,10 +446,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Directional Icons</h4>
+							<h3 class="panel-title">Directional Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -510,10 +507,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Video Player Icons</h4>
+							<h3 class="panel-title">Video Player Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -555,10 +551,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Brand Icons</h4>
+							<h3 class="panel-title">Brand Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -600,10 +595,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="box">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Medical Icons</h4>
+							<h3 class="panel-title">Medical Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="col-md-3">
