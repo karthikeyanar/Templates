@@ -329,20 +329,18 @@ label, .label {
     padding-right: 8px;
 }
 /* navbar */
-#navbar {
-	position: relative;
-	z-index: 2;
-}
 .navbar {
 	border-radius:0;
+	box-shadow:none;
 }
-/* navbar */
 #navbar  {
-	background: #2E7EFC;
 	color: #fff;
 	margin: 0;
 	padding: 0;
 	border: 0;
+	position: relative;
+	z-index: 2;
+	background: #2e7efc; 
 }
 #navbar.navbar {
 	min-height:0;
@@ -706,7 +704,7 @@ label, .label {
 }
 /* page-header */
 .page-header {
-	margin: 10px 0;
+	margin: 20px 0;
 	padding: 0;
 	border: 0;
 }
@@ -767,10 +765,6 @@ pre {
 	background-color: #eee;
 	padding: 2px;
 }
-/* btn */
-.btn {
-	border-radius:0;
-} 
 /* modal */
 .modal-header .close {
 	font-size: 30px;
@@ -1000,10 +994,9 @@ select.form-control:focus,
 /* end form */
 /* menu */
 #menu .nav-tabs {
-	border-bottom:0;
+	border:0;
 }
 #menu .tab-content ul {
-	display: table-row;
 }
 #menu .tab-content ul, #menu .tab-content ul li{
 	list-style:none; 
@@ -1015,7 +1008,7 @@ select.form-control:focus,
 #menu .tab-content ul li a {
 	display:block;
 	float:left;
-	padding: 12px;
+	padding: 15px;
 	color:#333;
 	font-size:13px;
 }
@@ -1027,20 +1020,15 @@ select.form-control:focus,
 	padding-right:15px;
 }
 #menu .nav-tabs > li {
-	margin-bottom:0;
-	float:none;
-	display: table-cell;
-	padding-right:2px;
+	margin-top:10px;
 }
 #menu .nav-tabs > li > a {
-	float:none;
-	display: table-cell;
 	color:#fff;
 }
 #menu .nav-tabs > li > a:hover {
 	color:#333;
 	background:#f5f5f5;
-	border-color:#f5f5f5;
+	  border-bottom-color: transparent;
 }
 #menu .nav-tabs-box  {
 	background:#2E7EFC;
@@ -1051,8 +1039,6 @@ select.form-control:focus,
 #menu .nav-tabs > li.active > a {
 	background:#f5f5f5;
 	color:#333;
-	border-color:transparent;
-	font-size:14px;
 }
 /* end menu */
 /* responsive */

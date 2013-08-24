@@ -23,34 +23,20 @@
 					</a>
 				</li>
 				<li class="dropdown user-box pull-right">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-						<img src="img/nophoto.jpg" />
-						<span>Joe Nilson</span>
-					</a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/nophoto.jpg" /><span>Joe Nilson</span></a>
 					<div class="dropdown-menu">
-						<div class="user-photo">
-							<img src="img/photo.jpg" />
-						</div>
+						<div class="user-photo"><img src="img/photo.jpg" /></div>
 						<div class="user-info">
-							<p>
-								Joe Nilson<br />
-								test@gmail.com
-							</p>
+							<p>Joe Nilson<br />test@gmail.com</p>
 							<ul>
-								<li>
-									<a href="#">Profile</a>
-								</li>
-								<li>
-									<a href="#">Settings</a>
-								</li>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Settings</a></li>
 							</ul>
 						</div>
 						<div class="clearfix">
 						</div>
 						<div class="pull-right">
-							<button class="btn btn-danger">
-								Sign out
-							</button>
+							<button class="btn btn-danger">Sign out</button>
 						</div>
 					</div>
 				</li>

@@ -1,6 +1,11 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
+			<div class="page-header">
+				<h1>
+					Dashboard
+				</h1>
+			</div>
 			<!-- tiles -->
 			<div class="row">
 				<div class="col-md-12">
