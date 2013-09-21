@@ -4,7 +4,7 @@
 	
  
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							Charts</h1>
@@ -12,22 +12,22 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Pie Chart</h4>
+							<h3 class="panel-title">
+								Pie Chart</h3>
 						</div>
 						<div class="panel-body">
 							<div id="pie-chart1" class="chart chart-medium"></div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Interactivity</h4>
+							<h3 class="panel-title">
+								Interactivity</h3>
 						</div>
 						<div class="panel-body">
 							<div id="interactivity" class="chart chart-medium">
@@ -37,10 +37,10 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>Panning and Zooming</h4>
+							<h3 class="panel-title">Panning and Zooming</h3>
 						</div>
 						<div class="panel-body">
 							<div id="panning" class="chart chart-large">

@@ -23,12 +23,12 @@
 			</li>
 		</ul>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h4>
+						<h3 class="panel-title">
 							<i class="icon-edit"></i>Labels
-						</h4>
+						</h3>
 					</div>
 					<div class="panel-body no-padding">
 						<table class="table">
@@ -94,12 +94,12 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h4>
+						<h3 class="panel-title">
 							<i class="icon-edit"></i>Badges
-						</h4>
+						</h3>
 					</div>
 					<div class="panel-body no-padding">
 						<table class="table">

@@ -25,9 +25,9 @@
 			</li>
 		</ul>
 		<div class="row">
-			<div class="col-md-3">
-				<h4>
-				Draggable Events</h4>
+			<div class="col-lg-3">
+				<h3 class="panel-title">
+				Draggable Events</h3>
 				<div  id="external-events">
 					<div class='external-event bg-sky-blue fg-white'>
 						My Event 1</div>
@@ -44,7 +44,7 @@
 					<input type='checkbox' id='drop-remove' />Remove after drop
 				</label>
 			</div>
-			<div class="col-md-9">
+			<div class="col-lg-9">
 				<div id='calendar'></div>
 			</div>
 		</div>

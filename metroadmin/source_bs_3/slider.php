@@ -1,8 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-
- 
 		<div class="page-header">
 			<h1>Slider</h1>
 		</div>
@@ -23,17 +21,17 @@
 			</li>
 		</ul>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h4>
+						<h3 class="panel-title">
 							<i class="icon-edit"></i>Slider
-						</h4>
+						</h3>
 					</div>
 					<div class="panel-body no-padding">
 						<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
 							<div class="form-group">
-								<label class="control-label no-padding no-margin">
+								<label class="control-label col-lg-2 no-padding no-margin">
 									Default
 								</label>
 								<div class="col-lg-10">
@@ -55,10 +53,10 @@
 								<label class="col-lg-2 control-label">
 									Vertical Slider
 								</label>
-								<div class="col-lg-10">
+								<div class="col-lg-2">
 									<p>
 										<label for="amount">Volume</label>
-										<input type="text" id="amount" class="input-mini"  />
+										<input type="text" id="amount" class="form-control"  />
 									</p>
 									<div id="slider-vertical" style="height: 200px;"></div>
 								</div>

@@ -1,8 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-	
- 
 			<div class="page-header">
 				<h1>
 					File Input</h1>
@@ -14,11 +12,11 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
-					<div class="panel">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>File Input</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>File Input</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST">
@@ -27,7 +25,7 @@
 								</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
@@ -38,12 +36,13 @@
 									</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<div class="input-append">
+										<div class="input-group">
 											<div class="uneditable-input col-md-3">
 												<i class="icon-file fileupload-exists"></i><span class="fileupload-preview"></span>
 											</div>
-											<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
-												type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+											<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+												type="file" /></span>
+											<a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
 										</div>
 									</div>
 								</div>
@@ -56,7 +55,7 @@
 										<div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;">
 										</div>
 										<div>
-											<span class="btn btn-file"><span class="fileupload-new">Select image</span><span
+											<span class="btn btn-default btn-file"><span class="fileupload-new">Select image</span><span
 												class="fileupload-exists">Change</span><input type="file" /></span> <a href="#" class="btn fileupload-exists"
 													data-dismiss="fileupload">Remove</a>
 										</div>
@@ -72,7 +71,7 @@
 											<img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA" /></div>
 										<div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;">
 										</div>
-										<span class="btn btn-file"><span class="fileupload-new">Select image</span><span
+										<span class="btn btn-default btn-file"><span class="fileupload-new">Select image</span><span
 											class="fileupload-exists">Change</span><input type="file" /></span> <a href="#" class="btn fileupload-exists"
 												data-dismiss="fileupload">Remove</a>
 									</div>

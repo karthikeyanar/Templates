@@ -8,7 +8,7 @@
 			</div>
 			<!-- tiles -->
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="tile-group">
 						<div class="tile icon">
 	                    	<div class="tile-content">
@@ -67,11 +67,11 @@
 			</div>
 			<!-- chart -->
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Pie Chart</h4>
+							<h3 class="panel-title">
+								Pie Chart</h3>
 						</div>
 						<div class="panel-body">
 							<div id="pie-chart1" class="chart chart-medium">
@@ -79,11 +79,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Interactivity</h4>
+							<h3 class="panel-title">
+								Interactivity</h3>
 						</div>
 						<div class="panel-body">
 							<div id="interactivity" class="chart chart-medium">
@@ -94,11 +94,11 @@
 			</div>
 			<!--- chat --->
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-comment"></i>Chat</h4>
+							<h3 class="panel-title">
+								<i class="icon-comment"></i>Chat</h3>
 						</div>
 						<div class="panel-body">
 							<div class="chat-content">
@@ -112,7 +112,7 @@
 												<div class="arrow-left">
 												</div>
 												<h4 class="media-heading">
-													Jarge</h4>
+													Jarge</h3>
 												<p>
 													Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 													commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
@@ -128,7 +128,7 @@
 														<div class="arrow-left">
 														</div>
 														<h4 class="media-heading">
-															Sam</h4>
+															Sam</h3>
 														Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 														commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 													</div>
@@ -145,7 +145,7 @@
 														<div class="arrow-left">
 														</div>
 														<h4 class="media-heading">
-															Adam</h4>
+															Adam</h3>
 														Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 														commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 													</div>
@@ -162,7 +162,7 @@
 												<div class="arrow-right">
 												</div>
 												<h4 class="media-heading">
-													Roy</h4>
+													Roy</h3>
 												Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 												commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 											</div>
@@ -183,7 +183,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div id="calendar">
 					</div>
 				</div>

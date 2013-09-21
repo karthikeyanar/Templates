@@ -4,7 +4,7 @@
 	
 	
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							Dynamic Table</h1>
@@ -12,11 +12,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
-					<div class="panel">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-table"></i>Table with pagination</h4>
+							<h3 class="panel-title">
+								<i class="icon-table"></i>Table with pagination</h3>
 						</div>
 						<div class="panel-body">
 							<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-hover"

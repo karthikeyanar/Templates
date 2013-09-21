@@ -1,5 +1,5 @@
 /* ===========================================================
- * bootstrap-modalmanager.js v2.1
+ * bootstrap-modalmanager.js v2.2.0
  * ===========================================================
  * Copyright 2012 Jordan Schroter.
  *
@@ -49,19 +49,6 @@
 						}
 					}, 10);
 				});
-				// listen to 'change' event, checking if modal-size changed and call 'layout'. 
-				$(document).on('change.modal','.modal.modal-reposition',function(e){
-					var $target = $(e.currentTarget)
-						, modal = $target.data('modal');
-					if (modal && modal.isShown){
-						setTimeout(
-							function(){
-								if ($target.height()!=$target.data('modalheight') || $target.width()!=$target.data('modalwidth'))
-									modal.layout()
-              }
-							,$target.data('repositionwait') || that.options.repositionWait || 300);
-					}
-				});
 			}
 		},
 
@@ -92,7 +79,6 @@
 					modal.$element.appendTo(modal.$container);
 
 					that.backdrop(modal, function () {
-
 						modal.$element.show();
 
 						if (transition) {       
@@ -126,8 +112,12 @@
 			modal.$element.on('hidden.modalmanager', targetIsSelf(function (e) {
 
 				that.backdrop(modal);
-
 				if (modal.$backdrop){
+					var transition = $.support.transition && modal.$element.hasClass('fade');
+
+					// trigger a relayout due to firebox's buggy transition end event 
+					if (transition) { modal.$element[0].offsetWidth; }
+
 					$.support.transition && modal.$element.hasClass('fade') ?
 						modal.$backdrop.one($.support.transition.end, function () { that.destroyModal(modal) }) :
 						that.destroyModal(modal);
@@ -144,7 +134,6 @@
 		},
 
 		destroyModal: function (modal) {
-
 			modal.destroy();
 
 			var hasOpenModal = this.hasOpenModal();
@@ -160,12 +149,17 @@
 			this.setFocus();
 		},
 
-		hasOpenModal: function () {
+		getOpenModals: function () {
+			var openModals = [];
 			for (var i = 0; i < this.stack.length; i++){
-				if (this.stack[i].isShown) return true;
+				if (this.stack[i].isShown) openModals.push(this.stack[i]);
 			}
 
-			return false;
+			return openModals;
+		},
+
+		hasOpenModal: function () {
+			return this.getOpenModals().length > 0;
 		},
 
 		setFocus: function () {
@@ -183,7 +177,7 @@
 
 		removeModal: function (modal) {
 			modal.$element.off('.modalmanager');
-			if (modal.$backdrop) this.removeBackdrop.call(modal);
+			if (modal.$backdrop) this.removeBackdrop(modal);
 			this.stack.splice(this.getIndexOfModal(modal), 1);
 		},
 
@@ -222,11 +216,12 @@
 			modal.$backdrop = null;
 		},
 
-		createBackdrop: function (animate) {
+		createBackdrop: function (animate, tmpl) {
 			var $backdrop;
 
 			if (!this.$backdropHandle) {
-				$backdrop = $('<div class="modal-backdrop ' + animate + '" />')
+				$backdrop = $(tmpl)
+					.addClass(animate)
 					.appendTo(this.$element);
 			} else {
 				$backdrop = this.$backdropHandle;
@@ -235,7 +230,7 @@
 				this.isLoading && this.removeSpinner();
 			}
 
-			return $backdrop
+			return $backdrop;
 		},
 
 		removeContainer: function (modal) {
@@ -247,11 +242,10 @@
 			var $container;
 
 			$container = $('<div class="modal-scrollable">')
-				.css('z-index', getzIndex( 'modal',
-					modal ? this.getIndexOfModal(modal) : this.stack.length ))
+				.css('z-index', getzIndex('modal', this.getOpenModals().length))
 				.appendTo(this.$element);
 
-			if(modal&&modal.options.backdrop!='static') {
+			if (modal && modal.options.backdrop != 'static') {
 				$container.on('click.modal', targetIsSelf(function (e) {
 					modal.hide();
 				}));
@@ -273,9 +267,9 @@
 			if (modal.isShown && showBackdrop) {
 				var doAnimate = $.support.transition && animate && !this.$backdropHandle;
 
-				modal.$backdrop = this.createBackdrop(animate);
+				modal.$backdrop = this.createBackdrop(animate, modal.options.backdropTemplate);
 
-				modal.$backdrop.css('z-index', getzIndex( 'backdrop', this.getIndexOfModal(modal) ));
+				modal.$backdrop.css('z-index', getzIndex( 'backdrop', this.getOpenModals().length ));
 
 				if (doAnimate) modal.$backdrop[0].offsetWidth; // force reflow
 
@@ -324,16 +318,18 @@
 
 			if (!this.isLoading) {
 
-				this.$backdropHandle = this.createBackdrop('fade');
+				this.$backdropHandle = this.createBackdrop('fade', this.options.backdropTemplate);
 
 				this.$backdropHandle[0].offsetWidth; // force reflow
 
+				var openModals = this.getOpenModals();
+
 				this.$backdropHandle
-					.css('z-index', getzIndex('backdrop', this.stack.length))
+					.css('z-index', getzIndex('backdrop', openModals.length + 1))
 					.addClass('in');
 
 				var $spinner = $(this.options.spinner)
-					.css('z-index', getzIndex('modal', this.stack.length))
+					.css('z-index', getzIndex('modal', openModals.length + 1))
 					.appendTo(this.$element)
 					.addClass('in');
 
@@ -417,8 +413,8 @@
 	$.fn.modalmanager.defaults = {
 		backdropLimit: 999,
 		resize: true,
-		//spinner: '<div class="loading-spinner fade" style="width: 200px; margin-left: -100px;"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div>'
-		spinner: '<div class="loading-spinner fade"><div class="loading-img"></div></div>'
+		spinner: '<div class="loading-spinner fade" style="width: 200px; margin-left: -100px;"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div>',
+		backdropTemplate: '<div class="modal-backdrop" />'
 	};
 
 	$.fn.modalmanager.Constructor = ModalManager

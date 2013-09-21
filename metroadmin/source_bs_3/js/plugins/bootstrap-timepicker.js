@@ -37,8 +37,8 @@
     _init: function() {
       var self = this;
 
-      if (this.$element.parent().hasClass('input-append') || this.$element.parent().hasClass('input-prepend')) {
-        this.$element.parent('.input-append, .input-prepend').find('.add-on').on({
+      if (this.$element.parent().hasClass('input-group') || this.$element.parent().hasClass('input-prepend')) {
+        this.$element.parent('.input-group, .input-prepend').find('.input-group-addon').on({
           'click.timepicker': $.proxy(this.showWidget, this)
         });
         this.$element.on({
@@ -258,10 +258,10 @@
         templateContent;
 
       if (this.showInputs) {
-        hourTemplate = '<input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"/>';
-        minuteTemplate = '<input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2"/>';
-        secondTemplate = '<input type="text" name="second" class="bootstrap-timepicker-second" maxlength="2"/>';
-        meridianTemplate = '<input type="text" name="meridian" class="bootstrap-timepicker-meridian" maxlength="2"/>';
+        hourTemplate = '<input type="text" name="hour" class="form-control bootstrap-timepicker-hour" maxlength="2"/>';
+        minuteTemplate = '<input type="text" name="minute" class="form-control bootstrap-timepicker-minute" maxlength="2"/>';
+        secondTemplate = '<input type="text" name="second" class="form-control bootstrap-timepicker-second" maxlength="2"/>';
+        meridianTemplate = '<input type="text" name="meridian" class="form-control bootstrap-timepicker-meridian" maxlength="2"/>';
       } else {
         hourTemplate = '<span class="bootstrap-timepicker-hour"></span>';
         minuteTemplate = '<span class="bootstrap-timepicker-minute"></span>';

@@ -14,11 +14,11 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Dropdown menus</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Dropdown menus</h3>
 						</div>
 						<div class="panel-body">
 							<div class="clearfix">
@@ -149,11 +149,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Sub menus on dropdowns</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Sub menus on dropdowns</h3>
 						</div>
 						<div class="panel-body">
 							<div class="clearfix">
@@ -211,7 +211,7 @@
 											<li><a href="#" tabindex="-1">Another action</a></li>
 											<li><a href="#" tabindex="-1">Something else here</a></li>
 											<li class="divider"></li>
-											<li class="dropdown-submenu pull-left"><a href="#" tabindex="-1">More options</a>
+											<li class="dropdown-submenu"><a href="#" tabindex="-1">More options</a>
 												<ul class="dropdown-menu">
 													<li><a href="#" tabindex="-1">Second level link</a></li>
 													<li><a href="#" tabindex="-1">Second level link</a></li>

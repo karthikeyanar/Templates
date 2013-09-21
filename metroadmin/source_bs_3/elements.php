@@ -52,7 +52,7 @@
 							    Option two can be something else and selecting it will deselect option one
 							  </label>
 							</div>
-							<h4>Inline checkboxes</h4>
+							<h3 class="panel-title">Inline checkboxes</h3>
 							<label class="checkbox-inline">
 							  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
 							</label>

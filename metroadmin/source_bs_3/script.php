@@ -38,7 +38,7 @@
 <!-- bootstrap fileupload -->
 <script src="js/plugins/bootstrap-fileupload.min.js" type="text/javascript"></script>
 <!-- bootstrap timepicker -->
-<script src="js/plugins/bootstrap-timepicker.min.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-timepicker.js" type="text/javascript"></script>
 <!-- data-table -->
 <script src="js/plugins/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>
@@ -48,5 +48,5 @@
 <script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
 <!-- bootstrap bootbox -->
 <script src="js/plugins/bootbox.min.js" type="text/javascript"></script>
-<!-- pepper jhelper -->
-<script src="js/files/jhelper.js" type="text/javascript"></script>
+<!-- pepper application -->
+<script src="js/files/application.js" type="text/javascript"></script>

@@ -41,7 +41,7 @@
 	
  
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							icons</h1>
@@ -49,14 +49,80 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Metro icons</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<ul class="list-inline list-unstyled">
+										<li><i class="icon-flag icon-metro"></i></li>
+										<li><i class="icon-flag icon-metro icon-metro-inverted"></i></li>
+										<li><i class="icon-flag icon-metro-rounded"></i></li>
+										<li><i class="icon-flag icon-metro-rounded icon-metro-inverted"></i></li>
+									</ul>
+									<ul class="list-inline list-unstyled">
+										<li><i class="icon-exclamation icon-metro"></i></li>
+										<li><i class="icon-exclamation icon-metro icon-metro-inverted"></i></li>
+										<li><i class="icon-exclamation icon-metro-rounded"></i></li>
+										<li><i class="icon-exclamation icon-metro-rounded icon-metro-inverted"></i></li>
+									</ul>
+									<ul class="list-inline list-unstyled">
+										<li><i class="icon-2x icon-facebook icon-metro"></i></li>
+										<li><i class="icon-2x icon-facebook icon-metro icon-metro-inverted"></i></li>
+										<li><i class="icon-2x icon-facebook icon-metro-rounded"></i></li>
+										<li><i class="icon-2x icon-facebook icon-metro-rounded icon-metro-inverted"></i></li>
+									</ul>
+									<ul class="list-inline list-unstyled">
+										<li><i class="icon-2x icon-twitter icon-metro"></i></li>
+										<li><i class="icon-2x icon-twitter icon-metro icon-metro-inverted"></i></li>
+										<li><i class="icon-2x icon-twitter icon-metro-rounded"></i></li>
+										<li><i class="icon-2x icon-twitter icon-metro-rounded icon-metro-inverted"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Metro icons - white border</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<ul class="list-inline list-unstyled">
+										<li class="bg-black" style="padding:5px"><i class="icon-flag icon-metro-rounded white-border"></i></li>
+									</ul>
+									<ul class="list-inline list-unstyled">
+										<li class="bg-black" style="padding:5px"><i class="icon-exclamation icon-metro-rounded white-border"></i></li>
+									</ul>
+									<ul class="list-inline list-unstyled">
+										<li class="bg-black" style="padding:5px"><i class="icon-2x icon-facebook icon-metro-rounded white-border"></i></li>
+									</ul>
+									<ul class="list-inline list-unstyled">
+										<li class="bg-black" style="padding:5px"><i class="icon-2x icon-twitter icon-metro-rounded white-border"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">New Icons in 3.1.1</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/expand-alt"><i class="icon-expand-alt"></i>icon-expand-alt</a></li>
 										<li><a href="../icon/collapse-alt"><i class="icon-collapse-alt"></i>icon-collapse-alt</a></li>
@@ -78,7 +144,7 @@
 											<span class="muted">(alias)</span></a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/star-half-empty"><i class="icon-star-half-empty"></i>icon-star-half-empty</a></li>
 										<li><a href="../icon/star-half-empty"><i class="icon-star-half-full"></i>icon-star-half-full
@@ -100,7 +166,7 @@
 										<li><a href="../icon/puzzle-piece"><i class="icon-puzzle-piece"></i>icon-puzzle-piece</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/microphone"><i class="icon-microphone"></i>icon-microphone</a></li>
 										<li><a href="../icon/microphone-off"><i class="icon-microphone-off"></i>icon-microphone-off</a></li>
@@ -119,7 +185,7 @@
 										<li><a href="../icon/unlock-alt"><i class="icon-unlock-alt"></i>icon-unlock-alt</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/bullseye"><i class="icon-bullseye"></i>icon-bullseye</a></li>
 										<li><a href="../icon/ellipsis-horizontal"><i class="icon-ellipsis-horizontal"></i>icon-ellipsis-horizontal</a></li>
@@ -143,14 +209,14 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Web Application Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/adjust"><i class="icon-adjust"></i>icon-adjust</a></li>
 										<li><a href="../icon/anchor"><i class="icon-anchor"></i>icon-anchor</a></li>
@@ -205,7 +271,7 @@
 										<li><a href="../icon/ellipsis-vertical"><i class="icon-ellipsis-vertical"></i>icon-ellipsis-vertical</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/envelope-alt"><i class="icon-envelope-alt"></i>icon-envelope-alt</a></li>
 										<li><a href="../icon/envelope"><i class="icon-envelope"></i>icon-envelope</a></li>
@@ -260,7 +326,7 @@
 										<li><a href="../icon/magic"><i class="icon-magic"></i>icon-magic</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/magnet"><i class="icon-magnet"></i>icon-magnet</a></li>
 										<li><a href="../icon/share-alt"><i class="icon-mail-forward"></i>icon-mail-forward <span
@@ -319,7 +385,7 @@
 										<li><a href="../icon/rss-sign"><i class="icon-rss-sign"></i>icon-rss-sign</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/rss"><i class="icon-rss"></i>icon-rss</a></li>
 										<li><a href="../icon/screenshot"><i class="icon-screenshot"></i>icon-screenshot</a></li>
@@ -380,14 +446,14 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Text Editor Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/file"><i class="icon-file"></i>icon-file</a></li>
 										<li><a href="../icon/file-alt"><i class="icon-file-alt"></i>icon-file-alt</a></li>
@@ -400,7 +466,7 @@
 										<li><a href="../icon/text-height"><i class="icon-text-height"></i>icon-text-height</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/text-width"><i class="icon-text-width"></i>icon-text-width</a></li>
 										<li><a href="../icon/text-left"><i class="icon-text-left"></i>icon-text-left</a></li>
@@ -413,7 +479,7 @@
 										<li><a href="../icon/bold"><i class="icon-bold"></i>icon-bold</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/italic"><i class="icon-italic"></i>icon-italic</a></li>
 										<li><a href="../icon/strikethrough"><i class="icon-strikethrough"></i>icon-strikethrough</a></li>
@@ -426,7 +492,7 @@
 										<li><a href="../icon/eraser"><i class="icon-eraser"></i>icon-eraser</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/columns"><i class="icon-columns"></i>icon-columns</a></li>
 										<li><a href="../icon/table"><i class="icon-table"></i>icon-table</a></li>
@@ -445,14 +511,14 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Directional Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/angle-left"><i class="icon-angle-left"></i>icon-angle-left</a></li>
 										<li><a href="../icon/angle-right"><i class="icon-angle-right"></i>icon-angle-right</a></li>
@@ -464,7 +530,7 @@
 										<li><a href="../icon/arrow-up"><i class="icon-arrow-up"></i>icon-arrow-up</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/caret-down"><i class="icon-caret-down"></i>icon-caret-down</a></li>
 										<li><a href="../icon/caret-left"><i class="icon-caret-left"></i>icon-caret-left</a></li>
@@ -476,7 +542,7 @@
 										<li><a href="../icon/chevron-up"><i class="icon-chevron-up"></i>icon-chevron-up</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/chevron-sign-left"><i class="icon-chevron-sign-left"></i>icon-chevron-sign-left</a></li>
 										<li><a href="../icon/chevron-sign-right"><i class="icon-chevron-sign-right"></i>icon-chevron-sign-right</a></li>
@@ -488,7 +554,7 @@
 										<li><a href="../icon/circle-arrow-up"><i class="icon-circle-arrow-up"></i>icon-circle-arrow-up</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/double-angle-left"><i class="icon-double-angle-left"></i>icon-double-angle-left</a></li>
 										<li><a href="../icon/double-angle-right"><i class="icon-double-angle-right"></i>icon-double-angle-right</a></li>
@@ -506,14 +572,14 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Video Player Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/play-circle"><i class="icon-play-circle"></i>icon-play-circle</a></li>
 										<li><a href="../icon/play-sign"><i class="icon-play-sign"></i>icon-play-sign</a></li>
@@ -521,7 +587,7 @@
 										<li><a href="../icon/pause"><i class="icon-pause"></i>icon-pause</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/stop"><i class="icon-stop"></i>icon-stop</a></li>
 										<li><a href="../icon/eject"><i class="icon-eject"></i>icon-eject</a></li>
@@ -529,7 +595,7 @@
 										<li><a href="../icon/forward"><i class="icon-forward"></i>icon-forward</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/fast-backward"><i class="icon-fast-backward"></i>icon-fast-backward</a></li>
 										<li><a href="../icon/fast-forward"><i class="icon-fast-forward"></i>icon-fast-forward</a></li>
@@ -537,7 +603,7 @@
 										<li><a href="../icon/step-forward"><i class="icon-step-forward"></i>icon-step-forward</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/fullscreen"><i class="icon-fullscreen"></i>icon-fullscreen</a></li>
 										<li><a href="../icon/resize-full"><i class="icon-resize-full"></i>icon-resize-full</a></li>
@@ -550,14 +616,14 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Brand Icons</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/css3"><i class="icon-css3"></i>icon-css3</a></li>
 										<li><a href="../icon/facebook"><i class="icon-facebook"></i>icon-facebook</a></li>
@@ -565,7 +631,7 @@
 										<li><a href="../icon/twitter"><i class="icon-twitter"></i>icon-twitter</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/twitter-sign"><i class="icon-twitter-sign"></i>icon-twitter-sign</a></li>
 										<li><a href="../icon/github"><i class="icon-github"></i>icon-github</a></li>
@@ -573,7 +639,7 @@
 										<li><a href="../icon/html5"><i class="icon-html5"></i>icon-html5</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/linkedin"><i class="icon-linkedin"></i>icon-linkedin</a></li>
 										<li><a href="../icon/linkedin-sign"><i class="icon-linkedin-sign"></i>icon-linkedin-sign</a></li>
@@ -581,7 +647,7 @@
 										<li><a href="../icon/pinterest"><i class="icon-pinterest"></i>icon-pinterest</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div class="col-lg-3">
 									<ul class="the-icons">
 										<li><a href="../icon/pinterest-sign"><i class="icon-pinterest-sign"></i>icon-pinterest-sign</a></li>
 										<li><a href="../icon/google-plus"><i class="icon-google-plus"></i>icon-google-plus</a></li>
@@ -594,31 +660,31 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Medical Icons</h3>
 						</div>
 						<div class="panel-body">
-							<div class="col-md-3">
+							<div class="col-lg-3">
 								<ul class="the-icons">
 									<li><a href="../icon/ambulance"><i class="icon-ambulance"></i>icon-ambulance</a></li>
 									<li><a href="../icon/beaker"><i class="icon-beaker"></i>icon-beaker</a></li>
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3">
 								<ul class="the-icons">
 									<li><a href="../icon/h-sign"><i class="icon-h-sign"></i>icon-h-sign</a></li>
 									<li><a href="../icon/hospital"><i class="icon-hospital"></i>icon-hospital</a></li>
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3">
 								<ul class="the-icons">
 									<li><a href="../icon/medkit"><i class="icon-medkit"></i>icon-medkit</a></li>
 									<li><a href="../icon/plus-sign-alt"><i class="icon-plus-sign-alt"></i>icon-plus-sign-alt</a></li>
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3">
 								<ul class="the-icons">
 									<li><a href="../icon/stethoscope"><i class="icon-stethoscope"></i>icon-stethoscope</a></li>
 									<li><a href="../icon/user-md"><i class="icon-user-md"></i>icon-user-md</a></li>

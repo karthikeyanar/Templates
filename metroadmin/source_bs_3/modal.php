@@ -12,11 +12,11 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Modal</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Modal</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
@@ -65,30 +65,30 @@
   </div>
   <div class="modal-body">
     <div class="row">
-      <div class="col-md-6">
-        <h4>Some Input</h4>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
+      <div class="col-lg-6">
+        <h3 class="panel-title">Some Input</h3>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
       </div>
-      <div class="col-md-6">
-        <h4>Some More Input</h4>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
-        <p><input type="text" class="col-md-12"></p>
+      <div class="col-lg-6">
+        <h3 class="panel-title">Some More Input</h3>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
+        <p><input type="text" class="col-lg-12"></p>
       </div>
     </div>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
     <button type="button" class="btn btn-primary">Save changes</button>
   </div>
 </div>
@@ -105,10 +105,10 @@
     <p>One fine body…</p>
     <input type="text" data-tabindex="1">
     <input type="text" data-tabindex="2">
-    <button class="btn" data-toggle="modal" href="#stack2">Launch modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#stack2">Launch modal</button>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
     <button type="button" class="btn btn-primary">Ok</button>
   </div>
 </div>
@@ -122,10 +122,10 @@
     <p>One fine body…</p>
     <input type="text" data-tabindex="1">
     <input type="text" data-tabindex="2">
-    <button class="btn" data-toggle="modal" href="#stack3">Launch modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#stack3">Launch modal</button>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
     <button type="button" class="btn btn-primary">Ok</button>
   </div>
 </div>
@@ -141,7 +141,7 @@
     <input type="text" data-tabindex="2">
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
     <button type="button" class="btn btn-primary">Ok</button>
   </div>
 </div>
@@ -157,7 +157,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin ipsum ac ante fermentum suscipit. In ac augue non purus accumsan lobortis id sed nibh. Nunc egestas hendrerit ipsum, et porttitor augue volutpat non. Aliquam erat volutpat. Vestibulum scelerisque lobortis pulvinar. Aenean hendrerit risus neque, eget tincidunt leo. Vestibulum est tortor, commodo nec cursus nec, vestibulum vel nibh. Morbi elit magna, ornare placerat euismod semper, dignissim vel odio. Phasellus elementum quam eu ipsum euismod pretium.</p>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
     <button type="button" class="btn btn-primary">Save changes</button>
   </div>
 </div>
@@ -169,11 +169,11 @@
     <h3>A Fairly Long Modal</h3>
   </div>
   <div class="modal-body">
-    <button class="btn" data-toggle="modal" href="#notlong" style="position: absolute; top: 50%; right: 12px">Not So Long Modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#notlong" style="position: absolute; top: 50%; right: 12px">Not So Long Modal</button>
     <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg">
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
   </div>
 </div>
 <div id="notlong" class="modal hide fade" tabindex="-1" data-replace="true">
@@ -182,13 +182,13 @@
     <h3>Not That Long</h3>
   </div>
   <div class="modal-body">
-    <button class="btn" data-toggle="modal" href="#verylong" style="position: absolute; top: 50%; right: 12px">Very Long Modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#verylong" style="position: absolute; top: 50%; right: 12px">Very Long Modal</button>
     <div style="height: 400px; overflow: hidden;">
       <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg" />
     </div>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
   </div>
 </div>
 <div id="verylong" class="modal hide fade" tabindex="-1" data-replace="true">
@@ -202,7 +202,7 @@
     </div>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
   </div>
 </div>
 <!-- end long width modal -->

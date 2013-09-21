@@ -604,19 +604,19 @@ form {
           box-shadow: none;
 }
 
-.btn-large {
+.btn-lg {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
 }
 
-.btn-small {
+.btn-sm {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
 }
  
-.btn-mini {
+.btn-xs {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
@@ -719,13 +719,13 @@ form {
           border-radius: 0;
 }
 
-.btn-group-vertical > .btn-large:first-child {
+.btn-group-vertical > .btn-lg:first-child {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
 }
 
-.btn-group-vertical > .btn-large:last-child {
+.btn-group-vertical > .btn-lg:last-child {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;

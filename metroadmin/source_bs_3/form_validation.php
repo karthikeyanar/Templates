@@ -14,17 +14,17 @@
 				<li class="pull-right"><a href="#" class="close" data-dismiss="breadcrumb">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
-					<div class="panel">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Form Validation</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Form Validation</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST" class="form-horizontal form-validate">
 							<div class="form-group">
-								<h4>
-									Login Information</h4>
+								<h3 class="panel-title">
+									Login Information</h3>
 							</div>
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">
@@ -53,8 +53,8 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<h4>
-									Personal Information</h4>
+								<h3 class="panel-title">
+									Personal Information</h3>
 							</div>
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">
@@ -105,10 +105,10 @@
 										</select>
 									</div>
 									<div class="pull-left cutter-right">
-										<input type="text" name="day" id="day" class="input-mini" placeholder="Day" data-rule-required="true"
+										<input type="text" name="day" id="day" class="form-control" placeholder="Day" data-rule-required="true"
 											data-msg-required="Required" data-placement="bottom" /></div>
 									<div class="pull-left">
-										<input type="text" name="year" id="year" class="input-mini" placeholder="Year" data-rule-required="true"
+										<input type="text" name="year" id="year" class="form-control" placeholder="Year" data-rule-required="true"
 											data-msg-required="Required" data-placement="bottom" />
 									</div>
 								</div>

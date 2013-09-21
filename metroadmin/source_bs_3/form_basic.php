@@ -14,11 +14,11 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
-					<div class="panel">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Basic form</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Basic form</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST">
@@ -42,7 +42,7 @@
 									File Input</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
@@ -93,11 +93,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Bordered form</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Bordered form</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<form action="#" method="POST" class='form-vertical form-bordered form-striped'>
@@ -121,7 +121,7 @@
 									File Input</label>
 								<div class="col-lg-10">
 										<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
@@ -172,11 +172,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Horizontal form</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Horizontal form</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST" class='form-horizontal'>
@@ -200,7 +200,7 @@
 									File Input</label>
 								<div class="col-lg-10">
 										<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
@@ -249,11 +249,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Vertical form</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Vertical form</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST" class='form-vertical'>
@@ -277,7 +277,7 @@
 									File Input</label>
 								<div class="col-lg-10">
 										<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
@@ -328,11 +328,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Vertical bordered form</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Vertical bordered form</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<form action="#" method="POST" class='form-horizontal form-bordered form-striped'>
@@ -356,7 +356,7 @@
 									File Input</label>
 								<div class="col-lg-10">
 										<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>

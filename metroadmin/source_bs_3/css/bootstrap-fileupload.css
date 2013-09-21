@@ -46,11 +46,32 @@
 .fileupload {
   margin-bottom: 9px;
 }
+.fileupload .input-group { 
+	display: block;
+}
+.fileupload .input-group-btn { 
+	display: inline-block;
+	width: auto;
+}
 .fileupload .uneditable-input {
-  display: inline-block;
   margin-bottom: 0px;
   vertical-align: middle;
   cursor: text;
+  min-height: 34px;
+}
+.fileupload-exists .uneditable-input {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.uneditable-input .fileupload-preview  {
+ float: left;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.icon-file.fileupload-exists {
+    float: left;
+    padding-top: 7px;
 }
 .fileupload .thumbnail {
   overflow: hidden;
@@ -64,6 +85,9 @@
   vertical-align: middle;
   max-height: 100%;
 }
+.fileupload-preview.thumbnail {
+	line-height: normal !important;
+}
 .fileupload .btn {
   vertical-align: middle;
 }
@@ -75,7 +99,7 @@
 .fileupload-inline .fileupload-controls {
   display: inline;
 }
-.fileupload-new .input-append .btn-file {
+.fileupload-new .input-group .btn-file {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;

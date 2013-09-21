@@ -14,12 +14,12 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
-					<div class="panel">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
 						<div class="panel-heading no-border">
-							<h4>
+							<h3 class="panel-title">
 								<i class="icon-table"></i>Default Style
-							</h4>
+							</h3>
 						</div>
 						<div class="panel-body">
 							<table class="table">
@@ -86,11 +86,11 @@
 							</table>
 						</div>
 					</div>
-					<div class="panel">
+					<div class="panel panel-default">
 						<div class="panel-heading no-border">
-							<h4>
+							<h3 class="panel-title">
 								<i class="icon-table"></i>Table Striped
-							</h4>
+							</h3>
 						</div>
 						<div class="panel-body">
 							<table class="table table-striped">
@@ -157,11 +157,11 @@
 							</table>
 						</div>
 					</div>
-					<div class="panel">
+					<div class="panel panel-default">
 						<div class="panel-heading no-border">
-							<h4>
+							<h3 class="panel-title">
 								<i class="icon-table"></i>Table Bordered
-							</h4>
+							</h3>
 						</div>
 						<div class="panel-body">
 							<table class="table table-bordered">
@@ -228,11 +228,11 @@
 							</table>
 						</div>
 					</div>
-					<div class="panel">
+					<div class="panel panel-default">
 						<div class="panel-heading no-border">
-							<h4>
+							<h3 class="panel-title">
 								<i class="icon-table"></i>Table Hover
-							</h4>
+							</h3>
 						</div>
 						<div class="panel-body">
 							<table class="table table-hover">
@@ -299,11 +299,11 @@
 							</table>
 						</div>
 					</div>
-					<div class="panel">
+					<div class="panel panel-default">
 						<div class="panel-heading no-border">
-							<h4>
+							<h3 class="panel-title">
 								<i class="icon-table"></i>Table Condensed
-							</h4>
+							</h3>
 						</div>
 						<div class="panel-body">
 							<table class="table table-condensed">

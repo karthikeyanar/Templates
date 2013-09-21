@@ -3,21 +3,21 @@
 <?php include_once 'navbar.php' ?>
 
 		<div class="row">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							Dashboard
 						</h1>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							Dashboard
 						</h1>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							Dashboard

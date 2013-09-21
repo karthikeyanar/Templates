@@ -14,11 +14,11 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Overview</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Overview</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
@@ -113,6 +113,8 @@
 									</ul>
 								</div>
 								<div class="clearfix">&nbsp;</div>
+							</div>
+							<div style="margin: 20px 0 0 0;" class="btn-toolbar">
 								<!-- /btn-group -->
 								<div class="btn-group">
 									<button data-toggle="dropdown" class="btn btn-purple dropdown-toggle">
@@ -172,16 +174,16 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Split button dropdowns</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Split button dropdowns</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
 								<div class="btn-group">
-									<button class="btn">
+									<button class="btn btn-default">
 										Action</button>
 									<button data-toggle="dropdown" class="btn dropdown-toggle">
 										<span class="caret"></span>
@@ -287,6 +289,8 @@
 								<!-- /btn-group -->
 								<div class="clearfix">
 									&nbsp;</div>
+								</div>
+								<div style="margin: 20px 0 0 0;" class="btn-toolbar">
 								<div class="btn-group">
 									<button class="btn btn-purple">
 										Purple</button>
@@ -353,16 +357,16 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Dropup menus</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Dropup menus</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
 								<div class="btn-group dropup">
-									<button class="btn">
+									<button class="btn btn-default">
 										Dropup</button>
 									<button data-toggle="dropdown" class="btn dropdown-toggle">
 										<span class="caret"></span>

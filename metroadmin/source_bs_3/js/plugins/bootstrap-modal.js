@@ -1,5 +1,5 @@
 /* ===========================================================
- * bootstrap-modal.js v2.1
+ * bootstrap-modal.js v2.2.0
  * ===========================================================
  * Copyright 2012 Jordan Schroter
  *
@@ -33,12 +33,17 @@
 		constructor: Modal,
 
 		init: function (element, options) {
+			var that = this;
+
 			this.options = options;
 
 			this.$element = $(element)
 				.delegate('[data-dismiss="modal"]', 'click.dismiss.modal', $.proxy(this.hide, this));
 
-			this.options.remote && this.$element.find('.modal-body').load(this.options.remote);
+			this.options.remote && this.$element.find('.modal-body').load(this.options.remote, function () {
+				var e = $.Event('loaded');
+				that.$element.trigger(e);
+			});
 
 			var manager = typeof this.options.manager === 'function' ?
 				this.options.manager.call(this) : this.options.manager;
@@ -104,11 +109,6 @@
 			var prop = this.options.height ? 'height' : 'max-height',
 				value = this.options.height || this.options.maxHeight;
 
-			if (!value && this.$element.hasClass('modal-fit')){
-				value = function(){return $(window).height() - 165}
-				prop = 'max-height';
-			}
-
 			if (this.options.width){
 				this.$element.css('width', this.options.width);
 
@@ -127,17 +127,16 @@
 
 			this.$element.find('.modal-body')
 				.css('overflow', '')
-				.css('max-height', '')
-				.css('height', '');
+				.css(prop, '');
 
-			var modalOverflow = $(window).height() - 10 < this.$element.height();
-
-			if (value && !this.$element.hasClass('modal-flow')){
+			if (value){
 				this.$element.find('.modal-body')
 					.css('overflow', 'auto')
 					.css(prop, value);
 			}
 
+			var modalOverflow = $(window).height() - 10 < this.$element.height();
+            
 			if (modalOverflow || this.options.modalOverflow) {
 				this.$element
 					.css('margin-top', 0)
@@ -147,10 +146,6 @@
 					.css('margin-top', 0 - this.$element.height() / 2)
 					.removeClass('modal-overflow');
 			}
-      
-			this.$element.data('modalheight',this.$element.height())
-			this.$element.data('modalwidth',this.$element.width())
-      
 		},
 
 		tab: function () {
@@ -212,10 +207,6 @@
 		},
 
 		hideModal: function () {
-			this.$element
-				.hide()
-				.trigger('hidden');
-
 			var prop = this.options.height ? 'height' : 'max-height';
 			var value = this.options.height || this.options.maxHeight;
 
@@ -225,6 +216,9 @@
 					.css(prop, '');
 			}
 
+			this.$element
+				.hide()
+				.trigger('hidden');
 		},
 
 		removeLoading: function () {
@@ -356,7 +350,8 @@
 		resize: false,
 		attentionAnimation: 'shake',
 		manager: 'body',
-		spinner: '<div class="loading-spinner" style="width: 200px; margin-left: -100px;"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div>'
+		spinner: '<div class="loading-spinner" style="width: 200px; margin-left: -100px;"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div>',
+		backdropTemplate: '<div class="modal-backdrop" />'
 	};
 
 	$.fn.modal.Constructor = Modal;
@@ -366,17 +361,11 @@
 	* ============== */
 
 	$(function () {
-		$(document).off('click.modal').on('click.modal.data-api', '[data-toggle|="modal"]', function ( e ) {
+		$(document).off('click.modal').on('click.modal.data-api', '[data-toggle="modal"]', function ( e ) {
 			var $this = $(this),
-				toggle = $this.attr('data-toggle'),
 				href = $this.attr('href'),
 				$target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))), //strip for ie7
 				option = $target.data('modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data());
-
-			if (toggle!='modal'){
-				if ($target.data('modal')) option = $target.data('modal').isShown? 'layout':'show';
-				$target.toggleClass(toggle);
-			}
 
 			e.preventDefault();
 			$target

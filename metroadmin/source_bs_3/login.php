@@ -6,8 +6,8 @@
 			<div class="login-box col-md-4">
 				<div class="panel panel-default blue">
 					<div class="panel-heading">
-						<h4>
-							<i class="icon-lock"></i>Sign In</h4>
+						<h3 class="panel-title">
+							<i class="icon-lock"></i>Sign In</h3>
 					</div>
 					<div class="panel-body">
 						<form action="index.php">

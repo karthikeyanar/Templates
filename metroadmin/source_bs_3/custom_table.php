@@ -13,12 +13,12 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
+							<h3 class="panel-title">
 								<i class="icon-table"></i>Box Bordered
-							</h4>
+							</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<table class="table">
@@ -87,9 +87,9 @@
 					</div>
 					<div class="panel panel-default blue">
 						<div class="panel-heading">
-							<h4>
+							<h3 class="panel-title">
 								<i class="icon-table"></i>Color Box
-							</h4>
+							</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<table class="table">

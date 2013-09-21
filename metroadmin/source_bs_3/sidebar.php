@@ -13,8 +13,11 @@ function checkactive($filename){
 		echo "class=\"active\"";
 	}
 }
+function selected_ul_menu($rootname){
+	writeclassname($rootname," <span class=\"selected\"></span>");
+}
 function openaccordion($rootname){
-	writeclassname($rootname," open");
+	writeclassname($rootname," active");
 }
 function openaccordionbody($rootname){
 	writeclassname($rootname," in");
@@ -78,207 +81,131 @@ function writeclassname($rootname,$classname){
 	}
 }
 ?>
-<!-- sidebar -->
-<div id="sidebar" class="visible-lg">
-	<div class="panel-group" id="sidebar-collapse">
-		<div class="panel">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<a class="accordion-toggle <?php checkactive_toggle("index.php");?>" href="index.php"><i class="icon-laptop"></i><span class="title">Dashboard</span>
-					</a>
+<div class="page-sidebar">
+	<ul class="page-sidebar-menu">
+		<li>
+			<div class="sidebar-toggler"><i class="icon-2x icon-arrow-left icon-metro-rounded white-border"></i></div>
+		</li>
+		<li>
+			<form class="sidebar-search">
+				<div class="input-group">
+				 	<span class="input-group-addon remove">
+						<a href="javascript:;"><i class="icon-remove"></i></a>
+					</span>
+					<input type="text" class="form-control" placeholder="Search..." />
+					<span class="input-group-btn">
+				        <button class="btn submit" type="button"><i class="icon-search"></i></button>
+				    </span>
 				</div>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<a class="accordion-toggle collapsed <?php echo openaccordion("uielements");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#uielements"><i class="icon-briefcase"></i><span class="title">UI Elements</span>
-					</a>
-				</div>
-				<div id="uielements" class="panel-collapse collapse	<?php echo openaccordionbody("uielements");?>">
-					<div class="accordion-inner">
-						<ul>
-							<li>
-								<a <?php checkactive("elements.php");?> href="elements.php">Elements</a>
-							</li>
-							<li>
-								<a <?php checkactive("styled_elements.php");?> href="styled_elements.php">Styled Elements</a>
-							</li>
-							<li>
-								<a <?php checkactive("iphone_style_checkbox.php");?> href="iphone_style_checkbox.php">iPhone Style CheckBox</a>
-							</li>
-							<li>
-								<a <?php checkactive("advanced_elements.php");?> href="advanced_elements.php">Advanced Elements</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<a class="accordion-toggle collapsed"
-						<?php echo openaccordion("components");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#components"><i class="icon-cog"></i><span class="title">Components</span>
-					</a>
-				</div>
-				<div id="components" class="panel-collapse collapse"
-					<?php echo openaccordionbody("components");?>">
-					<div class="accordion-inner">
-						<ul>
-							<li>
-								<a <?php checkactive("modal.php");?> href="modal.php">Modal</a>
-							</li>
-							<li>
-								<a <?php checkactive("alert_confirm.php");?> href="alert_confirm.php">Alrert & Confirm
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("labels_badges.php");?> href="labels_badges.php">Labels and badges
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("buttons.php");?> href="buttons.php">Buttons
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("icons.php");?> href="icons.php">Icons
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("slider.php");?> href="slider.php">Slider
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("file_input.php");?> href="file_input.php">File Input
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("chart.php");?> href="chart.php">Chart
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("form_editor.php");?> href="form_editor.php">Editor
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("dropdowns.php");?> href="dropdowns.php">Dropdowns
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("button_dropdowns.php");?> href="button_dropdowns.php">Button Dropdowns
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<a class="accordion-toggle collapsed"
-						<?php echo openaccordion("forms");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#forms"><i class="icon-tasks"></i><span class="title">Forms</span>
-					</a>
-				</div>
-				<div id="forms" class="panel-collapse collapse"
-					<?php echo openaccordionbody("forms");?>">
-					<div class="accordion-inner">
-						<ul>
-							<li>
-								<a <?php checkactive("form_basic.php");?> href="form_basic.php">Basic
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("form_validation.php");?> href="form_validation.php">Validation
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<a class="accordion-toggle collapsed"
-						<?php echo openaccordion("tables");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#tables"><i class="icon-table"></i><span class="title">Tables</span>
-					</a>
-				</div>
-				<div id="tables" class="panel-collapse collapse"
-					<?php echo openaccordionbody("tables");?>">
-					<div class="accordion-inner">
-						<ul>
-							<li>
-								<a <?php checkactive("table.php");?> href="table.php">Basic
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("dynamic_table.php");?> href="dynamic_table.php">Dynamic
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("custom_table.php");?> href="custom_table.php">Custom
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<a class="accordion-toggle collapsed"
-						<?php echo openaccordion("samples");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#samples"><i class="icon-pencil"></i><span class="title">Samples</span>
-					</a>
-				</div>
-				<div id="samples" class="panel-collapse collapse"
-					<?php echo openaccordionbody("samples");?>">
-					<div class="accordion-inner">
-						<ul>
-							<li>
-								<a <?php checkactive("login.php");?> href="login.php">Login
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("blank.php");?> href="blank.php">Blank
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("calendar.php");?> href="calendar.php">Calendar
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("file_manager.php");?> href="file_manager.php">File Manager
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("timesheet.php");?> href="timesheet.php">Timesheet
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("products.php");?> href="products.php">Products
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("invoice.php");?> href="invoice.php">Invoice
-								</a>
-							</li>
-							<li>
-								<a <?php checkactive("shopping_cart.php");?> href="shopping_cart.php">Shopping Cart
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+			</form> 
+		</li>
+		<li class="<?php checkactive_toggle("index.php");?>"><a href="index.php"><i class="icon-laptop"></i><span class="title">Dashboard</span><?php echo selected_ul_menu("index.php");?></a></li>
+		<li class="<?php echo openaccordion("uielements");?>">
+			<a href="javascript:;"><i class="icon-briefcase"></i><span class="title">UI Elements</span><?php echo selected_ul_menu("uielements");?><span class="arrow"></span></a>
+			<ul class="sub-menu">
+				<li <?php checkactive("elements.php");?>><a href="elements.php">Elements</a>
+				</li>
+				<li <?php checkactive("styled_elements.php");?>><a href="styled_elements.php">Styled Elements</a></li>
+				<li <?php checkactive("iphone_style_checkbox.php");?>>
+					<a href="iphone_style_checkbox.php">iPhone Style CheckBox</a>
+				</li>
+				<li <?php checkactive("advanced_elements.php");?>>
+					<a href="advanced_elements.php">Advanced Elements</a>
+				</li>
+			</ul>
+		</li>
+		<li class="<?php echo openaccordion("components");?>">
+			<a href="javascript:;"><i class="icon-cog"></i><span class="title">Components</span><span class="arrow"></span></a>
+			<ul class="sub-menu">
+				<li <?php checkactive("modal.php");?>>
+					<a href="modal.php">Modal</a>
+				</li>
+				<li <?php checkactive("alert_confirm.php");?>>
+					<a href="alert_confirm.php">Alrert & Confirm</a>
+				</li>
+				<li <?php checkactive("labels_badges.php");?>>
+					<a href="labels_badges.php">Labels and badges</a>
+				</li>
+				<li <?php checkactive("buttons.php");?>>
+					<a href="buttons.php">Buttons</a>
+				</li>
+				<li <?php checkactive("icons.php");?>>
+					<a href="icons.php">Icons</a>
+				</li>
+				<li <?php checkactive("slider.php");?>>
+					<a href="slider.php">Slider</a>
+				</li>
+				<li <?php checkactive("file_input.php");?>>
+					<a href="file_input.php">File Input</a>
+				</li>
+				<li <?php checkactive("chart.php");?>>
+					<a href="chart.php">Chart</a>
+				</li>
+				<li <?php checkactive("form_editor.php");?>>
+					<a href="form_editor.php">Editor</a>
+				</li>
+				<li <?php checkactive("dropdowns.php");?>>
+					<a href="dropdowns.php">Dropdowns</a>
+				</li>
+				<li <?php checkactive("button_dropdowns.php");?>>
+					<a href="button_dropdowns.php">Button Dropdowns</a>
+				</li>
+			</ul>
+		</li>
+		<li class="<?php echo openaccordion("forms");?>">
+			<a href="javascript:;"><i class="icon-tasks"></i><span class="title">Forms</span><span class="arrow"></span></a>
+			<ul class="sub-menu">
+				<li <?php checkactive("form_basic.php");?>>
+					<a href="form_basic.php">Basic</a>
+				</li>
+				<li <?php checkactive("form_validation.php");?>>
+					<a href="form_validation.php">Validation</a>
+				</li>
+			</ul>
+		</li>
+		<li class="<?php echo openaccordion("tables");?>">
+			<a href="javascript:;"><i class="icon-table"></i><span class="title">Tables</span><span class="arrow"></span></a>
+			<ul class="sub-menu">
+				<li <?php checkactive("table.php");?>>
+					<a href="table.php">Basic</a>
+				</li>
+				<li <?php checkactive("dynamic_table.php");?>>
+					<a href="dynamic_table.php">Dynamic</a>
+				</li>
+				<li <?php checkactive("custom_table.php");?>>
+					<a href="custom_table.php">Custom</a>
+				</li>
+			</ul>
+		</li>
+		<li class="<?php echo openaccordion("samples");?>">
+			<a href="javascript:;"><i class="icon-pencil"></i><span class="title">Samples</span><span class="arrow"></span></a>
+			<ul class="sub-menu">
+				<li <?php checkactive("login.php");?>>
+					<a href="login.php">Login</a>
+				</li>
+				<li <?php checkactive("blank.php");?>>
+					<a href="blank.php">Blank</a>
+				</li>
+				<li <?php checkactive("calendar.php");?>>
+					<a href="calendar.php">Calendar</a>
+				</li>
+				<li <?php checkactive("file_manager.php");?>>
+					<a href="file_manager.php">File Manager</a>
+				</li>
+				<li <?php checkactive("timesheet.php");?>>
+					<a href="timesheet.php">Timesheet</a>
+				</li>
+				<li <?php checkactive("products.php");?>>
+					<a href="products.php">Products</a>
+				</li>
+				<li <?php checkactive("invoice.php");?>>
+					<a href="invoice.php">Invoice</a>
+				</li>
+				<li <?php checkactive("shopping_cart.php");?>>
+					<a href="shopping_cart.php">Shopping Cart</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
 </div>
 <!-- end sidebar -->

@@ -11,17 +11,18 @@
 				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
 				<li><a href="form_basic.php">UI Elements</a> <i class="icon-angle-right"></i></li>
 				<li class="active"><a href="elements.php">Buttons</a></li>
-				<li class="pull-right"><a href="#" class="btn btn-action" data-dismiss='breadcrumb'><i class="icon-remove"></i></a></li>
+				<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="icon-remove icon-metro-rounded"></i></a></li>
 			</ul>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Default</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Default</h3>
 						</div>
 						<div class="panel-body no-padding">
-							<table class="table table-striped">
+							
+							<table class="table">
 								<thead>
 									<tr>
 										<th>
@@ -38,7 +39,7 @@
 								<tbody>
 									<tr>
 										<td>
-											<button class="btn" type="button">
+											<button class="btn btn-default" type="button">
 												Default</button>
 										</td>
 										<td>
@@ -139,11 +140,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Additional Color Buttons</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Additional Color Buttons</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<table class="table table-striped">
@@ -216,35 +217,35 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Button Sizes</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Button Sizes</h3>
 						</div>
 						<div class="panel-body">
 							<p>
-								<button class="btn btn-large btn-primary" type="button">
+								<button class="btn btn-lg btn-primary" type="button">
 									Large button</button>
-								<button class="btn btn-large" type="button">
+								<button class="btn btn-lg" type="button">
 									Large button</button>
 							</p>
 							<p>
 								<button class="btn btn-primary" type="button">
 									Default button</button>
-								<button class="btn" type="button">
+								<button class="btn btn-default" type="button">
 									Default button</button>
 							</p>
 							<p>
-								<button class="btn btn-small btn-primary" type="button">
+								<button class="btn btn-sm btn-primary" type="button">
 									Small button</button>
-								<button class="btn btn-small" type="button">
+								<button class="btn btn-sm" type="button">
 									Small button</button>
 							</p>
 							<p>
-								<button class="btn btn-mini btn-primary" type="button">
+								<button class="btn btn-xs btn-primary" type="button">
 									Mini button</button>
-								<button class="btn btn-mini" type="button">
+								<button class="btn btn-xs" type="button">
 									Mini button</button>
 							</p>
 						</div>
@@ -252,67 +253,67 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Block Level Button</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Block Level Button</h3>
 						</div>
 						<div class="panel-body">
-							<button class="btn btn-large btn-block btn-primary" type="button">
+							<button class="btn btn-lg btn-block btn-primary" type="button">
 								Block level button</button>
-							<button class="btn btn-large btn-block" type="button">
+							<button class="btn btn-lg btn-block" type="button">
 								Block level button</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Disabled state</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Disabled state</h3>
 						</div>
 						<div class="panel-body">
-							<a href="#" class="btn btn-large btn-primary disabled">Primary link</a> <a href="#"
-								class="btn btn-large disabled">Link</a><div class="clearfix">
+							<a href="#" class="btn btn-lg btn-primary disabled">Primary link</a> <a href="#"
+								class="btn btn-lg disabled">Link</a><div class="clearfix">
 									&nbsp;</div>
-							<button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">
+							<button type="button" class="btn btn-lg btn-primary disabled" disabled="disabled">
 								Primary button</button>
-							<button type="button" class="btn btn-large" disabled>
+							<button type="button" class="btn btn-lg" disabled>
 								Button</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>One class, multiple tags</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>One class, multiple tags</h3>
 						</div>
 						<div class="panel-body">
-							<a class="btn" href="">Link</a>
-							<button class="btn" type="submit">
+							<a class="btn btn-default" href="">Link</a>
+							<button class="btn btn-default" type="submit">
 								Button</button>
-							<input class="btn" type="button" value="Input">
-							<input class="btn" type="submit" value="Submit">
+							<input class="btn btn-default" type="button" value="Input">
+							<input class="btn btn-default" type="submit" value="Submit">
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Single button group</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Single button group</h3>
 						</div>
 						<div class="panel-body">
 							<div class="btn-group">
-								<button class="btn">
+								<button class="btn btn-default">
 									Left</button>
-								<button class="btn">
+								<button class="btn btn-default">
 									Middle</button>
-								<button class="btn">
+								<button class="btn btn-default">
 									Right</button>
 							</div>
 						</div>
@@ -320,58 +321,58 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Multiple button groups</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Multiple button groups</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
 								<div class="btn-group">
-									<button class="btn">
+									<button class="btn btn-default">
 										1</button>
-									<button class="btn">
+									<button class="btn btn-default">
 										2</button>
-									<button class="btn">
+									<button class="btn btn-default">
 										3</button>
-									<button class="btn">
+									<button class="btn btn-default">
 										4</button>
 								</div>
 								<div class="btn-group">
-									<button class="btn">
+									<button class="btn btn-default">
 										5</button>
-									<button class="btn">
+									<button class="btn btn-default">
 										6</button>
-									<button class="btn">
+									<button class="btn btn-default">
 										7</button>
 								</div>
 								<div class="btn-group">
-									<button class="btn">
+									<button class="btn btn-default">
 										8</button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								<i class="icon-edit"></i>Vertical button groups</h4>
+							<h3 class="panel-title">
+								<i class="icon-edit"></i>Vertical button groups</h3>
 						</div>
 						<div class="panel-body">
 							<div class="btn-group btn-group-vertical">
-								<button class="btn" type="button">
+								<button class="btn btn-default" type="button">
 									<i class="icon-text-left"></i>
 								</button>
-								<button class="btn" type="button">
+								<button class="btn btn-default" type="button">
 									<i class="icon-align-center"></i>
 								</button>
-								<button class="btn" type="button">
+								<button class="btn btn-default" type="button">
 									<i class="icon-align-right"></i>
 								</button>
-								<button class="btn" type="button">
+								<button class="btn btn-default" type="button">
 									<i class="icon-align-justify"></i>
 								</button>
 							</div>

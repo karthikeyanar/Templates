@@ -1,9 +1,9 @@
 </head>
-<body>
-<div id="navbar" class="navbar navbar-inverse">
+<body class="page-header-fixed">
+<div class="header navbar navbar-inverse">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<button type="button" class="navbar-toggle">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -45,7 +45,9 @@
 	</div>
 </div>
 <!-- container -->
-<div id="container">
-	<?php include_once 'menu.php' ?>
-	<!-- mainbar -->
-	<div id="mainbar" class="container">
+<div class="page-container">
+	<!-- page sidebar -->
+	<?php include_once 'sidebar.php' ?>
+	<!-- end page sidebar -->
+	<!-- page-content -->
+	<div class="page-content container">

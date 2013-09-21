@@ -59,7 +59,7 @@
       // so much markup
 
       var markupBeforeInput = function () {
-        var $div = $("<div>").addClass("input-prepend input-append pick-a-color-markup");
+        var $div = $("<div>").addClass("input-prepend input-group pick-a-color-markup");
 
         if (settings.showHexInput) {
           $div = $div.append($("<span>").addClass("hex-pound").text("#"));
@@ -204,7 +204,7 @@
           var $previewItem = $("<li>").addClass("preview-item").append($("<span>").
               addClass("preview-text").text("Preview")),
             $preview = $("<span>").addClass("color-preview advanced").
-              append("<button class='color-select btn btn-mini advanced' type='button'>Select</button>");
+              append("<button class='color-select btn btn-xs advanced' type='button'>Select</button>");
           $advancedList.append($previewItem.append($preview));
           $dropdownContainer.append($advanced.append($advancedList));
         }
@@ -254,7 +254,7 @@
             return markupBeforeInput().append(function () {
               var inputType = settings.showHexInput ? 'text' : 'hidden';
               return $('<input id="appendedPrependedDropdownButton" type="'+ inputType +'" value="' +
-                myColorVars.defaultColor + '" name="' + myId + '"/>').addClass("color-text-input");
+                myColorVars.defaultColor + '" name="' + myId + '"/>').addClass("form-control color-text-input");
             }).append(markupAfterInput());
           });
         },
@@ -500,7 +500,7 @@
             $this_parent.siblings(".color-preview").css("background-color",highlightedHex);
             // replace the color label with a 'select' button
             $this_parent.prev('.color-label').replaceWith(
-              '<button class="color-select btn btn-mini" type="button">Select</button>');
+              '<button class="color-select btn btn-xs" type="button">Select</button>');
             if (spectrumType !== "darkenRight") {
               methods.modifyHighlightBand($thisEl,colorMultiplier,spectrumType);
             }

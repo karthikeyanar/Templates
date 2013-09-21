@@ -67,7 +67,7 @@
 				var x=item.datapoint[0].toFixed(2),
 						y=item.datapoint[1].toFixed(2);
 
-				jhelper.chartToolTip(item.pageX,item.pageY,
+				APP.chartToolTip(item.pageX,item.pageY,
 						    item.series.label+" of "+x+" = "+y);
 			}
 		} else {

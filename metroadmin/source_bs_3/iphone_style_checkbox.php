@@ -1,10 +1,8 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-	
- 
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							iPhone Style Checkbox</h1>
@@ -12,11 +10,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Size</h4>
+							<h3 class="panel-title">
+								Size</h3>
 						</div>
 						<div class="panel-body">
 							<div class="switch switch-large">
@@ -36,11 +34,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Colors</h4>
+							<h3 class="panel-title">
+								Colors</h3>
 						</div>
 						<div class="panel-body">
 							<div class="switch" data-on="primary" data-off="info">
@@ -63,11 +61,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Disable Animation</h4>
+							<h3 class="panel-title">
+								Disable Animation</h3>
 						</div>
 						<div class="panel-body">
 							<div class="switch" data-animated="false">
@@ -76,11 +74,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Disabled</h4>
+							<h3 class="panel-title">
+								Disabled</h3>
 						</div>
 						<div class="panel-body">
 							<div class="switch" data-animated="false">
@@ -89,11 +87,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Text</h4>
+							<h3 class="panel-title">
+								Text</h3>
 						</div>
 						<div class="panel-body">
 							<div class="switch" data-on-label="Yes" data-off-label="No">
@@ -102,11 +100,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								HTML text</h4>
+							<h3 class="panel-title">
+								HTML text</h3>
 						</div>
 						<div class="panel-body">
 							<div class="switch" data-on-label="<i class='icon-ok icon-white'></i>" data-off-label="<i class='icon-remove'></i>">
@@ -117,11 +115,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Event handler <small>javascript</small></h4>
+							<h3 class="panel-title">
+								Event handler <small>javascript</small></h3>
 						</div>
 						<div class="panel-body">
 							<div id="mySwitch" class="switch">
@@ -137,11 +135,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Toggle State <small>javascript</small></h4>
+							<h3 class="panel-title">
+								Toggle State <small>javascript</small></h3>
 						</div>
 						<div class="panel-body">
 							<div id="toggle-state-switch" class="switch">
@@ -162,11 +160,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Destroy <small>javascript</small></h4>
+							<h3 class="panel-title">
+								Destroy <small>javascript</small></h3>
 						</div>
 						<div class="panel-body">
 							<div id="destroy-switch" class="switch">
@@ -183,17 +181,17 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Create <small>javascript</small></h4>
+							<h3 class="panel-title">
+								Create <small>javascript</small></h3>
 						</div>
 						<div class="panel-body">
 							<input id="create-switch" type="checkbox" checked />
 							<br>
 							<br>
-							<div id="btn-create" class="btn">
+							<div id="btn-create" class="btn btn-default">
 								Create</div>
 							<pre class="prettyprint linenums">
 $('#create-switch').wrap('&lt;div class="switch" />').parent().bootstrapSwitch();</pre>
@@ -202,11 +200,11 @@ $('#create-switch').wrap('&lt;div class="switch" />').parent().bootstrapSwitch()
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>
-								Disabled <small>javascript</small></h4>
+							<h3 class="panel-title">
+								Disabled <small>javascript</small></h3>
 						</div>
 						<div class="panel-body">
 							<div id="disable-switch" class="switch">
@@ -214,22 +212,22 @@ $('#create-switch').wrap('&lt;div class="switch" />').parent().bootstrapSwitch()
 							</div>
 							<br>
 							<br>
-							<button id="btn-is-active-switch" class="btn">
+							<button id="btn-is-active-switch" class="btn btn-default">
 								Is active?
 							</button>
-							<button id="btn-toggle-activation-switch" class="btn">
+							<button id="btn-toggle-activation-switch" class="btn btn-default">
 								Toggle activation!
 							</button>
-							<button id="btn-disable-switch" class="btn">
+							<button id="btn-disable-switch" class="btn btn-default">
 								Disable!
 							</button>
-							<button id="btn-activate-switch" class="btn">
+							<button id="btn-activate-switch" class="btn btn-default">
 								Activate!
 							</button>
 							<pre class="prettyprint linenums">
-$('#disable-switch').bootstrapSwitch('isActive');
-$('#disable-switch').bootstrapSwitch('toggleActivation');
-$('#disable-switch').bootstrapSwitch('setActive', false);  // true || false</pre>
+							$('#disable-switch').bootstrapSwitch('isActive');
+							$('#disable-switch').bootstrapSwitch('toggleActivation');
+							$('#disable-switch').bootstrapSwitch('setActive', false);  // true || false</pre>
 						</div>
 					</div>
 				</div>
