@@ -58,10 +58,10 @@
 							<div class="row">
 								<div class="col-lg-12">
 									<ul class="list-inline list-unstyled">
-										<li><i class="icon-flag icon-metro"></i></li>
-										<li><i class="icon-flag icon-metro icon-metro-inverted"></i></li>
-										<li><i class="icon-flag icon-metro-rounded"></i></li>
-										<li><i class="icon-flag icon-metro-rounded icon-metro-inverted"></i></li>
+										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
+										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
+										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
+										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
 									</ul>
 									<ul class="list-inline list-unstyled">
 										<li><i class="icon-exclamation icon-metro"></i></li>

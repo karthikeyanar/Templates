@@ -980,7 +980,16 @@ textarea.form-control:focus, input.form-control:focus, select.form-control:focus
   background-position: -78px -28px;
 }
 /* icon-metro */
-
+.icon-metro-circle {
+	border: 2px solid #222222;
+    border-radius: 20px;
+    color: #222222;
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    width: 40px;
+}
 .icon-metro,
 .icon-metro-rounded {
     display: inline-table !important;

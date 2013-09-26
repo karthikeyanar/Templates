@@ -1,4 +1,4 @@
-﻿@import "tile.css";
+@import "tile.css";
 body {
 	background-color: #222222 !important;
 }
@@ -643,10 +643,6 @@ pre {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-/* icons */
-.icon-white {
-	color: #fff;
-}
 /* chart */
 .chart {
 	width: 100%;
@@ -683,7 +679,6 @@ pre {
 .modal-header .close {
 	font-size: 30px;
 }
-
 /* popover confirm */
 .popover-confirm-btn {
 	margin-right: 10px;
