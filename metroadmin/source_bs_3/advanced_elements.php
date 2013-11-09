@@ -44,7 +44,7 @@
 								Date Picker
 							</label>
 							<div class="col-lg-2">
-								<input type="text" class="form-control datepicker" name="date" id="datepicker">
+								<input type="text" class="form-control" name="date" id="datepicker">
 							</div>
 						</div>
 						<div class="form-group">
@@ -67,79 +67,6 @@
 										<span class="input-group-addon">
 											<i class="icon-time"></i>
 										</span>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-lg-2 control-label">
-							</label>
-							<div class="col-lg-10">
-								<div class="fileupload fileupload-new" data-provides="fileupload">
-									<span class="btn btn-default btn-file">
-										<span class="fileupload-new">Select file</span>
-										<span class="fileupload-exists">Change</span>
-										<input type="file" />
-									</span>
-									<span class="fileupload-preview"></span>
-									<a href="#" class="close fileupload-exists"	data-dismiss="fileupload" style="float: none">&times</a>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="password" class="col-lg-2 control-label">
-							</label>
-							<div class="col-lg-10">
-								<div class="fileupload fileupload-new" data-provides="fileupload">
-									<div class="input-group">
-										<div class="uneditable-input col-md-3">
-											<i class="icon-file fileupload-exists"></i>
-											<span class="fileupload-preview"></span>
-										</div>
-										<span class="btn btn-default btn-file">
-											<span class="fileupload-new">Select file</span>
-											<span class="fileupload-exists">Change</span>
-											<input
-												type="file" />
-										</span>
-										<a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-lg-2 control-label">
-							</label>
-							<div class="col-lg-10">
-								<div class="fileupload fileupload-new" data-provides="fileupload">
-									<div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;">
-									</div>
-									<div>
-										<span class="btn btn-default btn-file">
-											<span class="fileupload-new">Select image</span>
-											<span class="fileupload-exists">Change</span>
-											<input type="file" />
-										</span>
-										<a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-lg-2 control-label">
-							</label>
-							<div class="col-lg-10">
-								<div class="fileupload fileupload-new" data-provides="fileupload">
-									<div class="fileupload-new thumbnail" style="width: 50px; height: 50px;">
-										<img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA" />
-									</div>
-									<div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;">
-									</div>
-									<span class="btn btn-default btn-file">
-										<span class="fileupload-new">Select image</span>
-										<span class="fileupload-exists">Change</span>
-										<input type="file" />
-									</span>
-									<a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
 								</div>
 							</div>
 						</div>
@@ -186,6 +113,10 @@
 		$("#select2InputTag").select2({tags:["red", "green", "blue"]});
 
 		$("#select2InputTag2").select2({tags:["red", "green", "blue"], maximumInputLength: 10});
+
+		$('#datepicker').datepicker({
+			autoclose: true
+		});
 
 		$('#timepicker1').timepicker();
 

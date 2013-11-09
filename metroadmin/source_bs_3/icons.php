@@ -6,7 +6,7 @@
 		margin: 0;
 		padding: 0;
 	}
-	.the-icons li [class^="icon-"], .the-icons li [class*=" icon-"] {
+	.the-icons li a [class^="icon-"], .the-icons li a [class*=" icon-"] {
 		display: inline-block;
 		text-align: center;
 		width: 1.28571em;
@@ -38,79 +38,11 @@
 	}
 </style>
 <?php include_once 'navbar.php' ?>
-	
- 
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="page-header">
 						<h1>
 							icons</h1>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Metro icons</h3>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-lg-12">
-									<ul class="list-inline list-unstyled">
-										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
-										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
-										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
-										<li><a class="icon-metro-circle"><i class="icon-flag"></i></a></li>
-									</ul>
-									<ul class="list-inline list-unstyled">
-										<li><i class="icon-exclamation icon-metro"></i></li>
-										<li><i class="icon-exclamation icon-metro icon-metro-inverted"></i></li>
-										<li><i class="icon-exclamation icon-metro-rounded"></i></li>
-										<li><i class="icon-exclamation icon-metro-rounded icon-metro-inverted"></i></li>
-									</ul>
-									<ul class="list-inline list-unstyled">
-										<li><i class="icon-2x icon-facebook icon-metro"></i></li>
-										<li><i class="icon-2x icon-facebook icon-metro icon-metro-inverted"></i></li>
-										<li><i class="icon-2x icon-facebook icon-metro-rounded"></i></li>
-										<li><i class="icon-2x icon-facebook icon-metro-rounded icon-metro-inverted"></i></li>
-									</ul>
-									<ul class="list-inline list-unstyled">
-										<li><i class="icon-2x icon-twitter icon-metro"></i></li>
-										<li><i class="icon-2x icon-twitter icon-metro icon-metro-inverted"></i></li>
-										<li><i class="icon-2x icon-twitter icon-metro-rounded"></i></li>
-										<li><i class="icon-2x icon-twitter icon-metro-rounded icon-metro-inverted"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Metro icons - white border</h3>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-lg-12">
-									<ul class="list-inline list-unstyled">
-										<li class="bg-black" style="padding:5px"><i class="icon-flag icon-metro-rounded white-border"></i></li>
-									</ul>
-									<ul class="list-inline list-unstyled">
-										<li class="bg-black" style="padding:5px"><i class="icon-exclamation icon-metro-rounded white-border"></i></li>
-									</ul>
-									<ul class="list-inline list-unstyled">
-										<li class="bg-black" style="padding:5px"><i class="icon-2x icon-facebook icon-metro-rounded white-border"></i></li>
-									</ul>
-									<ul class="list-inline list-unstyled">
-										<li class="bg-black" style="padding:5px"><i class="icon-2x icon-twitter icon-metro-rounded white-border"></i></li>
-									</ul>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

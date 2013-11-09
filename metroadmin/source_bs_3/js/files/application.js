@@ -91,15 +91,9 @@
 
 
 	};
-	  
+
 
 	this.sidebarToggler=function() {
-		// handle sidebar show/hide
-		$('.header .navbar-toggle').on('click',function(e) {
-			alert(1);
-		});
-
-
 		// handle sidebar show/hide
 		$('.page-sidebar').on('click','.sidebar-toggler',function(e) {
 			var body=$('body');
@@ -163,7 +157,7 @@
 		if($(window).width()<980) {
 			$('body').removeClass("page-sidebar-closed");
 		}
-	}
+	};
 
 	this.chartToolTip=function(x,y,contents) {
 		$('<div id="tooltip" class="chart-tooltip tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner">'+contents+'</div></div>').css({
@@ -193,9 +187,11 @@
 				radioClass: iradioClass
 			});
 		});
+		
 		$(".form-validate").validate({
 			ignore: "input[type='text']:hidden"
 		});
+
 		$("[data-toggle='tooltip']").tooltip();
 
 		// dismiss breadcrumb
@@ -204,8 +200,14 @@
 			$breadcrumb.fadeOut();
 		});
 
+		$('.footer').on('click','.go-top',function(e) {
+			APP.scrollTo();
+			e.preventDefault();
+		});
+
 		self.sidebarMenu();
 		self.sidebarToggler();
+		 
 	};
 
 	this.responsive=function() {

@@ -7,7 +7,7 @@
 <!-- bootstrap -->
 <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-<!-- bootstrap modal -->
+<!-- bootstrap modal --> 
 <script src="js/plugins/bootstrap-modalmanager.js" type="text/javascript"></script>
 <script src="js/plugins/bootstrap-modal.js" type="text/javascript"></script>
 <!-- select2 -->
@@ -46,7 +46,7 @@
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
 <!-- bootstrap popover confirm -->
 <script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
-<!-- bootstrap bootbox -->
-<script src="js/plugins/bootbox.min.js" type="text/javascript"></script>
+<!-- bootstrap alert -->
+<script src="js/plugins/bootstrap-alert.js" type="text/javascript"></script>
 <!-- pepper application -->
 <script src="js/files/application.js" type="text/javascript"></script>

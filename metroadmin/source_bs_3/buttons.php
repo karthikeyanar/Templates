@@ -11,7 +11,7 @@
 				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
 				<li><a href="form_basic.php">UI Elements</a> <i class="icon-angle-right"></i></li>
 				<li class="active"><a href="elements.php">Buttons</a></li>
-				<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="icon-remove icon-metro-rounded"></i></a></li>
+				<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="icon-remove"></i></a></li>
 			</ul>
 			<div class="row">
 				<div class="col-lg-12">
@@ -43,7 +43,7 @@
 												Default</button>
 										</td>
 										<td>
-											<code>btn</code>
+											<code>btn btn-default</code>
 										</td>
 										<td>
 											Standard gray button with gradient

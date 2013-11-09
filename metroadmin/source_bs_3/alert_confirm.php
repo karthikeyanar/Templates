@@ -59,7 +59,7 @@
 									Alert
 								</label>
 								<div class="col-lg-10">
-									<a id="alert" class="demo btn btn-primary">View Demo</a>
+									<a id="alert" class="demo btn btn-primary" data-modal-alert='true' data-title='Alert' data-message='Hello' data-callback='isalert()'>View Demo</a>
 								</div>
 							</div>
 							<div class="form-group">
@@ -67,23 +67,7 @@
 									Confirm
 								</label>
 								<div class="col-lg-10">
-									<a id="confirm" class="demo btn btn-primary">View Demo</a>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-lg-2 control-label">
-									Prompt
-								</label>
-								<div class="col-lg-10">
-									<a id="prompt" class="demo btn btn-primary">View Demo</a>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-lg-2 control-label">
-									Custom Dialog
-								</label>
-								<div class="col-lg-10">
-									<a id="custom" class="demo btn btn-primary">View Demo</a>
+									<a id="confirm" class="demo btn btn-primary" data-modal-confirm='true' data-title='Confirm' data-message='Are you sure?' data-yes-callback='isyescallback()' data-no-callback='isnocallback()'>View Demo</a>
 								</div>
 							</div>
 						</form>
@@ -96,7 +80,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="icon-edit"></i>Alert & Confirm 
+							<i class="icon-edit"></i>Alerts
 						</h3>
 					</div>
 					<div class="panel-body">
@@ -137,50 +121,17 @@
 	function isconfirm(){
 		//confirm callback
 	}
-	$(function(){
-	$("#alert").click(function(){
-	bootbox.alert("Hello world!", function() {
-	//callback
-	});
-	});
-	$("#confirm").click(function(){
-	bootbox.confirm("Are you sure?", function(result) {
-	//callback
-	});
-	});
-	$("#prompt").click(function(){
-	bootbox.prompt("What is your name?", function(result) {
-	if (result === null) {
-	//Prompt dismissed
-	} else {
-	//result;
+	function isalert(){
+		//confirm alert
 	}
-	});
-	});
-	$("#custom").click(function(){
-	bootbox.dialog("I am a custom dialog", [{
-	"label" : "Success!",
-	"class" : "btn-success",
-	"callback": function() {
-	//great success;
+	function isyescallback(){
+		//confirm alert
+		//alert('yes');
 	}
-	}, {
-	"label" : "Danger!",
-	"class" : "btn-danger",
-	"callback": function() {
-	//uh oh, look out!;
+	function isnocallback(){
+		//confirm alert
+		//alert('no');
 	}
-	}, {
-	"label" : "Click ME!",
-	"class" : "btn-primary",
-	"callback": function() {
-	//Primary button;
-	}
-	}, {
-	"label" : "Just a button..."
-	}]);
-	});
-	});
 </script>
 <?php include_once 'footer.php' ?>
 

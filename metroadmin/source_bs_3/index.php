@@ -171,11 +171,11 @@
 								</ul>
 							</div>
 							<div class="chat-send">
-								<div class="input-icon-btn">
+								<div class="input-group">
 									<input type="text" id="msg" name="msg" class="form-control" placeholder="Message" />
-									<button id="send" class="btn btn-primary">
+									<span class="input-group-btn"><button id="send" class="btn btn-primary">
 										<i class="icon-share-alt"></i>
-									</button>
+									</button></span>
 								</div>
 							</div>
 						</div>

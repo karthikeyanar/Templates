@@ -1,4 +1,4 @@
-<!-- bootstrap 3.0 -->
+<!-- bootstrap 3.0.2 -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <!-- font awesome -->
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -17,15 +17,13 @@
 <link href="css/bootstrap-switch.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datatable -->
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
-<!-- bootstrap modal -->
-<link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap modal --> 
+<link href="css/bs3-modal.css" rel="stylesheet" type="text/css" />
 <!-- inputlimiter -->
 <link href="css/jquery.inputlimiter.1.0.css" rel="stylesheet" type="text/css" />
 <!-- select2 -->
 <link href="css/select2.css" rel="stylesheet" type="text/css" />
 <!-- fullcalendar -->
-<link href="css/fullcalendar.css" rel="stylesheet" type="text/css" />
 <link href="css/fullcalendar-theme.css" rel="stylesheet" type="text/css" />
 <!-- icheck -->
 <link href="css/icheck-minimal.css" rel="stylesheet" type="text/css" />
@@ -33,9 +31,7 @@
 <!-- pick-a-color -->
 <link href="css/pick-a-color-1.1.4.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap wysihtml5 -->
-<link href="css/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
-<link href="css/wysiwyg-color.css" rel="stylesheet" type="text/css" />
+<link href="css/wysiwyg-editor.css" rel="stylesheet" type="text/css" />
 <!-- pepper site -->
-<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
 <link href="css/site.css" rel="stylesheet" type="text/css" />
 

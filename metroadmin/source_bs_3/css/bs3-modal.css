@@ -1,0 +1,20 @@
+@import "bootstrap-modal-bs3patch.css";
+@import "bootstrap-modal.css";
+.modal {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.modal-header, .modal-footer,.modal-body {
+	padding:15px;
+}
+.modal-footer {
+	margin-top:0;
+}
+.modal-header.bg-blue {
+	color:#fff;
+}
+.modal-header .close {
+	font-size: 25px;
+	color:inherit;
+}

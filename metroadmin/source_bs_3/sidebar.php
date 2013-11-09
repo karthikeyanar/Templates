@@ -43,6 +43,7 @@ function writeclassname($rootname,$classname){
 			|| $file == "labels_badges.php"
 			|| $file == "modal.php"
 			|| $file == "buttons.php"
+			|| $file == "colors.php"
 			|| $file == "slider.php"
 			|| $file == "icons.php"
 			|| $file == "file_input.php"
@@ -81,10 +82,10 @@ function writeclassname($rootname,$classname){
 	}
 }
 ?>
-<div class="page-sidebar">
+<div class="page-sidebar navbar-collapse collapse">
 	<ul class="page-sidebar-menu">
 		<li>
-			<div class="sidebar-toggler"><i class="icon-2x icon-arrow-left icon-metro-rounded white-border"></i></div>
+			<div class="sidebar-toggler"><i class="icon-metro icon-metro-back white"></i></div>
 		</li>
 		<li>
 			<form class="sidebar-search">
@@ -131,6 +132,9 @@ function writeclassname($rootname,$classname){
 				</li>
 				<li <?php checkactive("icons.php");?>>
 					<a href="icons.php">Icons</a>
+				</li>
+				<li <?php checkactive("colors.php");?>>
+					<a href="colors.php">Colors</a>
 				</li>
 				<li <?php checkactive("slider.php");?>>
 					<a href="slider.php">Slider</a>
