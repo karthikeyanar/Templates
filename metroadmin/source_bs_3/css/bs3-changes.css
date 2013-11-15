@@ -128,7 +128,7 @@ label {
 .btn-group .btn, .btn-group-vertical .btn, .input-group-btn > .btn {
 	border-width:1px !important;
 }
-
+ 
 /* .input-group-addon */
 .input-group-addon,.input-group-lg > .form-control, .input-group-lg > .input-group-addon
 , .input-group-lg > .input-group-btn > .btn  
@@ -457,6 +457,7 @@ textarea.form-control:focus, input.form-control:focus, select.form-control:focus
 	background: #FFFE7E;
 	border-color: #fff;
 	border-radius:0;
+	padding:10px;
 }
 .alert, .alert h4 {
 	color: #000;
@@ -724,6 +725,9 @@ textarea.form-control:focus, input.form-control:focus, select.form-control:focus
 }
 /* end color */
 /* popover */
+.popover { 
+	border-radius:0;
+}
 .popover.error {
 	background-color: #E65858;
 	color: #FFFFFF;

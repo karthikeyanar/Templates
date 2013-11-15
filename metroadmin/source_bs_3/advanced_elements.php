@@ -110,9 +110,9 @@
 <script type="text/javascript">
 	$(function() {
 		//select2
-		$("#select2InputTag").select2({tags:["red", "green", "blue"]});
+		//$("#select2InputTag").select2({tags:["red", "green", "blue"]});
 
-		$("#select2InputTag2").select2({tags:["red", "green", "blue"], maximumInputLength: 10});
+		//$("#select2InputTag2").select2({tags:["red", "green", "blue"], maximumInputLength: 10});
 
 		$('#datepicker').datepicker({
 			autoclose: true

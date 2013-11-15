@@ -1,0 +1,61 @@
+.bs-check-wrapper {
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.checkbox .bs-check-wrapper, .radio .bs-check-wrapper {
+	margin-left: -20px;
+}
+.checkbox-inline .bs-check-wrapper, .radio-inline .bs-check-wrapper {
+	margin-left: -20px;
+}
+.bs-check-wrapper input {
+	display: none;
+}
+a.bs-check-toggle.checkbox, a.bs-check-toggle.radio {
+	-moz-box-orient: vertical;
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	border: 0;
+}
+a.bs-check-toggle:hover {
+	text-decoration: none;
+	border: 0;
+}
+a.bs-check-toggle.checkbox.blue, a.bs-check-toggle.radio.blue {
+	background: url(../img/bs-fancy-check-blue.png) no-repeat;
+	background-position: 0 0;
+}
+a.bs-check-toggle.checkbox.blue:hover {
+	background-position: -24px 0;
+}
+a.bs-check-toggle.checkbox.blue.checked {
+	background-position: -48px 0;
+}
+a.bs-check-toggle.checkbox.blue.disabled {
+	background-position: -72px 0;
+	cursor: not-allowed;
+}
+a.bs-check-toggle.checkbox.blue.checked.disabled {
+	background-position: -96px 0;
+}
+a.bs-check-toggle.radio.blue {
+	background-position: -120px 0;
+}
+a.bs-check-toggle.radio.blue:hover {
+	background-position: -144px 0;
+}
+a.bs-check-toggle.radio.blue.checked {
+	background-position: -168px 0;
+}
+a.bs-check-toggle.radio.blue.disabled {
+	background-position: -192px 0;
+	cursor: not-allowed;
+}
+a.bs-check-toggle.radio.blue.checked.disabled {
+	background-position: -216px 0;
+}

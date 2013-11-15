@@ -1,5 +1,5 @@
 <!-- jquery -->
-<script src="js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
 <!-- jquery ui 1.10.3 -->
 <script src="js/jquery/jquery-ui-1.10.3.custom.min.js"></script>
 <!-- jquery validation -->
@@ -10,8 +10,6 @@
 <!-- bootstrap modal --> 
 <script src="js/plugins/bootstrap-modalmanager.js" type="text/javascript"></script>
 <script src="js/plugins/bootstrap-modal.js" type="text/javascript"></script>
-<!-- select2 -->
-<script src="js/plugins/select2.js" type="text/javascript"></script>
 <!-- inputlimiter -->
 <script src="js/plugins/jquery.inputlimiter.1.3.1.min.js" type="text/javascript"></script>
 <!-- autogrow textarea -->
@@ -39,9 +37,15 @@
 <script src="js/plugins/bootstrap-fileupload.min.js" type="text/javascript"></script>
 <!-- bootstrap timepicker -->
 <script src="js/plugins/bootstrap-timepicker.js" type="text/javascript"></script>
+<!-- chosen -->
+<script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 <!-- data-table -->
 <script src="js/plugins/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>
+<!-- bootstrap check -->
+<script src="js/plugins/bootstrap-fancy-check.js" type="text/javascript"></script>
+<!-- pretty check -->
+<script src="js/plugins/prettyCheckable.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
 <!-- bootstrap popover confirm -->

@@ -30,7 +30,7 @@
 									</label>
 								</div>
 								<div class="pull-right">
-									<button type="submit" class="btn btn-primary input-small">
+									<button type="submit" class="btn btn-primary">
 										Sign in</button>
 								</div>
 								<div class="clearfix">

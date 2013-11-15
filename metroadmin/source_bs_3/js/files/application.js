@@ -166,6 +166,47 @@
 		}).appendTo("body").fadeIn(200);
 	};
 
+	this.handleDatePicker=function($target) {
+		//http://eternicode.github.io/bootstrap-datepicker/
+		var $filter=$('[data-plugin="datepicker"]')
+		if($target) {
+			$filter=$('[data-plugin="datepicker"]',$target);
+		}
+		$filter.each(function() {
+			var $this=$(this);
+			var autoClose=$this.data("autoClose");
+			var calendarWeeks=$this.data("calendarWeeks");
+			var todayHighlight=$this.data("todayHighlight");
+			var keyboardNavigation=$this.data("keyboard-navigation");
+			var forceParse=$this.data("force-parse");
+			var daysOfWeekDisabled=$this.data("daysof-week-disabled");
+			var startView=$this.data("start-view");
+			var minViewMode=$this.data("min-view-mode");
+			var todayBtn=$this.data("today-btn");
+			var language=$this.data("language");
+			var startDate=$this.data("start-date");
+			var endDate=$this.data("end-date");
+			var format=$this.data("format");
+			var weekStart=$this.data("week-start");
+			$this.datepicker({
+				"autoclose": autoClose
+				,"calendarWeeks": calendarWeeks
+				,"todayHighlight": todayHighlight
+				,"keyboardNavigation": keyboardNavigation
+				,"forceParse": forceParse
+				,"daysOfWeekDisabled": daysOfWeekDisabled
+				,"startView": startView
+				,"minViewMode": minViewMode
+				,"todayBtn": todayBtn
+				,"language": language
+				,"startDate": startDate
+				,"endDate": endDate
+				,"format": format
+				,"weekStart": weekStart
+			});
+		});
+	};
+
 	this.init=function() {
 		$(":input[data-style='icheck']").each(function() {
 			var $this=$(this);
@@ -187,7 +228,7 @@
 				radioClass: iradioClass
 			});
 		});
-		
+
 		$(".form-validate").validate({
 			ignore: "input[type='text']:hidden"
 		});
@@ -205,9 +246,24 @@
 			e.preventDefault();
 		});
 
+		// chosen
+		var config={
+			'.chosen-select': {},
+			'.chosen-select-deselect': { allow_single_deselect: true },
+			'.chosen-select-no-single': { disable_search_threshold: 10 },
+			'.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
+			'.chosen-select-width': { width: "95%" }
+		}
+		for(var selector in config) {
+			$(selector).chosen(config[selector]);
+		}
+
+		//handle datepicker
+		self.handleDatePicker();
+
 		self.sidebarMenu();
 		self.sidebarToggler();
-		 
+
 	};
 
 	this.responsive=function() {

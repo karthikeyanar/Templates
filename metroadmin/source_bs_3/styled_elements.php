@@ -25,7 +25,7 @@
 									Standard Select
 								</label>
 								<div class="col-lg-9">
-									<select id="country" name="country" data-placeholder="Choose a Country..." class="select2 width-fluid">
+									<select id="country" name="country" data-placeholder="Choose a Country..." class="chosen-select width-fluid">
 										<option value=""></option>
 										<option value="United States">United States</option>
 										<option value="United Kingdom">United Kingdom</option>
@@ -291,7 +291,7 @@
 									Multiple Select
 								</label>
 								<div class="col-lg-9">
-									<select data-placeholder="Choose a Country..." class="select2 width-fluid"
+									<select data-placeholder="Choose a Country..." class="chosen-select width-fluid"
 										multiple>
 										<option value=""></option>
 										<option value="United States">United States</option>
@@ -558,7 +558,7 @@
 									Single Select with Groups
 								</label>
 								<div class="col-lg-9">
-									<select data-placeholder="Your Favorite Football Team" class="select2 width-fluid">
+									<select data-placeholder="Your Favorite Football Team" class="chosen-select width-fluid">
 										<option value=""></option>
 										<optgroup label="NFC EAST">
 											<option>Dallas Cowboys</option>
@@ -616,7 +616,7 @@
 									Multiple Select with Groups
 								</label>
 								<div class="col-lg-9">
-									<select data-placeholder="Your Favorite Football Teams" class="select2 width-fluid"	multiple>
+									<select data-placeholder="Your Favorite Football Teams" class="chosen-select width-fluid"	multiple>
 										<option value=""></option>
 										<optgroup label="NFC EAST">
 											<option>Dallas Cowboys</option>

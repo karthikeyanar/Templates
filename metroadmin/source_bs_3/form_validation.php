@@ -23,72 +23,72 @@
 						<div class="panel-body">
 							<form action="#" method="POST" class="form-horizontal form-validate">
 							<div class="form-group">
-								<h3 class="panel-title">
-									Login Information</h3>
+								<div class="col-lg-12">
+									<h3 class="panel-title">Login Information</h3>
+								</div>
 							</div>
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">
 									Email</label>
-								<div class="col-lg-10">
+								<div class="col-lg-4">
 									<input type="text" name="email" id="email" data-rule-required="true" data-rule-email="true"
 										data-msg-required="Required" data-placement="bottom" data-msg-email="Invalid Email"
-										class="input-xlarge" />
+										class="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="password" class="col-lg-2 control-label">
 									Password</label>
-								<div class="col-lg-10">
-									<input type="password" name="password" id="password" class="input-xlarge" data-rule-minlength="6"
+								<div class="col-lg-4">
+									<input type="password" name="password" id="password" class="form-control" data-rule-minlength="6"
 										data-msg-required="Required" data-rule-required="true" data-placement="bottom" />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="password" class="col-lg-2 control-label">
 									Cofirm Password</label>
-								<div class="col-lg-10">
-									<input type="password" name="confirm_password" id="confirm_password" class="input-xlarge"
+								<div class="col-lg-4">
+									<input type="password" name="confirm_password" id="confirm_password" class="form-control"
 										data-msg-required="Required" data-rule-required="true" data-rule-equalto="#password"
 										data-msg-equalto="These passwords don't match. Try again?" data-placement="bottom" />
 								</div>
 							</div>
 							<div class="form-group">
-								<h3 class="panel-title">
-									Personal Information</h3>
+								<div class="col-lg-12">
+									<h3 class="panel-title">Personal Information</h3>
+								</div>
 							</div>
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">
 									First Name</label>
-								<div class="col-lg-10">
+								<div class="col-lg-4">
 									<input type="text" name="first_name" id="first_name" data-rule-required="true" data-msg-required="Required"
-										data-placement="bottom" class="input-xlarge" />
+										data-placement="bottom" class="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">
 									Last Name</label>
-								<div class="col-lg-10">
+								<div class="col-lg-4">
 									<input type="text" name="last_name" id="last_name" data-rule-required="true" data-msg-required="Required"
-										data-placement="bottom" class="input-xlarge" />
+										data-placement="bottom" class="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">
 									Sex</label>
-								<div class="col-lg-10">
-									<select name="sex" id="sex" class="select2 input-medium">
+								<div class="col-lg-4">
+									<select name="sex" id="sex" class="form-control">
 										<option value="Male">Male</option>
 										<option value="Female">Female</option>
 									</select>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="textfield" class="col-lg-2 control-label">
-									Birthday</label>
+								<label for="textfield" class="col-lg-2 control-label">Birthday</label>
 								<div class="col-lg-10">
 									<div class="pull-left cutter-right">
-										<select name="Month" id="Month" class="select2 input-medium" data-rule-required="true"
-											data-msg-required="Required" data-placement="bottom">
+										<select name="Month" id="Month" class="form-control" data-rule-required="true" data-msg-required="Required" data-placement="bottom">
 											<option value="">Month</option>
 											<option value="1">January</option>
 											<option value="2">February</option>
@@ -105,19 +105,20 @@
 										</select>
 									</div>
 									<div class="pull-left cutter-right">
-										<input type="text" name="day" id="day" class="form-control" placeholder="Day" data-rule-required="true"
-											data-msg-required="Required" data-placement="bottom" /></div>
+										<input type="text" name="day" id="day" class="form-control" style="width:100px" placeholder="Day" data-rule-required="true"	data-msg-required="Required" data-placement="bottom" />
+									</div>
 									<div class="pull-left">
-										<input type="text" name="year" id="year" class="form-control" placeholder="Year" data-rule-required="true"
-											data-msg-required="Required" data-placement="bottom" />
+										<input type="text" name="year" id="year" class="form-control" style="width:100px" placeholder="Year" data-rule-required="true"	data-msg-required="Required" data-placement="bottom" />
 									</div>
 								</div>
 							</div>
-							<div class="form-actions">
-								<button type="submit" class="btn btn-primary input-small">
-									Save</button>
-								<button type="button" class="btn btn-danger">
-									Cancel</button>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button type="submit" class="btn btn-primary cutter-right">
+										Save</button>
+									<button type="button" class="btn btn-danger">
+										Cancel</button>
+								</div>
 							</div>
 							</form>
 						</div>

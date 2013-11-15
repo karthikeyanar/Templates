@@ -17,12 +17,16 @@
 <link href="css/bootstrap-switch.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datatable -->
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap check -->
+<link href="css/bootstrap-fancy-check.css" rel="stylesheet" type="text/css" />
+<!-- pretty check -->
+<link href="css/prettyCheckable.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap modal --> 
 <link href="css/bs3-modal.css" rel="stylesheet" type="text/css" />
+<!-- chosen -->
+<link href="css/bs-chosen.css" rel="stylesheet" type="text/css" />
 <!-- inputlimiter -->
 <link href="css/jquery.inputlimiter.1.0.css" rel="stylesheet" type="text/css" />
-<!-- select2 -->
-<link href="css/select2.css" rel="stylesheet" type="text/css" />
 <!-- fullcalendar -->
 <link href="css/fullcalendar-theme.css" rel="stylesheet" type="text/css" />
 <!-- icheck -->
