@@ -8,8 +8,8 @@
 					Elements</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="form_basic.php">Forms</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_basic.php">Forms</a> <i class="fa fa-angle-right"></i></li>
 				<li><a href="elements.php">Elements</a></li>
 				<li class="pull-right"><a href="#" data-dismiss='breadcrumb' class="close">&times</a></li>
 			</ul>
@@ -17,7 +17,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
-							<h3 class="panel-title"><i class="icon-edit"></i>Supported controls</h3>
+							<h3 class="panel-title"><i class="fa fa-edit"></i>Supported controls</h3>
 						</div>
 						<div class="panel-body">
 							<span class="help-text">Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</span>
@@ -31,7 +31,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
-							<h3 class="panel-title"><i class="icon-edit"></i>Checkboxes and radios</h3>
+							<h3 class="panel-title"><i class="fa fa-edit"></i>Checkboxes and radios</h3>
 						</div>
 						<div class="panel-body">
 							<div class="checkbox">
@@ -70,7 +70,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
-							<h3 class="panel-title"><i class="icon-edit"></i>Validation states</h3>
+							<h3 class="panel-title"><i class="fa fa-edit"></i>Validation states</h3>
 						</div>
 						<div class="panel-body">
 							<div class="form-group has-success">
@@ -93,7 +93,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
-							<h3 class="panel-title"><i class="icon-edit"></i>Control sizing</h3>
+							<h3 class="panel-title"><i class="fa fa-edit"></i>Control sizing</h3>
 						</div>
 						<div class="panel-body">
 							<div class="form-group">
@@ -140,7 +140,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
-							<h3 class="panel-title"><i class="icon-edit"></i>Column sizing</h3>
+							<h3 class="panel-title"><i class="fa fa-edit"></i>Column sizing</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -165,7 +165,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
-							<h3 class="panel-title"><i class="icon-edit"></i>Help text</h3>
+							<h3 class="panel-title"><i class="fa fa-edit"></i>Help text</h3>
 						</div>
 						<div class="panel-body">
 						    <input type="text" class="form-control">
@@ -178,7 +178,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
-							<h3 class="panel-title"><i class="icon-edit"></i>Textarea</h3>
+							<h3 class="panel-title"><i class="fa fa-edit"></i>Textarea</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<form method="post" class="form-horizontal form-striped">

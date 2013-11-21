@@ -16,7 +16,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Table with pagination</h3>
+								<i class="fa fa-table"></i>Table with pagination</h3>
 						</div>
 						<div class="panel-body">
 							<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-hover"

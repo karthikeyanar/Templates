@@ -8,8 +8,8 @@
 						Tables</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="table.php">Tables</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="table.php">Tables</a> <i class="fa fa-angle-right"></i></li>
 				<li><a href="table.php">Basic</a></li>
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
@@ -18,7 +18,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading no-border">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Default Style
+								<i class="fa fa-table"></i>Default Style
 							</h3>
 						</div>
 						<div class="panel-body">
@@ -89,7 +89,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading no-border">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Table Striped
+								<i class="fa fa-table"></i>Table Striped
 							</h3>
 						</div>
 						<div class="panel-body">
@@ -160,7 +160,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading no-border">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Table Bordered
+								<i class="fa fa-table"></i>Table Bordered
 							</h3>
 						</div>
 						<div class="panel-body">
@@ -231,7 +231,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading no-border">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Table Hover
+								<i class="fa fa-table"></i>Table Hover
 							</h3>
 						</div>
 						<div class="panel-body">
@@ -302,7 +302,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading no-border">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Table Condensed
+								<i class="fa fa-table"></i>Table Condensed
 							</h3>
 						</div>
 						<div class="panel-body">

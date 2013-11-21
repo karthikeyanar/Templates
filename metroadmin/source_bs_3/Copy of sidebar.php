@@ -84,7 +84,7 @@ function writeclassname($rootname,$classname){
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<div class="panel-title">
-					<a class="accordion-toggle <?php checkactive_toggle("index.php");?>" href="index.php"><i class="icon-laptop"></i><span class="title">Dashboard</span>
+					<a class="accordion-toggle <?php checkactive_toggle("index.php");?>" href="index.php"><i class="fa fa-laptop"></i><span class="title">Dashboard</span>
 					</a>
 				</div>
 			</div>
@@ -93,7 +93,7 @@ function writeclassname($rootname,$classname){
 			<div class="panel-heading">
 				<div class="panel-title">
 					<a class="accordion-toggle collapsed <?php echo openaccordion("uielements");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#uielements"><i class="icon-briefcase"></i><span class="title">UI Elements</span>
+						href="#uielements"><i class="fa fa-briefcase"></i><span class="title">UI Elements</span>
 					</a>
 				</div>
 				<div id="uielements" class="panel-collapse collapse	<?php echo openaccordionbody("uielements");?>">
@@ -121,7 +121,7 @@ function writeclassname($rootname,$classname){
 				<div class="panel-title">
 					<a class="accordion-toggle collapsed"
 						<?php echo openaccordion("components");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#components"><i class="icon-cog"></i><span class="title">Components</span>
+						href="#components"><i class="fa fa-cog"></i><span class="title">Components</span>
 					</a>
 				</div>
 				<div id="components" class="panel-collapse collapse"
@@ -181,7 +181,7 @@ function writeclassname($rootname,$classname){
 				<div class="panel-title">
 					<a class="accordion-toggle collapsed"
 						<?php echo openaccordion("forms");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#forms"><i class="icon-tasks"></i><span class="title">Forms</span>
+						href="#forms"><i class="fa fa-tasks"></i><span class="title">Forms</span>
 					</a>
 				</div>
 				<div id="forms" class="panel-collapse collapse"
@@ -206,7 +206,7 @@ function writeclassname($rootname,$classname){
 				<div class="panel-title">
 					<a class="accordion-toggle collapsed"
 						<?php echo openaccordion("tables");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#tables"><i class="icon-table"></i><span class="title">Tables</span>
+						href="#tables"><i class="fa fa-table"></i><span class="title">Tables</span>
 					</a>
 				</div>
 				<div id="tables" class="panel-collapse collapse"
@@ -235,7 +235,7 @@ function writeclassname($rootname,$classname){
 				<div class="panel-title">
 					<a class="accordion-toggle collapsed"
 						<?php echo openaccordion("samples");?>" data-toggle="collapse" data-parent="#sidebar-collapse"
-						href="#samples"><i class="icon-pencil"></i><span class="title">Samples</span>
+						href="#samples"><i class="fa fa-pencil"></i><span class="title">Samples</span>
 					</a>
 				</div>
 				<div id="samples" class="panel-collapse collapse"

@@ -8,8 +8,8 @@
 					Form Validation</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="form_basic.php">Forms</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_basic.php">Forms</a> <i class="fa fa-angle-right"></i></li>
 				<li><a href="form_validation.php">Form Validation</a> </li>
 				<li class="pull-right"><a href="#" class="close" data-dismiss="breadcrumb">&times</a></li>
 			</ul>
@@ -18,7 +18,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Form Validation</h3>
+								<i class="fa fa-edit"></i>Form Validation</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST" class="form-horizontal form-validate">

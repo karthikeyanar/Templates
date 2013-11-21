@@ -54,6 +54,18 @@ label.error {
 .no-border {
 	border: 0 !important;
 }
+.no-border-left {
+	border-left: 0 !important;
+}
+.no-border-right {
+	border-right: 0 !important;
+}
+.no-border-top {
+	border: 0 !important;
+}
+.no-border-bottom {
+	border-bottom: 0 !important;
+}
 .no-wrap {
 	white-space: nowrap !important;
 }

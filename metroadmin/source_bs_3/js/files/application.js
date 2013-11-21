@@ -177,7 +177,7 @@
 			var autoClose=$this.data("autoClose");
 			var calendarWeeks=$this.data("calendarWeeks");
 			var todayHighlight=$this.data("todayHighlight");
-			var keyboardNavigation=$this.data("keyboard-navigation");
+			var keyboardNavigation=$this.data("keyboardNavigation");
 			var forceParse=$this.data("force-parse");
 			var daysOfWeekDisabled=$this.data("daysof-week-disabled");
 			var startView=$this.data("start-view");
@@ -207,28 +207,29 @@
 		});
 	};
 
-	this.init=function() {
-		$(":input[data-style='icheck']").each(function() {
+	this.handleChosen=function($target) {
+		//http://harvesthq.github.io/chosen/
+		var $filter=$('.chosen-select')
+		if($target) {
+			$filter=$('.chosen-select',$target);
+		}
+		$filter.each(function() {
 			var $this=$(this);
-			var $parent=$this.parent();
-			if($parent.hasClass("radio")||$parent.hasClass("checkbox")) {
-				$parent.addClass("icheck-label");
-			}
-			if($this.attr("disabled")!=undefined) {
-				$this.addClass("disabled");
-			}
-			var skin="";
-			var color="";
-			if($this.attr("data-skin")==undefined) { skin="square"; } else { skin=$this.attr("data-skin"); }
-			if($this.attr("data-color")==undefined) { color="blue"; } else { color=$this.attr("data-color"); }
-			var icheckClass="icheckbox_"+skin+(color!=""?'-'+color:'');
-			var iradioClass="iradio_"+skin+(color!=""?'-'+color:'');
-			$this.iCheck({
-				checkboxClass: icheckClass,
-				radioClass: iradioClass
+			var allow_single_deselect=$this.data("allowsingledeselect")||true;
+			var disable_search_threshold=$this.data("disablesearchthreshold")||10;
+			var no_results_text=$this.data("noresultstext")||'Oops, nothing found!';
+			var width=$this.data("width")||"100%";
+			$this.chosen({
+				"width": width
+				,"allow_single_deselect": allow_single_deselect
+				,"disable_search_threshold": disable_search_threshold
+				,"no_results_text": no_results_text
 			});
 		});
+	};
 
+	this.init=function() {
+		 
 		$(".form-validate").validate({
 			ignore: "input[type='text']:hidden"
 		});
@@ -246,20 +247,11 @@
 			e.preventDefault();
 		});
 
-		// chosen
-		var config={
-			'.chosen-select': {},
-			'.chosen-select-deselect': { allow_single_deselect: true },
-			'.chosen-select-no-single': { disable_search_threshold: 10 },
-			'.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
-			'.chosen-select-width': { width: "95%" }
-		}
-		for(var selector in config) {
-			$(selector).chosen(config[selector]);
-		}
-
 		//handle datepicker
 		self.handleDatePicker();
+
+		//handle chosen
+		self.handleChosen();
 
 		self.sidebarMenu();
 		self.sidebarToggler();

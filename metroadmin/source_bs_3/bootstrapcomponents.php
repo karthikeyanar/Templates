@@ -7,10 +7,10 @@
 					Bootstrap Components</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="form_basic.php">UI Elements</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_basic.php">UI Elements</a> <i class="fa fa-angle-right"></i></li>
 				<li class="active"><a href="bootstrapcomponents.php">Bootstrap Components</a></li>
-				<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="icon-remove"></i></a></li>
+				<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="fa fa-remove"></i></a></li>
 			</ul>
 			<div class="row">
 				<div class="col-lg-12">
@@ -1663,9 +1663,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Brand</a>
         </div>
@@ -1730,9 +1730,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Brand</a>
         </div>
@@ -1757,9 +1757,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Brand</a>
         </div>
@@ -1779,9 +1779,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Brand</a>
         </div>
@@ -1797,9 +1797,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Brand</a>
         </div>
@@ -1823,9 +1823,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Brand</a>
         </div>
@@ -1848,9 +1848,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
+            <span class="fa fa-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Brand</a>
         </div>

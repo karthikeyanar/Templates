@@ -14,8 +14,6 @@
 <script src="js/plugins/jquery.inputlimiter.1.3.1.min.js" type="text/javascript"></script>
 <!-- autogrow textarea -->
 <script src="js/plugins/jquery.autogrowtextarea.min.js" type="text/javascript"></script>
-<!-- icheck -->
-<script src="js/plugins/jquery.icheck.min.js" type="text/javascript"></script>
 <!-- flot chart -->
 <script src="js/charts/jquery.flot.min.js" type="text/javascript"></script>
 <script src="js/charts/jquery.flot.pie.min.js" type="text/javascript"></script>
@@ -44,13 +42,11 @@
 <script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>
 <!-- bootstrap check -->
 <script src="js/plugins/bootstrap-fancy-check.js" type="text/javascript"></script>
-<!-- pretty check -->
-<script src="js/plugins/prettyCheckable.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
 <!-- bootstrap popover confirm -->
 <script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
-<!-- bootstrap alert -->
-<script src="js/plugins/bootstrap-alert.js" type="text/javascript"></script>
+<!-- bootbox -->
+<script src="js/plugins/bootbox.min.js" type="text/javascript"></script>
 <!-- pepper application -->
 <script src="js/files/application.js" type="text/javascript"></script>

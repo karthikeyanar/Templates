@@ -6,27 +6,17 @@
 			<h1>Alert & Confirm</h1>
 		</div>
 		<ul class="breadcrumb">
-			<li>
-				<a href="index.php">Home</a>
-				<i class="icon-angle-right"></i>
-			</li>
-			<li>
-				<a href="form_basic.php">UI Elements</a>
-				<i class="icon-angle-right"></i>
-			</li>
-			<li>
-				<a href="alert_confirm.php">Alert & Confirm</a>
-			</li>
-			<li class="pull-right">
-				<a href="#" class="close">&times</a>
-			</li>
+			<li><a href="index.php">Home</a><i class="fa fa-angle-right"></i></li>
+			<li><a href="form_basic.php">UI Elements</a><i class="fa fa-angle-right"></i></li>
+			<li><a href="alert_confirm.php">Alert & Confirm</a></li>
+			<li class="pull-right"><a href="#" class="close">&times</a></li>
 		</ul>
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="icon-edit"></i>Popup Confirm
+							<i class="fa fa-edit"></i>Popup Confirm
 						</h3>
 					</div>
 					<div class="panel-body no-padding">
@@ -36,7 +26,7 @@
 									Popup Confirm
 								</label>
 								<div class="col-lg-10">
-									<a class='btn btn-success' data-placement='bottom' data-title='Confirm order and use selected payment method?'  data-popover-confirm='isconfirm()'>Confirm and Purchase</a>
+									<a class='btn btn-success' data-placement='bottom' data-title='Confirm order and use selected payment method?'  data-popover-confirm=''>Confirm and Purchase</a>
 								</div>
 							</div>
 						</form>
@@ -49,7 +39,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="icon-edit"></i>Alert & Confirm Dialog
+							<i class="fa fa-edit"></i>Alert & Confirm Dialog
 						</h3>
 					</div>
 					<div class="panel-body no-padding">
@@ -59,7 +49,7 @@
 									Alert
 								</label>
 								<div class="col-lg-10">
-									<a id="alert" class="demo btn btn-primary" data-modal-alert='true' data-title='Alert' data-message='Hello' data-callback='isalert()'>View Demo</a>
+									<a id="alert" class="btn btn-primary">View Demo</a>
 								</div>
 							</div>
 							<div class="form-group">
@@ -67,7 +57,15 @@
 									Confirm
 								</label>
 								<div class="col-lg-10">
-									<a id="confirm" class="demo btn btn-primary" data-modal-confirm='true' data-title='Confirm' data-message='Are you sure?' data-yes-callback='isyescallback()' data-no-callback='isnocallback()'>View Demo</a>
+									<a id="confirm" class="btn btn-primary">View Demo</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label">
+									Prompt
+								</label>
+								<div class="col-lg-10">
+									<a id="prompt" class="btn btn-primary">View Demo</a>
 								</div>
 							</div>
 						</form>
@@ -80,7 +78,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="icon-edit"></i>Alerts
+							<i class="fa fa-edit"></i>Alerts
 						</h3>
 					</div>
 					<div class="panel-body">
@@ -118,20 +116,25 @@
 <!-- end container -->
 <?php include_once 'script.php' ?>
 <script>
-	function isconfirm(){
-		//confirm callback
-	}
-	function isalert(){
-		//confirm alert
-	}
-	function isyescallback(){
-		//confirm alert
-		//alert('yes');
-	}
-	function isnocallback(){
-		//confirm alert
-		//alert('no');
-	}
+	$(function(){
+		$("#alert").click(function(){
+			bootbox.alert("Hello world!", function() {
+				//alert("hello");
+			});
+		});
+		$("#confirm").click(function(){
+			bootbox.confirm("Are you sure?", function(result) {
+				//alert("hello");
+			});
+		});
+		$("#prompt").click(function(){
+			bootbox.prompt("What is your name?", function(result) {
+				if (result === null) {
+				} else {
+				}
+			});
+		});
+	});
 </script>
 <?php include_once 'footer.php' ?>
 

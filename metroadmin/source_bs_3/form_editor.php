@@ -8,8 +8,8 @@
 					Editor</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="form_basic.php">Forms</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_basic.php">Forms</a> <i class="fa fa-angle-right"></i></li>
 				<li><a href="form_basic.php">Editor</a> </li>
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
@@ -18,7 +18,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>WYSIHTML5 Editor</h3>
+								<i class="fa fa-edit"></i>WYSIHTML5 Editor</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST">
@@ -37,7 +37,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>CK Editor</h3>
+								<i class="fa fa-edit"></i>CK Editor</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST">

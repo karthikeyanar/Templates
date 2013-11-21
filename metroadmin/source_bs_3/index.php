@@ -12,7 +12,7 @@
 					<div class="tile-group">
 						<div class="tile icon">
 	                    	<div class="tile-content">
-		                        <i class="icon-envelope icon-4x"></i>
+		                        <i class="fa fa-envelope icon-4x"></i>
 		                    </div>
 		                    <div class="brand">
 		                        <div class="badge">10</div>
@@ -21,7 +21,7 @@
 			            </div>
 			            <div class="tile icon bg-orange">
 							<div class="tile-content">
-								<i class="icon-calendar icon-4x"></i>
+								<i class="fa fa-calendar icon-4x"></i>
 							</div>
 							<div class="brand">
 								<div class="badge">
@@ -32,7 +32,7 @@
 						</div>
 						<div class="tile icon bg-sky-blue">
 							<div class="tile-content">
-								<i class="icon-shopping-cart icon-4x"></i>
+								<i class="fa fa-shopping-cart icon-4x"></i>
 							</div>
 							<div class="brand">
 								<div class="badge">
@@ -43,7 +43,7 @@
 						</div>
 						<div class="tile icon bg-green">
 							<div class="tile-content">
-								<i class="icon-briefcase icon-4x"></i>
+								<i class="fa fa-briefcase icon-4x"></i>
 							</div>
 							<div class="brand">
 								<div class="badge">
@@ -55,10 +55,10 @@
 						<div class="tile double bg-purple">
 							<div class="tile-content list">
 								<ul>
-									<li><i class="icon-tags"></i><span class="title">Total Sales 100</span></li>
-									<li><i class="icon-money"></i><span class="title">Total Profit $342,242</span></li>
-									<li><i class="icon-group"></i><span class="title">Total Users 125</span></li>
-									<li><i class="icon-envelope"></i><span class="title">Total Messages 250</span></li>
+									<li><i class="fa fa-tags"></i><span class="title">Total Sales 100</span></li>
+									<li><i class="fa fa-money"></i><span class="title">Total Profit $342,242</span></li>
+									<li><i class="fa fa-group"></i><span class="title">Total Users 125</span></li>
+									<li><i class="fa fa-envelope"></i><span class="title">Total Messages 250</span></li>
 								</ul>
 							</div>
 						</div>
@@ -98,7 +98,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-comment"></i>Chat</h3>
+								<i class="fa fa-comment"></i>Chat</h3>
 						</div>
 						<div class="panel-body">
 							<div class="chat-content">
@@ -174,7 +174,7 @@
 								<div class="input-group">
 									<input type="text" id="msg" name="msg" class="form-control" placeholder="Message" />
 									<span class="input-group-btn"><button id="send" class="btn btn-primary">
-										<i class="icon-share-alt"></i>
+										<i class="fa fa-share-alt"></i>
 									</button></span>
 								</div>
 							</div>

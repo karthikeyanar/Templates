@@ -4,9 +4,9 @@
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<span class="fa fa-bar"></span>
+				<span class="fa fa-bar"></span>
+				<span class="fa fa-bar"></span>
 			</button>
 			<a class="navbar-brand" href="index.php">Pepper Admin</a>
 		</div>
@@ -14,12 +14,12 @@
 			<ul class="nav navbar-icon pull-right">
 				<li>
 					<a href="#" class="link" title="Settings" data-toggle="tooltip" data-placement="bottom">
-						<i class="icon-cog icon-large"></i>
+						<i class="fa fa-cog icon-large"></i>
 					</a>
 				</li>
 				<li>
 					<a href="#" class="link" title="Lock" data-toggle="tooltip" data-placement="bottom">
-						<i class="icon-lock icon-large"></i>
+						<i class="fa fa-lock icon-large"></i>
 					</a>
 				</li>
 				<li class="dropdown user-box pull-right">

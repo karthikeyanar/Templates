@@ -8,11 +8,11 @@
 		<ul class="breadcrumb">
 			<li>
 				<a href="index.php">Home</a>
-				<i class="icon-angle-right"></i>
+				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>
 				<a href="form_basic.php">Forms</a>
-				<i class="icon-angle-right"></i>
+				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>
 				<a href="products.php">Products</a>

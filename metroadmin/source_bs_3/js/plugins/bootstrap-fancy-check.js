@@ -8,10 +8,14 @@
 		if(this.theme==undefined) {
 			this.theme="blue";
 		}
-		this.container=$("<span class='bs-check-wrapper'><a class='bs-check-toggle' href='#'></a></span>");
+		this.size=this.$element.data("size");
+		if(this.size==undefined){
+			this.size="";
+		}
+		this.container=$("<span class='bs-fancy-check-wrapper'><a class='bs-fancy-check-toggle' href='#'></a></span>");
 		this.$element.before(this.container);
 		this.container.append(this.$element);
-		this.toggle=$(".bs-check-toggle",this.container);
+		this.toggle=$(".bs-fancy-check-toggle",this.container);
 		this.toggle.addClass(this.theme);
 		if(this.element.checked)
 			this.toggle.addClass("checked");
@@ -23,7 +27,9 @@
 			this.toggle.addClass("radio");
 			this.isRadio=true;
 		}
-
+		if(this.size!="") {
+			this.toggle.addClass(this.size);
+		}
 
 		//on change, change the class of the link
 		this.$element.change(function() {

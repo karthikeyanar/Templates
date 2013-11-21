@@ -85,24 +85,24 @@ function writeclassname($rootname,$classname){
 <div class="page-sidebar navbar-collapse collapse">
 	<ul class="page-sidebar-menu">
 		<li>
-			<div class="sidebar-toggler"><i class="icon-metro icon-metro-back white"></i></div>
+			<div class="sidebar-toggler"><i class="fa fa-metro icon-metro-back white"></i></div>
 		</li>
 		<li>
 			<form class="sidebar-search">
 				<div class="input-group">
 				 	<span class="input-group-addon remove">
-						<a href="javascript:;"><i class="icon-remove"></i></a>
+						<a href="javascript:;"><i class="fa fa-remove"></i></a>
 					</span>
 					<input type="text" class="form-control" placeholder="Search..." />
 					<span class="input-group-btn">
-				        <button class="btn submit" type="button"><i class="icon-search"></i></button>
+				        <button class="btn submit" type="button"><i class="fa fa-search"></i></button>
 				    </span>
 				</div>
 			</form> 
 		</li>
-		<li class="<?php checkactive_toggle("index.php");?>"><a href="index.php"><i class="icon-laptop"></i><span class="title">Dashboard</span><?php echo selected_ul_menu("index.php");?></a></li>
+		<li class="<?php checkactive_toggle("index.php");?>"><a href="index.php"><i class="fa fa-laptop"></i><span class="title">Dashboard</span><?php echo selected_ul_menu("index.php");?></a></li>
 		<li class="<?php echo openaccordion("uielements");?>">
-			<a href="javascript:;"><i class="icon-briefcase"></i><span class="title">UI Elements</span><?php echo selected_ul_menu("uielements");?><span class="arrow"></span></a>
+			<a href="javascript:;"><i class="fa fa-briefcase"></i><span class="title">UI Elements</span><?php echo selected_ul_menu("uielements");?><span class="arrow"></span></a>
 			<ul class="sub-menu">
 				<li <?php checkactive("elements.php");?>><a href="elements.php">Elements</a>
 				</li>
@@ -116,7 +116,7 @@ function writeclassname($rootname,$classname){
 			</ul>
 		</li>
 		<li class="<?php echo openaccordion("components");?>">
-			<a href="javascript:;"><i class="icon-cog"></i><span class="title">Components</span><span class="arrow"></span></a>
+			<a href="javascript:;"><i class="fa fa-cog"></i><span class="title">Components</span><span class="arrow"></span></a>
 			<ul class="sub-menu">
 				<li <?php checkactive("modal.php");?>>
 					<a href="modal.php">Modal</a>
@@ -157,7 +157,7 @@ function writeclassname($rootname,$classname){
 			</ul>
 		</li>
 		<li class="<?php echo openaccordion("forms");?>">
-			<a href="javascript:;"><i class="icon-tasks"></i><span class="title">Forms</span><span class="arrow"></span></a>
+			<a href="javascript:;"><i class="fa fa-tasks"></i><span class="title">Forms</span><span class="arrow"></span></a>
 			<ul class="sub-menu">
 				<li <?php checkactive("form_basic.php");?>>
 					<a href="form_basic.php">Basic</a>
@@ -168,7 +168,7 @@ function writeclassname($rootname,$classname){
 			</ul>
 		</li>
 		<li class="<?php echo openaccordion("tables");?>">
-			<a href="javascript:;"><i class="icon-table"></i><span class="title">Tables</span><span class="arrow"></span></a>
+			<a href="javascript:;"><i class="fa fa-table"></i><span class="title">Tables</span><span class="arrow"></span></a>
 			<ul class="sub-menu">
 				<li <?php checkactive("table.php");?>>
 					<a href="table.php">Basic</a>
@@ -182,7 +182,7 @@ function writeclassname($rootname,$classname){
 			</ul>
 		</li>
 		<li class="<?php echo openaccordion("samples");?>">
-			<a href="javascript:;"><i class="icon-pencil"></i><span class="title">Samples</span><span class="arrow"></span></a>
+			<a href="javascript:;"><i class="fa fa-pencil"></i><span class="title">Samples</span><span class="arrow"></span></a>
 			<ul class="sub-menu">
 				<li <?php checkactive("login.php");?>>
 					<a href="login.php">Login</a>

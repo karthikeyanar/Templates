@@ -19,8 +19,6 @@
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap check -->
 <link href="css/bootstrap-fancy-check.css" rel="stylesheet" type="text/css" />
-<!-- pretty check -->
-<link href="css/prettyCheckable.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap modal --> 
 <link href="css/bs3-modal.css" rel="stylesheet" type="text/css" />
 <!-- chosen -->
@@ -29,9 +27,6 @@
 <link href="css/jquery.inputlimiter.1.0.css" rel="stylesheet" type="text/css" />
 <!-- fullcalendar -->
 <link href="css/fullcalendar-theme.css" rel="stylesheet" type="text/css" />
-<!-- icheck -->
-<link href="css/icheck-minimal.css" rel="stylesheet" type="text/css" />
-<link href="css/icheck-square.css" rel="stylesheet" type="text/css" />
 <!-- pick-a-color -->
 <link href="css/pick-a-color-1.1.4.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap wysihtml5 -->

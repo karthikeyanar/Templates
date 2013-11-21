@@ -8,8 +8,8 @@
 					Button Dropdowns</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="form_basic.php">UI Elements</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_basic.php">UI Elements</a> <i class="fa fa-angle-right"></i></li>
 				<li><a href="elements.php">Button Dropdowns</a></li>
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
@@ -18,12 +18,12 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Overview</h3>
+								<i class="fa fa-edit"></i>Overview</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
 								<div class="btn-group">
-									<button data-toggle="dropdown" class="btn dropdown-toggle">
+									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
 										Action <span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu">
@@ -178,14 +178,14 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Split button dropdowns</h3>
+								<i class="fa fa-edit"></i>Split button dropdowns</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
 								<div class="btn-group">
 									<button class="btn btn-default">
 										Action</button>
-									<button data-toggle="dropdown" class="btn dropdown-toggle">
+									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
 										<span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu">
@@ -361,14 +361,14 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Dropup menus</h3>
+								<i class="fa fa-edit"></i>Dropup menus</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
 								<div class="btn-group dropup">
 									<button class="btn btn-default">
 										Dropup</button>
-									<button data-toggle="dropdown" class="btn dropdown-toggle">
+									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
 										<span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu">
@@ -381,9 +381,9 @@
 								</div>
 								<!-- /btn-group -->
 								<div class="btn-group dropup">
-									<button class="btn primary">
+									<button class="btn btn-default">
 										Right dropup</button>
-									<button data-toggle="dropdown" class="btn primary dropdown-toggle">
+									<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
 										<span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu pull-right">

@@ -143,10 +143,11 @@
 			if (!hasOpenModal){
 				this.$element.removeClass('page-overflow');
 			}
-
+			 
 			this.removeContainer(modal);
-
+			
 			this.setFocus();
+			
 		},
 
 		getOpenModals: function () {

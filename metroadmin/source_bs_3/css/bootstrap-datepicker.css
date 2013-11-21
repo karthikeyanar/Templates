@@ -454,3 +454,10 @@
   margin-left: -5px;
   margin-right: -5px;
 }
+.datepicker.datepicker-inline {
+	width: auto; display:  table !important;
+   border: 2px solid #DCDCDC;
+}
+.datepicker.datepicker-inline .datepicker-days{
+	 display:  table !important;
+}

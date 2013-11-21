@@ -8,8 +8,8 @@
 					Dropdowns</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="form_basic.php">UI Elements</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_basic.php">UI Elements</a> <i class="fa fa-angle-right"></i></li>
 				<li><a href="elements.php">Dropdowns</a></li>
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
@@ -18,7 +18,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Dropdown menus</h3>
+								<i class="fa fa-edit"></i>Dropdown menus</h3>
 						</div>
 						<div class="panel-body">
 							<div class="clearfix">
@@ -153,7 +153,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Sub menus on dropdowns</h3>
+								<i class="fa fa-edit"></i>Sub menus on dropdowns</h3>
 						</div>
 						<div class="panel-body">
 							<div class="clearfix">

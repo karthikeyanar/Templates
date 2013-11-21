@@ -7,7 +7,7 @@
 				<div class="panel panel-default blue">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="icon-lock"></i>Sign In</h3>
+							<i class="fa fa-lock"></i>Sign In</h3>
 					</div>
 					<div class="panel-body">
 						<form action="index.php">
@@ -25,7 +25,7 @@
 							<div class="col-lg-10">
 								<div class="pull-left">
 									<label class="checkbox">
-										<input type="checkbox" data-style="icheck">
+										<input type="checkbox" data-provide="bsfancycheck">
 										Remember me
 									</label>
 								</div>

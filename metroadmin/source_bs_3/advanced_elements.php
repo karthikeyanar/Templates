@@ -7,11 +7,11 @@
 	<ul class="breadcrumb">
 		<li>
 			<a href="index.php">Home</a>
-			<i class="icon-angle-right"></i>
+			<i class="fa fa-angle-right"></i>
 		</li>
 		<li>
 			<a href="form_basic.php">Forms</a>
-			<i class="icon-angle-right"></i>
+			<i class="fa fa-angle-right"></i>
 		</li>
 		<li>
 			<a href="advanced_elements.php">Advanced Elements</a>
@@ -25,7 +25,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						<i class="icon-edit"></i>Advanced Elements
+						<i class="fa fa-edit"></i>Advanced Elements
 					</h3>
 				</div>
 				<div class="panel-body no-padding">
@@ -52,8 +52,8 @@
 								Default Time Picker
 							</label>
 							<div class="col-lg-2">
-								<div class="input-group bootstrap-timepicker">
-									<input id="timepicker1" class="form-control" type="text"/><span class="input-group-addon"><i class="icon-time"></i></span>
+								<div class="input-group">
+									<input id="timepicker1" class="form-control" type="text"/><span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
 								</div>
 							</div>
 						</div>
@@ -62,10 +62,10 @@
 								Modal Time Picker
 							</label>
 							<div class="col-lg-2">
-								<div class="input-group bootstrap-timepicker">
+								<div class="input-group">
 									<input id="timepicker2" type="text" class="form-control">
 										<span class="input-group-addon">
-											<i class="icon-time"></i>
+											<i class="fa fa-clock-o"></i>
 										</span>
 								</div>
 							</div>

@@ -8,17 +8,17 @@
 					Buttons</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="form_basic.php">UI Elements</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_basic.php">UI Elements</a> <i class="fa fa-angle-right"></i></li>
 				<li class="active"><a href="elements.php">Buttons</a></li>
-				<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="icon-remove"></i></a></li>
+				<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="fa fa-remove"></i></a></li>
 			</ul>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Default</h3>
+								<i class="fa fa-edit"></i>Default</h3>
 						</div>
 						<div class="panel-body no-padding">
 							
@@ -144,7 +144,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Additional Color Buttons</h3>
+								<i class="fa fa-edit"></i>Additional Color Buttons</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<table class="table table-striped">
@@ -221,7 +221,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Button Sizes</h3>
+								<i class="fa fa-edit"></i>Button Sizes</h3>
 						</div>
 						<div class="panel-body">
 							<p>
@@ -257,7 +257,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Block Level Button</h3>
+								<i class="fa fa-edit"></i>Block Level Button</h3>
 						</div>
 						<div class="panel-body">
 							<button class="btn btn-lg btn-block btn-primary" type="button">
@@ -271,7 +271,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Disabled state</h3>
+								<i class="fa fa-edit"></i>Disabled state</h3>
 						</div>
 						<div class="panel-body">
 							<a href="#" class="btn btn-lg btn-primary disabled">Primary link</a> <a href="#"
@@ -290,7 +290,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>One class, multiple tags</h3>
+								<i class="fa fa-edit"></i>One class, multiple tags</h3>
 						</div>
 						<div class="panel-body">
 							<a class="btn btn-default" href="">Link</a>
@@ -305,7 +305,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Single button group</h3>
+								<i class="fa fa-edit"></i>Single button group</h3>
 						</div>
 						<div class="panel-body">
 							<div class="btn-group">
@@ -325,7 +325,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Multiple button groups</h3>
+								<i class="fa fa-edit"></i>Multiple button groups</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
@@ -359,21 +359,21 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-edit"></i>Vertical button groups</h3>
+								<i class="fa fa-edit"></i>Vertical button groups</h3>
 						</div>
 						<div class="panel-body">
 							<div class="btn-group btn-group-vertical">
 								<button class="btn btn-default" type="button">
-									<i class="icon-text-left"></i>
+									<i class="fa fa-text-left"></i>
 								</button>
 								<button class="btn btn-default" type="button">
-									<i class="icon-align-center"></i>
+									<i class="fa fa-align-center"></i>
 								</button>
 								<button class="btn btn-default" type="button">
-									<i class="icon-align-right"></i>
+									<i class="fa fa-align-right"></i>
 								</button>
 								<button class="btn btn-default" type="button">
-									<i class="icon-align-justify"></i>
+									<i class="fa fa-align-justify"></i>
 								</button>
 							</div>
 						</div>

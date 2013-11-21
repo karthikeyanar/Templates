@@ -8,8 +8,8 @@
 						Tables</h1>
 			</div>
 			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="icon-angle-right"></i></li>
-				<li><a href="table.php">Tables</a> <i class="icon-angle-right"></i></li>
+				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="table.php">Tables</a> <i class="fa fa-angle-right"></i></li>
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
@@ -17,7 +17,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Box Bordered
+								<i class="fa fa-table"></i>Box Bordered
 							</h3>
 						</div>
 						<div class="panel-body no-padding">
@@ -88,7 +88,7 @@
 					<div class="panel panel-default blue">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="icon-table"></i>Color Box
+								<i class="fa fa-table"></i>Color Box
 							</h3>
 						</div>
 						<div class="panel-body no-padding">

@@ -9,11 +9,11 @@
 		<ul class="breadcrumb">
 			<li>
 				<a href="index.php">Home</a>
-				<i class="icon-angle-right"></i>
+				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>
 				<a href="form_basic.php">UI Elements</a>
-				<i class="icon-angle-right"></i>
+				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>
 				<a href="labels_badges.php">Labels and badges</a>
@@ -27,7 +27,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="icon-edit"></i>Labels
+							<i class="fa fa-edit"></i>Labels
 						</h3>
 					</div>
 					<div class="panel-body no-padding">
@@ -98,7 +98,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="icon-edit"></i>Badges
+							<i class="fa fa-edit"></i>Badges
 						</h3>
 					</div>
 					<div class="panel-body no-padding">

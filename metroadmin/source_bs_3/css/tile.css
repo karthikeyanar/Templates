@@ -363,12 +363,12 @@
 	content:'';
 	display:table;
 }
-.tile .tile-content.list ul li [class^="icon-"], 
+.tile .tile-content.list ul li [class^="fa fa-"], 
 .tile .tile-content.list ul li [class*=" icon-"],
 .tile .tile-content.list ul li .title {
 	float:left;
 }
-.tile .tile-content.list ul li [class^="icon-"], 
+.tile .tile-content.list ul li [class^="fa fa-"], 
 .tile .tile-content.list ul li [class*=" icon-"] {
 	 font-size: 24px;
 }
@@ -442,7 +442,7 @@
   .tile .tile-content.list ul li {
   	margin-bottom:5px;
   }
-	.tile .tile-content.list ul li [class^="icon-"], 
+	.tile .tile-content.list ul li [class^="fa fa-"], 
 	.tile .tile-content.list ul li [class*=" icon-"] {
 		 font-size: 16px;
 		 margin-top:5px;
