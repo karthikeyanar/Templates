@@ -21,8 +21,6 @@
 						<div class="panel-body">
 							<form action="#" method="POST">
 							<div class="form-group">
-								<label for="password" class="col-lg-2 control-label">
-								</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
 										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
@@ -31,8 +29,6 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="password" class="col-lg-2 control-label">
-									</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
 										<div class="input-group">
@@ -45,8 +41,6 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="password" class="col-lg-2 control-label">
-									</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
 										<div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;">
@@ -58,8 +52,6 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="password" class="col-lg-2 control-label">
-									</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
 										<div class="fileupload-new thumbnail" style="width: 50px; height: 50px;"></div>

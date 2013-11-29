@@ -17,8 +17,8 @@
 <link href="css/bootstrap-switch.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datatable -->
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
-<!-- bootstrap check -->
-<link href="css/bootstrap-fancy-check.css" rel="stylesheet" type="text/css" />
+<!-- fcheck -->
+<link href="css/fcheck.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap modal --> 
 <link href="css/bs3-modal.css" rel="stylesheet" type="text/css" />
 <!-- chosen -->

@@ -25,7 +25,7 @@
 							<div class="col-lg-10">
 								<div class="pull-left">
 									<label class="checkbox">
-										<input type="checkbox" data-provide="bsfancycheck">
+										<input type="checkbox" data-provide="fcheck">
 										Remember me
 									</label>
 								</div>

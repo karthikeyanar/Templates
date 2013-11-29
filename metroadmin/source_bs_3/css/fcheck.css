@@ -1,0 +1,104 @@
+.fcheck {
+	margin-right: 8px;
+}
+.checkbox .fcheck, .radio .fcheck {
+	margin-left: -20px;
+}
+.checkbox-inline .fcheck, .radio-inline .fcheck {
+	margin-left: -20px;
+}
+.fcheck input {
+	display: none; margin-top:10px;
+}
+.fcheck a,.fcheck a:hover,.fcheck a:focus {
+	text-decoration: none;  outline: none;
+}
+.fcheck i {
+    background-color: #FFFFFF;
+    border-color: #808080;
+	color: #808080;
+    border-style: solid;
+    border-width: 1px;
+    height: 18px;
+    margin: 0 !important;
+    min-height: 0;
+    padding: 0 !important;
+    position: relative;
+    top: -0.1em;
+    width: 18px;
+}
+.fcheck i.radio {
+	border-radius: 100%;
+}
+.fcheck i:before {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: -7px;
+	left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+	display: inline-block;
+    text-decoration: inherit;
+}
+.fcheck i.radio:before {
+	font-size:12px;
+}
+.fcheck i.disabled {
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	cursor: not-allowed;
+}
+.fcheck i.radio {
+	border-radius:100%;
+}
+.fcheck i.blue {
+	color:#0072C6;
+	border-color:#0072C6;
+}
+.fcheck i.red {
+	color:#E81123;
+	border-color:#E81123;
+}
+.fcheck i.orange {
+	color:#FF8F32;
+	border-color:#FF8F32;
+}
+.fcheck i.purple {
+	color:#4617B4;
+	border-color:#4617B4;
+}
+.fcheck i.green {
+	color:#008A17;
+	border-color:#008A17;
+}
+.fcheck i.skyblue {
+	color:#2E7EFC;
+	border-color:#2E7EFC;
+}
+.fcheck i.grey {
+	color:#808080;
+	border-color:#808080;
+}
+.fcheck i.medium {
+	width:30px;
+	height:30px;
+}
+.fcheck i.medium:before {
+	font-size:22px;
+}
+.fcheck i.medium.radio:before {
+	font-size:18px;
+}
+.fcheck i.large {
+	width:40px;
+	height:40px;
+}
+.fcheck i.large:before {
+	font-size:28px;
+}
+.fcheck i.large.radio:before {
+	font-size:24px;
+}
+ 

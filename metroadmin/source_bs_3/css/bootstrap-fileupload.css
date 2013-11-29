@@ -57,8 +57,9 @@
   margin-bottom: 0px;
   vertical-align: middle;
   cursor: text;
-  min-height: 32px;
+  min-height: 34px;
   overflow:hidden;
+  border-right:0;
 }
 .fileupload-exists .uneditable-input {
 	display: inline-block;
@@ -147,4 +148,7 @@
 }
 .form-group.success .fileupload .thumbnail {
   border-color: #468847;
+}
+.fileupload.fileupload-exists  .input-group .btn-default {
+	border-right:0;
 }

@@ -43,6 +43,8 @@ function writeclassname($rootname,$classname){
 			|| $file == "labels_badges.php"
 			|| $file == "modal.php"
 			|| $file == "buttons.php"
+			|| $file == "panels.php"
+			|| $file == "tiles.php"
 			|| $file == "colors.php"
 			|| $file == "slider.php"
 			|| $file == "icons.php"
@@ -83,15 +85,13 @@ function writeclassname($rootname,$classname){
 }
 ?>
 <div class="page-sidebar navbar-collapse collapse">
+	<div class="sidebar-toggler"><i class="icon-metro icon-back medium icon-white"></i></div>
 	<ul class="page-sidebar-menu">
-		<li>
-			<div class="sidebar-toggler"><i class="fa fa-metro icon-metro-back white"></i></div>
-		</li>
 		<li>
 			<form class="sidebar-search">
 				<div class="input-group">
 				 	<span class="input-group-addon remove">
-						<a href="javascript:;"><i class="fa fa-remove"></i></a>
+						<a href="javascript:;"><i class="fa fa-times"></i></a>
 					</span>
 					<input type="text" class="form-control" placeholder="Search..." />
 					<span class="input-group-btn">
@@ -129,6 +129,12 @@ function writeclassname($rootname,$classname){
 				</li>
 				<li <?php checkactive("buttons.php");?>>
 					<a href="buttons.php">Buttons</a>
+				</li>
+				<li <?php checkactive("panels.php");?>>
+					<a href="panels.php">Panels</a>
+				</li>
+				<li <?php checkactive("tiles.php");?>>
+					<a href="tiles.php">Tiles</a>
 				</li>
 				<li <?php checkactive("icons.php");?>>
 					<a href="icons.php">Icons</a>

@@ -13,18 +13,18 @@
 				<li class="pull-right"><a href="#" class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default red">
 						<div class="panel-heading">
 							<h3 class="panel-title"><i class="fa fa-edit"></i>Styled Select</h3>
 						</div>
-						<div class="panel-body no-padding">
-							<form action="#" method="POST" class="form-horizontal form-striped">
+						<div class="panel-body">
+							<form action="#" method="POST" class="form-horizontal">
 							<div class="form-group">
-								<label class="col-lg-3 control-label">
+								<label class="col-md-3 control-label">
 									Standard Select
 								</label>
-								<div class="col-lg-9">
+								<div class="col-md-9">
 									<select id="country" name="country" data-placeholder="Choose a Country..." class="chosen-select">
 										<option value=""></option>
 										<option value="United States">United States</option>
@@ -287,10 +287,10 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-3 control-label">
+								<label class="col-md-3 control-label">
 									Multiple Select
 								</label>
-								<div class="col-lg-9">
+								<div class="col-md-9">
 									<select data-placeholder="Choose a Country..." class="chosen-select"
 										multiple>
 										<option value=""></option>
@@ -554,10 +554,10 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-3 control-label">
+								<label class="col-md-3 control-label">
 									Single Select with Groups
 								</label>
-								<div class="col-lg-9">
+								<div class="col-md-9">
 									<select data-placeholder="Your Favorite Football Team" class="chosen-select">
 										<option value=""></option>
 										<optgroup label="NFC EAST">
@@ -612,10 +612,10 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-3 control-label">
+								<label class="col-md-3 control-label">
 									Multiple Select with Groups
 								</label>
-								<div class="col-lg-9">
+								<div class="col-md-9">
 									<select data-placeholder="Your Favorite Football Teams" class="chosen-select"	multiple>
 										<option value=""></option>
 										<optgroup label="NFC EAST">
@@ -675,137 +675,165 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default blue">
 						<div class="panel-heading">
 							<h3 class="panel-title"><i class="fa fa-edit"></i>Styled Checkbox</h3>
 						</div>
-						<div class="panel-body no-padding">
-							<form action="#" method="POST" class="form-horizontal form-striped">
+						<div class="panel-body">
+							<form action="#" method="POST" class="form-horizontal">
 							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck">Blue
+										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="blue" />Blue
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck" checked>Blue	checked
+										<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="blue" checked="" />Blue	checked
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck" disabled>Blue disabled
+										<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="blue" disabled="" />Blue disabled
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck" checked disabled>Blue disble checked
+										<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="blue" checked="" disabled="" />Blue disble checked
 									</label>
-									</form>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-theme="red">Red
+										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="red" />Red
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck" data-theme="red" checked>Red	checked
+										<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="red" checked="" />Red checked
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck" data-theme="red" disabled>Red disabled
+										<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="red" disabled="" />Red disabled
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck" data-theme="red" checked disabled>Red disble checked
+										<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="red" checked="" disabled="" />Red disble checked
 									</label>
-									</form>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-theme="orange">Orange
+										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="orange" />Orange
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck" data-theme="orange" checked>Orange	checked
+										<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="orange" checked="" />Orange checked
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck" data-theme="orange" disabled>Orange disabled
+										<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="orange" disabled="" />Orange disabled
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck" data-theme="orange" checked disabled>Orange disble checked
+										<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="orange" checked="" disabled="" />Orange disble checked
 									</label>
-									</form>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-theme="purple">Purple
+										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="purple" />Purple
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck" data-theme="purple" checked>Purple	checked
+										<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="purple" checked="" />Purple checked
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck" data-theme="purple" disabled>Purple disabled
+										<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="purple" disabled="" />Purple disabled
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck" data-theme="purple" checked disabled>Purple disble checked
+										<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="purple" checked="" disabled="" />Purple disble checked
 									</label>
-									</form>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-theme="green">Green
+										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="green" />Green
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck" data-theme="green" checked>Green	checked
+										<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="green" checked="" />Green checked
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck" data-theme="green" disabled>Green disabled
+										<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="green" disabled="" />Green disabled
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck" data-theme="green" checked disabled>Green disble checked
+										<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="green" checked="" disabled="" />Green disble checked
 									</label>
-									</form>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-theme="skyblue">Skyblue
+										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="skyblue" />SkyBlue
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck" data-theme="skyblue" checked>Skyblue	checked
+										<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="skyblue" checked="" />SkyBlue checked
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck" data-theme="skyblue" disabled>Skyblue disabled
+										<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="skyblue" disabled="" />SkyBlue disabled
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck" data-theme="skyblue" checked disabled>Skyblue disble checked
+										<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="skyblue" checked="" disabled="" />SkyBlue disble checked
 									</label>
-									</form>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-theme="grey">Grey
+										<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="grey" />Grey
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck" data-theme="grey" checked>Grey	checked
+										<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="grey" checked="" />Grey checked
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck" data-theme="grey" disabled>Grey disabled
+										<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="grey" disabled="" />Grey disabled
 									</label>
+								</div>
+								<div class="col-md-3">
 									<label class="checkbox-inline">
-										<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck" data-theme="grey" checked disabled>Grey disble checked
+										<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="grey" checked="" disabled="" />Grey disble checked
 									</label>
-									</form>
 								</div>
 							</div>
 							</form>
@@ -814,258 +842,284 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default blue">
 						<div class="panel-heading">
 							<h3 class="panel-title"><i class="fa fa-edit"></i>Styled Radio</h3>
 						</div>
-						<div class="panel-body no-padding">
-							<form action="#" method="POST" class="form-horizontal form-striped">
-							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
-									<label class="radio-inline">
-										<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck">Blue
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" checked>Blue checked
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" disabled>Blue disabled
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" checked disabled>Blue disble checked
-									</label>
-									</form>
+						<div class="panel-body">
+							<form action="#" method="POST" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" />Blue
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" checked="" />Blue	checked
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" disabled="" />Blue disabled
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" checked="" disabled="" />Blue disble checked
+										</label>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
-									<label class="radio-inline">
-										<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="red">Red
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="red" checked>Red checked
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="red" disabled>Red disabled
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="red" checked disabled>Red disble checked
-									</label>
-									</form>
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="red" />Red
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="red" checked="" />Red checked
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="red" disabled="" />Red disabled
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="red" checked="" disabled="" />Red disble checked
+										</label>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="orange">Orange
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="orange" />Orange
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="orange" checked>Orange checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="orange" checked="" />Orange checked
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="orange" disabled>Orange disabled
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="orange" disabled="" />Orange disabled
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="orange" checked disabled>Orange disble checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="orange" checked="" disabled="" />Orange disble checked
 										</label>
-									</form>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="purple">Purple
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="purple" />Purple
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="purple" checked>Purple checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="purple" checked="" />Purple checked
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="purple" disabled>Purple disabled
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="purple" disabled="" />Purple disabled
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="purple" checked disabled>Purple disble checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="purple" checked="" disabled="" />Purple disble checked
 										</label>
-									</form>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="green">Green
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="green" />Green
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="green" checked>Green checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="green" checked="" />Green checked
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="green" disabled>Green disabled
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="green" disabled="" />Green disabled
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="green" checked disabled>Green disble checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="green" checked="" disabled="" />Green disble checked
 										</label>
-									</form>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="skyblue">Skyblue
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="skyblue" />SkyBlue
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="skyblue" checked>Skyblue checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="skyblue" checked="" />SkyBlue checked
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="skyblue" disabled>Skyblue disabled
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="skyblue" disabled="" />SkyBlue disabled
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="skyblue" checked disabled>Skyblue disble checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="skyblue" checked="" disabled="" />SkyBlue disble checked
 										</label>
-									</form>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-12">
-									<form id="Form1" class="form-horizontal">
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="grey">Grey
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="grey" />Grey
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-theme="grey" checked>Grey checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="grey" checked="" />Grey checked
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="grey" disabled>Grey disabled
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="grey" disabled="" />Grey disabled
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-theme="grey" checked disabled>Grey disble checked
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="grey" checked="" disabled="" />Grey disble checked
 										</label>
-									</form>
+									</div>
 								</div>
-							</div>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 	 		<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default blue">
 						<div class="panel-heading">
 							<h3 class="panel-title"><i class="fa fa-edit"></i>Size</h3>
 						</div>
-						<div class="panel-body no-padding">
-							<form action="#" method="POST" class="form-horizontal form-striped">
+						<div class="panel-body">
+							<form action="#" method="POST" class="form-horizontal">
 								<div class="form-group">
-									<div class="col-lg-12">
-										<form id="Form1" class="form-horizontal">
-											<label class="checkbox-inline">
-												<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-size="medium">Blue medium
-											</label>
-											<label class="checkbox-inline">
-												<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck"  data-size="medium" checked>Blue medium	checked
-											</label>
-											<label class="checkbox-inline">
-												<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck"  data-size="medium" disabled>Blue medium disabled
-											</label>
-											<label class="checkbox-inline">
-												<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck"  data-size="medium" checked disabled>Blue medium disble checked
-											</label>
-										</form>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="blue" data-size="medium" />Blue medium
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="blue" data-size="medium" checked="" />Blue medium checked
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="blue" data-size="medium"  disabled="" />Blue medium disabled
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="blue" data-size="medium"  checked="" disabled="" />Blue medium disble checked
+										</label>
 									</div>
 								</div>
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
 								<div class="form-group">
-									<div class="col-lg-12">
-										<form id="Form1" class="form-horizontal">
-											<label class="radio-inline">
-												<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-size="medium">Blue medium
-											</label>
-											<label class="radio-inline">
-												<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-size="medium" checked>Blue medium checked
-											</label>
-											<label class="radio-inline">
-												<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-size="medium" disabled>Blue medium disabled
-											</label>
-											<label class="radio-inline">
-												<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-size="medium" checked disabled>Blue medium disble checked
-											</label>
-										</form>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="medium" />Blue medium
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="medium" checked="" />Blue	medium checked
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="medium" disabled="" />Blue medium disabled
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="medium" checked="" disabled="" />Blue medium disble checked
+										</label>
 									</div>
 								</div>
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
 								<div class="form-group">
-									<div class="col-lg-12">
-										<form id="Form1" class="form-horizontal">
+									<div class="col-md-3">
 										<label class="checkbox-inline">
-											<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-size="large">Blue large
+											<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-theme="blue" data-size="large" />Blue large
 										</label>
+									</div>
+									<div class="col-md-3">
 										<label class="checkbox-inline">
-											<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck"  data-size="large" checked>Blue large	checked
+											<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-theme="blue" data-size="large" checked="" />Blue large checked
 										</label>
+									</div>
+									<div class="col-md-3">
 										<label class="checkbox-inline">
-											<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck"  data-size="large" disabled>Blue large disabled
+											<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-theme="blue" data-size="large"  disabled="" />Blue large disabled
 										</label>
+									</div>
+									<div class="col-md-3">
 										<label class="checkbox-inline">
-											<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck"  data-size="large" checked disabled>Blue large disble checked
+											<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-theme="blue" data-size="large"  checked="" disabled="" />Blue large disble checked
 										</label>
-										</form>
 									</div>
 								</div>
+							</form>
+							<form action="#" method="POST" class="form-horizontal">
 								<div class="form-group">
-									<div class="col-lg-12">
-										<form id="Form1" class="form-horizontal">
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-size="large">Blue large
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="large" />Blue large
 										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-size="large" checked>Blue large checked
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-size="large" disabled>Blue large disabled
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-size="large" checked disabled>Blue large disble checked
-										</label>
-										</form>
 									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-lg-12">
-										<form id="Form1" class="form-horizontal">
+									<div class="col-md-3">
 										<label class="checkbox-inline">
-											<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="bsfancycheck" data-size="xlarge">Blue xlarge
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="large" checked="" />Blue	large checked
 										</label>
-										<label class="checkbox-inline">
-											<input type="checkbox" id="Checkbox1" value="test" data-provide="bsfancycheck"  data-size="xlarge" checked>Blue xlarge	checked
-										</label>
-										<label class="checkbox-inline">
-											<input type="checkbox" id="Checkbox2" value="test" data-provide="bsfancycheck"  data-size="xlarge" disabled>Blue xlarge disabled
-										</label>
-										<label class="checkbox-inline">
-											<input type="checkbox" id="Checkbox3" value="test" data-provide="bsfancycheck"  data-size="xlarge" checked disabled>Blue xlarge disble checked
-										</label>
-										</form>
 									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-lg-12">
-										<form id="Form1" class="form-horizontal">
-											<label class="radio-inline">
-												<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-size="xlarge">Blue xlarge
-											</label>
-											<label class="radio-inline">
-												<input type="radio" name="radioblue" value="test" data-provide="bsfancycheck" data-size="xlarge" checked>Blue xlarge checked
-											</label>
-											<label class="radio-inline">
-												<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-size="xlarge" disabled>Blue xlarge disabled
-											</label>
-											<label class="radio-inline">
-												<input type="radio" name="radioblue1" value="test" data-provide="bsfancycheck" data-size="xlarge" checked disabled>Blue xlarge disble checked
-											</label>
-										</form>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="large" disabled="" />Blue large disabled
+										</label>
+									</div>
+									<div class="col-md-3">
+										<label class="checkbox-inline">
+											<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-theme="blue" data-size="large" checked="" disabled="" />Blue large disble checked
+										</label>
 									</div>
 								</div>
 							</form>

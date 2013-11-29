@@ -21,31 +21,31 @@
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Default</label>
 									<div class="col-lg-4">
-										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-plugin="datepicker" />
+										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-provide="datepicker" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Auto Close</label>
 									<div class="col-lg-4">
-										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-plugin="datepicker" data-auto-close="true" />
+										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-provide="datepicker" data-auto-close="true" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Calendar Weeks</label>
 									<div class="col-lg-4">
-										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-plugin="datepicker" data-calendar-weeks="true" />
+										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-provide="datepicker" data-calendar-weeks="true" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Today Highlight</label>
 									<div class="col-lg-4">
-										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-plugin="datepicker" data-today-highlight="true" />
+										<input type="text" id="datepicker" placeholder="Select date" class="form-control input-small" data-provide="datepicker" data-today-highlight="true" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Component</label>
 									<div class="col-lg-6 input-xlarge">
-										<div class="input-group input-daterange" data-plugin="datepicker">
+										<div class="input-group input-daterange" data-provide="datepicker">
 											<input type="text" class="form-control" name="start" placeholder="Start" />
 											<span class="input-group-addon no-border-left no-border-right">to</span>
 											<input type="text" class="form-control" name="end" placeholder="End" />
@@ -55,7 +55,7 @@
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Component</label>
 									<div class="col-lg-4 input-large">
-										<div id="component" class="input-group date" data-plugin="datepicker">
+										<div id="component" class="input-group date" data-provide="datepicker">
 											<input type="text" class="form-control" placeholder="Select date" /><span class="input-group-addon"><i class="fa fa-calendar cursor-pointer"></i></span>
 										</div>
 									</div>
@@ -63,7 +63,7 @@
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Calendar</label>
 									<div class="col-lg-8">
-										<div data-plugin="datepicker"></div>
+										<div data-provide="datepicker"></div>
 									</div>
 								</div>
 							</form>
@@ -115,7 +115,7 @@
 								<div class="form-group">
 									<label for="textfield" class="col-lg-4 control-label">Default</label>
 									<div class="col-lg-4 input-medium no-padding-right">
-										<input type="text" id="datepicker" placeholder="Select date" class="form-control" data-plugin="datepicker" />
+										<input type="text" id="datepicker" placeholder="Select date" class="form-control" data-provide="datepicker" />
 									</div>
 									<div class="col-lg-4 input-medium no-padding-left">
 										<div class="input-group bootstrap-timepicker">

@@ -118,12 +118,16 @@ function writeclassname($rootname,$classname){
 						</a>
 					</li>
 					<li>
-						<a <?php checkactive("labels_badges.php");?> href="labels_badges.php">Labels and badges
-						</a>
+						<a <?php checkactive("labels_badges.php");?> href="labels_badges.php">Labels and badges</a>
 					</li>
 					<li>
-						<a <?php checkactive("buttons.php");?> href="buttons.php">Buttons
-						</a>
+						<a <?php checkactive("buttons.php");?> href="buttons.php">Buttons</a>
+					</li>
+					<li>
+						<a <?php checkactive("panels.php");?> href="panels.php">Panels</a>
+					</li>
+					<li>
+						<a <?php checkactive("tiles.php");?> href="tiles.php">Tiles</a>
 					</li>
 					<li>
 						<a <?php checkactive("icons.php");?> href="icons.php">Icons

@@ -1,0 +1,748 @@
+.metro .tile-area
+{
+	overflow: hidden;
+	padding: 120px 80px 0 80px;
+	position: relative;
+}
+.metro .tile-area .tile-area-title
+{
+	left: 80px;
+	position: fixed;
+	top: 20px;
+}
+.metro .tile-area .user-id
+{
+	background-color: transparent;
+	color: #fff;
+	cursor: default;
+	display: inline-block;
+	padding: 8px;
+	position: fixed;
+	right: 40px;
+	top: 40px;
+	width: auto;
+}
+.metro .tile-area .user-id .user-id-image
+{
+	background-color: #464646;
+	color: inherit;
+	float: right;
+	height: 40px;
+	margin-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	width: 40px;
+}
+.metro .tile-area .user-id .user-id-image img,.metro .tile-area .user-id .user-id-image [class*="icon-"]
+{
+	color: inherit;
+	font-size: 16pt;
+	height: 100%;
+	line-height: 16pt;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+.metro .tile-area .user-id .user-id-image [class*="icon-"]
+{
+	padding: 10px;
+}
+.metro .tile-area .user-id .user-id-name
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.metro .tile-area .user-id .user-id-name .first-name,.metro .tile-area .user-id .user-id-name .last-name
+{
+	color: inherit;
+	display: block;
+	font-family: 'Segoe UI Light_','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+	line-height: 12pt;
+}
+.metro .tile-area .user-id .user-id-name .first-name
+{
+	font-size: 20pt;
+	line-height: 20pt;
+}
+.metro .tile-area .user-id .user-id-name .last-name
+{
+	font-size: 12pt;
+}
+.metro .tile-area .user-id:hover
+{
+	background-color: #404040;
+}
+.metro .tile-area-dark
+{
+	background-color: #1d1d1d!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-dark .tile
+{
+	outline-color: #373737!important;
+}
+.metro .tile-area-dark:before,.metro .tile-area-dark:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-dark:after
+{
+	clear: both;
+}
+.metro .tile-area-darkBrown
+{
+	background-color: #63362f!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkBrown .tile
+{
+	outline-color: #86493f!important;
+}
+.metro .tile-area-darkBrown:before,.metro .tile-area-darkBrown:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkBrown:after
+{
+	clear: both;
+}
+.metro .tile-area-darkCrimson
+{
+	background-color: #640024!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkCrimson .tile
+{
+	outline-color: #970036!important;
+}
+.metro .tile-area-darkCrimson:before,.metro .tile-area-darkCrimson:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkCrimson:after
+{
+	clear: both;
+}
+.metro .tile-area-darkViolet
+{
+	background-color: #57169a!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkViolet .tile
+{
+	outline-color: #701cc7!important;
+}
+.metro .tile-area-darkViolet:before,.metro .tile-area-darkViolet:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkViolet:after
+{
+	clear: both;
+}
+.metro .tile-area-darkMagenta
+{
+	background-color: #81003c!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkMagenta .tile
+{
+	outline-color: #b40054!important;
+}
+.metro .tile-area-darkMagenta:before,.metro .tile-area-darkMagenta:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkMagenta:after
+{
+	clear: both;
+}
+.metro .tile-area-darkCyan
+{
+	background-color: #1b6eae!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkCyan .tile
+{
+	outline-color: #228ada!important;
+}
+.metro .tile-area-darkCyan:before,.metro .tile-area-darkCyan:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkCyan:after
+{
+	clear: both;
+}
+.metro .tile-area-darkCobalt
+{
+	background-color: #00356a!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkCobalt .tile
+{
+	outline-color: #004e9d!important;
+}
+.metro .tile-area-darkCobalt:before,.metro .tile-area-darkCobalt:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkCobalt:after
+{
+	clear: both;
+}
+.metro .tile-area-darkTeal
+{
+	background-color: #004050!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkTeal .tile
+{
+	outline-color: #006983!important;
+}
+.metro .tile-area-darkTeal:before,.metro .tile-area-darkTeal:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkTeal:after
+{
+	clear: both;
+}
+.metro .tile-area-darkEmerald
+{
+	background-color: #003e00!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkEmerald .tile
+{
+	outline-color: #007100!important;
+}
+.metro .tile-area-darkEmerald:before,.metro .tile-area-darkEmerald:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkEmerald:after
+{
+	clear: both;
+}
+.metro .tile-area-darkGreen
+{
+	background-color: #128023!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkGreen .tile
+{
+	outline-color: #18ad2f!important;
+}
+.metro .tile-area-darkGreen:before,.metro .tile-area-darkGreen:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkGreen:after
+{
+	clear: both;
+}
+.metro .tile-area-darkOrange
+{
+	background-color: #bf5a15!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkOrange .tile
+{
+	outline-color: #e77120!important;
+}
+.metro .tile-area-darkOrange:before,.metro .tile-area-darkOrange:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkOrange:after
+{
+	clear: both;
+}
+.metro .tile-area-darkRed
+{
+	background-color: #9a1616!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkRed .tile
+{
+	outline-color: #c71c1c!important;
+}
+.metro .tile-area-darkRed:before,.metro .tile-area-darkRed:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkRed:after
+{
+	clear: both;
+}
+.metro .tile-area-darkPink
+{
+	background-color: #9a165a!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkPink .tile
+{
+	outline-color: #c71c74!important;
+}
+.metro .tile-area-darkPink:before,.metro .tile-area-darkPink:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkPink:after
+{
+	clear: both;
+}
+.metro .tile-area-darkIndigo
+{
+	background-color: #4b0096!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkIndigo .tile
+{
+	outline-color: #6400c9!important;
+}
+.metro .tile-area-darkIndigo:before,.metro .tile-area-darkIndigo:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkIndigo:after
+{
+	clear: both;
+}
+.metro .tile-area-darkBlue
+{
+	background-color: #16499a!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-darkBlue .tile
+{
+	outline-color: #1c5ec7!important;
+}
+.metro .tile-area-darkBlue:before,.metro .tile-area-darkBlue:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-darkBlue:after
+{
+	clear: both;
+}
+.metro .tile-area-lightBlue
+{
+	background-color: #4390df!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-lightBlue .tile
+{
+	outline-color: #6faae6!important;
+}
+.metro .tile-area-lightBlue:before,.metro .tile-area-lightBlue:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-lightBlue:after
+{
+	clear: both;
+}
+.metro .tile-area-lightTeal
+{
+	background-color: #008e8e!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-lightTeal .tile
+{
+	outline-color: #00c1c1!important;
+}
+.metro .tile-area-lightTeal:before,.metro .tile-area-lightTeal:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-lightTeal:after
+{
+	clear: both;
+}
+.metro .tile-area-lightOlive
+{
+	background-color: #78aa1c!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-lightOlive .tile
+{
+	outline-color: #97d623!important;
+}
+.metro .tile-area-lightOlive:before,.metro .tile-area-lightOlive:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-lightOlive:after
+{
+	clear: both;
+}
+.metro .tile-area-lightOrange
+{
+	background-color: #c29008!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-lightOrange .tile
+{
+	outline-color: #f3b40a!important;
+}
+.metro .tile-area-lightOrange:before,.metro .tile-area-lightOrange:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-lightOrange:after
+{
+	clear: both;
+}
+.metro .tile-area-lightPink
+{
+	background-color: #f472d0!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-lightPink .tile
+{
+	outline-color: #f8a1e0!important;
+}
+.metro .tile-area-lightPink:before,.metro .tile-area-lightPink:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-lightPink:after
+{
+	clear: both;
+}
+.metro .tile-area-grayed
+{
+	background-color: #585858!important;
+	height: 100%;
+	min-width: 100%;
+}
+.metro .tile-area-grayed .tile
+{
+	outline-color: #727272!important;
+}
+.metro .tile-area-grayed:before,.metro .tile-area-grayed:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile-area-grayed:after
+{
+	clear: both;
+}
+.metro .tile-group
+{
+	display: block;
+	float: left;
+	margin-right: 46px;
+	padding-top: 40px;
+	position: relative;
+	width: 130px;
+}
+.metro .tile-group.two,.metro .tile-group.double
+{
+	width: 260px;
+}
+.metro .tile-group.three,.metro .tile-group.triple
+{
+	width: 390px;
+}
+.metro .tile-group.four,.metro .tile-group.quadro
+{
+	width: 520px;
+}
+.metro .tile-group.five
+{
+	width: 650px;
+}
+.metro .tile-group.six
+{
+	width: 780px;
+}
+.metro .tile-group.seven
+{
+	width: 910px;
+}
+.metro .tile-group:first-child
+{
+	margin-left: 80px;
+}
+.metro .tile-group
+{
+	color: #fff;
+}
+.metro .tile-group .tile-group-title
+{
+	color: inherit;
+	font-family: 'Segoe UI Light_','Open Sans Light',Verdana,Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	left: 0;
+	line-height: 20px;
+	position: absolute;
+	top: 10px;
+}
+.metro .tile
+{
+	background-color: #eee;
+	box-shadow: inset 0 0 1px #ffc;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 0 10px 10px 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+.metro .tile:hover
+{
+	outline: #999 solid 3px;
+}
+.metro .tile:active
+{
+	outline: 0;
+}
+.metro .tile.no-outline
+{
+	outline-color: transparent;
+}
+.metro .tile
+{
+	height: 120px;
+	margin: 0 10px 10px 0;
+	width: 120px;
+}
+.metro .tile.half
+{
+	height: 55px;
+	width: 55px;
+}
+.metro .tile.double
+{
+	width: 250px;
+}
+.metro .tile.double-vertical
+{
+	height: 250px;
+}
+.metro .tile.triple
+{
+	width: 380px;
+}
+.metro .tile.triple-vertical
+{
+	height: 380px;
+}
+.metro .tile.quadro
+{
+	width: 510px;
+}
+.metro .tile.quadro-vertical
+{
+	height: 510px;
+}
+.metro .tile.selected
+{
+	border: 4px #4390df solid;
+}
+.metro .tile.selected:after
+{
+	border-left: 28px solid transparent;
+	border-top: 28px solid #4390df;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 101;
+}
+.metro .tile.selected:before
+{
+	color: #fff;
+	content: "\e08a";
+	display: block;
+	font-family: iconFont;
+	font-size: 9pt;
+	font-weight: normal;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 102;
+}
+.metro .tile .tile-content
+{
+	display: block;
+	height: 100%;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.metro .tile .tile-content.padded
+{
+	padding: 10px;
+}
+.metro .tile .tile-content.image
+{
+	max-height: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+.metro .tile .tile-content.icon [class*="icon-"],.metro .tile .tile-content.icon img
+{
+	color: #fff;
+	font-size: 48px;
+	height: 56px;
+	left: 50%;
+	line-height: 56px;
+	margin-left: -28px;
+	margin-top: -28px;
+	position: absolute;
+	position: relative;
+	text-align: center;
+	top: 50%;
+	width: 56px;
+}
+.metro .tile .tile-content.image-set img
+{
+	border: 1px #1e1e1e solid;
+	float: left;
+	height: 50%;
+	margin: 0;
+	padding: 0;
+	width: 25%!important;
+}
+.metro .tile .tile-content.image-set img:first-child
+{
+	float: left;
+	height: 100%;
+	width: 50%!important;
+}
+.metro .tile .tile-content
+{
+	display: none;
+}
+.metro .tile .tile-content:first-child
+{
+	display: block;
+}
+.metro .tile .brand,.metro .tile .tile-status
+{
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	min-height: 29px;
+	position: absolute;
+	right: 0;
+}
+.metro .tile .brand:before,.metro .tile .tile-status:before,.metro .tile .brand:after,.metro .tile .tile-status:after
+{
+	content: "";
+	display: table;
+}
+.metro .tile .brand:after,.metro .tile .tile-status:after
+{
+	clear: both;
+}
+.metro .tile .brand.opacity,.metro .tile .tile-status.opacity
+{
+	opacity: .7;
+}
+.metro .tile .brand .name,.metro .tile .tile-status .name,.metro .tile .brand .label,.metro .tile .tile-status .label,.metro .tile .brand .text,.metro .tile .tile-status .text
+{
+	background: transparent;
+	color: #fff;
+	display: block;
+	font-size: 10pt;
+	margin: 5px 20px 2px 5px;
+}
+.metro .tile .brand .text,.metro .tile .tile-status .text
+{
+	font-size: 8pt;
+	line-height: 10pt;
+	margin: 4px 5px;
+}
+.metro .tile .brand .badge,.metro .tile .tile-status .badge
+{
+	bottom: 0;
+	color: #fff;
+	display: block;
+	font-size: 10pt;
+	height: 29px;
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	vertical-align: middle!important;
+	width: 29px;
+}
+.metro .tile .brand .badge.activity,.metro .tile .tile-status .badge.activity
+{
+	background: url('data:image/png;
+}
+.metro .tile .brand .badge.alert,.metro .tile .tile-status .badge.alert
+{
+	background: url('data:image/png;
+}
+.metro .tile .brand .badge.available,.metro .tile .tile-status .badge.available
+{
+	background: url('data:image/png;
+}
+.metro .tile .brand .badge.unavailable,.metro .tile .tile-status .badge.unavailable
+{
+	background: url('data:image/png;
+}
+.metro .tile .brand .badge.away,.metro .tile .tile-status .badge.away
+{
+	background: url('data:image/png;
+}
+.metro .tile .brand .badge.busy,.metro .tile .tile-status .badge.busy
+{
+	background: url('data:image/png;
+}

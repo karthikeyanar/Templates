@@ -103,9 +103,9 @@
 						 			<code>.bg-dark-blue</code>
 								</div>
 								<div class="col-lg-3 cutter-bottom">
-									 <div class="well no-border bg-sky-blue no-margin">
+									 <div class="well no-border bg-skyblue no-margin">
 							 		</div>
-							 		<code>.bg-sky-blue</code>
+							 		<code>.bg-skyblue</code>
 								</div>
 							</div>
 							<div class="row">
@@ -241,10 +241,10 @@
 									<code>.fg-dark-blue</code>
 								</div>
 								<div class="col-lg-3 cutter-bottom">
-										<div class="well bg-white fg-sky-blue no-margin">
+										<div class="well bg-white fg-skyblue no-margin">
 										Title
 									</div>
-									<code>.fg-sky-blue</code>
+									<code>.fg-skyblue</code>
 								</div>
 							</div>
 							<div class="row">

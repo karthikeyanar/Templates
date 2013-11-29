@@ -17,10 +17,10 @@
 			<div id="computers" class="panel-collapse collapse in">
 				<div class="accordion-inner">
 					<ul>
-						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="bsfancycheck" />All-in-One Desktop</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="bsfancycheck" />Labptop</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="bsfancycheck" />Tablet</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="bsfancycheck" />Mobile</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="fcheck" />All-in-One Desktop</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="fcheck" />Labptop</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="fcheck" />Tablet</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="fcheck" />Mobile</label></li>
 					</ul>
 				</div>
 			</div>
@@ -30,10 +30,10 @@
 			<div id="brand" class="panel-collapse collapse in">
 				<div class="accordion-inner">
 					<ul>
-						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="bsfancycheck" />Dell (3)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="bsfancycheck" />HCL (2)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="bsfancycheck" />HP (4)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="bsfancycheck" />Acer (3)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="fcheck" />Dell (3)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="fcheck" />HCL (2)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="fcheck" />HP (4)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="fcheck" />Acer (3)</label></li>
 					</ul>
 				</div>
 			</div>
@@ -43,10 +43,10 @@
 			<div id="price" class="panel-collapse collapse in">
 				<div class="accordion-inner">
 					<ul>
-						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="bsfancycheck" />$500 - $1000 (2)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="bsfancycheck" />$1000 - $5000 (4)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="bsfancycheck" />$5000 - $10000 (10)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="bsfancycheck" />$10000 - $15000 (15)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="fcheck" />$500 - $1000 (2)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="fcheck" />$1000 - $5000 (4)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="fcheck" />$5000 - $10000 (10)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="fcheck" />$10000 - $15000 (15)</label></li>
 					</ul>
 				</div>
 			</div>
@@ -56,10 +56,10 @@
 			<div id="os" class="panel-collapse collapse in">
 				<div class="accordion-inner">
 					<ul>
-						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="bsfancycheck" />Windows 7 Home Basic (2)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="bsfancycheck" />Windows 7 Home Premium (4)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="bsfancycheck" />Windows 8 (10)</label></li>
-						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="bsfancycheck" />Linux (2)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c1" data-provide="fcheck" />Windows 7 Home Basic (2)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c2" data-provide="fcheck" />Windows 7 Home Premium (4)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c3" data-provide="fcheck" />Windows 8 (10)</label></li>
+						<li><label class="checkbox"><input type="checkbox" name="c4" data-provide="fcheck" />Linux (2)</label></li>
 					</ul>
 				</div>
 			</div>

@@ -30,7 +30,7 @@
 									Events</div>
 							</div>
 						</div>
-						<div class="tile icon bg-sky-blue">
+						<div class="tile icon bg-skyblue">
 							<div class="tile-content">
 								<i class="fa fa-shopping-cart icon-4x"></i>
 							</div>
@@ -108,7 +108,7 @@
 											height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR4nO2VrZLCMBRGef9HuSImoiIC05maiogaRERMJa9wVyXD37K7FDjD7CfOTIH0zuEk0N3xePT/zI4WoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoNkcIOfsMUY3M48xeq31ak0Iwc0MnfmSAIfDwc3Mc85ea3Uz8/1+f7Zmnmc3s1/LvmLmywKklO5KrOvad7Kta19qGIa+bhgGNzOvtT40EwvQjmiTTimdfT6Ooy/LciXbdjDn3K/ned40EwtgZl5K6Ue3Hddaa9/lW7IxRg8heAjBY4xPmYkFuPU6peSllG9lc879/WmanjLz7QEu/4lPpdr1Jaf3np6CdV03z3x7gGma+m+5lOJm5uM4/nhS2n3LsvST0O57dCYSoAm3Xbsleil77ynQjvdfZ6IBPh0FoAVoFIAWoFEAWoBGAWgBGgWgBWgUgBagUQBagEYBaAEaBaAFaBSAFqBRAFqARgFoARoFoAVoFIAWoPkClAggzoBQdWcAAAAASUVORK5CYII=">
 									</a>
 										<div class="media-body">
-											<div class="message-body right bg-sky-blue fg-white">
+											<div class="message-body right bg-skyblue fg-white">
 												<div class="arrow-left">
 												</div>
 												<h4 class="media-heading">
@@ -174,7 +174,7 @@
 								<div class="input-group">
 									<input type="text" id="msg" name="msg" class="form-control" placeholder="Message" />
 									<span class="input-group-btn"><button id="send" class="btn btn-primary">
-										<i class="fa fa-share-alt"></i>
+										<i class="fa fa-check"></i>
 									</button></span>
 								</div>
 							</div>
@@ -184,7 +184,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<div id="calendar">
+					<div id="calendar1">
 					</div>
 				</div>
 			</div>

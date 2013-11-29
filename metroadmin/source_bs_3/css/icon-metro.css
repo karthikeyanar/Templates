@@ -1,0 +1,33 @@
+/* icon-metro */
+.icon-metro {
+	background-size:24px 24px;
+	background-repeat:no-repeat;
+	height:24px;
+	width:24px;
+	display: inline-block;
+	line-height:0;
+	margin:0;
+	padding:0;
+} 
+.icon-metro.medium {
+	background-size:32px 32px;
+	height:32px;
+	width:32px;
+}
+.icon-metro.large {
+	background-size:48px 48px;
+	height:48px;
+	width:48px;
+}
+.icon-metro.icon-back {
+	background-image: url(../img/metro/black/back.png);
+} 
+.icon-metro.icon-back.icon-white {
+	background-image: url(../img/metro/white/back.png);
+} 
+.icon-metro.icon-next {
+	background-image: url(../img/metro/black/next.png);
+} 
+.icon-metro.icon-next.icon-white {
+	background-image: url(../img/metro/white/next.png);
+} 

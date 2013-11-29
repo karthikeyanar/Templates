@@ -29,7 +29,7 @@
 				<h3 class="panel-title">
 				Draggable Events</h3>
 				<div  id="external-events">
-					<div class='external-event bg-sky-blue fg-white'>
+					<div class='external-event bg-skyblue fg-white'>
 						My Event 1</div>
 					<div class='external-event bg-red fg-white'>
 						My Event 2</div>

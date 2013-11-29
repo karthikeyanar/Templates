@@ -40,12 +40,10 @@
 <!-- data-table -->
 <script src="js/plugins/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>
-<!-- bootstrap check -->
-<script src="js/plugins/bootstrap-fancy-check.js" type="text/javascript"></script>
+<!-- fcheck -->
+<script src="js/plugins/fcheck.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
-<!-- bootstrap popover confirm -->
-<script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
 <!-- bootbox -->
 <script src="js/plugins/bootbox.min.js" type="text/javascript"></script>
 <!-- pepper application -->
