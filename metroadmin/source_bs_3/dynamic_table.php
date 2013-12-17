@@ -1,8 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-	
-	
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="page-header">
@@ -1016,10 +1014,7 @@
 					</div>
 				</div>
 			</div>
-	</div>
-	<!-- end mainbar -->
-</div>
-<!-- end container -->
+<?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
 <script type="text/javascript">
 	/* Table initialisation */

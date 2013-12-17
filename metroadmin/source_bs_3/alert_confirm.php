@@ -1,7 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-
 		<div class="page-header">
 			<h1>Alert & Confirm</h1>
 		</div>
@@ -26,7 +25,7 @@
 									Popup Confirm
 								</label>
 								<div class="col-lg-10">
-									<a class='btn btn-success' data-placement='bottom' data-title='Confirm order and use selected payment method?'  data-popover-confirm=''>Confirm and Purchase</a>
+									<a class='btn btn-success' data-placement='bottom' data-title='Confirm order and use selected payment method?'  data-popover-confirm>Confirm and Purchase</a>
 								</div>
 							</div>
 						</form>
@@ -110,10 +109,7 @@
 				</div>
 			</div>
 		</div>
-</div>
-<!-- end mainbar -->
-</div>
-<!-- end container -->
+<?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
 <script>
 	$(function(){

@@ -1,8 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-	
- 
 			<div class="page-header">
 				<h1>
 					Button Dropdowns</h1>
@@ -400,9 +398,6 @@
 					</div>
 				</div>
 			</div>
-	</div>
-	<!-- end mainbar -->
-</div>
-<!-- end container -->
+<?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
 <?php include_once 'footer.php' ?>

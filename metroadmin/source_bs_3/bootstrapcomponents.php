@@ -2698,9 +2698,7 @@
 				</div>
 			</div>
 	 </div>
-	<!-- end mainbar -->
-</div>
-<!-- end container -->
+<?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
 <?php include_once 'footer.php' ?>
 	 

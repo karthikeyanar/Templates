@@ -1,427 +1,7 @@
-.tile-area {
-	overflow: hidden;
-	padding: 120px 80px 0 80px;
-	position: relative;
-}
-.tile-area .tile-area-title {
-	left: 80px;
-	position: fixed;
-	top: 20px;
-}
-.tile-area .user-id {
-	background-color: transparent;
-	color: #fff;
-	cursor: default;
-	display: inline-block;
-	padding: 8px;
-	position: fixed;
-	right: 40px;
-	top: 40px;
-	width: auto;
-}
-.tile-area .user-id .user-id-image {
-	background-color: #464646;
-	color: inherit;
-	float: right;
-	height: 40px;
-	margin-left: 10px;
-	text-align: center;
-	vertical-align: middle;
-	width: 40px;
-}
-.tile-area .user-id .user-id-image img, .tile-area .user-id .user-id-image [class*="icon-"] {
-	color: inherit;
-	font-size: 16pt;
-	height: 100%;
-	line-height: 16pt;
-	text-align: center;
-	vertical-align: middle;
-	width: 100%;
-}
-.tile-area .user-id .user-id-image [class*="icon-"] {
-	padding: 10px;
-}
-.tile-area .user-id .user-id-name {
-	float: right;
-	margin: 0;
-	padding: 0;
-	text-align: right;
-}
-.tile-area .user-id .user-id-name .first-name, .tile-area .user-id .user-id-name .last-name {
-	color: inherit;
-	display: block;
-	font-family: 'Segoe UI Light_' , 'Open Sans Light' ,Verdana,Arial,Helvetica,sans-serif;
-	line-height: 12pt;
-}
-.tile-area .user-id .user-id-name .first-name {
-	font-size: 20pt;
-	line-height: 20pt;
-}
-.tile-area .user-id .user-id-name .last-name {
-	font-size: 12pt;
-}
-.tile-area .user-id:hover {
-	background-color: #404040;
-}
-.tile-area-dark {
-	background-color: #1d1d1d !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-dark .tile {
-	outline-color: #373737 !important;
-}
-.tile-area-dark:before, .tile-area-dark:after {
-	content: "";
-	display: table;
-}
-.tile-area-dark:after {
-	clear: both;
-}
-.tile-area-darkBrown {
-	background-color: #63362f !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkBrown .tile {
-	outline-color: #86493f !important;
-}
-.tile-area-darkBrown:before, .tile-area-darkBrown:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkBrown:after {
-	clear: both;
-}
-.tile-area-darkCrimson {
-	background-color: #640024 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkCrimson .tile {
-	outline-color: #970036 !important;
-}
-.tile-area-darkCrimson:before, .tile-area-darkCrimson:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkCrimson:after {
-	clear: both;
-}
-.tile-area-darkViolet {
-	background-color: #57169a !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkViolet .tile {
-	outline-color: #701cc7 !important;
-}
-.tile-area-darkViolet:before, .tile-area-darkViolet:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkViolet:after {
-	clear: both;
-}
-.tile-area-darkMagenta {
-	background-color: #81003c !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkMagenta .tile {
-	outline-color: #b40054 !important;
-}
-.tile-area-darkMagenta:before, .tile-area-darkMagenta:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkMagenta:after {
-	clear: both;
-}
-.tile-area-darkCyan {
-	background-color: #1b6eae !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkCyan .tile {
-	outline-color: #228ada !important;
-}
-.tile-area-darkCyan:before, .tile-area-darkCyan:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkCyan:after {
-	clear: both;
-}
-.tile-area-darkCobalt {
-	background-color: #00356a !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkCobalt .tile {
-	outline-color: #004e9d !important;
-}
-.tile-area-darkCobalt:before, .tile-area-darkCobalt:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkCobalt:after {
-	clear: both;
-}
-.tile-area-darkTeal {
-	background-color: #004050 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkTeal .tile {
-	outline-color: #006983 !important;
-}
-.tile-area-darkTeal:before, .tile-area-darkTeal:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkTeal:after {
-	clear: both;
-}
-.tile-area-darkEmerald {
-	background-color: #003e00 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkEmerald .tile {
-	outline-color: #007100 !important;
-}
-.tile-area-darkEmerald:before, .tile-area-darkEmerald:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkEmerald:after {
-	clear: both;
-}
-.tile-area-darkGreen {
-	background-color: #128023 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkGreen .tile {
-	outline-color: #18ad2f !important;
-}
-.tile-area-darkGreen:before, .tile-area-darkGreen:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkGreen:after {
-	clear: both;
-}
-.tile-area-darkOrange {
-	background-color: #bf5a15 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkOrange .tile {
-	outline-color: #e77120 !important;
-}
-.tile-area-darkOrange:before, .tile-area-darkOrange:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkOrange:after {
-	clear: both;
-}
-.tile-area-darkRed {
-	background-color: #9a1616 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkRed .tile {
-	outline-color: #c71c1c !important;
-}
-.tile-area-darkRed:before, .tile-area-darkRed:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkRed:after {
-	clear: both;
-}
-.tile-area-darkPink {
-	background-color: #9a165a !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkPink .tile {
-	outline-color: #c71c74 !important;
-}
-.tile-area-darkPink:before, .tile-area-darkPink:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkPink:after {
-	clear: both;
-}
-.tile-area-darkIndigo {
-	background-color: #4b0096 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkIndigo .tile {
-	outline-color: #6400c9 !important;
-}
-.tile-area-darkIndigo:before, .tile-area-darkIndigo:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkIndigo:after {
-	clear: both;
-}
-.tile-area-darkBlue {
-	background-color: #16499a !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-darkBlue .tile {
-	outline-color: #1c5ec7 !important;
-}
-.tile-area-darkBlue:before, .tile-area-darkBlue:after {
-	content: "";
-	display: table;
-}
-.tile-area-darkBlue:after {
-	clear: both;
-}
-.tile-area-lightBlue {
-	background-color: #4390df !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-lightBlue .tile {
-	outline-color: #6faae6 !important;
-}
-.tile-area-lightBlue:before, .tile-area-lightBlue:after {
-	content: "";
-	display: table;
-}
-.tile-area-lightBlue:after {
-	clear: both;
-}
-.tile-area-lightTeal {
-	background-color: #008e8e !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-lightTeal .tile {
-	outline-color: #00c1c1 !important;
-}
-.tile-area-lightTeal:before, .tile-area-lightTeal:after {
-	content: "";
-	display: table;
-}
-.tile-area-lightTeal:after {
-	clear: both;
-}
-.tile-area-lightOlive {
-	background-color: #78aa1c !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-lightOlive .tile {
-	outline-color: #97d623 !important;
-}
-.tile-area-lightOlive:before, .tile-area-lightOlive:after {
-	content: "";
-	display: table;
-}
-.tile-area-lightOlive:after {
-	clear: both;
-}
-.tile-area-lightOrange {
-	background-color: #c29008 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-lightOrange .tile {
-	outline-color: #f3b40a !important;
-}
-.tile-area-lightOrange:before, .tile-area-lightOrange:after {
-	content: "";
-	display: table;
-}
-.tile-area-lightOrange:after {
-	clear: both;
-}
-.tile-area-lightPink {
-	background-color: #f472d0 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-lightPink .tile {
-	outline-color: #f8a1e0 !important;
-}
-.tile-area-lightPink:before, .tile-area-lightPink:after {
-	content: "";
-	display: table;
-}
-.tile-area-lightPink:after {
-	clear: both;
-}
-.tile-area-grayed {
-	background-color: #585858 !important;
-	height: 100%;
-	min-width: 100%;
-}
-.tile-area-grayed .tile {
-	outline-color: #727272 !important;
-}
-.tile-area-grayed:before, .tile-area-grayed:after {
-	content: "";
-	display: table;
-}
-.tile-area-grayed:after {
-	clear: both;
-}
-.tile-group {
-	display: block;
-	float: left;
-	margin-right: 46px;
-	padding-top: 40px;
-	position: relative;
-	width: 130px;
-}
-.tile-group.two, .tile-group.double {
-	width: 260px;
-}
-.tile-group.three, .tile-group.triple {
-	width: 390px;
-}
-.tile-group.four, .tile-group.quadro {
-	width: 520px;
-}
-.tile-group.five {
-	width: 650px;
-}
-.tile-group.six {
-	width: 780px;
-}
-.tile-group.seven {
-	width: 910px;
-}
-.tile-group:first-child {
-	margin-left: 80px;
-}
-.tile-group {
-	color: #fff;
-}
-.tile-group .tile-group-title {
-	color: inherit;
-	font-family: 'Segoe UI Light_' , 'Open Sans Light' ,Verdana,Arial,Helvetica,sans-serif;
-	font-size: 18px;
-	left: 0;
-	line-height: 20px;
-	position: absolute;
-	top: 10px;
-}
 .tile {
-	background-color: #eee;
-	box-shadow: inset 0 0 1px #ffc;
+	border: 4px solid transparent;
+	background-color: #DDDDDD;
+	box-shadow: none;
 	cursor: pointer;
 	display: block;
 	float: left;
@@ -431,7 +11,7 @@
 	position: relative;
 }
 .tile:hover {
-	outline: #999 solid 3px;
+	border: 4px solid #AAAAAA;
 }
 .tile:active {
 	outline: 0;
@@ -448,6 +28,9 @@
 	height: 55px;
 	width: 55px;
 }
+.tile.vertical {
+	height: 250px;
+}
 .tile.double {
 	width: 250px;
 }
@@ -460,11 +43,19 @@
 .tile.triple-vertical {
 	height: 380px;
 }
-.tile.quadro {
-	width: 510px;
+.tile-box {
+	background-color:#fff;
+	margin-right:0 !important; 
+	border:0 !important;
 }
-.tile.quadro-vertical {
-	height: 510px;
+.tile.tile-box {
+	width:130px;
+}
+.tile.double.tile-box {
+	width:260px;
+}
+.tile.triple.tile-box {
+	width:390px;
 }
 .tile.selected {
 	border: 4px #4390df solid;
@@ -499,10 +90,18 @@
 	left: 0;
 	margin: 0;
 	overflow: hidden;
-	padding: 0;
+	padding: 10px;
 	position: absolute;
 	top: 0;
 	width: 100%;
+	color:#fff;
+}
+.tile .tile-content h1, .tile .tile-content h2, 
+.tile .tile-content h3, .tile .tile-content h4,
+.tile .tile-content h5, .tile .tile-content h6,
+.tile .tile-content p
+{
+	margin:0 0 5px 0;
 }
 .tile .tile-content.padded {
 	padding: 10px;
@@ -512,9 +111,8 @@
 	min-height: 100%;
 	width: 100%;
 }
-.tile .tile-content.icon [class*="icon-"], .tile .tile-content.icon img {
+.tile .tile-content.icon i, .tile .tile-content.icon img {
 	color: #fff;
-	font-size: 48px;
 	height: 56px;
 	left: 50%;
 	line-height: 56px;
@@ -567,7 +165,8 @@
 	background: transparent;
 	color: #fff;
 	display: block;
-	font-size: 10pt;
+	font-size: 13px;
+    font-weight: 400;
 	margin: 5px 20px 2px 5px;
 }
 .tile .brand .text, .tile .tile-status .text {
@@ -576,16 +175,19 @@
 	margin: 4px 5px;
 }
 .tile .brand .badge, .tile .tile-status .badge {
-	bottom: 0;
-	color: #fff;
-	display: block;
-	font-size: 10pt;
-	height: 29px;
-	margin: 0;
-	padding: 5px;
-	position: absolute;
-	right: 10px;
-	text-align: center;
-	vertical-align: middle !important;
-	width: 29px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border-radius: 0 !important;
+    bottom: 0;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    height: auto;
+    margin: 0;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    vertical-align: middle !important;
+    width: auto;
 }

@@ -241,6 +241,12 @@
 
 	};
 
+	this.handleDropdowns = function () {
+        $('body').on('click', '.dropdown-menu.hold-on-click', function(e){
+            e.stopPropagation();
+        })
+    };
+
 	this.initScrollTop = function() {
 		$('.footer').on('click', '.go-top', function(e) {
 			APP.scrollTo();
@@ -281,6 +287,9 @@
 		self.handleChosen();
 
 		self.handlePanelTools();
+		self.handleDropdowns();
+
+		self.sidebarAndContentHeight();
 
 	};
 

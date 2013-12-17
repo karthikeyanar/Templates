@@ -43,6 +43,8 @@
 <!-- fcheck -->
 <script src="js/plugins/fcheck.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
+<script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
+<!-- bootstrap switch -->
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
 <!-- bootbox -->
 <script src="js/plugins/bootbox.min.js" type="text/javascript"></script>

@@ -73,10 +73,7 @@
 					</div>
 				</div>
 			</div>
-	</div>
-	<!-- end mainbar -->
-</div>
-<!-- end container -->
+<?php include_once 'endcontainer.php' ?>
 <!-- Modal Definitions (tabbed over for <pre>) -->
 <div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
   <div class="modal-header">

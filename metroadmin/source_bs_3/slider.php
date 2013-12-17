@@ -66,10 +66,7 @@
 				</div>
 			</div>
 		</div>
-</div>
-<!-- end mainbar -->
-</div>
-<!-- end container -->
+<?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
 <style>
 	#red, #green, #blue {

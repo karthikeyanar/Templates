@@ -232,10 +232,7 @@ $('#create-switch').wrap('&lt;div class="switch" />').parent().bootstrapSwitch()
 					</div>
 				</div>
 			</div>
-	</div>
-	<!-- end mainbar -->
-</div>
-<!-- end container -->
+<?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
 <script type="text/javascript">
 	$('#mySwitch').on('switch-change',function(e,data) {

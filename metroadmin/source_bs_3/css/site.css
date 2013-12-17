@@ -244,6 +244,11 @@ label {
 	-moz-background-clip: none;
 	background-clip: none;
 }
+.dropdown-checkboxes {
+	 padding: 5px;
+}
+.dropdown-checkboxes .checkbox,.dropdown-checkboxes .radio {
+}
 .dropdown-menu {
 	margin-top: 0;
 	border: 2px solid #dcdcdc;
@@ -410,6 +415,9 @@ label {
 .panel-heading {
 	border-radius: 0;
 }
+.panel-heading,.panel-body {
+	padding:10px;
+}
 .panel-default > .panel-heading {
 	background-image: none;
 	filter: none;
@@ -534,6 +542,7 @@ label {
     line-height: 0;
     margin: 0 0 0 10px;
     padding: 0;
+	cursor: pointer;
 }
 .panel-btn-group > a > .fa {
 	font-size:14px;
@@ -1331,7 +1340,7 @@ label.error {
   display: none;
   list-style: none;
   clear: both;
-  margin: 8px 0px 8px 0px;
+  margin: 8px 0;
   padding: 0; 
 }
 .page-sidebar-menu > li.active > ul.sub-menu {

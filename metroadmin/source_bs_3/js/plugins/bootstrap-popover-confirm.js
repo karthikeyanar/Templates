@@ -21,7 +21,6 @@ $(function() {
 $(document).on('click','[data-popover-confirm]',function() {
 	var btn=$(this),
     popover=btn.next();
-
 	btn.popover('toggle');
 });
 
