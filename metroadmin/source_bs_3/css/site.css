@@ -33,6 +33,7 @@ a:hover, a:focus {
 }
 label {
 	font-weight: normal;
+	font-size:14px;
 }
 /* btn */
 .btn {
@@ -245,9 +246,11 @@ label {
 	background-clip: none;
 }
 .dropdown-checkboxes {
-	 padding: 5px;
+	 padding: 5px 10px; color:#333;
 }
 .dropdown-checkboxes .checkbox,.dropdown-checkboxes .radio {
+	font-size: 13px;
+    margin: 10px 0;
 }
 .dropdown-menu {
 	margin-top: 0;
@@ -282,6 +285,12 @@ label {
 }
 .dropdown-menu.warning {
 	border: solid 2px #F89406;
+}
+.dropdown-menu li > a {
+    font-weight: normal;
+    line-height: 18px;
+    padding: 5px 13px;
+    white-space: nowrap;
 }
 .dropdown-menu > li > a:hover, 
 .dropdown-menu > li > a:focus, 
@@ -544,24 +553,28 @@ label {
     padding: 0;
 	cursor: pointer;
 }
-.panel-btn-group > a > .fa {
-	font-size:14px;
+.panel-btn-group .btn-group {
+	margin-left:10px;
 }
-.panel-btn-group > a.expand .fa-chevron-down:before {
-	content: "\f077";
+.panel-btn-group > a > .fa {
+	font-size:14px; color:#fff;
+} 
+.panel-btn-group > a.expand .fa-angle-down:before {
+	content: "\f106"; 
 }
 .panel.panel-tools > .panel-heading > .panel-btn-group > .remove {
 	color: inherit;
     float: right;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: normal;
     line-height: 0;
     text-shadow: none;
-	margin-top:8px;
+	margin-top:8px; color:#fff;
 }
 .panel .panel-title [class^="fa fa-"], .panel .panel-title [class*=" icon-"] {
 	margin-right: 5px;
 }
+.panel-default .panel-btn-group > a > .fa, .panel-default.panel-tools > .panel-heading > .panel-btn-group > .remove { color:#333; }
 /* well */
 .well {
 	background-image: none;
@@ -1074,17 +1087,65 @@ label.error {
 .height-fluid {
 	height: 100% !important;
 }
-.cutter-left {
-	margin-left: 10px;
+.margin5 {
+	margin:5px !important;
 }
-.cutter-right {
-	margin-right: 10px;
+.margin5-left {
+	margin-left: 5px !important;
 }
-.cutter-top {
-	margin-top: 10px;
+.margin5-right {
+	margin-right: 5px !important;
 }
-.cutter-bottom {
-	margin-bottom: 10px;
+.margin5-top {
+	margin-top: 5px !important;
+}
+.margin5-bottom {
+	margin-bottom: 5px !important;
+}
+.margin10 {
+	margin:10px !important;
+}
+.margin10-left {
+	margin-left: 10px !important;
+}
+.margin10-right {
+	margin-right: 10px !important;
+}
+.margin10-top {
+	margin-top: 10px !important;
+}
+.margin10-bottom {
+	margin-bottom: 10px !important;
+}
+.padding5 {
+	padding:5px !important;
+}
+.padding5-left {
+	padding-left: 5px !important;
+}
+.padding5-right {
+	padding-right: 5px !important;
+}
+.padding5-top {
+	padding-top: 5px !important;
+}
+.padding5-bottom {
+	padding-bottom: 5px !important;
+}
+.padding10 {
+	padding:10px !important;
+}
+.padding10-left {
+	padding-left: 10px !important;
+}
+.padding10-right {
+	padding-right: 10px !important;
+}
+.padding10-top {
+	padding-top: 10px !important;
+}
+.padding10-bottom {
+	padding-bottom: 10px !important;
 }
 /* header */
 .header {
@@ -1662,7 +1723,7 @@ label.error {
 }
 /* page-header */
 .page-header {
-	margin: 20px 0;
+	margin: 15px 0;
 	padding: 0;
 	border: 0;
 }
@@ -1758,6 +1819,48 @@ pre {
 .chat-send {
 	margin-top: 20px;
 }
+/* input with left aligned icons */
+.input-icon {
+  position: relative;
+}
+
+
+.input-icon input {
+   padding-left: 33px !important;
+}
+
+.input-icon i {
+  color: #ccc;
+  display: block;
+  position: absolute;
+  margin: 11px 2px 4px 10px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-icon.right input {
+   padding-left: 12px !important;
+   padding-right: 33px !important;
+}
+
+.input-icon.right i {
+   right: 8px;
+   float: right;
+}
+
+.has-success .input-icon > i {
+  color: #468847;
+}
+
+.has-warning .input-icon > i {
+  color: #c09853;
+}
+
+.has-error .input-icon > i {
+  color: #b94a48;
+}
 /* responsive */
 @media (min-width:768px) { 
 	body {
@@ -1797,10 +1900,8 @@ pre {
 	  border-left: 15px solid transparent; 
 	  border-right: 15px solid transparent; 
 	}
-	.header .container > .navbar-header,
-	.header .container > .navbar-collapse {
-		margin-right: -15px;
-		margin-left: -15px;
+	.header.navbar > .container .navbar-brand {
+		margin-left:0;
 	}
 }
 @media (min-width: 992px) { 
@@ -1899,7 +2000,15 @@ pre {
 		margin: 0 !important;
 		padding: 0 !important;
 	}
-	
+	.page-sidebar.navbar-collapse {
+		margin-left:0;
+		margin-right:0;
+	}
+	.header .container > .navbar-header,
+	.header .container > .navbar-collapse {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
 }
 @media (max-width: 992px) { 
 	.container {
@@ -1932,4 +2041,4 @@ pre {
 		border-bottom: 1px solid #5E5E5E;
 		border-left: 1px solid #5E5E5E;
 	}
-}
+} 

@@ -85,7 +85,7 @@
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">Birthday</label>
 								<div class="col-lg-10">
-									<div class="pull-left cutter-right">
+									<div class="pull-left margin10-right">
 										<select name="Month" id="Month" class="form-control" data-rule-required="true" data-msg-required="Required" data-placement="bottom">
 											<option value="">Month</option>
 											<option value="1">January</option>
@@ -102,7 +102,7 @@
 											<option value="12">December</option>
 										</select>
 									</div>
-									<div class="pull-left cutter-right">
+									<div class="pull-left margin10-right">
 										<input type="text" name="day" id="day" class="form-control" style="width:100px" placeholder="Day" data-rule-required="true"	data-msg-required="Required" data-placement="bottom" />
 									</div>
 									<div class="pull-left">
@@ -112,7 +112,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary cutter-right">
+									<button type="submit" class="btn btn-primary margin10-right">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>

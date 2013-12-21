@@ -9,58 +9,42 @@
 			<!-- tiles -->
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="tile-group">
-						<div class="tile icon">
-	                    	<div class="tile-content">
-		                        <i class="fa fa-envelope icon-4x"></i>
-		                    </div>
-		                    <div class="brand">
-		                        <div class="badge">10</div>
-		                        <div class="name">Mail</div>
-		                    </div>
-			            </div>
-			            <div class="tile icon bg-orange">
-							<div class="tile-content">
-								<i class="fa fa-calendar icon-4x"></i>
-							</div>
-							<div class="brand">
-								<div class="badge">
-									10</div>
-								<div class="name">
-									Events</div>
-							</div>
+					<div class="tile bg-skyblue">
+						<div class="tile-content icon"><i class="fa fa-shopping-cart fa-3x"></i></div>
+						<div class="tile-status">
+							<span class="name">Orders</span>
+							<div class="badge">10</div>
 						</div>
-						<div class="tile icon bg-skyblue">
-							<div class="tile-content">
-								<i class="fa fa-shopping-cart icon-4x"></i>
-							</div>
-							<div class="brand">
-								<div class="badge">
-									10</div>
-								<div class="name">
-									Orders</div>
-							</div>
+					</div>
+					<div class="tile bg-orange">
+						<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
+						<div class="tile-status">
+							<span class="name">Documents</span>
+							<div class="badge">10</div>
 						</div>
-						<div class="tile icon bg-green">
-							<div class="tile-content">
-								<i class="fa fa-briefcase icon-4x"></i>
-							</div>
-							<div class="brand">
-								<div class="badge">
-									10</div>
-								<div class="name">
-									Products</div>
-							</div>
+					</div>
+					<div class="tile bg-dark-orange">
+						<div class="tile-content icon"><i class="fa fa-plane fa-4x"></i></div>
+						<div class="tile-status">
+							<span class="name">Projects</span>
+							<div class="badge">10</div>
 						</div>
-						<div class="tile double bg-purple">
-							<div class="tile-content list">
-								<ul>
-									<li><i class="fa fa-tags"></i><span class="title">Total Sales 100</span></li>
-									<li><i class="fa fa-money"></i><span class="title">Total Profit $342,242</span></li>
-									<li><i class="fa fa-group"></i><span class="title">Total Users 125</span></li>
-									<li><i class="fa fa-envelope"></i><span class="title">Total Messages 250</span></li>
-								</ul>
-							</div>
+					</div>
+					<div class="tile bg-pink">
+						<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
+						<div class="tile-status">
+							<span class="name">Events</span>
+							<div class="badge">10</div>
+						</div>
+					</div>
+					<div class="tile double bg-cardovan">
+						<div class="tile-content padding5">
+							<h4>Annoncements</h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ut laoreet...</p>
+						</div>
+						<div class="tile-status">
+							<span class="name">John</span>
+							<div class="badge">05/02/2013</div>
 						</div>
 					</div>
 				</div>

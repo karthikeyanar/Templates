@@ -56,6 +56,8 @@ function writeclassname($rootname,$classname){
 	} else if($rootname=="forms"){
 		if($file == "form_basic.php"
 			|| $file == "form_validation.php"
+			|| $file == "form_controls.php"
+			|| $file == "form_components.php"
 		)
 		{
 			echo $classname;
@@ -165,12 +167,10 @@ function writeclassname($rootname,$classname){
 		<li class="<?php echo openaccordion("forms");?>">
 			<a href="javascript:;"><i class="fa fa-tasks"></i><span class="title">Forms</span><span class="arrow"></span></a>
 			<ul class="sub-menu">
-				<li <?php checkactive("form_basic.php");?>>
-					<a href="form_basic.php">Basic</a>
-				</li>
-				<li <?php checkactive("form_validation.php");?>>
-					<a href="form_validation.php">Validation</a>
-				</li>
+				<li <?php checkactive("form_controls.php");?>><a href="form_controls.php">Form Controls</a></li>
+				<li <?php checkactive("form_components.php");?>><a href="form_components.php">Form Components</a></li>
+				<li <?php checkactive("form_basic.php");?>><a href="form_basic.php">Basic</a></li>
+				<li <?php checkactive("form_validation.php");?>><a href="form_validation.php">Validation</a></li>
 			</ul>
 		</li>
 		<li class="<?php echo openaccordion("tables");?>">

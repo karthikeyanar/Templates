@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="tile double bg-skyblue">
-				<div class="tile-content">
+				<div class="tile-content padding5">
 					<h4>KPTemplates</h4>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet...</p>
 				</div>
@@ -47,19 +47,23 @@
 				</div>
 			</div>
 			<div class="tile tile-box">
-				<div class="tile half">
+				<div class="tile half bg-red">
+					<div class="tile-content icon"><i class="fa fa-bell-o fa-3x"></i></div>
 				</div>
-				<div class="tile half">
+				<div class="tile half bg-skyblue">
+					<div class="tile-content icon"><i class="fa fa-print fa-3x"></i></div>
 				</div>
-				<div class="tile half">
+				<div class="tile half bg-orange">
+					<div class="tile-content icon"><i class="fa fa-inbox fa-3x"></i></div>
 				</div>
-				<div class="tile half">
+				<div class="tile half bg-pink">
+					<div class="tile-content icon"><i class="fa fa-group fa-3x"></i></div>
 				</div>
 			</div>
 			<div class="tile double bg-cardovan">
-				<div class="tile-content">
+				<div class="tile-content padding5">
 					<h4>Annoncements</h4>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet...</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ut laoreet...</p>
 				</div>
 				<div class="tile-status">
 					<span class="name">John</span>
@@ -72,14 +76,13 @@
 					<span class="name">Reports</span>
 				</div>
 			</div>
-			<div class="tile double bg-amber">
+			<div class="tile double bg-dark-red no-border">
 				<div class="tile-content icon">
-					<i class="icon-play-alt"></i>
+					<i class="fa fa-play-circle fa-4x"></i>
 				</div>
 				<div class="brand bg-black">
 					<span class="label fg-white">Player</span>
-					<div class="badge bg-darkRed paused">
-					</div>
+					<div class="badge bg-black"><i class="fa fa-pause"></i></div>
 				</div>
 			</div>
 			<div class="tile bg-orange">
@@ -89,12 +92,12 @@
 					<div class="badge">10</div>
 				</div>
 			</div>
-			<div class="tile double">
-				<div class="tile-content image">
-					<img src="images/4.jpg">
+			<div class="tile double no-border">
+				<div class="tile-content image no-padding">
+					<img src="img/4.jpg">
 				</div>
-				<div class="brand bg-dark opacity">
-					<span class="text">This is a desert eagle. He is very hungry and angry bird. </span>
+				<div class="brand bg-grey opacity">
+					<span class="text">This is a desert eagle. He is very hungry and angry bird.</span>
 				</div>
 			</div>
 			<div class="tile bg-dark-orange">
@@ -104,23 +107,23 @@
 					<div class="badge">10</div>
 				</div>
 			</div>
-			<div class="tile bg-green">
-				<div class="tile-content icon">
-					<img src="images/excel2013icon.png">
+			<div class="tile bg-pink">
+				<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
+				<div class="tile-status">
+					<span class="name">Events</span>
+					<div class="badge">10</div>
 				</div>
 			</div>
-			<div class="tile double">
-				<div class="tile-content image">
-					<img src="images/1.jpg">
+			<div class="tile bg-teal">
+				<div class="tile-content icon"><i class="fa fa-group fa-3x"></i></div>
+				<div class="tile-status">
+					<span class="name">Meetings</span>
+					<div class="badge">10</div>
 				</div>
 			</div>
-			<div class="tile double">
-				<div class="tile-content image-set">
-					<img src="images/1.jpg">
-					<img src="images/2.jpg">
-					<img src="images/3.jpg">
-					<img src="images/4.jpg">
-					<img src="images/5.jpg">
+			<div class="tile double bg-dark-blue">
+				<div class="tile-content padding5">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing elit, nibh ut laoreet...</p>
 				</div>
 			</div>
 		</div>

@@ -81,7 +81,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary cutter-right">
+									<button type="submit" class="btn btn-primary margin10-right">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>
@@ -162,7 +162,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary cutter-right">
+									<button type="submit" class="btn btn-primary margin10-right">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>
