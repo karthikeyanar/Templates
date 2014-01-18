@@ -57,6 +57,7 @@ function writeclassname($rootname,$classname){
 		if($file == "form_basic.php"
 			|| $file == "form_validation.php"
 			|| $file == "form_controls.php"
+			|| $file == "form_controls2.php"
 			|| $file == "form_components.php"
 		)
 		{
@@ -103,20 +104,6 @@ function writeclassname($rootname,$classname){
 			</form> 
 		</li>
 		<li class="<?php checkactive_toggle("index.php");?>"><a href="index.php"><i class="fa fa-laptop"></i><span class="title">Dashboard</span><?php echo selected_ul_menu("index.php");?></a></li>
-		<li class="<?php echo openaccordion("uielements");?>">
-			<a href="javascript:;"><i class="fa fa-briefcase"></i><span class="title">UI Elements</span><?php echo selected_ul_menu("uielements");?><span class="arrow"></span></a>
-			<ul class="sub-menu">
-				<li <?php checkactive("elements.php");?>><a href="elements.php">Elements</a>
-				</li>
-				<li <?php checkactive("styled_elements.php");?>><a href="styled_elements.php">Styled Elements</a></li>
-				<li <?php checkactive("iphone_style_checkbox.php");?>>
-					<a href="iphone_style_checkbox.php">iPhone Style CheckBox</a>
-				</li>
-				<li <?php checkactive("advanced_elements.php");?>>
-					<a href="advanced_elements.php">Advanced Elements</a>
-				</li>
-			</ul>
-		</li>
 		<li class="<?php echo openaccordion("components");?>">
 			<a href="javascript:;"><i class="fa fa-cog"></i><span class="title">Components</span><span class="arrow"></span></a>
 			<ul class="sub-menu">
@@ -168,6 +155,7 @@ function writeclassname($rootname,$classname){
 			<a href="javascript:;"><i class="fa fa-tasks"></i><span class="title">Forms</span><span class="arrow"></span></a>
 			<ul class="sub-menu">
 				<li <?php checkactive("form_controls.php");?>><a href="form_controls.php">Form Controls</a></li>
+				<li <?php checkactive("form_controls2.php");?>><a href="form_controls2.php">Form Controls 2</a></li>
 				<li <?php checkactive("form_components.php");?>><a href="form_components.php">Form Components</a></li>
 				<li <?php checkactive("form_basic.php");?>><a href="form_basic.php">Basic</a></li>
 				<li <?php checkactive("form_validation.php");?>><a href="form_validation.php">Validation</a></li>

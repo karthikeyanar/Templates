@@ -10,39 +10,50 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="index.php">Pepper Admin</a>
-				<div class="user-nav">
-					<ul class="nav navbar-icon pull-right">
-						<li>
-							<a href="#" class="link" title="Settings" data-toggle="tooltip" data-placement="bottom">
-								<i class="fa fa-cog fa-lg"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="link" title="Lock" data-toggle="tooltip" data-placement="bottom">
-								<i class="fa fa-lock fa-lg"></i>
-							</a>
-						</li>
-						<li class="dropdown user-box pull-right">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<img src="img/nophoto.jpg" />
-								<span>Joe Nilson</span>
-							</a>
-							<div class="dropdown-menu">
-								<div class="user-photo">
-									<img src="img/photo.jpg" />
-								</div>
-								<div class="user-info">
-									<p>Joe Nilson<br />test@gmail.com</p>
-									<ul>
-										<li><a href="#">Profile</a></li>
-										<li><a href="#">Settings</a></li>
-									</ul>
-								</div>
-								<div class="clearfix"></div>
-								<div class="pull-right">
-									<button class="btn btn-danger">Sign out</button>
-								</div>
+				<div class="header-nav">
+					<ul class="nav icon-nav">
+						<li class="dropdown visible-md visible-lg">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="fa fa-cog fa-lg"></i></a>
+							<div class="dropdown-menu pull-right settings">
+								<form class="form-horizontal" method="POST" action="#">
+									<div class="form-group">
+										<label class="control-label col-md-6">Layout Fixed</label>
+										<div class="col-md-6">
+											<input type="checkbox" id="fixedlayout" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-6">Header Fixed</label>
+										<div class="col-md-6">
+											<input type="checkbox" id="fixedheader" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-6">Footer Fixed</label>
+										<div class="col-md-6">
+											<input type="checkbox" id="fixedfooter" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-6">Sidebar Fixed</label>
+										<div class="col-md-6">
+											<input type="checkbox" id="fixedsidebar" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
+										</div>
+									</div>
+								</form>
 							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="Lock" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-lock fa-lg"></i></a>
+						</li>
+						<li>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Joe Nilson</span></a>
+							<ul class="dropdown-menu pull-right" role="menu">
+							    <li><a href="#">Edit Profile</a></li>
+							    <li><a href="#">Account Settings</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#">Logout</a></li>
+							</ul>
 						</li>
 					</ul>
 					<div class="clearfix"></div>

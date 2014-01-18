@@ -4,9 +4,13 @@
 		this.element=element;
 		this.$element=$(element);
 		this.isRadio=false;
-		this.theme=this.$element.data("theme");
-		if(this.theme==undefined) {
-			this.theme="";
+		this.color=this.$element.data("color");
+		this.skin=this.$element.data("skin");
+		if(this.color==undefined) {
+			this.color="";
+		}
+		if(this.skin==undefined) {
+			this.skin="";
 		}
 		this.size=this.$element.data("size");
 		if(this.size==undefined) {
@@ -26,7 +30,8 @@
 			this.toggle.addClass("radio");
 			this.isRadio=true;
 		}
-		this.toggle.addClass(this.theme);
+		this.toggle.addClass(this.color);
+		this.toggle.addClass(this.skin);
 		if(this.size!="") {
 			this.toggle.addClass(this.size);
 		}
@@ -62,11 +67,11 @@
 			if(this.element.checked)
 				this.toggle.addClass("fa-check");
 		};
- 
+
 		this.destroy=function() {
-			 this.$element.removeData("fcheck");
-			 this.container.before(this.element);
-			 this.container.remove();
+			this.$element.removeData("fcheck");
+			this.container.before(this.element);
+			this.container.remove();
 		};
 
 	}

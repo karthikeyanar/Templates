@@ -16,11 +16,11 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Dropdown menus</h3>
+								Dropdown menus</h3>
 						</div>
 						<div class="panel-body">
 							<div class="clearfix">
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -31,7 +31,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu primary</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -42,7 +42,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu info</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -53,7 +53,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu success</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -64,7 +64,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu warning</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -75,7 +75,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu danger</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -86,7 +86,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu inverse</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -97,7 +97,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu purple</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -108,7 +108,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu pink</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -119,7 +119,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<code>dropdown-menu teal</code>
 									<div class="dropdown clearfix">
 										<ul style="display: block; position: static" aria-labelledby="dropdownMenu" role="menu"
@@ -151,11 +151,11 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Sub menus on dropdowns</h3>
+								Sub menus on dropdowns</h3>
 						</div>
 						<div class="panel-body">
 							<div class="clearfix">
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<p class="muted">
 										Default</p>
 									<div class="dropdown clearfix">
@@ -177,7 +177,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<p class="muted">
 										Dropup</p>
 									<div class="dropup">
@@ -199,7 +199,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="pull-left margin10-right">
+								<div class="pull-left margin-right-10">
 									<p class="muted">
 										Left submenu</p>
 									<div class="dropdown">

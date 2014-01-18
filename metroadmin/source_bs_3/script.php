@@ -25,16 +25,21 @@
 <script src="js/plugins/jquery.slimscroll.js" type="text/javascript"></script>
 <!-- wysihtml5 editor -->
 <script src="js/plugins/wysihtml5-0.3.0.min.js" type="text/javascript"></script>
-<script src="js/plugins/bootstrap-wysihtml5.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap3-wysihtml5.js" type="text/javascript"></script>
 <!-- ckeditor -->
 <script src="js/ckeditor/ckeditor.js" type="text/javascript"></script>
 <!-- pick-a-color -->
-<script src="js/plugins/tinycolor-0.9.14.min.js" type="text/javascript"></script>
-<script src="js/plugins/pick-a-color-1.1.4.min.js" type="text/javascript"></script>
+<script src="js/plugins/tinycolor-0.9.15.min.js" type="text/javascript"></script>
+<script src="js/plugins/pick-a-color.js" type="text/javascript"></script>
 <!-- bootstrap fileupload -->
 <script src="js/plugins/bootstrap-fileupload.min.js" type="text/javascript"></script>
 <!-- bootstrap timepicker -->
 <script src="js/plugins/bootstrap-timepicker.js" type="text/javascript"></script>
+<!-- bootstrap select -->
+<script src="js/plugins/bootstrap-select.min.js" type="text/javascript"></script>
+<!-- bootstrap daterange picker -->
+<script src="js/plugins/moment.min.js" type="text/javascript"></script>
+<script src="js/plugins/daterangepicker.js" type="text/javascript"></script>
 <!-- chosen -->
 <script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 <!-- data-table -->
@@ -46,6 +51,8 @@
 <script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
+<!-- bootstrap spinner -->
+<script src="js/plugins/bootstrap.touchspin.js" type="text/javascript"></script>
 <!-- bootbox -->
 <script src="js/plugins/bootbox.min.js" type="text/javascript"></script>
 <!-- pepper application -->

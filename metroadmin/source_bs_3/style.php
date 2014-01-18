@@ -15,6 +15,10 @@
 <link href="css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap switch -->
 <link href="css/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap select -->
+<link href="css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap daterange picker -->
+<link href="css/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datatable -->
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
 <!-- fcheck -->
@@ -28,7 +32,8 @@
 <!-- fullcalendar -->
 <link href="css/fullcalendar-theme.css" rel="stylesheet" type="text/css" />
 <!-- pick-a-color -->
-<link href="css/pick-a-color-1.1.4.css" rel="stylesheet" type="text/css" />
+<link href="css/pick-a-color-1.1.8.min.css" rel="stylesheet" type="text/css" />
+<link href="css/pick-a-color-bs3.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap wysihtml5 -->
 <link href="css/wysiwyg-editor.css" rel="stylesheet" type="text/css" />
 <!-- pepper site -->

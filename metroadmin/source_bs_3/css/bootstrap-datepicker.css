@@ -99,8 +99,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-.datepicker td,
-.datepicker th {
+.datepicker td, .datepicker th {
   text-align: center;
   width: 20px;
   height: 20px;
@@ -109,6 +108,7 @@
   border-radius: 0;
   border: none;
   padding: 7px 10px !important;
+  font-size:14px;
 }
 .table-striped .datepicker table tr td,
 .table-striped .datepicker table tr th {
@@ -419,7 +419,9 @@
   background-color: transparent;
 }
 .input-append.date .add-on i,
-.input-prepend.date .add-on i {
+.input-prepend.date .add-on i, 
+.input-group.date .add-on i
+{
   display: block;
   cursor: pointer;
   width: 16px;

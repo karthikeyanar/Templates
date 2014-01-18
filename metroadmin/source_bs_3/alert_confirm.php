@@ -15,7 +15,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="fa fa-edit"></i>Popup Confirm
+							Popup Confirm
 						</h3>
 					</div>
 					<div class="panel-body no-padding">
@@ -38,7 +38,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="fa fa-edit"></i>Alert & Confirm Dialog
+							Alert & Confirm Dialog
 						</h3>
 					</div>
 					<div class="panel-body no-padding">
@@ -77,7 +77,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<i class="fa fa-edit"></i>Alerts
+							Alerts
 						</h3>
 					</div>
 					<div class="panel-body">

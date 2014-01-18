@@ -15,7 +15,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Background Colors</h3>
+								Background Colors</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -34,7 +34,7 @@
 							 		</div>
 						 			<code>.bg-red</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 									 <div class="well no-border bg-dark-red no-margin">
 							 		</div>
 							 		<code>.bg-dark-red</code>
@@ -56,7 +56,7 @@
 							 		</div>
 						 			<code>.bg-light-green</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 									 <div class="well no-border bg-green no-margin">
 							 		</div>
 							 		<code>.bg-green</code>
@@ -75,12 +75,12 @@
 							 		<code>.bg-teal</code>
 								</div>
 								
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 									 <div class="well no-border bg-dark-purple no-margin">
 							 		</div>
 							 		<code>.bg-dark-purple</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 									 <div class="well no-border bg-purple no-margin">
 							 		</div>
 							 		<code>.bg-purple</code>
@@ -102,14 +102,14 @@
 							 		</div>
 						 			<code>.bg-dark-blue</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 									 <div class="well no-border bg-skyblue no-margin">
 							 		</div>
 							 		<code>.bg-skyblue</code>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 									<div class="well no-border bg-black no-margin">
 									</div>
 									<code>.bg-black</code>
@@ -139,7 +139,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Foreground Colors</h3>
+								Foreground Colors</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -161,7 +161,7 @@
 									</div>
 									<code>.fg-red</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 										<div class="well bg-white fg-dark-red no-margin">
 										Title
 									</div>
@@ -187,7 +187,7 @@
 									</div>
 									<code>.fg-light-green</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 										<div class="well bg-white fg-green no-margin">
 										Title
 									</div>
@@ -209,13 +209,13 @@
 									<code>.fg-teal</code>
 								</div>
 											
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 										<div class="well bg-white fg-dark-purple no-margin">
 										Title
 									</div>
 									<code>.fg-dark-purple</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 										<div class="well bg-white fg-purple no-margin">
 									</div>
 									<code>.fg-purple</code>
@@ -240,7 +240,7 @@
 									</div>
 									<code>.fg-dark-blue</code>
 								</div>
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 										<div class="well bg-white fg-skyblue no-margin">
 										Title
 									</div>
@@ -248,7 +248,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-3 margin10-bottom">
+								<div class="col-lg-3 margin-bottom-10">
 									<div class="well bg-white fg-black no-margin">
 									Title
 									</div>

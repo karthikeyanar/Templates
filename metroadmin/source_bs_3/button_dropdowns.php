@@ -16,7 +16,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Overview</h3>
+								Overview</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
@@ -176,7 +176,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Split button dropdowns</h3>
+								Split button dropdowns</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
@@ -359,7 +359,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Dropup menus</h3>
+								Dropup menus</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">

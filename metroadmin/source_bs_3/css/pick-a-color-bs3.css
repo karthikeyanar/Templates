@@ -1,0 +1,43 @@
+div.pick-a-color-markup .color-menu {
+	width: 100%;
+}
+div.pick-a-color-markup .color-menu-tabs .tab {
+	padding: 3px 10px;
+}
+div.pick-a-color-markup .advanced-content .color-box {
+	width: calc(100% - 30px);
+}
+div.pick-a-color-markup .advanced-content .color-preview {
+	width: 100%;
+}
+div.pick-a-color-markup .color-preview {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+.color-menu.dropdown-menu {
+	border-top: 0;
+}
+div.pick-a-color-markup .color-menu .basicColors-content li:hover a, div.pick-a-color-markup .color-menu .savedColors-content li:hover a {
+	background-color: transparent;
+}
+div.pick-a-color-markup .input-group-addon {
+	background-color: #fff;
+}
+@media screen and (max-width:979px) {
+	div.pick-a-color-markup .pick-a-color {
+		font-size: 14px;
+		padding: 4px 6px;
+	}
+	div.pick-a-color-markup .color-preview {
+		height: 1.429em;
+		width: 1.429em;
+	}
+	div.pick-a-color-markup .hex-pound {
+		padding: 6px 12px;
+	}
+	div.pick-a-color-markup .color-menu {
+		left: 0;
+		width: 100%;
+	}
+}

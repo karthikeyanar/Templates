@@ -44,8 +44,8 @@ $(document).on('click','[data-modal-alert=true]',function() {
 						 <p> "+message+"</p> \
 					  </div> \
 					  <div class='modal-footer'> \
-						<button id='yes' type='button' class='btn btn-primary margin10-right'>Yes</button> \
-						<button id='no' type='button' class='btn btn-danger margin10-left' data-dismiss='modal'>No</button> \
+						<button id='yes' type='button' class='btn btn-primary margin-right-10'>Yes</button> \
+						<button id='no' type='button' class='btn btn-danger margin-left-10' data-dismiss='modal'>No</button> \
 					  </div> \
 					</div>";
 

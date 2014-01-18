@@ -16,7 +16,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Default</h3>
+								Default</h3>
 						</div>
 						<div class="panel-body no-padding">
 							
@@ -142,7 +142,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Additional Color Buttons</h3>
+								Additional Color Buttons</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<table class="table table-striped">
@@ -219,7 +219,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Button Sizes</h3>
+								Button Sizes</h3>
 						</div>
 						<div class="panel-body">
 							<p>
@@ -255,7 +255,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Block Level Button</h3>
+								Block Level Button</h3>
 						</div>
 						<div class="panel-body">
 							<button class="btn btn-lg btn-block btn-primary" type="button">
@@ -269,7 +269,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Disabled state</h3>
+								Disabled state</h3>
 						</div>
 						<div class="panel-body">
 							<a href="#" class="btn btn-lg btn-primary disabled">Primary link</a> <a href="#"
@@ -288,7 +288,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>One class, multiple tags</h3>
+								One class, multiple tags</h3>
 						</div>
 						<div class="panel-body">
 							<a class="btn btn-default" href="">Link</a>
@@ -303,7 +303,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Single button group</h3>
+								Single button group</h3>
 						</div>
 						<div class="panel-body">
 							<div class="btn-group">
@@ -323,7 +323,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Multiple button groups</h3>
+								Multiple button groups</h3>
 						</div>
 						<div class="panel-body">
 							<div style="margin: 0;" class="btn-toolbar">
@@ -357,7 +357,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Vertical button groups</h3>
+								Vertical button groups</h3>
 						</div>
 						<div class="panel-body">
 							<div class="btn-group btn-group-vertical">

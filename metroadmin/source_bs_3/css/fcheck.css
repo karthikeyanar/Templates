@@ -53,52 +53,64 @@
 .fcheck i.radio {
 	border-radius:100%;
 }
+/* colors */
 .fcheck i.blue {
 	color:#0072C6;
 	border-color:#0072C6;
+}
+.fcheck i.square.fa-check.blue {
+	color:#fff;
+	background-color:#0072C6;
 }
 .fcheck i.red {
 	color:#E81123;
 	border-color:#E81123;
 }
+.fcheck i.square.fa-check.red {
+	color:#fff;
+	background-color:#E81123;
+}
 .fcheck i.orange {
 	color:#FF8F32;
 	border-color:#FF8F32;
+}
+.fcheck i.square.fa-check.orange {
+	color:#fff;
+	background-color:#FF8F32;
 }
 .fcheck i.purple {
 	color:#4617B4;
 	border-color:#4617B4;
 }
+.fcheck i.square.fa-check.purple {
+	color:#fff;
+	background-color:#4617B4;
+}
 .fcheck i.green {
 	color:#008A17;
 	border-color:#008A17;
+}
+.fcheck i.square.fa-check.green {
+	color:#fff;
+	background-color:#008A17;
 }
 .fcheck i.skyblue {
 	color:#2E7EFC;
 	border-color:#2E7EFC;
 }
+.fcheck i.square.fa-check.skyblue {
+	color:#fff;
+	background-color:#2E7EFC;
+}
 .fcheck i.grey {
 	color:#808080;
 	border-color:#808080;
 }
-.fcheck i.medium {
-	width:30px;
-	height:30px;
-}
-.fcheck i.medium:before {
-	font-size:22px;
-}
-.fcheck i.medium.radio:before {
-	font-size:18px;
-}
-.fcheck i.large {
-	width:40px;
-	height:40px;
-}
-.fcheck i.large:before {
-	font-size:28px;
-}
-.fcheck i.large.radio:before {
-	font-size:24px;
-}
- 
+.fcheck i.square.fa-check.grey {
+	color:#fff;
+	background-color:#808080;
+} 
+/* bootstrap */
+.input-group-addon .fcheck {
+	margin-right:0;
+} 

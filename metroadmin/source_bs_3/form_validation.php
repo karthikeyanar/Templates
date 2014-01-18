@@ -16,7 +16,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Form Validation</h3>
+								Form Validation</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST" class="form-horizontal form-validate">
@@ -85,7 +85,7 @@
 							<div class="form-group">
 								<label for="textfield" class="col-lg-2 control-label">Birthday</label>
 								<div class="col-lg-10">
-									<div class="pull-left margin10-right">
+									<div class="pull-left margin-right-10">
 										<select name="Month" id="Month" class="form-control" data-rule-required="true" data-msg-required="Required" data-placement="bottom">
 											<option value="">Month</option>
 											<option value="1">January</option>
@@ -102,7 +102,7 @@
 											<option value="12">December</option>
 										</select>
 									</div>
-									<div class="pull-left margin10-right">
+									<div class="pull-left margin-right-10">
 										<input type="text" name="day" id="day" class="form-control" style="width:100px" placeholder="Day" data-rule-required="true"	data-msg-required="Required" data-placement="bottom" />
 									</div>
 									<div class="pull-left">
@@ -112,7 +112,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary margin10-right">
+									<button type="submit" class="btn btn-primary margin-right-10">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>

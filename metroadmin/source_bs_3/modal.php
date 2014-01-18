@@ -15,7 +15,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Modal</h3>
+								Modal</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
@@ -57,7 +57,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Colors</h3>
+								Colors</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<form action="#" method="POST" class="form-horizontal form-bordered form-striped">

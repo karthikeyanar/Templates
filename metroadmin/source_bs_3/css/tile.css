@@ -180,7 +180,7 @@
     bottom: 0;
     color: #FFFFFF;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     height: auto;
     margin: 0;
@@ -190,4 +190,5 @@
     text-align: center;
     vertical-align: middle !important;
     width: auto;
+	line-height: 14px;
 }

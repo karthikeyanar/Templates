@@ -16,7 +16,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Basic form</h3>
+								Basic form</h3>
 						</div>
 						<div class="panel-body">
 							<form action="#" method="POST" class="form-horizontal">
@@ -81,7 +81,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary margin10-right">
+									<button type="submit" class="btn btn-primary margin-right-10">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>
@@ -97,7 +97,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<i class="fa fa-edit"></i>Bordered form</h3>
+								Bordered form</h3>
 						</div>
 						<div class="panel-body no-padding">
 							<form action="#" method="POST" class='form-horizontal form-bordered form-striped'>
@@ -162,7 +162,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary margin10-right">
+									<button type="submit" class="btn btn-primary margin-right-10">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>
