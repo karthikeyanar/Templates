@@ -147,11 +147,11 @@
 							</div>
 							<br>
 							<br>
-							<div id="toggle-state-switch-button-on" class="btn btn-primary">
+							<div id="toggle-state-switch-button-on" class="btn btn-blue">
 								ON!</div>
-							<div id="toggle-state-switch-button" class="btn btn-primary">
+							<div id="toggle-state-switch-button" class="btn btn-blue">
 								Toggle me!</div>
-							<div id="toggle-state-switch-button-off" class="btn btn-primary">
+							<div id="toggle-state-switch-button-off" class="btn btn-blue">
 								OFF!</div>
 							<pre class="prettyprint linenums">$('#toggle-state-switch').bootstrapSwitch('toggleState');$('#toggle-state-switch').bootstrapSwitch('setState', false); // true || false
 							</pre>
@@ -191,7 +191,7 @@
 							<input id="create-switch" type="checkbox" checked />
 							<br>
 							<br>
-							<div id="btn-create" class="btn btn-default">
+							<div id="btn-create" class="btn btn-grey">
 								Create</div>
 							<pre class="prettyprint linenums">
 $('#create-switch').wrap('&lt;div class="switch" />').parent().bootstrapSwitch();</pre>
@@ -212,16 +212,16 @@ $('#create-switch').wrap('&lt;div class="switch" />').parent().bootstrapSwitch()
 							</div>
 							<br>
 							<br>
-							<button id="btn-is-active-switch" class="btn btn-default">
+							<button id="btn-is-active-switch" class="btn btn-grey">
 								Is active?
 							</button>
-							<button id="btn-toggle-activation-switch" class="btn btn-default">
+							<button id="btn-toggle-activation-switch" class="btn btn-grey">
 								Toggle activation!
 							</button>
-							<button id="btn-disable-switch" class="btn btn-default">
+							<button id="btn-disable-switch" class="btn btn-grey">
 								Disable!
 							</button>
-							<button id="btn-activate-switch" class="btn btn-default">
+							<button id="btn-activate-switch" class="btn btn-grey">
 								Activate!
 							</button>
 							<pre class="prettyprint linenums">

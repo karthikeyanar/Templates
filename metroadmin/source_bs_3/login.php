@@ -23,12 +23,12 @@
 							<div class="col-lg-10">
 								<div class="pull-left">
 									<label class="checkbox">
-										<input type="checkbox" data-provide="fcheck">
+										<input type="checkbox" class="uniform">
 										Remember me
 									</label>
 								</div>
 								<div class="pull-right">
-									<button type="submit" class="btn btn-primary">
+									<button type="submit" class="btn btn-blue">
 										Sign in</button>
 								</div>
 								<div class="clearfix">

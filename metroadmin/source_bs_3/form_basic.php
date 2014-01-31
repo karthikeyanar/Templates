@@ -40,7 +40,7 @@
 									File Input</label>
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-grey btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
@@ -81,7 +81,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary margin-right-10">
+									<button type="submit" class="btn btn-blue margin-right-10">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>
@@ -121,7 +121,7 @@
 									File Input</label>
 								<div class="col-lg-10">
 										<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
+										<span class="btn btn-grey btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input
 											type="file" /></span> <span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"
 												data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
@@ -162,7 +162,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-10 col-lg-offset-2">
-									<button type="submit" class="btn btn-primary margin-right-10">
+									<button type="submit" class="btn btn-blue margin-right-10">
 										Save</button>
 									<button type="button" class="btn btn-danger">
 										Cancel</button>

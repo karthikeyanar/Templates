@@ -23,7 +23,7 @@
 							<div class="form-group">
 								<div class="col-lg-10">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+										<span class="btn btn-grey btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
 										<span class="fileupload-preview"></span><a href="#" class="close fileupload-exists"	data-dismiss="fileupload" style="float: none">&times</a>
 									</div>
 								</div>
@@ -35,7 +35,7 @@
 											<div class="uneditable-input col-md-3">
 												<span class="fileupload-preview"></span>
 											</div>
-											<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+											<span class="btn btn-grey btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
 										</div>
 									</div>
 								</div>
@@ -46,7 +46,7 @@
 										<div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;">
 										</div>
 										<div>
-											<span class="btn btn-default btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+											<span class="btn btn-grey btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
 										</div>
 									</div>
 								</div>
@@ -57,7 +57,7 @@
 										<div class="fileupload-new thumbnail" style="width: 50px; height: 50px;"></div>
 										<div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;">
 										</div>
-										<span class="btn btn-default btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+										<span class="btn btn-grey btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
 									</div>
 								</div>
 							</div>

@@ -21,8 +21,8 @@
 <link href="css/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datatable -->
 <link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
-<!-- fcheck -->
-<link href="css/fcheck.css" rel="stylesheet" type="text/css" />
+<!-- jquery uniform -->
+<link href="css/uniform.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap modal --> 
 <link href="css/bs3-modal.css" rel="stylesheet" type="text/css" />
 <!-- chosen -->

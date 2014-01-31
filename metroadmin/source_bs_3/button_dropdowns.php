@@ -128,7 +128,7 @@
 								</div>
 								<!-- /btn-group -->
 								<div class="btn-group">
-									<button data-toggle="dropdown" class="btn btn-pink dropdown-toggle">
+									<button data-toggle="dropdown" class="btn btn-yellow dropdown-toggle">
 										Pink <span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu pink">
@@ -305,9 +305,9 @@
 								</div>
 								<!-- /btn-group -->
 								<div class="btn-group">
-									<button class="btn btn-pink">
+									<button class="btn btn-yellow">
 										Pink</button>
-									<button data-toggle="dropdown" class="btn btn-pink dropdown-toggle">
+									<button data-toggle="dropdown" class="btn btn-yellow dropdown-toggle">
 										<span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu pink">

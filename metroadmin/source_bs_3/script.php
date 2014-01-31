@@ -45,10 +45,10 @@
 <!-- data-table -->
 <script src="js/plugins/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>
-<!-- fcheck -->
-<script src="js/plugins/fcheck.js" type="text/javascript"></script>
+<!-- jquery uniform -->
+<script src="js/plugins/jquery.uniform.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
-<script src="js/plugins/bootstrap-popover-confirm.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-confirmation.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
 <script src="js/plugins/bootstrap-switch.js" type="text/javascript"></script>
 <!-- bootstrap spinner -->

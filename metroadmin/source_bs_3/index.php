@@ -157,7 +157,7 @@
 							<div class="chat-send">
 								<div class="input-group">
 									<input type="text" id="msg" name="msg" class="form-control" placeholder="Message" />
-									<span class="input-group-btn"><button id="send" class="btn btn-primary">
+									<span class="input-group-btn"><button id="send" class="btn btn-blue">
 										<i class="fa fa-check"></i>
 									</button></span>
 								</div>

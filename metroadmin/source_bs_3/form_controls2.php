@@ -37,7 +37,7 @@
 					<div class="col-md-6">
 						<div class="input-group">
 							<span class="input-group-addon">
-								<input type="checkbox" name="chk" data-provide="fcheck" />
+								<input type="checkbox" name="chk" class="uniform" />
 							</span>
 							<input type="text" class="form-control">
 						</div>
@@ -46,7 +46,7 @@
 						<div class="input-group">
 							<input type="text" class="form-control">
 							<span class="input-group-addon">
-								<input type="checkbox" name="chk" data-provide="fcheck" />
+								<input type="checkbox" name="chk" class="uniform" />
 							</span>
 						</div>
 					</div>
@@ -61,7 +61,7 @@
 					<div class="col-md-6">
 						<div class="input-group">
 							<span class="input-group-btn">
-								<button class="btn btn-primary" type="button">
+								<button class="btn btn-blue" type="button">
 									Go!</button>
 							</span>
 							<input type="text" class="form-control">
@@ -71,7 +71,7 @@
 						<div class="input-group">
 							<input type="text" class="form-control">
 							<span class="input-group-btn">
-								<button class="btn btn-primary" type="button">
+								<button class="btn btn-blue" type="button">
 									Go!</button>
 							</span>
 						</div>
@@ -87,12 +87,12 @@
 					<div class="col-md-12">
 						<div class="input-group">
 							<span class="input-group-btn">
-								<button class="btn btn-primary" type="button">
+								<button class="btn btn-blue" type="button">
 									Go!</button>
 							</span>
 							<input type="text" class="form-control">
 							<span class="input-group-btn">
-								<button class="btn btn-primary" type="button">
+								<button class="btn btn-blue" type="button">
 									Go!</button>
 							</span>
 						</div>
@@ -163,7 +163,7 @@
 							</div>
 							<input type="text" class="form-control">
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-pink dropdown-toggle" data-toggle="dropdown">
+								<button type="button" class="btn btn-yellow dropdown-toggle" data-toggle="dropdown">
 									Action <i class="fa fa-angle-down"></i>
 								</button>
 								<ul class="dropdown-menu pull-right">
@@ -187,9 +187,9 @@
 					<div class="col-md-6">
 						<div class="input-group">
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-primary" tabindex="-1">
+								<button type="button" class="btn btn-blue" tabindex="-1">
 									Action</button>
-								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+								<button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown"
 									tabindex="-1">
 									<i class="fa fa-angle-down"></i>
 								</button>
@@ -208,9 +208,9 @@
 						<div class="input-group">
 							<input type="text" class="form-control">
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-primary" tabindex="-1">
+								<button type="button" class="btn btn-blue" tabindex="-1">
 									Action</button>
-								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+								<button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown"
 									tabindex="-1">
 									<i class="fa fa-angle-down"></i>
 								</button>
@@ -379,7 +379,7 @@
 					Remember me
 				</label>
 			</div>
-			<button type="submit" class="btn btn-default">
+			<button type="submit" class="btn btn-grey">
 				Sign in</button>
 			</form>
 			<hr>
@@ -408,7 +408,7 @@
 					Remember me
 				</label>
 			</div>
-			<button type="submit" class="btn btn-default">
+			<button type="submit" class="btn btn-grey">
 				Sign in</button>
 			</form>
 			<hr>

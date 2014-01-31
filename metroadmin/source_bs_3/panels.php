@@ -1,52 +1,80 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-	<div class="page-header">
+<div class="page-header">
 	<h1>
-		Panels</h1>
+		Panels
+	</h1>
 </div>
 <ul class="breadcrumb">
-	<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
-	<li><a href="form_basic.php">UI Elements</a> <i class="fa fa-angle-right"></i></li>
-	<li class="active"><a href="elements.php">Panels</a></li>
-	<li class="pull-right"><a href="#" data-dismiss='breadcrumb'><i class="fa fa-remove">
-	</i></a></li>
+	<li>
+		<a href="index.php">Home</a>
+		<i class="fa fa-angle-right"></i>
+	</li>
+	<li>
+		<a href="form_basic.php">UI Elements</a>
+		<i class="fa fa-angle-right"></i>
+	</li>
+	<li class="active">
+		<a href="elements.php">Panels</a>
+	</li>
+	<li class="pull-right">
+		<a href="#" data-dismiss='breadcrumb'>
+			<i class="fa fa-remove">
+			</i>
+		</a>
+	</li>
 </ul>
 <div class="row">
 	<div class="col-lg-6">
-		<div class="panel panel-default panel-tools">
+		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">
-					Panel title</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-primary btn-xs" data-toggle="dropdown">
+				<h3 class="panel-title margin-top-5 pull-left">
+					Panel title
+				</h3>
+				<div class="pull-right">
+					<div class="btn-group margin-right-10">
+						<a class="btn btn-red btn-xs" href="#" data-toggle="dropdown">
 							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu primary pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+						</a>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
 							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
 						</ul>
 					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-pink" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu pink hold-on-click dropdown-checkboxes pull-right">
+					<div class="btn-group margin-right-10">
+						<a class="btn btn-xs btn-blue" href="#" data-toggle="dropdown" data-hover="dropdown"
+							data-close-others="true">
+							Filter By <i class="fa fa-angle-down"></i>
+						</a>
+						<div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
 							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
+								<input type="checkbox" id="finance" value="option1" class="uniform" />Finance
+							</label>
 							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
+								<input type="checkbox" id="finance" value="option1" class="uniform" />Membership
+							</label>
 							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
+								<input type="checkbox" id="finance" value="option1" class="uniform" />Customer Support
+							</label>
 						</div>
 					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
+					<div class="btn-group panel-actions">
+						<a class="down" data-action='collapse'><i class="fa fa-angle-down"></i></a>
+						<a class="refresh"><i class="fa fa-refresh"></i></a>
+						<a class="remove" data-action='remove'><i class="fa fa-times"></i></a>
+					</div>
 				</div>
 			</div>
 			<div class="panel-body">
@@ -57,7 +85,8 @@
 	<div class="col-lg-6">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Panel heading without title</div>
+				Panel heading without title
+			</div>
 			<div class="panel-body">
 				Panel content
 			</div>
@@ -71,96 +100,14 @@
 				Panel content
 			</div>
 			<div class="panel-footer">
-				Panel footer</div>
+				Panel footer
+			</div>
 		</div>
 	</div>
 	<div class="col-lg-6">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Panel header</div>
-			<div class="panel-body">
-				Panel content
-			</div>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-lg-6">
-		<div class="panel panel-success panel-tools">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					Panel Success</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-primary btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu primary pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
-			</div>
-			<div class="panel-body">
-				Panel content
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-6">
-		<div class="panel panel-info panel-tools">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					Panel Info</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
+				Panel header
 			</div>
 			<div class="panel-body">
 				Panel content
@@ -170,40 +117,40 @@
 </div>
 <div class="row">
 	<div class="col-lg-6">
-		<div class="panel panel-warning panel-tools">
+		<div class="panel panel-default">
+			<div class="panel-heading no-padding">
+				<h3 class="panel-title pull-left padding-10">
+					Panel title
+				</h3>
+				<div class="pull-right">
+					 <!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+					  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+					  <li><a href="#profile" data-toggle="tab">Profile</a></li>
+					  <li><a href="#messages" data-toggle="tab">Messages</a></li>
+					  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel-body">
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="home">Home</div>
+					<div class="tab-pane" id="profile">Profile</div>
+					<div class="tab-pane" id="messages">Messages</div>
+					<div class="tab-pane" id="settings">Settings</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="panel panel-success">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					Panel Warning</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
+					Panel Success
+				</h3>
 			</div>
 			<div class="panel-body">
 				Panel content
@@ -211,40 +158,11 @@
 		</div>
 	</div>
 	<div class="col-lg-6">
-		<div class="panel panel-danger panel-tools">
+		<div class="panel panel-info">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					Panel Danger</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
+					Panel Info
+				</h3>
 			</div>
 			<div class="panel-body">
 				Panel content
@@ -254,40 +172,11 @@
 </div>
 <div class="row">
 	<div class="col-lg-6">
-		<div class="panel panel-skyblue panel-tools">
+		<div class="panel panel-warning">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					Panel SkyBlue</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
+					Panel Warning
+				</h3>
 			</div>
 			<div class="panel-body">
 				Panel content
@@ -295,40 +184,11 @@
 		</div>
 	</div>
 	<div class="col-lg-6">
-		<div class="panel panel-pink panel-tools">
+		<div class="panel panel-danger">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					Panel Pink</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
+					Panel Danger
+				</h3>
 			</div>
 			<div class="panel-body">
 				Panel content
@@ -338,165 +198,11 @@
 </div>
 <div class="row">
 	<div class="col-lg-6">
-		<div class="panel panel-purple panel-tools">
+		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					Panel Purple</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
-			</div>
-			<div class="panel-body">
-				Panel content
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-6">
-		<div class="panel panel-teal panel-tools">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					Panel Teal</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
-			</div>
-			<div class="panel-body">
-				Panel content
-			</div>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-lg-6">
-		<div class="panel panel-cardovan panel-tools">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					Panel Cardovan</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-primary" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu primary hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
-			</div>
-			<div class="panel-body">
-				Panel content
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-6">
-		<div class="panel panel-primary panel-tools">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					Panel Primary</h3>
-				<div class="panel-btn-group">
-					<div class="btn-group">
-						<button class="btn btn-success btn-xs" data-toggle="dropdown">
-							Action <i class='fa fa-angle-down'></i>
-						</button>
-						<ul class="dropdown-menu success pull-right" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<a class="btn btn-xs btn-cardovan" href="#" data-toggle="dropdown" data-hover="dropdown"
-							data-close-others="true">Filter By <i class="fa fa-angle-down"></i></a>
-						<div class="dropdown-menu cardovan hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="Checkbox1" value="option1" data-provide="fcheck">Finance</label>
-							<label class="checkbox">
-								<input type="checkbox" id="Checkbox2" value="option1" data-provide="fcheck">Membership</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="Checkbox3" value="option1" data-provide="fcheck">Customer
-								Support</label>
-						</div>
-					</div>
-					<a class='collapse' data-action='collapse'><i class="fa fa-angle-down"></i></a><a
-						class='refresh'><i class="fa fa-refresh"></i></a><a data-action='remove' class="remove">
-							&times</a>
-				</div>
+					Panel Primary
+				</h3>
 			</div>
 			<div class="panel-body">
 				Panel content
@@ -507,4 +213,3 @@
 <?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
 <?php include_once 'footer.php' ?>
-	 

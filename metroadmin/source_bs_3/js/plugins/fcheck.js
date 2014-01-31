@@ -1,6 +1,6 @@
 (function($) {
 	var FCHECK=function(element) {
-		var that=this;
+		var self=this;
 		this.element=element;
 		this.$element=$(element);
 		this.isRadio=false;
@@ -37,24 +37,30 @@
 		}
 
 		//on change, change the class of the link
-		this.$element.change(function() {
-			//this.checked&&that.toggle.addClass('fa-check')||that.toggle.removeClass('fa-check');
+		//this.$element.change(function() {
+			//this.checked&&self.toggle.addClass('fa-check')||self.toggle.removeClass('fa-check');
 			//return true;
-		});
+		//});
 
 		// Click Handler, trigger the click and change event on the input
-		this.toggle.click(function() {
+
+		this
+		.$element
+		.click(function() {
+			console.log("click" + "," + this.checked);
+			$(this).fcheck('update');
+			return;
 			//do nothing if the original input is disabled
-			if(that.$element.attr('disabled')) {
+			if(self.$element.attr('disabled')) {
 				return false;
 			}
 			//trigger the envents on the input object
-			that.$element.trigger("click").trigger("change").fcheck('update');
-			if(that.isRadio) {
-				var $frm=that.$element.parents("form:first");
+			//self.$element.trigger("click").trigger("change").fcheck('update');
+			if(self.isRadio) {
+				var $frm=self.$element.parents("form:first");
 				// uncheck all others of same name input radio elements
-				$('input:radio[name="'+that.$element.attr('name')+'"]',$frm)
-				//.not(that.$element)
+				$('input:radio[name="'+self.$element.attr('name')+'"]',$frm)
+				//.not(self.$element)
 				.each(function() {
 					$(this).fcheck('update');
 				});

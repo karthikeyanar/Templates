@@ -186,9 +186,9 @@
 						</label>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary margin-right-10">
+				<button type="submit" class="btn btn-blue margin-right-10">
 					Submit</button>
-				<button type="button" class="btn btn-default">
+				<button type="button" class="btn btn-grey">
 					Cancel</button>
 				</form>
 			</div>
@@ -250,9 +250,9 @@
 						<option>Option 5</option>
 					</select>
 				</div>
-				<button type="submit" class="btn btn-primary margin-right-10">
+				<button type="submit" class="btn btn-blue margin-right-10">
 					Submit</button>
-				<button type="button" class="btn btn-default">
+				<button type="button" class="btn btn-grey">
 					Cancel</button>
 				</form>
 			</div>
@@ -692,9 +692,9 @@
 				</div>
 				<div class="form-actions">
 					<div class="col-md-9 col-md-offset-3">
-						<button type="submit" class="btn btn-primary margin-right-10">
+						<button type="submit" class="btn btn-blue margin-right-10">
 							Submit</button>
-						<button type="button" class="btn btn-default">
+						<button type="button" class="btn btn-grey">
 							Cancel</button>
 					</div>
 				</div>
@@ -772,7 +772,7 @@
 				</div>
 				<div class="form-actions">
 					<div class="col-md-9 col-md-offset-3">
-						<button type="submit" class="btn btn-primary margin-right-10">
+						<button type="submit" class="btn btn-blue margin-right-10">
 							Save</button>
 						<button type="button" class="btn btn-danger">
 							Cancel</button>

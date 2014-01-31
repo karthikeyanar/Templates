@@ -88,8 +88,8 @@ function writeclassname($rootname,$classname){
 }
 ?>
 <div class="page-sidebar navbar-collapse collapse">
-	<div class="sidebar-toggler"><i class="icon-metro icon-back medium icon-white"></i></div>
 	<ul class="page-sidebar-menu">
+		<li class="sidbar-toggler-menu"><div class="sidebar-toggler"><i class="icon-metro icon-back  icon-white"></i></div></li>
 		<li>
 			<form class="sidebar-search">
 				<div class="input-group">

@@ -248,7 +248,7 @@
 							<div class="form-group">
 								<label class="col-md-3 control-label">Advanced Date Ranges</label>
 								<div class="col-md-9">
-								 	<button id="reportrange" class="btn btn-default">
+								 	<button id="reportrange" class="btn btn-grey">
 										<i class="fa fa-calendar cursor-pointer margin-right-10"></i><span class="margin-right-10"></span><b class="caret"></b>
 									</button>
 								</div>
@@ -465,161 +465,23 @@
 			<div class="col-md-12">
 				<div class="panel panel-default blue">
 					<div class="panel-heading">
-						<h3 class="panel-title">Minimal Skin</h3>
+						<h3 class="panel-title">Checkbox</h3>
 					</div>
 					<div class="panel-body">
 						<form action="#" method="POST" class="form-horizontal">
 						<div class="form-group">
 							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-color="blue" />Blue
+								<label class="checkbox">
+									<input type="checkbox" value="test" class="uniform" />Option 1
 								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-color="blue" checked />Blue	checked
+								<label class="checkbox">
+									<input type="checkbox" value="test" class="uniform" checked />Option 2
 								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-color="blue" disabled />Blue disabled
+								<label class="checkbox">
+									<input type="checkbox" value="test" class="uniform" disabled />Option 3
 								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-color="blue" checked disabled />Blue disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-color="red" />Red
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-color="red" checked />Red checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-color="red" disabled />Red disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-color="red" checked disabled />Red disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-color="orange" />Orange
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-color="orange" checked />Orange checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-color="orange" disabled />Orange disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-color="orange" checked disabled />Orange disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-color="purple" />Purple
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-color="purple" checked />Purple checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-color="purple" disabled />Purple disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-color="purple" checked disabled />Purple disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-color="green" />Green
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-color="green" checked />Green checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-color="green" disabled />Green disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-color="green" checked disabled />Green disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-color="skyblue" />SkyBlue
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-color="skyblue" checked />SkyBlue checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-color="skyblue" disabled />SkyBlue disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-color="skyblue" checked disabled />SkyBlue disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-color="grey" />Grey
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-color="grey" checked />Grey checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-color="grey" disabled />Grey disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-color="grey" checked disabled />Grey disble checked
+								<label class="checkbox">
+									<input type="checkbox" value="test" class="uniform" checked disabled />Option 4
 								</label>
 							</div>
 						</div>
@@ -632,519 +494,23 @@
 			<div class="col-md-12">
 				<div class="panel panel-default blue">
 					<div class="panel-heading">
-						<h3 class="panel-title">Minimal Skin</h3>
+						<h3 class="panel-title">Radio</h3>
 					</div>
 					<div class="panel-body">
 						<form action="#" method="POST" class="form-horizontal">
 							<div class="form-group">
 								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="blue" />Blue
+									<label class="radio">
+										<input type="radio" name="rdo" value="test" class="uniform" />Option 1
 									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="blue" checked />Blue	checked
+									<label class="radio">
+										<input type="radio" name="rdo" value="test" class="uniform" checked />Option 2
 									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="blue" disabled />Blue disabled
+									<label class="radio">
+										<input type="radio" name="rdo" value="test" class="uniform" disabled />Option 3
 									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="blue" checked disabled />Blue disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="red" />Red
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="red" checked />Red checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="red" disabled />Red disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="red" checked disabled />Red disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="orange" />Orange
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="orange" checked />Orange checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="orange" disabled />Orange disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="orange" checked disabled />Orange disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="purple" />Purple
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="purple" checked />Purple checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="purple" disabled />Purple disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="purple" checked disabled />Purple disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="green" />Green
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="green" checked />Green checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="green" disabled />Green disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="green" checked disabled />Green disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="skyblue" />SkyBlue
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="skyblue" checked />SkyBlue checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="skyblue" disabled />SkyBlue disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="skyblue" checked disabled />SkyBlue disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="grey" />Grey
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="grey" checked />Grey checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="grey" disabled />Grey disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-color="grey" checked disabled />Grey disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel panel-default blue">
-					<div class="panel-heading">
-						<h3 class="panel-title">Square Skin</h3>
-					</div>
-					<div class="panel-body">
-						<form action="#" method="POST" class="form-horizontal">
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-skin="square" data-color="blue" />Blue
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-skin="square" data-color="blue" checked />Blue	checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-skin="square" data-color="blue" disabled />Blue disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-skin="square" data-color="blue" checked disabled />Blue disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-skin="square" data-color="red" />Red
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-skin="square" data-color="red" checked />Red checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-skin="square" data-color="red" disabled />Red disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-skin="square" data-color="red" checked disabled />Red disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-skin="square" data-color="orange" />Orange
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-skin="square" data-color="orange" checked />Orange checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-skin="square" data-color="orange" disabled />Orange disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-skin="square" data-color="orange" checked disabled />Orange disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-skin="square" data-color="purple" />Purple
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-skin="square" data-color="purple" checked />Purple checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-skin="square" data-color="purple" disabled />Purple disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-skin="square" data-color="purple" checked disabled />Purple disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-skin="square" data-color="green" />Green
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-skin="square" data-color="green" checked />Green checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-skin="square" data-color="green" disabled />Green disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-skin="square" data-color="green" checked disabled />Green disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" />SkyBlue
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" checked />SkyBlue checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" disabled />SkyBlue disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" checked disabled />SkyBlue disble checked
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="inlineCheckbox1" value="test" data-provide="fcheck" data-skin="square" data-color="grey" />Grey
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox1" value="test" data-provide="fcheck" data-skin="square" data-color="grey" checked />Grey checked
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox2" value="test" data-provide="fcheck" data-skin="square" data-color="grey" disabled />Grey disabled
-								</label>
-							</div>
-							<div class="col-md-3">
-								<label class="checkbox-inline">
-									<input type="checkbox" id="Checkbox3" value="test" data-provide="fcheck" data-skin="square" data-color="grey" checked disabled />Grey disble checked
-								</label>
-							</div>
-						</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel panel-default blue">
-					<div class="panel-heading">
-						<h3 class="panel-title">Square Skin</h3>
-					</div>
-					<div class="panel-body">
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="blue" />Blue
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="blue" checked />Blue	checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="blue" disabled />Blue disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="blue" checked disabled />Blue disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="red" />Red
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="red" checked />Red checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="red" disabled />Red disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="red" checked disabled />Red disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="orange" />Orange
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="orange" checked />Orange checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="orange" disabled />Orange disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="orange" checked disabled />Orange disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="purple" />Purple
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="purple" checked />Purple checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="purple" disabled />Purple disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="purple" checked disabled />Purple disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="green" />Green
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="green" checked />Green checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="green" disabled />Green disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="green" checked disabled />Green disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" />SkyBlue
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" checked />SkyBlue checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" disabled />SkyBlue disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="skyblue" checked disabled />SkyBlue disble checked
-									</label>
-								</div>
-							</div>
-						</form>
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="grey" />Grey
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="grey" checked />Grey checked
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="grey" disabled />Grey disabled
-									</label>
-								</div>
-								<div class="col-md-3">
-									<label class="checkbox-inline">
-										<input type="radio" name="rdo"  value="test" data-provide="fcheck" data-skin="square" data-color="grey" checked disabled />Grey disble checked
+									<label class="radio">
+										<input type="radio" name="rdo" value="test" class="uniform" checked disabled />Option 4
 									</label>
 								</div>
 							</div>
@@ -1263,9 +629,9 @@
 						<input type="checkbox" checked  id="toggle-state-switch" class="switch" />
 						<br/>
 						<br/>
-						<div id="toggle-state-switch-button-on" class="btn btn-primary">ON!</div>
-						<div id="toggle-state-switch-button" class="btn btn-primary">Toggle me!</div>
-						<div id="toggle-state-switch-button-off" class="btn btn-primary">OFF!</div>
+						<div id="toggle-state-switch-button-on" class="btn btn-blue">ON!</div>
+						<div id="toggle-state-switch-button" class="btn btn-blue">Toggle me!</div>
+						<div id="toggle-state-switch-button-off" class="btn btn-blue">OFF!</div>
 						<pre class="prettyprint linenums">$('#toggle-state-switch').bootstrapSwitch('toggleState');$('#toggle-state-switch').bootstrapSwitch('setState', false); // true || false
 						</pre>
 					</div>
@@ -1300,7 +666,7 @@
 						<input id="create-switch" type="checkbox" checked />
 						<br/>
 						<br/>
-						<div id="btn-create" class="btn btn-default">Create</div>
+						<div id="btn-create" class="btn btn-grey">Create</div>
 						<pre class="prettyprint linenums">$('#create-switch').bootstrapSwitch();</pre>
 					</div>
 				</div>
@@ -1317,10 +683,10 @@
 						<input type="checkbox" id="disable-switch" checked>
 						<br/>
 						<br/>
-						<button id="btn-disable-is" class="btn btn-default">Is disabled?</button>
-						<button id="btn-disable-toggle" class="btn btn-default">Toggle Disable</button>
-						<button id="btn-disable-set" class="btn btn-default">Set Disable</button>
-						<button id="btn-disable-remove" class="btn btn-default">Remove Disable</button>
+						<button id="btn-disable-is" class="btn btn-grey">Is disabled?</button>
+						<button id="btn-disable-toggle" class="btn btn-grey">Toggle Disable</button>
+						<button id="btn-disable-set" class="btn btn-grey">Set Disable</button>
+						<button id="btn-disable-remove" class="btn btn-grey">Remove Disable</button>
 						<br/>
 						<br/>
 						<pre class="prettyprint linenums">
@@ -2052,7 +1418,7 @@
 								 	Colors
 								</label>
 								<div class="col-md-3">
-							 	    <select class="selectpicker form-control" data-style="btn-primary">
+							 	    <select class="selectpicker form-control" data-style="btn-blue">
 									    <option>Mustard</option>
 									    <option>Ketchup</option>
 									    <option>Relish</option>
@@ -2220,7 +1586,7 @@
 	        boostat: 5,
 	        maxboostedstep: 10,
 	        postfix: '%',
-	        buttondown_class: 'btn btn-primary',
+	        buttondown_class: 'btn btn-blue',
 	        buttonup_class: 'btn btn-success'
 	    });
 		$("#spinner3").TouchSpin({
@@ -2229,7 +1595,7 @@
 	        stepinterval: 50,
 	        maxboostedstep: 10000000,
 	        prefix: '$',
-	        buttondown_class: 'btn btn-primary',
+	        buttondown_class: 'btn btn-blue',
 	        buttonup_class: 'btn btn-success'
 	    });
 		$("#spinner4").TouchSpin();
@@ -2261,8 +1627,8 @@
 	                'Last Month': [moment().subtract('month',1).startOf('month'),moment().subtract('month',1).endOf('month')]
 	                },
 	                opens: 'right',
-	                buttonClasses: ['btn btn-default'],
-	                applyClass: 'btn-small btn-primary',
+	                buttonClasses: ['btn btn-grey'],
+	                applyClass: 'btn-small btn-blue',
 	                cancelClass: 'btn-small',
 	                format: 'MM/DD/YYYY',
 	                separator: ' to ',

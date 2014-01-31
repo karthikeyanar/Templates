@@ -120,9 +120,9 @@
 									<code>.bg-grey</code>
 								</div> 
 								<div class="col-lg-3">
-									<div class="well no-border bg-dark-cardovan no-margin">
+									<div class="well no-border bg-yellow no-margin">
 									</div>
-									<code>.bg-dark-cardovan</code>
+									<code>.bg-yellow</code>
 								</div>
 								<div class="col-lg-3">
 									<div class="well no-border bg-cardovan no-margin">
@@ -261,10 +261,10 @@
 									<code>.fg-grey</code>
 								</div> 
 								<div class="col-lg-3">
-									<div class="well bg-white fg-dark-cardovan no-margin">
+									<div class="well bg-white fg-yellow no-margin">
 									Title
 									</div>
-									<code>.fg-dark-cardovan</code>
+									<code>.fg-yellow</code>
 								</div>
 								<div class="col-lg-3">
 									<div class="well bg-white fg-cardovan no-margin">
