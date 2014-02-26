@@ -12,17 +12,16 @@
 	<li class="pull-right"><a href="#" class="close">&times</a></li>
 </ul>
 <!-- Nav tabs -->
-<ul class="nav nav-tabs nav-tab-custom">
+<ul class="nav nav-tabs nav-tab-border">
 	<li class="active"><a href="#component1" data-toggle="tab">Date Picker & Time Picker</a></li>
-	<li><a href="#component2" data-toggle="tab">Daterange Picker</a></li>
-	<li><a href="#component3" data-toggle="tab">Elements</a></li>
-	<li><a href="#component4" data-toggle="tab">CheckBox & Radio</a></li>
-	<li><a href="#component5" data-toggle="tab">iPhone Style Checkbox</a></li>
-	<li><a href="#component6" data-toggle="tab">Dropdowns</a></li>
-	<li><a href="#component7" data-toggle="tab">Spinner</a></li>
+	<li><a href="#component2" data-toggle="tab">Elements</a></li>
+	<li><a href="#component3" data-toggle="tab">CheckBox & Radio</a></li>
+	<li><a href="#component4" data-toggle="tab">iPhone Style Checkbox</a></li>
+	<li><a href="#component5" data-toggle="tab">Dropdowns</a></li>
+	<li><a href="#component6" data-toggle="tab">Spinner</a></li>
 </ul>
 <!-- Tab panes -->
-<div class="tab-content padding">
+<div class="tab-content padding-top-10">
 	<div class="tab-pane active" id="component1">
 		<div class="row">
 			<div class="col-md-12">
@@ -217,8 +216,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="tab-pane" id="component2">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default">
@@ -259,7 +256,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="tab-pane" id="component3">
+	<div class="tab-pane" id="component2">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
@@ -311,29 +308,6 @@
 								<label class="checkbox-inline">
 								  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
 								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="panel panel-default">
-							<div class="panel-heading panel-title">
-								<h3 class="panel-title">Validation states</h3>
-							</div>
-							<div class="panel-body">
-								<div class="form-group has-success">
-								  <label class="control-label" for="inputSuccess">Input with success</label>
-								  <input type="text" class="form-control" id="inputSuccess">
-								</div>
-								<div class="form-group has-warning">
-								  <label class="control-label" for="inputWarning">Input with warning</label>
-								  <input type="text" class="form-control" id="inputWarning">
-								</div>
-								<div class="form-group has-error">
-								  <label class="control-label" for="inputError">Input with error</label>
-								  <input type="text" class="form-control" id="inputError">
-								</div>
 							</div>
 						</div>
 					</div>
@@ -429,26 +403,26 @@
 							<div class="panel-heading panel-title">
 								<h3 class="panel-title">Textarea</h3>
 							</div>
-							<div class="panel-body no-padding">
+							<div class="panel-body">
 								<form method="post" class="form-horizontal form-striped">
 									<div class="form-group">
-										<label class="col-md-2 control-label font-normal">
+										<label class="col-md-3 control-label font-normal">
 											Textarea</label>
-										<div class="col-md-10">
+										<div class="col-md-9">
 											<textarea rows="5" cols="80" class="form-control col-xs-2"></textarea>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-2 control-label">
+										<label class="col-md-3 control-label">
 											Textarea with Auto Resize</label>
-										<div class="col-md-10">
+										<div class="col-md-9">
 											<textarea rows="5" cols="80" id="textareaAR" class="form-control"></textarea>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-2 control-label">
+										<label class="col-md-3 control-label">
 											Textarea with Character Count</label>
-										<div class="col-md-10">
+										<div class="col-md-9">
 											<textarea id="textareaCC" rows="5" cols="80" class="form-control"></textarea>
 										</div>
 									</div>
@@ -460,7 +434,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="tab-pane" id="component4">
+	<div class="tab-pane" id="component3">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default blue">
@@ -520,7 +494,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="tab-pane" id="component5">
+	<div class="tab-pane" id="component4">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default">
@@ -699,7 +673,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="tab-pane" id="component6">
+	<div class="tab-pane" id="component5">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default">
@@ -1369,7 +1343,7 @@
 						<h3 class="panel-title">Bootstrap Dropdown</h3>
 					</div>
 					<div class="panel-body no-padding">
-						<form action="#" method="POST" class="form-horizontal form-striped form-bordered">
+						<form action="#" method="POST" class="form-horizontal form-striped form-row-separated">
 							<div class="form-group">
 								<label class="col-md-3 control-label">
 									Standard Select
@@ -1457,7 +1431,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="tab-pane" id="component7">
+	<div class="tab-pane" id="component6">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default">
@@ -1513,15 +1487,7 @@
 			showMeridian: false
 		});
 		$(".date-picker").datepicker({});
-		$(".pick-a-color").pickAColor({
-			showSpectrum: false,
-			showSavedColors: true,
-			saveColorsPerElement: false,
-			fadeMenuToggle: true,
-			showAdvanced: true,
-			showHexInput: true,
-			showBasicColors: true
-		});
+	 
 		// Make it more personal
 		$('#textareaCC').inputlimiter({
 			limit: 50,

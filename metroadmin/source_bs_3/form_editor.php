@@ -7,8 +7,8 @@
 	</div>
 	<ul class="breadcrumb">
 		<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
-		<li><a href="form_basic.php">Forms</a> <i class="fa fa-angle-right"></i></li>
-		<li><a href="form_basic.php">Editor</a> </li>
+		<li><a href="form_layout.php">Forms</a> <i class="fa fa-angle-right"></i></li>
+		<li><a href="form_layout.php">Editor</a> </li>
 		<li class="pull-right"><a href="#" class="close">&times</a></li>
 	</ul>
 	<div class="row">

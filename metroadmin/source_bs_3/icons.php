@@ -44,17 +44,27 @@
     word-wrap: break-word;
 }
 .fa-icons li a, .metro-icons li a {
-	color: #333333;
+	color: #000;
 }
 </style>
+<div class="page-header">
+	<h1>Icons</h1>
+</div>
+<ul class="breadcrumb">
+	<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+	<li><a href="icons.php">Forms</a> <i class="fa fa-angle-right"></i></li>
+	<li><a href="icons.php">Icons</a> </li>
+	<li class="pull-right"><a href="#" class="close">&times</a></li>
+</ul>
 <!-- Nav tabs -->
-<ul class="nav nav-tabs nav-tab-custom">
+<ul class="nav nav-tabs nav-tab-border">
 	<li class="active"><a href="#icon1" data-toggle="tab">Font Awesome</a></li>
 	<li><a href="#icon2" data-toggle="tab">Glyphicons</a></li>
 	<li><a href="#icon3" data-toggle="tab">Metro Icons</a></li>
+	<li><a href="#icon4" data-toggle="tab">Metro Icon Size</a></li>
 </ul>
 <!-- Tab panes -->
-<div class="tab-content padding">
+<div class="tab-content padding-top-10">
 	<div class="tab-pane active" id="icon1">
 		<div class="row">
 			<div class="col-md-12">
@@ -1376,141 +1386,107 @@
 							<div class="col-md-12">
 								<ul class="metro-icons">
 									<li><a href="#"><i class="icon-metro icon-back"></i>icon-metro icon-back </a></li>
-									<li><a href="#"><i class="icon-metro icon-back icon-large"></i>icon-metro icon-back icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-back icon-white"></i>icon-metro icon-back icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-back icon-white icon-large"></i>icon-metro icon-back icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-next"></i>icon-metro icon-next </a></li>
-									<li><a href="#"><i class="icon-metro icon-next icon-large"></i>icon-metro icon-next icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-next icon-white"></i>icon-metro icon-next icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-next icon-white icon-large"></i>icon-metro icon-next icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-add"></i>icon-metro icon-add </a></li>
-									<li><a href="#"><i class="icon-metro icon-add icon-large"></i>icon-metro icon-add icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-add icon-white"></i>icon-metro icon-add icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-add icon-white icon-large"></i>icon-metro icon-add icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-camera"></i>icon-metro icon-camera </a></li>
-									<li><a href="#"><i class="icon-metro icon-camera icon-large"></i>icon-metro icon-camera icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-camera icon-white"></i>icon-metro icon-camera icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-camera icon-white icon-large"></i>icon-metro icon-camera icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-cancel"></i>icon-metro icon-cancel </a></li>
-									<li><a href="#"><i class="icon-metro icon-cancel icon-large"></i>icon-metro icon-cancel icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-cancel icon-white"></i>icon-metro icon-cancel icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-cancel icon-white icon-large"></i>icon-metro icon-cancel icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-check"></i>icon-metro icon-check </a></li>
-									<li><a href="#"><i class="icon-metro icon-check icon-large"></i>icon-metro icon-check icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-check icon-white"></i>icon-metro icon-check icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-check icon-white icon-large"></i>icon-metro icon-check icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-circle"></i>icon-metro icon-circle </a></li>
-									<li><a href="#"><i class="icon-metro icon-circle icon-large"></i>icon-metro icon-circle icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-circle icon-white"></i>icon-metro icon-circle icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-circle icon-white icon-large"></i>icon-metro icon-circle icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-delete"></i>icon-metro icon-delete </a></li>
-									<li><a href="#"><i class="icon-metro icon-delete icon-large"></i>icon-metro icon-delete icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-delete icon-white"></i>icon-metro icon-delete icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-delete icon-white icon-large"></i>icon-metro icon-delete icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-download"></i>icon-metro icon-download </a></li>
-									<li><a href="#"><i class="icon-metro icon-download icon-large"></i>icon-metro icon-download icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-download icon-white"></i>icon-metro icon-download icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-download icon-white icon-large"></i>icon-metro icon-download icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-edit"></i>icon-metro icon-edit </a></li>
-									<li><a href="#"><i class="icon-metro icon-edit icon-large"></i>icon-metro icon-edit icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-edit icon-white"></i>icon-metro icon-edit icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-edit icon-white icon-large"></i>icon-metro icon-edit icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-fav-add"></i>icon-metro icon-fav-add </a></li>
-									<li><a href="#"><i class="icon-metro icon-fav-add icon-large"></i>icon-metro icon-fav-add icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-fav-add icon-white"></i>icon-metro icon-fav-add icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-fav-add icon-white icon-large"></i>icon-metro icon-fav-add icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-fav"></i>icon-metro icon-fav </a></li>
-									<li><a href="#"><i class="icon-metro icon-fav icon-large"></i>icon-metro icon-fav icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-fav icon-white"></i>icon-metro icon-fav icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-fav icon-white icon-large"></i>icon-metro icon-fav icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-flag"></i>icon-metro icon-flag </a></li>
-									<li><a href="#"><i class="icon-metro icon-flag icon-large"></i>icon-metro icon-flag icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-flag icon-white"></i>icon-metro icon-flag icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-flag icon-white icon-large"></i>icon-metro icon-flag icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-folder"></i>icon-metro icon-folder </a></li>
-									<li><a href="#"><i class="icon-metro icon-folder icon-large"></i>icon-metro icon-folder icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-folder icon-white"></i>icon-metro icon-folder icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-folder icon-white icon-large"></i>icon-metro icon-folder icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-forward"></i>icon-metro icon-forward </a></li>
-									<li><a href="#"><i class="icon-metro icon-forward icon-large"></i>icon-metro icon-forward icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-forward icon-white"></i>icon-metro icon-forward icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-forward icon-white icon-large"></i>icon-metro icon-forward icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-heart"></i>icon-metro icon-heart </a></li>
-									<li><a href="#"><i class="icon-metro icon-heart icon-large"></i>icon-metro icon-heart icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-heart icon-white"></i>icon-metro icon-heart icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-heart icon-white icon-large"></i>icon-metro icon-heart icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-info"></i>icon-metro icon-info </a></li>
-									<li><a href="#"><i class="icon-metro icon-info icon-large"></i>icon-metro icon-info icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-info icon-white"></i>icon-metro icon-info icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-info icon-white icon-large"></i>icon-metro icon-info icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-mail"></i>icon-metro icon-mail </a></li>
-									<li><a href="#"><i class="icon-metro icon-mail icon-large"></i>icon-metro icon-mail icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-mail icon-white"></i>icon-metro icon-mail icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-mail icon-white icon-large"></i>icon-metro icon-mail icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-minus"></i>icon-metro icon-minus </a></li>
-									<li><a href="#"><i class="icon-metro icon-minus icon-large"></i>icon-metro icon-minus icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-minus icon-white"></i>icon-metro icon-minus icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-minus icon-white icon-large"></i>icon-metro icon-minus icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-next"></i>icon-metro icon-next </a></li>
-									<li><a href="#"><i class="icon-metro icon-next icon-large"></i>icon-metro icon-next icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-next icon-white"></i>icon-metro icon-next icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-next icon-white icon-large"></i>icon-metro icon-next icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-pause"></i>icon-metro icon-pause </a></li>
-									<li><a href="#"><i class="icon-metro icon-pause icon-large"></i>icon-metro icon-pause icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-pause icon-white"></i>icon-metro icon-pause icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-pause icon-white icon-large"></i>icon-metro icon-pause icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-phone"></i>icon-metro icon-phone </a></li>
-									<li><a href="#"><i class="icon-metro icon-phone icon-large"></i>icon-metro icon-phone icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-phone icon-white"></i>icon-metro icon-phone icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-phone icon-white icon-large"></i>icon-metro icon-phone icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-play"></i>icon-metro icon-play </a></li>
-									<li><a href="#"><i class="icon-metro icon-play icon-large"></i>icon-metro icon-play icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-play icon-white"></i>icon-metro icon-play icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-play icon-white icon-large"></i>icon-metro icon-play icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-question"></i>icon-metro icon-question </a></li>
-									<li><a href="#"><i class="icon-metro icon-question icon-large"></i>icon-metro icon-question icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-question icon-white"></i>icon-metro icon-question icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-question icon-white icon-large"></i>icon-metro icon-question icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-refresh"></i>icon-metro icon-refresh </a></li>
-									<li><a href="#"><i class="icon-metro icon-refresh icon-large"></i>icon-metro icon-refresh icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-refresh icon-white"></i>icon-metro icon-refresh icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-refresh icon-white icon-large"></i>icon-metro icon-refresh icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-backward"></i>icon-metro icon-backward </a></li>
-									<li><a href="#"><i class="icon-metro icon-backward icon-large"></i>icon-metro icon-backward icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-backward icon-white"></i>icon-metro icon-backward icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-backward icon-white icon-large"></i>icon-metro icon-backward icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-bottom-dot"></i>icon-metro icon-bottom-dot </a></li>
-									<li><a href="#"><i class="icon-metro icon-bottom-dot icon-large"></i>icon-metro icon-bottom-dot icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-bottom-dot icon-white"></i>icon-metro icon-bottom-dot icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-bottom-dot icon-white icon-large"></i>icon-metro icon-bottom-dot icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-save"></i>icon-metro icon-save </a></li>
-									<li><a href="#"><i class="icon-metro icon-save icon-large"></i>icon-metro icon-save icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-save icon-white"></i>icon-metro icon-save icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-save icon-white icon-large"></i>icon-metro icon-save icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-search"></i>icon-metro icon-search </a></li>
-									<li><a href="#"><i class="icon-metro icon-search icon-large"></i>icon-metro icon-search icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-search icon-white"></i>icon-metro icon-search icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-search icon-white icon-large"></i>icon-metro icon-search icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-setting"></i>icon-metro icon-setting </a></li>
-									<li><a href="#"><i class="icon-metro icon-setting icon-large"></i>icon-metro icon-setting icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-setting icon-white"></i>icon-metro icon-setting icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-setting icon-white icon-large"></i>icon-metro icon-setting icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-share"></i>icon-metro icon-share </a></li>
-									<li><a href="#"><i class="icon-metro icon-share icon-large"></i>icon-metro icon-share icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-share icon-white"></i>icon-metro icon-share icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-share icon-white icon-large"></i>icon-metro icon-share icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-top-dot"></i>icon-metro icon-top-dot </a></li>
-									<li><a href="#"><i class="icon-metro icon-top-dot icon-large"></i>icon-metro icon-top-dot icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-top-dot icon-white"></i>icon-metro icon-top-dot icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-top-dot icon-white icon-large"></i>icon-metro icon-top-dot icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-upload"></i>icon-metro icon-upload </a></li>
-									<li><a href="#"><i class="icon-metro icon-upload icon-large"></i>icon-metro icon-upload icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-upload icon-white"></i>icon-metro icon-upload icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-upload icon-white icon-large"></i>icon-metro icon-upload icon-white icon-large</a></li>
 									<li><a href="#"><i class="icon-metro icon-video"></i>icon-metro icon-video </a></li>
-									<li><a href="#"><i class="icon-metro icon-video icon-large"></i>icon-metro icon-video icon-large</a></li>
 									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-video icon-white"></i>icon-metro icon-video icon-white </a></li>
-									<li class="bg-black"><a href="#" class="fg-white"><i class="icon-metro icon-video icon-white icon-large"></i>icon-metro icon-video icon-white icon-large</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane" id="icon4">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Metro Icon Size</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="metro-icons">
+									<li>
+										<a href="#">
+											<i class="icon-metro icon-back icon-24"></i>icon-metro icon-back icon-24
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-metro icon-back"></i>icon-metro icon-back 
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-metro icon-back icon-48"></i>icon-metro icon-back icon-48
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>

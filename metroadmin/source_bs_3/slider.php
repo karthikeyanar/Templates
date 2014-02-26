@@ -10,11 +10,11 @@
 				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>
-				<a href="form_basic.php">UI Elements</a>
+				<a href="form_layout.php">UI Elements</a>
 				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>
-				<a href="labels_badges.php">Slider</a>
+				<a href="slider.php">Slider</a>
 			</li>
 			<li class="pull-right">
 				<a href="#" class="close">&times</a>
@@ -29,7 +29,7 @@
 						</h3>
 					</div>
 					<div class="panel-body no-padding">
-						<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
+						<form action="#" method="POST" class="form-horizontal form-row-separated form-striped">
 							<div class="form-group">
 								<label class="control-label col-lg-2 no-padding no-margin">
 									Default

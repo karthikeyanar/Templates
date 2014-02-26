@@ -7,7 +7,7 @@
 			</div>
 			<ul class="breadcrumb">
 				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
-				<li><a href="form_basic.php">Forms</a> <i class="fa fa-angle-right"></i></li>
+				<li><a href="form_layout.php">Forms</a> <i class="fa fa-angle-right"></i></li>
 				<li><a href="elements.php">Elements</a></li>
 				<li class="pull-right"><a href="#" data-dismiss='breadcrumb' class="close">&times</a></li>
 			</ul>

@@ -324,16 +324,17 @@
   background-color: #003399 \9;
 }
 .datepicker table tr td span {
-  display: block;
-  width: auto;
-  height: auto;
-  float: left;
-  margin: 1%;
-  cursor: pointer;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   padding: 12px 24px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 12px 24px;
+    width: 80px;
 }
 .datepicker table tr td span.month {
 	padding: 12px 28px;

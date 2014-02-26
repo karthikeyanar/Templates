@@ -1,78 +1,79 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
-			<div class="page-header">
-				<h1>Modal</h1>
+<div class="page-header">
+	<h1>Modal</h1>
+</div>
+<ul class="breadcrumb">
+	<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
+	<li><a href="form_layout.php">UI Elements</a> <i class="fa fa-angle-right"></i></li>
+	<li><a href="modal.php">Modal</a></li>
+	<li class="pull-right"><a href="#" class="close">&times</a></li>
+</ul>
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					Modal</h3>
 			</div>
-			<ul class="breadcrumb">
-				<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
-				<li><a href="form_basic.php">UI Elements</a> <i class="fa fa-angle-right"></i></li>
-				<li><a href="modal.php">Modal</a></li>
-				<li class="pull-right"><a href="#" class="close">&times</a></li>
-			</ul>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Modal</h3>
-						</div>
-						<div class="panel-body no-padding">
-							<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
-							<div class="form-group">
-								<label class="col-lg-2 control-label">
-									Responsive</label>
-								<div class="col-lg-10">
-									<button class="demo btn btn-blue" data-toggle="modal" href="#responsive">View Demo</button>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-lg-2 control-label">
-									Stackable</label>
-								<div class="col-lg-10">
-									<button class="demo btn btn-blue" data-toggle="modal" href="#stack1">View Demo</button>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-lg-2 control-label">
-									Full Width</label>
-								<div class="col-lg-10">
-									<button class="demo btn btn-blue" data-toggle="modal" href="#full-width">View Demo</button>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-lg-2 control-label">
-									Long modal</label>
-								<div class="col-lg-10">
-									<button class="demo btn btn-blue" data-toggle="modal" href="#long">View Demo</button>
-								</div>
-							</div>
-							</form>
-						</div>
+			<div class="panel-body no-padding">
+				<form action="#" method="POST" class="form-horizontal form-row-separated form-striped">
+				<div class="form-group">
+					<label class="col-md-4 control-label">
+						Responsive</label>
+					<div class="col-md-6">
+						<button class="demo btn btn-blue" data-toggle="modal" href="#responsive">View Demo</button>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Colors</h3>
-						</div>
-						<div class="panel-body no-padding">
-							<form action="#" method="POST" class="form-horizontal form-bordered form-striped">
-							<div class="form-group">
-								<label class="col-lg-2 control-label">
-									Blue</label>
-								<div class="col-lg-10">
-									<button class="demo btn btn-blue" data-toggle="modal" href="#bg-blue-modal">View Demo</button>
-								</div>
-							</div>
-							</form>
-						</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">
+						Stackable</label>
+					<div class="col-md-6">
+						<button class="demo btn btn-blue" data-toggle="modal" href="#stack1">View Demo</button>
 					</div>
 				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">
+						Full Width</label>
+					<div class="col-md-6">
+						<button class="demo btn btn-blue" data-toggle="modal" href="#full-width">View Demo</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">
+						Long modal</label>
+					<div class="col-md-6">
+						<button class="demo btn btn-blue" data-toggle="modal" href="#long">View Demo</button>
+					</div>
+				</div>
+				</form>
 			</div>
+		</div>
+	</div>
+ 	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					Metro Style</h3>
+			</div>
+			<div class="panel-body no-padding">
+				<form action="#" method="POST" class="form-horizontal form-row-separated form-striped">
+				<div class="form-group">
+					<label class="col-md-4 control-label">
+						Default</label>
+					<div class="col-md-6">
+						<button class="demo btn btn-blue" data-toggle="modal" href="#metro-modal">View Demo</button>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	
+</div>
 <?php include_once 'endcontainer.php' ?>
 <!-- Modal Definitions (tabbed over for <pre>) -->
 <div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
@@ -110,7 +111,7 @@
   </div>
 </div>
 
-<div id="full-width" class="modal container fade" tabindex="-1" style="display: none;">
+<div id="full-width" class="modal modal-full fade" tabindex="-1" style="display: none;">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h4 class="modal-title">Full Width</h4>
@@ -233,22 +234,41 @@
   </div>
 </div>
 
-<div id="bg-blue-modal" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
-  <div class="modal-header bg-blue">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h4 class="modal-title">Blue Header</h4>
-  </div>
-  <div class="modal-body">
-    <div class="row">
-      <div class="col-md-6">
-        <h1>Modal</h1>
-      </div>
-    </div>
-  </div>
-  <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
-    <button type="button" class="btn btn-blue">Save</button>
-  </div>
+<div id="metro-modal" class="modal modal-metro fade" tabindex="-1" style="display: none;">
+	<div class="container">
+	  <div class="modal-header">
+	    <a class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-metro icon-cancel"></i></a>
+	    <h4 class="modal-title">Title</h4>
+	  </div>
+	  <div class="modal-body">
+	    <div class="row">
+	      <div class="col-md-6">
+	        <h4>Some Input</h4>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	      </div>
+	      <div class="col-md-6">
+	        <h4>Some More Input</h4>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	        <p><input class="form-control" type="text" /></p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
+	    <button type="button" class="btn btn-blue">Save</button>
+	  </div>
+  	</div>
 </div>
 
 <?php include_once 'script.php' ?>

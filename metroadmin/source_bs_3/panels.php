@@ -12,7 +12,7 @@
 		<i class="fa fa-angle-right"></i>
 	</li>
 	<li>
-		<a href="form_basic.php">UI Elements</a>
+		<a href="form_layout.php">UI Elements</a>
 		<i class="fa fa-angle-right"></i>
 	</li>
 	<li class="active">

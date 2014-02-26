@@ -2,7 +2,7 @@
 <?php include_once 'style.php' ?>
 <?php include_once 'navbar.php' ?>
 <div class="page-header">
-	<h1>Buttons</h1>
+	<h1>Buttons & DropDowns</h1>
 </div>
 <ul class="breadcrumb">
 	<li>
@@ -10,11 +10,11 @@
 		<i class="fa fa-angle-right"></i>
 	</li>
 	<li>
-		<a href="form_basic.php">UI Elements</a>
+		<a href="form_layout.php">UI Elements</a>
 		<i class="fa fa-angle-right"></i>
 	</li>
 	<li class="active">
-		<a href="elements.php">Buttons</a>
+		<a href="elements.php">Buttons & DropDowns</a>
 	</li>
 	<li class="pull-right">
 		<a href="#" data-dismiss='breadcrumb'>
@@ -77,6 +77,49 @@
 				<h4>Block Buttons</h4>
 				<button class="btn btn-default btn-block" type="button">Default</button>
 				<button class="btn btn-primary btn-block" type="button">Primary</button>
+				<h4>Normal Circle Buttons</h4>
+				<button class="btn btn-default btn-circle" type="button"><i class="fa fa-check"></i>
+				</button>
+				<button class="btn btn-primary btn-circle" type="button"><i class="fa fa-list"></i>
+				</button>
+				<button class="btn btn-success btn-circle" type="button"><i class="fa fa-link"></i>
+				</button>
+				<button class="btn btn-info btn-circle" type="button"><i class="fa fa-check"></i>
+				</button>
+				<button class="btn btn-warning btn-circle" type="button"><i class="fa fa-times"></i>
+				</button>
+				<button class="btn btn-danger btn-circle" type="button"><i class="fa fa-heart"></i>
+				</button>
+				<br>
+				<br>
+				<h4>Large Circle Buttons</h4>
+				<button class="btn btn-default btn-circle btn-lg" type="button"><i class="fa fa-check"></i>
+				</button>
+				<button class="btn btn-primary btn-circle btn-lg" type="button"><i class="fa fa-list"></i>
+				</button>
+				<button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-link"></i>
+				</button>
+				<button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-check"></i>
+				</button>
+				<button class="btn btn-warning btn-circle btn-lg" type="button"><i class="fa fa-times"></i>
+				</button>
+				<button class="btn btn-danger btn-circle btn-lg" type="button"><i class="fa fa-heart"></i>
+				</button>
+				<br>
+				<br>
+				<h4>Extra Large Circle Buttons</h4>
+				<button class="btn btn-default btn-circle btn-xl" type="button"><i class="fa fa-check"></i>
+				</button>
+				<button class="btn btn-primary btn-circle btn-xl" type="button"><i class="fa fa-list"></i>
+				</button>
+				<button class="btn btn-success btn-circle btn-xl" type="button"><i class="fa fa-link"></i>
+				</button>
+				<button class="btn btn-info btn-circle btn-xl" type="button"><i class="fa fa-check"></i>
+				</button>
+				<button class="btn btn-warning btn-circle btn-xl" type="button"><i class="fa fa-times"></i>
+				</button>
+				<button class="btn btn-danger btn-circle btn-xl" type="button"><i class="fa fa-heart"></i>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -588,6 +631,204 @@
 					</ul>
 				</div>
 				<!-- /btn-group -->
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					Sub menus on dropdowns
+				</h3>
+			</div>
+			<div class="panel-body">
+				<div class="clearfix">
+					<div class="pull-left margin-right-10">
+						<p class="muted">
+							Default
+						</p>
+						<div class="dropdown clearfix">
+							<ul aria-labelledby="dropdownMenu" style="display: block; position: static" role="menu"
+								class="dropdown-menu">
+								<li>
+									<a href="#" tabindex="-1">Action</a>
+								</li>
+								<li>
+									<a href="#" tabindex="-1">Another action</a>
+								</li>
+								<li>
+									<a href="#" tabindex="-1">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-submenu">
+									<a href="#" tabindex="-1">More options</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pull-left margin-right-10">
+						<p class="muted">
+							Dropup
+						</p>
+						<div class="dropup">
+							<ul aria-labelledby="dropdownMenu" style="display: block; position: static" role="menu"
+								class="dropdown-menu">
+								<li>
+									<a href="#" tabindex="-1">Action</a>
+								</li>
+								<li>
+									<a href="#" tabindex="-1">Another action</a>
+								</li>
+								<li>
+									<a href="#" tabindex="-1">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-submenu">
+									<a href="#" tabindex="-1">More options</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pull-left margin-right-10">
+						<p class="muted">
+							Left submenu
+						</p>
+						<div class="dropdown">
+							<ul aria-labelledby="dropdownMenu" style="display: block; position: static" role="menu"
+								class="dropdown-menu">
+								<li>
+									<a href="#" tabindex="-1">Action</a>
+								</li>
+								<li>
+									<a href="#" tabindex="-1">Another action</a>
+								</li>
+								<li>
+									<a href="#" tabindex="-1">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-submenu">
+									<a href="#" tabindex="-1">More options</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+										<li>
+											<a href="#" tabindex="-1">Second level link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					Dropup menus
+				</h3>
+			</div>
+			<div class="panel-body">
+				<div style="margin: 0;" class="btn-toolbar">
+					<div class="btn-group dropup">
+						<button class="btn btn-default">
+							Dropup
+						</button>
+						<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /btn-group -->
+					<div class="btn-group dropup">
+						<button class="btn btn-default">
+							Right dropup
+						</button>
+						<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu pull-right">
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /btn-group -->
+				</div>
 			</div>
 		</div>
 	</div>

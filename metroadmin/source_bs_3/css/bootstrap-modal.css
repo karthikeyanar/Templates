@@ -17,13 +17,13 @@
 .modal-open.page-overflow .page-container .navbar-fixed-top,
 .modal-open.page-overflow .page-container .navbar-fixed-bottom,
 .modal-open.page-overflow .modal-scrollable {
-	overflow-y: scroll;
+	overflow: auto;  
 }
 
 @media (max-width: 979px) {
 	.modal-open.page-overflow .page-container .navbar-fixed-top,
 	.modal-open.page-overflow .page-container .navbar-fixed-bottom  {
-		overflow-y: visible;
+		overflow: auto;  
 	}
 }
 
@@ -84,15 +84,8 @@
 
 .modal-backdrop, 
 .modal-backdrop.fade.in{
-	opacity: 0.7;
-	filter: alpha(opacity=70);
-	background: #fff;
 }
 
-.modal.container {
-  width: 940px;
-  margin-left: -470px;
-}
 
 /* Modal Overflow */
 
@@ -113,18 +106,84 @@
 	-webkit-overflow-scrolling: touch;
 }
 
+.modal.modal-full {
+	left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+}
+
+
+/* modal */
+.modal .modal-dialog {
+	padding-bottom: 0;
+    padding-top: 0;
+    width: auto;
+}
+.modal .modal-dialog {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    position: relative;
+    width: auto;
+    z-index: 1050;
+}
+.modal .modal-content {
+	background-clip: none;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0 none;
+    position: relative;
+}
+.modal-metro {
+	box-shadow: none;
+	border-radius: 0;
+	border: 0 none !important;
+    left: 0 !important;
+    margin-left: 0;
+    overflow: hidden;
+    right: 0 !important;
+    width: 100% !important;
+}
+.modal-metro > .modal-dialog > .modal-content {
+	background-color: inherit;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+}
+.modal-metro > .modal-dialog {
+	margin-top: 0; margin-bottom: 0;
+}
+.modal-metro > .modal-dialog > .modal-header > .modal-header, 
+.modal-metro > .modal-dialog > .modal-content > .modal-footer,
+.modal-metro .modal-header,
+.modal-metro .modal-footer
+{
+	border: 0;
+}
+.modal-metro > .container > .modal-header, 
+.modal-metro > .container > .modal-body,
+.modal-metro > .container > .modal-footer
+{
+	padding-left:0; padding-right:0;
+}
+.modal-metro > .container > .modal-body {
+	padding: 0;
+}
+.modal-metro.notification > .modal-dialog > .modal-content > .modal-body p {
+	font-size: 24px; 
+}
+
 /* Responsive */
 
 @media (min-width: 1200px) {
-	.modal.container {
-		width: 1170px;
-		margin-left: -585px;
-	}
 }
 
 @media (max-width: 979px) {
 	.modal, 
-	.modal.container,
 	.modal.modal-overflow 	{
 		top: 1%;
 		right: 1%;
@@ -137,7 +196,6 @@
 	}
 	
 	.modal.fade.in, 
-	.modal.container.fade.in,
 	.modal.modal-overflow.fade.in {
 		top: 1%;
 		bottom: auto;

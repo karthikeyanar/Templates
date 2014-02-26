@@ -11,7 +11,7 @@
 				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>
-				<a href="form_basic.php">Forms</a>
+				<a href="form_layout.php">Forms</a>
 				<i class="fa fa-angle-right"></i>
 			</li>
 			<li>

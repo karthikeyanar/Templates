@@ -68,7 +68,7 @@
 }
 .chosen-container .chosen-results li.highlighted {
 	background: none;
-	background-color: #2E7EFC;
+	background-color: #007FFF;
 	color: white;
 }
 .chosen-container .chosen-results li.highlighted em {
@@ -190,7 +190,7 @@
 	outline: 0;
 	height: 30px;
 	padding: 6px 8px;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 1.428571429;
 	font-family: inherit;
 }

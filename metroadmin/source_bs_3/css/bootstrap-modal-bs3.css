@@ -30,6 +30,3 @@ body.modal-open,
   background-clip: padding-box;
 }
 
-.modal.container {
-  max-width: none;
-}
