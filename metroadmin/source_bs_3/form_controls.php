@@ -801,8 +801,8 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="input-group">
-							<span class="input-group-addon">
-								<input type="checkbox" name="chk" class="uniform" />
+							<span class="input-group-addon metro-checkbox">
+								<input type="checkbox" name="chk" />
 							</span>
 							<input type="text" class="form-control" />
 						</div>
@@ -810,8 +810,8 @@
 					<div class="col-md-6">
 						<div class="input-group">
 							<input type="text" class="form-control" />
-							<span class="input-group-addon">
-								<input type="checkbox" name="chk" class="uniform" />
+							<span class="input-group-addon metro-checkbox">
+								<input type="checkbox" name="chk" />
 							</span>
 						</div>
 					</div>
@@ -928,7 +928,7 @@
 							</div>
 							<input type="text" class="form-control" />
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-yellow dropdown-toggle" data-toggle="dropdown">
+								<button type="button" class="btn btn-purple dropdown-toggle" data-toggle="dropdown">
 									Action <i class="fa fa-angle-down"></i>
 								</button>
 								<ul class="dropdown-menu pull-right">

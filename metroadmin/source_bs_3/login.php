@@ -22,8 +22,8 @@
 						<div class="form-group">
 							<div class="col-lg-10">
 								<div class="pull-left">
-									<label class="checkbox">
-										<input type="checkbox" class="uniform">
+									<label class="checkbox metro-checkbox">
+										<input type="checkbox">
 										Remember me
 									</label>
 								</div>

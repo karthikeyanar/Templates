@@ -11,9 +11,6 @@
 .modal-footer {
 	margin-top:0;
 }
-.modal-header.bg-blue {
-	color:#fff;
-}
 .modal-header .close {
 	font-size: 25px;
 	color:inherit;

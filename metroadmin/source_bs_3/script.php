@@ -7,7 +7,7 @@
 <!-- jquery validation -->
 <script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
 <!-- page sidebar menu -->
-<script src="js/plugins/jquery.metisMenu.js" type="text/javascript"></script>
+<script src="js/plugins/jquery.sidebarMenu.js" type="text/javascript"></script>
 <!-- inputlimiter -->
 <script src="js/plugins/jquery.inputlimiter.1.3.1.min.js" type="text/javascript"></script>
 <!-- autogrow textarea -->
@@ -33,9 +33,7 @@
 <script src="js/plugins/chosen.jquery.min.js" type="text/javascript"></script>
 <!-- data-table -->
 <script src="js/plugins/jquery.dataTables.min.js" type="text/javascript"></script>
-<script src="js/plugins/datatable-bootstrap.js" type="text/javascript"></script>
-<!-- jquery uniform -->
-<script src="js/plugins/jquery.uniform.js" type="text/javascript"></script>
+<script src="js/plugins/datatable-bs3.js" type="text/javascript"></script>
 <!-- panel slider -->
 <script src="js/plugins/jquery.panelslider.js" type="text/javascript"></script>
 

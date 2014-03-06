@@ -1,5 +1,5 @@
 </head>
-<body class="header-fixed">
+<body class="header-fixed left-sidebar-fixed">
 	  <!-- header -->
 		<div class="header navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -16,27 +16,15 @@
 								<div class="dropdown-menu pull-right settings">
 									<form class="form-horizontal" method="POST" action="#">
 										<div class="form-group">
-											<label class="control-label col-md-6">Layout Fixed</label>
-											<div class="col-md-6">
-												<input type="checkbox" id="fixedlayout" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
-											</div>
-										</div>
-										<div class="form-group">
 											<label class="control-label col-md-6">Header Fixed</label>
 											<div class="col-md-6">
-												<input type="checkbox" id="fixedheader" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-6">Footer Fixed</label>
-											<div class="col-md-6">
-												<input type="checkbox" id="fixedfooter" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
+												<input type="checkbox" id="fixed-header" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-6">Sidebar Fixed</label>
 											<div class="col-md-6">
-												<input type="checkbox" id="fixedsidebar" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
+												<input type="checkbox" id="fixed-left-sidebar" class="switch" data-on="primary" data-off="danger" data-on-label="Yes" data-off-label="No" />
 											</div>
 										</div>
 									</form>

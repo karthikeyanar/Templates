@@ -15,9 +15,7 @@
 <!-- bootstrap daterange picker -->
 <link href="css/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap datatable -->
-<link href="css/datatable-bootstrap.css" rel="stylesheet" type="text/css" />
-<!-- jquery uniform -->
-<link href="css/uniform.css" rel="stylesheet" type="text/css" />
+<link href="css/datatable-bs3.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap modal --> 
 <link href="css/bs-modal.css" rel="stylesheet" type="text/css" />
 <!-- chosen -->

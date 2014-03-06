@@ -445,17 +445,17 @@
 						<form action="#" method="POST" class="form-horizontal">
 						<div class="form-group">
 							<div class="col-md-3">
-								<label class="checkbox">
-									<input type="checkbox" value="test" class="uniform" />Option 1
+								<label class="checkbox metro-checkbox">
+									<input type="checkbox" value="test" />Option 1
 								</label>
-								<label class="checkbox">
-									<input type="checkbox" value="test" class="uniform" checked />Option 2
+								<label class="checkbox metro-checkbox">
+									<input type="checkbox" value="test" checked />Option 2
 								</label>
-								<label class="checkbox">
-									<input type="checkbox" value="test" class="uniform" disabled />Option 3
+								<label class="checkbox metro-checkbox">
+									<input type="checkbox" value="test" disabled />Option 3
 								</label>
-								<label class="checkbox">
-									<input type="checkbox" value="test" class="uniform" checked disabled />Option 4
+								<label class="checkbox metro-checkbox">
+									<input type="checkbox" value="test" checked disabled />Option 4
 								</label>
 							</div>
 						</div>
@@ -474,17 +474,17 @@
 						<form action="#" method="POST" class="form-horizontal">
 							<div class="form-group">
 								<div class="col-md-3">
-									<label class="radio">
-										<input type="radio" name="rdo" value="test" class="uniform" />Option 1
+									<label class="radio metro-radio">
+										<input type="radio" name="rdo" value="test" />Option 1
 									</label>
-									<label class="radio">
-										<input type="radio" name="rdo" value="test" class="uniform" checked />Option 2
+									<label class="radio metro-radio">
+										<input type="radio" name="rdo" value="test" checked />Option 2
 									</label>
-									<label class="radio">
-										<input type="radio" name="rdo" value="test" class="uniform" disabled />Option 3
+									<label class="radio metro-radio">
+										<input type="radio" name="rdo" value="test" disabled />Option 3
 									</label>
-									<label class="radio">
-										<input type="radio" name="rdo" value="test" class="uniform" checked disabled />Option 4
+									<label class="radio metro-radio">
+										<input type="radio" name="rdo" value="test" checked disabled />Option 4
 									</label>
 								</div>
 							</div>

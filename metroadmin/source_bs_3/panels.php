@@ -59,14 +59,14 @@
 							Filter By <i class="fa fa-angle-down"></i>
 						</a>
 						<div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" class="uniform" />Finance
+							<label class="checkbox metro-checkbox">
+								<input type="checkbox" id="finance" value="option1" />Finance
 							</label>
-							<label class="checkbox">
-								<input type="checkbox" id="finance" value="option1" class="uniform" />Membership
+							<label class="checkbox metro-checkbox">
+								<input type="checkbox" id="finance" value="option1" />Membership
 							</label>
-							<label class="checkbox no-wrap">
-								<input type="checkbox" id="finance" value="option1" class="uniform" />Customer Support
+							<label class="checkbox metro-checkbox no-wrap">
+								<input type="checkbox" id="finance" value="option1" />Customer Support
 							</label>
 						</div>
 					</div>

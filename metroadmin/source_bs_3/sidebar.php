@@ -60,8 +60,7 @@ function writeclassname($rootname,$classname){
 		}
 	} else if($rootname=="tables"){
 		if($file == "table.php"
-			|| $file == "dynamic_table.php"
-			|| $file == "custom_table.php"
+			|| $file == "data_table.php"
 		)
 		{
 			echo $classname;
@@ -111,7 +110,7 @@ function writeclassname($rootname,$classname){
                 <span class="title">UI Features</span>
                 <span class="fa arrow"></span>
             </a>
-            <ul class="nav nav-level-2 collapse">
+            <ul class="nav sub-menu">
 				<li <?php checkactive("general.php");?>>
                     <a href="general.php">General</a>
                 </li>
@@ -153,7 +152,7 @@ function writeclassname($rootname,$classname){
                 <span class="title">Forms</span>
                 <span class="fa arrow"></span>
             </a>
-            <ul class="nav nav-level-2 collapse">
+            <ul class="nav sub-menu">
                 <li <?php checkactive("form_controls.php");?>>
                     <a href="form_controls.php">Form Controls</a>
                 </li>
@@ -174,15 +173,12 @@ function writeclassname($rootname,$classname){
                 <span class="title">Tables</span>
                 <span class="fa arrow"></span>
             </a>
-            <ul class="nav nav-level-2 collapse">
+            <ul class="nav sub-menu">
                 <li <?php checkactive("table.php");?>>
                     <a href="table.php">Basic</a>
                 </li>
-                <li <?php checkactive("dynamic_table.php");?>>
-                    <a href="dynamic_table.php">Dynamic</a>
-                </li>
-                <li <?php checkactive("custom_table.php");?>>
-                    <a href="custom_table.php">Custom</a>
+                <li <?php checkactive("data_table.php");?>>
+                    <a href="data_table.php">Data Table</a>
                 </li>
             </ul>
         </li>
@@ -192,7 +188,7 @@ function writeclassname($rootname,$classname){
                 <span class="title">Samples</span>
                 <span class="fa arrow"></span>
             </a>
-            <ul class="nav nav-level-2 collapse">
+            <ul class="nav sub-menu">
                 <li <?php checkactive("login.php");?>>
                     <a href="login.php">Login</a>
                 </li>

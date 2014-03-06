@@ -61,10 +61,7 @@
 				}
 			]
 	});
-
-	$(".chat-content").slimscroll({
-		height: '400px'
-	});
+     
 
 	/* pie chart */
 

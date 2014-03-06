@@ -60,7 +60,19 @@
 					<div class="panel-body">
 						<div class="note">
 							<h4>Default</h4>
-							<p>Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+						</div>
+						<div class="note note-danger">
+							<h4>Danger</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+						</div>
+						<div class="note note-warning">
+							<h4>Warning</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+						</div>
+						<div class="note note-info">
+							<h4>Info</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 						</div>
 					</div>
 				</div>
@@ -165,115 +177,24 @@
 					</div>
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-md-3">
-									<div class="well bg-white no-margin">
-								</div>
-								<code>.bg-white</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well no-border bg-pink no-margin">
-								</div>
-								<code>.bg-pink</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well no-border bg-red no-margin">
-								</div>
-								<code>.bg-red</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well no-border bg-dark-red no-margin">
-								</div>
-								<code>.bg-dark-red</code>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-									<div class="well no-border bg-dark-orange no-margin">
-								</div>
-								<code>.bg-dark-orange</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well no-border bg-orange no-margin">
-								</div>
-								<code>.bg-orange</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well no-border bg-light-green no-margin">
-								</div>
-								<code>.bg-light-green</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well no-border bg-green no-margin">
-								</div>
-								<code>.bg-green</code>
-							</div>
-						</div>
-						<div class="row">
-								
-							<div class="col-md-3">
-									<div class="well no-border bg-light-teal no-margin">
-								</div>
-								<code>.bg-light-teal</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well no-border bg-teal no-margin">
-								</div>
-								<code>.bg-teal</code>
-							</div>
-								
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well no-border bg-dark-purple no-margin">
-								</div>
-								<code>.bg-dark-purple</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well no-border bg-purple no-margin">
-								</div>
-								<code>.bg-purple</code>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-									<div class="well no-border bg-light-blue no-margin">
-								</div>
-								<code>.bg-light-blue</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well no-border bg-blue no-margin">
-								</div>
-								<code>.bg-blue</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well no-border bg-dark-blue no-margin">
-								</div>
-								<code>.bg-dark-blue</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well no-border bg-skyblue no-margin">
-								</div>
-								<code>.bg-skyblue</code>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3 margin-bottom-10">
-								<div class="well no-border bg-black no-margin">
-								</div>
-								<code>.bg-black</code>
-							</div>
-							<div class="col-md-3">
-								<div class="well no-border bg-grey no-margin">
-								</div>
-								<code>.bg-grey</code>
-							</div> 
-							<div class="col-md-3">
-								<div class="well no-border bg-yellow no-margin">
-								</div>
-								<code>.bg-yellow</code>
-							</div>
-							<div class="col-md-3">
-								<div class="well no-border bg-cardovan no-margin">
-								</div>
-								<code>.bg-cardovan</code>
+							<div class="col-md-12">
+								<ul class="list-group no-margin">
+									<li class="list-group-item bg-primary no-border margin-bottom-5">.bg-primary</li>
+									<li class="list-group-item bg-success no-border margin-bottom-5">.bg-success</li>
+									<li class="list-group-item bg-info no-border margin-bottom-5">.bg-info</li>
+									<li class="list-group-item bg-warning no-border margin-bottom-5">.bg-warning</li>
+									<li class="list-group-item bg-danger no-border margin-bottom-5">.bg-danger</li>
+									<li class="list-group-item bg-pink no-border margin-bottom-5">.bg-pink</li>
+									<li class="list-group-item bg-red no-border margin-bottom-5">.bg-red</li>
+									<li class="list-group-item bg-orange no-border margin-bottom-5">.bg-orange</li>
+									<li class="list-group-item bg-green no-border margin-bottom-5">.bg-green</li>
+									<li class="list-group-item bg-teal no-border margin-bottom-5">.bg-teal</li>
+									<li class="list-group-item bg-purple no-border margin-bottom-5">.bg-purple</li>
+									<li class="list-group-item bg-skyblue no-border margin-bottom-5">.bg-skyblue</li>
+									<li class="list-group-item bg-black no-border margin-bottom-5">.bg-black</li>
+									<li class="list-group-item bg-grey no-border margin-bottom-5">.bg-grey</li>
+									<li class="list-group-item bg-cardovan no-border">.bg-cardovan</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -289,140 +210,59 @@
 					</div>
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-md-3">
-								<div class="well bg-black no-border fg-white no-margin">
-									Title
-								</div>
-								<code>.fg-white</code>
-							</div>
-							<div class="col-md-3">
-								<div class="well bg-white fg-pink no-margin">
-								Title
-								</div>
-								<code>.fg-pink</code>
-							</div>
-							<div class="col-md-3">
-								<div class="well bg-white fg-red no-margin">
-								Title
-								</div>
-								<code>.fg-red</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well bg-white fg-dark-red no-margin">
-									Title
-								</div>
-								<code>.fg-dark-red</code>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-									<div class="well bg-white fg-dark-orange no-margin">
-									Title
-								</div>
-								<code>.fg-dark-orange</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well bg-white fg-orange no-margin">
-									Title
-								</div>
-								<code>.fg-orange</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well bg-white fg-light-green no-margin">
-									Title
-								</div>
-								<code>.fg-light-green</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well bg-white fg-green no-margin">
-									Title
-								</div>
-								<code>.fg-green</code>
-							</div>
-						</div>
-						<div class="row">
-											
-							<div class="col-md-3">
-									<div class="well bg-white fg-light-teal no-margin">
-									Title
-								</div>
-								<code>.fg-light-teal</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well bg-white fg-teal no-margin">
-									Title
-								</div>
-								<code>.fg-teal</code>
-							</div>
-											
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well bg-white fg-dark-purple no-margin">
-									Title
-								</div>
-								<code>.fg-dark-purple</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well bg-white fg-purple no-margin">
-								</div>
-								<code>.fg-purple</code>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-									<div class="well bg-white fg-light-blue no-margin">
-									Title
-								</div>
-								<code>.fg-light-blue</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well bg-white fg-blue no-margin">
-									Title
-								</div>
-								<code>.fg-blue</code>
-							</div>
-							<div class="col-md-3">
-									<div class="well bg-white fg-dark-blue no-margin">
-									Title
-								</div>
-								<code>.fg-dark-blue</code>
-							</div>
-							<div class="col-md-3 margin-bottom-10">
-									<div class="well bg-white fg-skyblue no-margin">
-									Title
-								</div>
-								<code>.fg-skyblue</code>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3 margin-bottom-10">
-								<div class="well bg-white fg-black no-margin">
-								Title
-								</div>
-								<code>.fg-black</code>
-							</div>
-							<div class="col-md-3">
-								<div class="well bg-white fg-grey no-margin">
-								Title
-								</div>
-								<code>.fg-grey</code>
-							</div> 
-							<div class="col-md-3">
-								<div class="well bg-white fg-yellow no-margin">
-								Title
-								</div>
-								<code>.fg-yellow</code>
-							</div>
-							<div class="col-md-3">
-								<div class="well bg-white fg-cardovan no-margin">
-								Title
-								</div>
-								<code>.fg-cardovan</code>
+							<div class="col-md-12">
+								<ul class="list-group no-margin">
+									<li class="list-group-item bg-black fg-white no-border margin-bottom-5">.fg-white</li>
+									<li class="list-group-item fg-black no-border">.fg-black</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							Tooltips 
+						</h3>
+					</div>
+					<div class="panel-body">
+						<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button><div class="clearfix">&nbsp;</div>
+						<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button><div class="clearfix">&nbsp;</div>
+						<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button><div class="clearfix">&nbsp;</div>
+						<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							Popovers 
+						</h3>
+					</div>
+					<div class="panel-body">
+						<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+						  Popover on left
+						</button><div class="clearfix">&nbsp;</div>
+						<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+						  Popover on top
+						</button><div class="clearfix">&nbsp;</div>
+						<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus	sagittis lacus vel augue laoreet rutrum faucibus.">
+						  Popover on bottom
+						</button><div class="clearfix">&nbsp;</div>
+						<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+						  Popover on right
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default">
@@ -611,6 +451,161 @@
 			</div>
 			<!-- /.col-md-12 -->
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+						Progress bars
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+						<h3>Basic</h3>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+							<span class="sr-only">60% Complete</span>
+							</div>
+						</div>
+						<h3>With Label</h3>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+							60%
+							</div>
+						</div>
+						<h3>Contextual alternatives</h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							<span class="sr-only">40% Complete (success)</span>
+						  </div>
+						</div>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">20% Complete</span>
+						  </div>
+						</div>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							<span class="sr-only">60% Complete (warning)</span>
+						  </div>
+						</div>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<span class="sr-only">80% Complete</span>
+						  </div>
+						</div>
+						<h3>Striped</h3>
+						<div class="progress progress-striped">
+						  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							<span class="sr-only">40% Complete (success)</span>
+						  </div>
+						</div>
+						<div class="progress progress-striped">
+						  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">20% Complete</span>
+						  </div>
+						</div>
+						<div class="progress progress-striped">
+						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							<span class="sr-only">60% Complete (warning)</span>
+						  </div>
+						</div>
+						<div class="progress progress-striped">
+						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<span class="sr-only">80% Complete (danger)</span>
+						  </div>
+						</div>
+						<h3>Animated</h3>
+						<div class="progress progress-striped active">
+						  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+							<span class="sr-only">45% Complete</span>
+						  </div>
+						</div>
+						<h3>Stacked</h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-success" style="width: 35%">
+							<span class="sr-only">35% Complete (success)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-warning" style="width: 20%">
+							<span class="sr-only">20% Complete (warning)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-danger" style="width: 10%">
+							<span class="sr-only">10% Complete (danger)</span>
+						  </div>
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-md-12 -->
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+						List Group
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+						 <h3>Basic</h3>
+						 <ul class="list-group">
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+						<h3>Badges</h3>
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<span class="badge">14</span>
+							Cras justo odio
+						  </li>
+						</ul>
+						<h3>Linked items</h3>
+						<div class="list-group">
+						  <a href="#" class="list-group-item active">
+							Cras justo odio
+						  </a>
+						  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						  <a href="#" class="list-group-item">Morbi leo risus</a>
+						  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						  <a href="#" class="list-group-item">Vestibulum at eros</a>
+						</div>
+						<h3>Linked items</h3>
+						<ul class="list-group">
+						  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+						  <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+						  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+						  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+						</ul>
+						<div class="list-group">
+						  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+						  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+						  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+						  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+						</div>
+						<h3>Custom content</h3>
+						<div class="list-group">
+						  <a class="list-group-item active" href="#">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						  </a>
+						  <a class="list-group-item" href="#">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						  </a>
+						  <a class="list-group-item" href="#">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						  </a>
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-md-12 -->
+		</div>
 	</div>
 </div>
 <?php include_once 'endcontainer.php' ?>
@@ -645,3 +640,5 @@
  	});
 </script>
 <?php include_once 'footer.php' ?>
+
+

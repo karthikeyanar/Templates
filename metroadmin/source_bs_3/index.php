@@ -23,7 +23,7 @@
 							<div class="badge">10</div>
 						</div>
 					</div>
-					<div class="tile bg-dark-orange">
+					<div class="tile bg-orange">
 						<div class="tile-content icon"><i class="fa fa-plane fa-4x"></i></div>
 						<div class="tile-status">
 							<span class="name">Projects</span>

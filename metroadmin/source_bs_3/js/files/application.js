@@ -59,13 +59,21 @@
         });
     };
 
-    this.handleUniform=function($target) {
-        var $filter=$('.uniform');
-        if($target) {
-            $filter=$('.uniform',$target);
-        }
-        $filter.uniform();
+    this.handleMetroCheck=function(filter) {
+        var $elements;
+        if(filter)
+            $elements=$('.metro-checkbox,.metro-radio',filter);
+        else
+            $elements=$('.metro-checkbox,.metro-radio');
+
+        $elements.each(function() {
+            var $check=$(".check",this);
+            if(!$check.get(0))
+                $("input",this).after("<span class='check'></span>");
+        });
     };
+
+  
 
     this.handleBreadcrumb=function() {
         // dismiss breadcrumb
@@ -83,6 +91,10 @@
 
     this.handleToolTip=function() {
         $("[data-toggle='tooltip']").tooltip();
+    };
+
+    this.handlePopover=function() {
+        $("[data-toggle='popover']").popover();
     };
 
     this.handlePanelTools=function() {
@@ -136,28 +148,61 @@
     };
 
     this.handleFixedSideBar=function() {
-        var $pageSidebar=$(".page-sidebar");
-        var $menu=$('#pageSidebarmenu',$pageSidebar);
-        var sidebarHeight=$(window).height();
-
+        var $body=$("body");
+        var $leftSidebar=$("#left-sidebar");
+        var $menu=$('#pageSidebarmenu',$leftSidebar);
+        var windowHeight=$(window).height();
+        $(".empty-menu",$menu).remove();
         if($menu.parent('.slimScrollDiv').size()===1) { // destroy existing instance before updating the height
-            $menu.slimScroll({
+            $menu
+            .slimScroll({
                 destroy: true
             });
             $menu.removeAttr('style');
         }
 
-        $menu
-       .slimScroll({
-           size: '5px',
-           color: '#fff',
-           opacity: .3,
-           position: 'right',
-           height: sidebarHeight,
-           allowPageScroll: false,
-           disableFadeOut: false,
-           alwaysVisible: true
-       });
+        if($body.hasClass("left-sidebar-fixed")) {
+            var sidebarHeight=windowHeight;
+            $menu
+            .append("<li class='empty-menu'><div style='height:20px;'></div></li>")
+            .slimScroll({
+                size: '5px',
+                color: '#fff',
+                opacity: .3,
+                position: 'right',
+                height: sidebarHeight,
+                allowPageScroll: false,
+                disableFadeOut: false,
+                alwaysVisible: true
+            });
+        } else {
+            self.handleLeftSidebarMenuHeight();
+        }
+    };
+
+    this.handleLeftSidebarMenuHeight=function() {
+        var $body=$("body");
+        var $leftSidebar=$("#left-sidebar");
+        var $menu=$('#pageSidebarmenu',$leftSidebar);
+        var $pageContent=$('.page-content');
+        var windowHeight=$(window).height();
+        var menuHeight=$menu.outerHeight();
+        var pageContentHeight=$pageContent.outerHeight();
+        pageContentHeight+=$(".header").outerHeight();
+        pageContentHeight+=$(".footer").outerHeight();
+
+
+        if($body.hasClass("left-sidebar-fixed")==false) {
+            var minHeight=windowHeight;
+            if(windowHeight<pageContentHeight)
+                minHeight=pageContentHeight;
+            if(minHeight<menuHeight)
+                minHeight=menuHeight;
+            console.log(windowHeight+","+pageContentHeight+","+menuHeight);
+            $leftSidebar.css({
+                "min-height": minHeight
+            });
+        }
     };
 
     this.resizeContentHeight=function() {
@@ -216,7 +261,7 @@
 	        containers: [
 		    {
 		        "object": function() {
-		            return $('.page-wrapper');
+		            return $('.header');
 		        }
 			    ,"css": [{ "name": "margin-left"}]
 		    },
@@ -245,17 +290,58 @@
 	    });
     };
 
+    this.handleSettings=function() {
+        var $body=$("body");
+        var $header=$(".header");
+        var $leftSideBar=$("#left-sidebar");
+        $header.removeClass("navbar-fixed-top");
+        if($body.hasClass("header-fixed"))
+            $header.addClass("navbar-fixed-top");
+
+
+        self.handleFixedSideBar();
+    };
+
 
 
     this.init=function() {
+
+        var $body=$("body");
+
+        var $fixedHeader=$("#fixed-header");
+        var $fixedLeftSidebar=$("#fixed-left-sidebar");
+        if($body.hasClass("header-fixed"))
+            $fixedHeader.prop("checked",true);
+        if($body.hasClass("left-sidebar-fixed"))
+            $fixedLeftSidebar.prop("checked",true);
+
+        $fixedHeader
+        .change(function() {
+            var clsName="header-fixed";
+            if(this.checked)
+                $body.addClass(clsName);
+            else
+                $body.removeClass(clsName);
+            self.handleSettings();
+        });
+
+        $fixedLeftSidebar
+        .change(function() {
+            var clsName="left-sidebar-fixed";
+            if(this.checked)
+                $body.addClass(clsName);
+            else
+                $body.removeClass(clsName);
+            self.handleSettings();
+        });
 
         self.isIE8=!!navigator.userAgent.match(/MSIE 8.0/);
         self.isIE9=!!navigator.userAgent.match(/MSIE 9.0/);
         self.isIE10=!!navigator.userAgent.match(/MSIE 10.0/);
 
-        $('#pageSidebarmenu').metisMenu();
+        $('#pageSidebarmenu').sidebarMenu();
 
-        self.handleFixedSideBar();
+        self.handleSettings();
 
         self.resizeContentHeight();
         self.initSettings();
@@ -265,13 +351,16 @@
 
         self.handleFormValidation();
         self.handleToolTip();
+        self.handlePopover();
         self.handleChosen();
 
         self.handlePanelTools();
         self.handleDropdowns();
         self.handleBootstrapSelect();
         self.handleSwitch();
-        self.handleUniform();
+        self.handleMetroCheck();
+
+
 
     };
 
@@ -303,4 +392,5 @@ $(function() {
 
 $(window).resize(function() {
     APP.responsive();
+    APP.handleFixedSideBar();
 });

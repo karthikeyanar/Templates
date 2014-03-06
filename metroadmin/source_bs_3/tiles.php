@@ -39,7 +39,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet...</p>
 				</div>
 			</div>
-			<div class="tile bg-red">
+			<div class="tile bg-purple">
 				<div class="tile-content icon"><i class="fa fa-user fa-3x"></i></div>
 				<div class="tile-status">
 					<span class="name">Members</span>
@@ -76,7 +76,7 @@
 					<span class="name">Reports</span>
 				</div>
 			</div>
-			<div class="tile double bg-dark-red no-border">
+			<div class="tile double bg-red no-border">
 				<div class="tile-content icon">
 					<i class="fa fa-play-circle fa-4x"></i>
 				</div>
@@ -85,7 +85,7 @@
 					<div class="badge bg-black"><i class="fa fa-pause"></i></div>
 				</div>
 			</div>
-			<div class="tile bg-orange">
+			<div class="tile bg-teal">
 				<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
 				<div class="tile-status">
 					<span class="name">Documents</span>
@@ -100,7 +100,7 @@
 					<span class="text">This is a desert eagle. He is very hungry and angry bird.</span>
 				</div>
 			</div>
-			<div class="tile bg-dark-orange">
+			<div class="tile bg-orange">
 				<div class="tile-content icon"><i class="fa fa-plane fa-4x"></i></div>
 				<div class="tile-status">
 					<span class="name">Projects</span>
@@ -121,7 +121,7 @@
 					<div class="badge">10</div>
 				</div>
 			</div>
-			<div class="tile double bg-dark-blue">
+			<div class="tile double bg-primary">
 				<div class="tile-content padding5">
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing elit, nibh ut laoreet...</p>
 				</div>
