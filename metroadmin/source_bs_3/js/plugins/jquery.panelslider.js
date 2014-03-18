@@ -60,10 +60,10 @@
                 animation[cs.name]=cs.value;
             });
             var obj=(typeof cnt.object=='function'?cnt.object.call():cnt.object);
-            obj.animate(animation,duration);
+            obj.animate(animation,{ "duration": duration  });
         });
 
-        panel.show().animate(panelAnimation,duration,function() {
+        panel.show().animate(panelAnimation,{ "duration": duration ,"complete": function() {
             _sliding=false;
 
             var otherPanel=$('.ps-active-panel').not(panel);
@@ -72,6 +72,7 @@
 
             if(options.onShown)
                 options.onShown(panel);
+        }
         });
     }
 
@@ -80,6 +81,8 @@
         panelWidth=panel.data('width'), // panel.outerWidth(true),
         bodyAnimation={},
         panelAnimation={};
+
+        panelWidth=panel.outerWidth(true);
 
         if(panel.data('onHide'))
             panel.data('onHide')(panel);
@@ -96,8 +99,6 @@
                 break;
         }
 
-
-
         $.each(panel.data('containers'),function(i,cnt) {
             $.each(cnt.css,function(i,cs) {
                 cs.value='-='+panelWidth;
@@ -105,7 +106,7 @@
         });
 
 
-        panel.animate(panelAnimation,duration,function() {
+        panel.animate(panelAnimation,{ "duration": duration ,"complete": function() {
             panel.hide();
             panel.removeClass('ps-active-panel');
 
@@ -114,6 +115,7 @@
             if(panel.data('onHidden')) {
                 panel.data('onHidden')(panel);
             }
+        }
         });
 
         if(isDisableContainer) {
@@ -125,14 +127,14 @@
                 animation[cs.name]=cs.value;
             });
             var obj=(typeof cnt.object=='function'?cnt.object.call():cnt.object);
-            obj.animate(animation,duration);
+            obj.animate(animation,{ "duration": duration  });
         });
 
         $('.ps-panel-toggle').removeClass('open');
 
     }
 
-    $.panelslider=function(element,options) {
+    $.panelSlider=function(element,options) {
         var active=$('.ps-active-panel');
         var defaults={
             side: 'left', // panel side: left or right
@@ -175,37 +177,41 @@
         e.stopPropagation();
     });
 
-    $.fn.panelsliderClose=function(options) {
+    $.fn.panelSliderClose=function(options) {
         _slideOut($(this));
     };
 
 
-    $.fn.panelslider=function(options) {
+    $.fn.panelSlider=function(options) {
 
         var $this=$(this);
 
         $this
-		.click(function(e) {
+        .on('click.panelSlider',function(e) {
 
-
-		    var active=$('.ps-active-panel'),
+            var active=$('.ps-active-panel'),
 			panel=$($this.attr('data-target')||(href=$this.attr('href'))&&href.replace(/.*(?=#[^\s]+$)/,'')); //strip for ie7
 
 
-		    $('.ps-panel-toggle').removeClass('open');
+            $('.ps-panel-toggle').removeClass('open');
 
-		    $this.addClass('open');
+            $this.addClass('open');
 
-		    if(panel.hasClass('ps-active-panel')) {
-		        $this.removeClass('open');
-		        panel.panelsliderClose();
-		    } else {
-		        $.panelslider(panel,options);
-		    }
+            if(panel.hasClass('ps-active-panel')) {
+                $this.removeClass('open');
+                panel.panelSliderClose();
+            } else {
+                $.panelSlider(panel,options);
+            }
 
-		    e.preventDefault();
-		    e.stopPropagation();
-		});
+            e.preventDefault();
+            e.stopPropagation();
+        });
+
+        $this.on('touchend',function(e) {
+            $this.trigger('click.panelSlider');
+            e.preventDefault();
+        });
 
         return this;
     };

@@ -1,6 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'navbar.php' ?>
+<?php include_once 'startcontainer.php' ?>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="page-header">
@@ -279,5 +279,5 @@ $('#create-switch').wrap('&lt;div class="switch" />').parent().bootstrapSwitch()
 		$('#disable-switch').bootstrapSwitch('setActive',true);
 	});
 </script>
-<?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
  

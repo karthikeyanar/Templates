@@ -1,3 +1,4 @@
+<!-- page sidebar -->
 <?php
 function checkactive_toggle($filename){
 	$path = $_SERVER["REQUEST_URI"];
@@ -82,11 +83,17 @@ function writeclassname($rootname,$classname){
 }
 ?>
 <div id="left-sidebar" class="page-sidebar">
-    <ul class="nav page-sidebar-menu" id="pageSidebarmenu">
+    <ul class="nav page-sidebar-menu" id="page-sidebar-menu">
         <li>
-            <a class="navbar-brand" href="index.php">Pepper</a>
+			<div class="sidebar-toggler-wrapper">
+				<button type="button" class="navbar-toggle sidebar-toggler">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
         </li>
-        <li class="page-sidebar-search">
+        <li class="page-sidebar-search open">
             <div class="input-group custom-search-form">
                 <input type="text" class="form-control" placeholder="Search..." />
                 <span class="input-group-btn">
@@ -95,7 +102,8 @@ function writeclassname($rootname,$classname){
                     </button>
                 </span>
             </div>
-            <!-- /input-group -->
+			<a href="javascript:;" id="close-search">&times</a>
+			<a href="javascript:;" id="open-search"><i class="fa fa-search"></i></a>
         </li>
         <li class=<?php checkactive_toggle("index.php");?>>
             <a href="index.php">

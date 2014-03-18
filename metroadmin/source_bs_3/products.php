@@ -1,6 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'navbar.php' ?>
+<?php include_once 'startcontainer.php' ?>
 <?php include_once 'products_sidebar.php' ?>
 		<div class="page-header">
 			<h1>Products</h1>
@@ -32,4 +32,4 @@
 		</div>
 <?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
-<?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>

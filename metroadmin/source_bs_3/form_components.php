@@ -1,6 +1,6 @@
 <?php include_once 'header.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'navbar.php' ?>
+<?php include_once 'startcontainer.php' ?>
 	<div class="page-header">
 	<h1>
 		Form components</h1>
@@ -1617,4 +1617,4 @@
 		$('#reportrange span').html(moment().subtract('days',29).format('MMMM D, YYYY')+' - '+moment().format('MMMM D, YYYY'));
 	});
 </script>
-<?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>

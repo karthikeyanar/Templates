@@ -1,6 +1,6 @@
 <?php include_once 'header.php' ?>	
 <?php include_once 'style.php' ?>
-<?php include_once 'navbar.php' ?>
+<?php include_once 'startcontainer.php' ?>
 <div class="panel panel-default">
 	<div class="panel-heading panel-title">
 		<h3 class="panel-title">Daterange Pickers</h3>
@@ -943,4 +943,4 @@
 		$('#reportrange span').html(moment().subtract('days',29).format('MMMM D, YYYY')+' - '+moment().format('MMMM D, YYYY'));
 	});
 </script>
-<?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>

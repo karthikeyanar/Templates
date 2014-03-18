@@ -1,57 +1,64 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'navbar.php' ?>
-			<div class="page-header">
-				<h1>
-					Dashboard
-				</h1>
-			</div>
-			<!-- tiles -->
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="tile bg-skyblue">
-						<div class="tile-content icon"><i class="fa fa-shopping-cart fa-3x"></i></div>
-						<div class="tile-status">
-							<span class="name">Orders</span>
-							<div class="badge">10</div>
-						</div>
-					</div>
-					<div class="tile bg-orange">
-						<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
-						<div class="tile-status">
-							<span class="name">Documents</span>
-							<div class="badge">10</div>
-						</div>
-					</div>
-					<div class="tile bg-orange">
-						<div class="tile-content icon"><i class="fa fa-plane fa-4x"></i></div>
-						<div class="tile-status">
-							<span class="name">Projects</span>
-							<div class="badge">10</div>
-						</div>
-					</div>
-					<div class="tile bg-pink">
-						<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
-						<div class="tile-status">
-							<span class="name">Events</span>
-							<div class="badge">10</div>
-						</div>
-					</div>
-					<div class="tile double bg-cardovan">
-						<div class="tile-content padding5">
-							<h4>Annoncements</h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ut laoreet...</p>
-						</div>
-						<div class="tile-status">
-							<span class="name">John</span>
-							<div class="badge">05/02/2013</div>
-						</div>
-					</div>
+<!-- fullcalendar -->
+<link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'startcontainer.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
+	<div class="page-header">
+		<h1>
+			Dashboard
+		</h1>
+	</div>
+	<!-- tiles -->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="tile bg-skyblue">
+				<div class="tile-content icon"><i class="fa fa-shopping-cart fa-3x"></i></div>
+				<div class="tile-status">
+					<span class="name">Orders</span>
+					<div class="badge">10</div>
 				</div>
 			</div>
-			<!-- chart -->
+			<div class="tile bg-orange">
+				<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
+				<div class="tile-status">
+					<span class="name">Documents</span>
+					<div class="badge">10</div>
+				</div>
+			</div>
+			<div class="tile bg-orange">
+				<div class="tile-content icon"><i class="fa fa-plane fa-4x"></i></div>
+				<div class="tile-status">
+					<span class="name">Projects</span>
+					<div class="badge">10</div>
+				</div>
+			</div>
+			<div class="tile bg-pink">
+				<div class="tile-content icon"><i class="fa fa-briefcase fa-3x"></i></div>
+				<div class="tile-status">
+					<span class="name">Events</span>
+					<div class="badge">10</div>
+				</div>
+			</div>
+			<div class="tile double bg-cardovan">
+				<div class="tile-content padding5">
+					<h4>Annoncements</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ut laoreet...</p>
+				</div>
+				<div class="tile-status">
+					<span class="name">John</span>
+					<div class="badge">05/02/2013</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
@@ -63,7 +70,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
@@ -76,9 +83,10 @@
 					</div>
 				</div>
 			</div>
-			<!--- chat --->
+		</div>
+		<div class="col-md-6">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
@@ -166,13 +174,54 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div id="calendar1">
-					</div>
-				</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bell fa-fw"></i>Notifications Panel
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a class="list-group-item" href="#"><i class="fa fa-comment fa-fw"></i>New Comment <span class="pull-right text-muted small"><em>4 minutes ago</em> </span></a><a class="list-group-item" href="#"><i class="fa fa-twitter fa-fw"></i>3 New Followers <span class="pull-right text-muted small"><em>12 minutes ago</em> </span></a>
+                        <a class="list-group-item" href="#"><i class="fa fa-envelope fa-fw"></i>Message Sent
+                            <span class="pull-right text-muted small"><em>27 minutes ago</em> </span></a>
+                        <a class="list-group-item" href="#"><i class="fa fa-tasks fa-fw"></i>New Task <span class="pull-right text-muted small"><em>43 minutes ago</em> </span></a><a class="list-group-item" href="#"><i class="fa fa-upload fa-fw"></i>Server Rebooted <span class="pull-right text-muted small">
+                                    <em>11:32 AM</em> </span></a><a class="list-group-item" href="#"><i class="fa fa-bolt fa-fw">
+                                    </i>Server Crashed! <span class="pull-right text-muted small"><em>11:13 AM</em> </span>
+                                    </a><a class="list-group-item" href="#"><i class="fa fa-warning fa-fw"></i>Server Not
+                                        Responding <span class="pull-right text-muted small"><em>10:57 AM</em> </span>
+                        </a><a class="list-group-item" href="#"><i class="fa fa-shopping-cart fa-fw"></i>New
+                            Order Placed <span class="pull-right text-muted small"><em>9:49 AM</em> </span>
+                        </a><a class="list-group-item" href="#"><i class="fa fa-money fa-fw"></i>Payment Received
+                            <span class="pull-right text-muted small"><em>Yesterday</em> </span></a>
+                    </div>
+                    <!-- /.list-group -->
+                    <a class="btn btn-default btn-block" href="#">View All Alerts</a>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="calendar">
 			</div>
+		</div>
+	</div>
+<?php include_once 'end-page-content.php' ?>
 <?php include_once 'endcontainer.php' ?>
 <?php include_once 'script.php' ?>
+<!-- flot chart -->
+<script src="js/charts/jquery.flot.min.js" type="text/javascript"></script>
+<script src="js/charts/jquery.flot.pie.min.js" type="text/javascript"></script>
+<script src="js/charts/jquery.flot.navigate.min.js" type="text/javascript"></script>
+<script src="js/charts/jquery.flot.resize.min.js" type="text/javascript"></script>
+<!-- full calendar -->
+<script src="js/plugins/fullcalendar.min.js" type="text/javascript"></script>
 <script src="js/example/dashboard.js" type="text/javascript"></script>
+<?php include_once 'applicationscript.php' ?>
 <?php include_once 'footer.php' ?>
+<?php include_once 'end-page.php' ?>
