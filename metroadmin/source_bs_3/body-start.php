@@ -1,2 +1,2 @@
 </head>
-<body class="header-fixed">
+<body class="page-fluid header-fixed">

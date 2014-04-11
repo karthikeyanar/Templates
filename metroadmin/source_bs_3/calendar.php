@@ -1,53 +1,65 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Calendar</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
-		<div class="page-header">
-			<h1>
-				Calendar
-			</h1>
+<!-- fullcalendar -->
+<link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
+<div class="page-header">
+	<h1>
+		Calendar
+	</h1>
+</div>
+<ul class="breadcrumb">
+	<li>
+		<a href="index.php">Home</a>
+		<i class="fa fa-angle-right"></i>
+	</li>
+	<li>
+		<a href="form_layout.php">Forms</a>
+		<i class="fa fa-angle-right"></i>
+	</li>
+	<li>
+		<a href="calendar.php">Calendar</a>
+	</li>
+	<li class="pull-right">
+		<a href="#" class="close">&times</a>
+	</li>
+</ul>
+<div class="row">
+	<div class="col-lg-3">
+		<h3 class="panel-title">
+		Draggable Events</h3>
+		<div  id="external-events">
+			<div class='external-event bg-skyblue fg-white'>
+				My Event 1</div>
+			<div class='external-event bg-red fg-white'>
+				My Event 2</div>
+			<div class='external-event bg-green fg-white'>
+				My Event 3</div>
+			<div class='external-event bg-purple fg-white'>
+				My Event 4</div>
+			<div class='external-event bg-teal fg-white'>
+				My Event 5</div>
 		</div>
-		<ul class="breadcrumb">
-			<li>
-				<a href="index.php">Home</a>
-				<i class="fa fa-angle-right"></i>
-			</li>
-			<li>
-				<a href="form_layout.php">Forms</a>
-				<i class="fa fa-angle-right"></i>
-			</li>
-			<li>
-				<a href="calendar.php">Calendar</a>
-			</li>
-			<li class="pull-right">
-				<a href="#" class="close">&times</a>
-			</li>
-		</ul>
-		<div class="row">
-			<div class="col-lg-3">
-				<h3 class="panel-title">
-				Draggable Events</h3>
-				<div  id="external-events">
-					<div class='external-event bg-skyblue fg-white'>
-						My Event 1</div>
-					<div class='external-event bg-red fg-white'>
-						My Event 2</div>
-					<div class='external-event bg-green fg-white'>
-						My Event 3</div>
-					<div class='external-event bg-purple fg-white'>
-						My Event 4</div>
-					<div class='external-event bg-teal fg-white'>
-						My Event 5</div>
-				</div>
-				<label class='checkbox'>
-					<input type='checkbox' id='drop-remove' />Remove after drop
-				</label>
-			</div>
-			<div class="col-lg-9">
-				<div id='calendar'></div>
-			</div>
-		</div>
-<?php include_once 'endcontainer.php' ?>
+		<label class='checkbox'>
+			<input type='checkbox' id='drop-remove' />Remove after drop
+		</label>
+	</div>
+	<div class="col-lg-9">
+		<div id='calendar'></div>
+	</div>
+</div>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
+<!-- full calendar -->
+<script src="js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
 <style>
 	.external-event {
 		margin:10px 0;
@@ -126,4 +138,5 @@
 	});
 
 </script>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>

@@ -1,18 +1,9 @@
-<?php include_once 'header.php' ?>
-<!-- google open sans -->
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
-<!-- font awesome -->
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/> 
-<!-- bootstrap 3.1.0 -->
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<!-- pepper style -->
-<link href="css/style-pepper.css" rel="stylesheet" type="text/css" />
-<!-- pepper site -->
-<link href="css/site.css" rel="stylesheet" type="text/css" />
-<!-- login -->
-<link href="css/login.css" rel="stylesheet" type="text/css" />
+<?php include_once 'start-page.php' ?>
+<?php include_once 'style.php' ?>
+<link href="css/pages/login.css" rel="stylesheet" type="text/css" />
+<body>
 <div class="container">
-	<div class="panel login-panel">
+	<div class="panel panel-white login-panel">
 		<div class="panel-heading">
 			<h3 class="panel-title">Sign In</h3>
 		</div>
@@ -42,18 +33,14 @@
 				</div><div class="clearfix"></div>
 			</div>
 			<div class="form-group line line-dashed"></div>
-			<div class="form-group">
-				<a class="btn btn-facebook btn-block"><i class="fa fa-facebook pull-left"></i>Sign in with Facebook</a>
-			</div>
-			<div class="form-group text-center">
-				<a class="btn btn-twitter btn-block"><i class="fa fa-twitter pull-left"></i>Sign in with Twitter</a>
-			</div>
-			<div class="form-group text-center">
-				<a class="btn btn-google-plus btn-block"><i class="fa fa-google-plus pull-left"></i>Sign in with Google</a>
+			<div class="form-group text-center social">
+				<a href="#"><i class="so-icon facebook"></i></a>
+				<a href="#"><i class="so-icon twitter"></i></a>
+				<a href="#"><i class="so-icon gplus"></i></a>
 			</div>
 			<div class="form-group line line-dashed"></div>
 			<div class="form-group text-center">
-				<button id="submit" name="submit" class="btn btn-blue btn-block">Create New Account</button>
+				<a href="signup.php" class="btn btn-blue btn-block">Create New Account</a>
 			</div>
 			</form>
 		</div>
@@ -63,4 +50,10 @@
 <script src="js/jquery/jquery-2.1.0.min.js" type="text/javascript"></script>
 <!-- bootstrap -->
 <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<!-- jquery validation -->
+<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
+<!-- pepper application -->
+<script src="js/files/application.js" type="text/javascript"></script>
+</body>
+</html>
+

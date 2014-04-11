@@ -1,6 +1,12 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Typography</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 <div class="page-header">
 	<h1>Typography</h1>
 </div>
@@ -241,7 +247,9 @@
     </div>
     <!-- /.col-lg-4 -->
 </div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
-
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>

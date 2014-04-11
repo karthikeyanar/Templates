@@ -1,11 +1,18 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Form Layouts</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<link href="css/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css" rel="stylesheet">
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 <div class="page-header">
 	<h1>Form Layouts</h1>
 </div>
 <ul class="breadcrumb">
-	<li><a href="index.php">Home</a><i class="fa fa-angle-right"></i>/li>
+	<li><a href="index.php">Home</a><i class="fa fa-angle-right"></i></li>
 	<li><a href="form_layout.php">Forms</a><i class="fa fa-angle-right"></i></li>
 	<li><a href="form_layout.php">Basic forms</a></li>
 	<li class="pull-right"><a href="#" class="close">&times</a></li>
@@ -28,7 +35,7 @@
 				</h3>
 			</div>
 			<div class="panel-body no-padding">
-				<form action="#" method="POST" class='form-horizontal form-row-separated form-bordered'>
+				<form action="#" method="POST" class='form-horizontal form-row-separated'>
 					<div class="form-group">
 						<label for="textfield" class="col-md-2 control-label">
 							Text input
@@ -51,7 +58,7 @@
 						</label>
 						<div class="col-md-10">
 							<div class="fileupload fileupload-new" data-provides="fileupload">
-								<span class="btn btn-grey btn-file">
+								<span class="btn btn-primary btn-file">
 									<span class="fileupload-new">Select file</span>
 									<span class="fileupload-exists">Change</span>
 									<input type="file" />
@@ -154,7 +161,7 @@
 						</label>
 						<div class="col-md-10">
 							<div class="fileupload fileupload-new" data-provides="fileupload">
-								<span class="btn btn-grey btn-file">
+								<span class="btn btn-primary btn-file">
 									<span class="fileupload-new">Select file</span>
 									<span class="fileupload-exists">Change</span>
 									<input type="file" />
@@ -257,7 +264,7 @@
 						</label>
 						<div class="col-md-10">
 							<div class="fileupload fileupload-new" data-provides="fileupload">
-								<span class="btn btn-grey btn-file">
+								<span class="btn btn-primary btn-file">
 									<span class="fileupload-new">Select file</span>
 									<span class="fileupload-exists">Change</span>
 									<input type="file" />
@@ -455,6 +462,11 @@
 	</div>
 	<!-- End 2 Columns tab -->
 </div> 
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<!-- Bootstrap FileUpload -->
+<script src="js/plugins/bs-fileupload/bootstrap-fileupload.min.js"></script>
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>

@@ -1,9 +1,15 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Form Controls</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 <div class="page-header">
 	<h1>
-		Form controls</h1>
+		Form Controls</h1>
 </div>
 <ul class="breadcrumb">
 	<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
@@ -261,7 +267,7 @@
 		</div>
 	</div>
 	<div class="tab-pane" id="form3">
-		<div class="panel panel-skyblue">
+		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title">
 					Form Input Width Sizing</h3>
@@ -692,7 +698,7 @@
 						</label>
 					</div>
 				</div>
-				<div class="form-actions">
+				<div class="form-group form-actions">
 					<div class="col-md-9 col-md-offset-3">
 						<button type="submit" class="btn btn-blue margin-right-10">
 							Submit</button>
@@ -705,7 +711,7 @@
 		</div>
 	</div>
 	<div class="tab-pane" id="form5">
-		<div class="panel panel-skyblue">
+		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title">
 					Horizontal Form Height Sizing</h3>
@@ -772,7 +778,7 @@
 						</select>
 					</div>
 				</div>
-				<div class="form-actions">
+				<div class="form-group form-actions">
 					<div class="col-md-9 col-md-offset-3">
 						<button type="submit" class="btn btn-blue margin-right-10">
 							Save</button>
@@ -1023,19 +1029,19 @@
 				Inline Form With Icons</h4>
 			<form class="form-inline" role="form">
 			<div class="form-group">
-				<label class="sr-only" for="exampleInputEmail22">
+				<label class="sr-only">
 					Email address</label>
 				<div class="input-icon">
 					<i class="fa fa-envelope"></i>
-					<input type="email" class="form-control" id="exampleInputEmail22" placeholder="Enter email" />
+					<input type="email" class="form-control" placeholder="Enter email" />
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="sr-only" for="exampleInputPassword42">
+				<label class="sr-only">
 					Password</label>
 				<div class="input-icon">
 					<i class="fa fa-user"></i>
-					<input type="password" class="form-control" id="exampleInputPassword42" placeholder="Password" />
+					<input type="password" class="form-control" placeholder="Password" />
 				</div>
 			</div>
 			<div class="checkbox">
@@ -1052,17 +1058,17 @@
 				Horizontal Form</h4>
 			<form class="form-horizontal" role="form">
 			<div class="form-group">
-				<label for="inputEmail1" class="col-md-2 control-label">
+				<label for="inputEmail" class="col-md-2 control-label">
 					Email</label>
 				<div class="col-md-4">
-					<input type="email" class="form-control" id="inputEmail1" placeholder="Email" />
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email" />
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword12" class="col-md-2 control-label">
+				<label for="inputPassword" class="col-md-2 control-label">
 					Password</label>
 				<div class="col-md-4">
-					<input type="password" class="form-control" id="inputPassword12" placeholder="Password" />
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password" />
 				</div>
 			</div>
 			<div class="form-group">
@@ -1148,6 +1154,9 @@
 		</div>
 	</div>
 </div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>

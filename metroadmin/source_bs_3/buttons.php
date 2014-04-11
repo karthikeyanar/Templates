@@ -1,6 +1,12 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Buttons</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 <div class="page-header">
 	<h1>Buttons & DropDowns</h1>
 </div>
@@ -34,6 +40,7 @@
 				<button class="btn btn-primary" type="button">Primary</button>
 				<button class="btn btn-success" type="button">Success</button>
 				<button class="btn btn-info" type="button">Info</button>
+				<div class="clearfix">&nbsp;</div>
 				<button class="btn btn-warning" type="button">Warning</button>
 				<button class="btn btn-danger" type="button">Danger</button>
 				<button class="btn btn-link" type="button">Link</button>
@@ -42,6 +49,7 @@
 				<button class="btn btn-red" type="button">Red</button>
 				<button class="btn btn-blue" type="button">Blue</button>
 				<button class="btn btn-green" type="button">Green</button>
+				<div class="clearfix">&nbsp;</div>
 				<button class="btn btn-purple" type="button">Purple</button>
 				<button class="btn btn-black" type="button">Black</button>
 				<button class="btn btn-orange" type="button">Orange</button>
@@ -70,6 +78,7 @@
 						<span class="caret"></span>
 					</button>
 				</div>
+				<div class="clearfix">&nbsp;</div>
 				<div class="btn-group">
 					<button class="btn btn-warning" type="button">Warning</button>
 					<button type="button" class="btn btn-warning">
@@ -94,6 +103,7 @@
 						<span class="caret"></span>
 					</button>
 				</div>
+				<div class="clearfix">&nbsp;</div>
 				<div class="btn-group">
 					<button class="btn btn-blue" type="button">Blue</button>
 					<button type="button" class="btn btn-blue">
@@ -118,6 +128,7 @@
 						<span class="caret"></span>
 					</button>
 				</div>
+				<div class="clearfix">&nbsp;</div>
 				<div class="btn-group">
 					<button class="btn btn-orange" type="button">Orange</button>
 					<button type="button" class="btn btn-orange">
@@ -129,6 +140,7 @@
 				<button class="btn btn-primary" disabled="" type="button">Primary</button>
 				<button class="btn btn-success" disabled="" type="button">Success</button>
 				<button class="btn btn-info" disabled="" type="button">Info</button>
+				<div class="clearfix">&nbsp;</div>
 				<button class="btn btn-warning" disabled="" type="button">Warning</button>
 				<button class="btn btn-danger" disabled="" type="button">Danger</button>
 				<h4>Large Buttons</h4>
@@ -136,6 +148,7 @@
 				<button class="btn btn-primary btn-lg" type="button">Primary</button>
 				<button class="btn btn-success btn-lg" type="button">Success</button>
 				<button class="btn btn-info btn-lg" type="button">Info</button>
+				<div class="clearfix">&nbsp;</div>
 				<button class="btn btn-warning btn-lg" type="button">Warning</button>
 				<button class="btn btn-danger btn-lg" type="button">Danger</button>
 				<h4>Small Buttons</h4>
@@ -603,6 +616,9 @@
 		</div>
 	</div>
 </div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>

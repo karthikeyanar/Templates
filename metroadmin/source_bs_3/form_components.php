@@ -1,9 +1,28 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Form Components</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
-	<div class="page-header">
-	<h1>
-		Form components</h1>
+<!-- chosen -->
+<link href="css/plugins/chosen/chosen.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap timepicker -->
+<link href="css/plugins/bootstrap-timepicker/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap datepicker -->
+<link href="css/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap select -->
+<link href="css/plugins/bootstrap-select/bootstrap-select.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap daterange picker -->
+<link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+<!-- inputlimiter -->
+<link href="css/plugins/jquery-inputlimiter/jquery.inputlimiter.1.0.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap switch -->
+<link href="css/plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
+<div class="page-header">
+	<h1>Form Components</h1>
 </div>
 <ul class="breadcrumb">
 	<li><a href="index.php">Home</a> <i class="fa fa-angle-right"></i></li>
@@ -23,6 +42,45 @@
 <!-- Tab panes -->
 <div class="tab-content padding-top-10">
 	<div class="tab-pane active" id="component1">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading panel-title">
+						<h3 class="panel-title">Daterange Pickers</h3>
+					</div>
+					<div class="panel-body">
+						<form method="post" class="form-horizontal form-striped">
+							<div class="form-group">
+								<label class="col-md-3 control-label">Reservation</label>
+								<div class="col-md-9">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-calendar cursor-pointer"></i></span>
+										<input type="text" class="form-control" name="reservation" id="reservation" value="03/18/2013 - 03/23/2013" />
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Reservation With Time</label>
+								<div class="col-md-9">
+										<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-calendar cursor-pointer"></i></span>
+										<input type="text" class="form-control" name="reservation" id="reservationtime" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM"	/>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Advanced Date Ranges</label>
+								<div class="col-md-9">
+								 	<button id="reportrange" class="btn btn-default">
+										<i class="fa fa-calendar cursor-pointer margin-right-10"></i><span class="margin-right-10"></span><b class="caret"></b>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default">
@@ -216,45 +274,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel panel-default">
-					<div class="panel-heading panel-title">
-						<h3 class="panel-title">Daterange Pickers</h3>
-					</div>
-					<div class="panel-body">
-						<form method="post" class="form-horizontal form-striped">
-							<div class="form-group">
-								<label class="col-md-3 control-label">Reservation</label>
-								<div class="col-md-9">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-calendar cursor-pointer"></i></span>
-										<input type="text" class="form-control" name="reservation" id="reservation" value="03/18/2013 - 03/23/2013" />
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Reservation With Time</label>
-								<div class="col-md-9">
-									 <div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-calendar cursor-pointer"></i></span>
-										<input type="text" class="form-control" name="reservation" id="reservationtime" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM"	/>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Advanced Date Ranges</label>
-								<div class="col-md-9">
-								 	<button id="reportrange" class="btn btn-grey">
-										<i class="fa fa-calendar cursor-pointer margin-right-10"></i><span class="margin-right-10"></span><b class="caret"></b>
-									</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 	<div class="tab-pane" id="component2">
 		<div class="row">
@@ -281,32 +300,32 @@
 							</div>
 							<div class="panel-body">
 								<div class="checkbox">
-								  <label>
-								    <input type="checkbox" value="">
-								    Option one is this and that&mdash;be sure to include why it's great
-								  </label>
+									<label>
+									<input type="checkbox" value="">
+									Option one is this and that&mdash;be sure to include why it's great
+									</label>
 								</div>
 								<div class="radio">
-								  <label>
-								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-								    Option one is this and that&mdash;be sure to include why it's great
-								  </label>
+									<label>
+									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+									Option one is this and that&mdash;be sure to include why it's great
+									</label>
 								</div>
 								<div class="radio">
-								  <label>
-								    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-								    Option two can be something else and selecting it will deselect option one
-								  </label>
+									<label>
+									<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+									Option two can be something else and selecting it will deselect option one
+									</label>
 								</div>
 								<h3 class="panel-title">Inline checkboxes</h3>
 								<label class="checkbox-inline">
-								  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+									<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
 								</label>
 								<label class="checkbox-inline">
-								  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+									<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
 								</label>
 								<label class="checkbox-inline">
-								  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+									<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
 								</label>
 							</div>
 						</div>
@@ -367,18 +386,18 @@
 							</div>
 							<div class="panel-body">
 								<div class="row">
-								  <div class="col-xs-2 col-sm-2 col-md-2 col-md-2">
-								    <input type="text" class="form-control" placeholder=".col-xs-2 .col-sm-2 .col-md-2 .col-md-2">
-								  </div>
-								  <div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
-								    <input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-md-3">
-								  </div>
-								  <div class="col-xs-4 col-sm-4 col-md-4 col-md-4">
-								    <input type="text" class="form-control" placeholder=".col-xs-4 .col-sm-4 .col-md-4 .col-md-4">
-								  </div>
-								   <div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
-								    <input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-md-4">
-								  </div>
+									<div class="col-xs-2 col-sm-2 col-md-2 col-md-2">
+									<input type="text" class="form-control" placeholder=".col-xs-2 .col-sm-2 .col-md-2 .col-md-2">
+									</div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
+									<input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-md-3">
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4 col-md-4">
+									<input type="text" class="form-control" placeholder=".col-xs-4 .col-sm-4 .col-md-4 .col-md-4">
+									</div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
+									<input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-md-4">
+									</div>
 								</div>
 							</div>
 						</div>
@@ -391,8 +410,8 @@
 								<h3 class="panel-title">Help text</h3>
 							</div>
 							<div class="panel-body">
-							    <input type="text" class="form-control">
-							    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+								<input type="text" class="form-control">
+								<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 							</div>
 						</div>
 					</div>
@@ -446,48 +465,51 @@
 						<div class="form-group">
 							<div class="col-md-3">
 								<label class="checkbox metro-checkbox">
-									<input type="checkbox" value="test" />Option 1
+									<input type="checkbox" value="test" /><span class='text'>Checkbox Default</span>
+								</label>
+								<label class="checkbox metro-checkbox primary">
+									<input type="checkbox" value="test" /><span class='text'>Checkbox Primary</span>
+								</label>
+								<label class="checkbox metro-checkbox success">
+									<input type="checkbox" value="test" /><span class='text'>Checkbox Success</span>
+								</label>
+								<label class="checkbox metro-checkbox info">
+									<input type="checkbox" value="test" /><span class='text'>Checkbox Info</span>
+								</label>
+								<label class="checkbox metro-checkbox warning">
+									<input type="checkbox" value="test" /><span class='text'>Checkbox Warning</span>
+								</label>
+								<label class="checkbox metro-checkbox danger">
+									<input type="checkbox" value="test" /><span class='text'>Checkbox Danger</span>
 								</label>
 								<label class="checkbox metro-checkbox">
-									<input type="checkbox" value="test" checked />Option 2
+									<input type="checkbox" value="test" disabled /><span class='text'>Checkbox Disabled</span>
 								</label>
-								<label class="checkbox metro-checkbox">
-									<input type="checkbox" value="test" disabled />Option 3
+							</div> 
+							<div class="col-md-3">
+								<label class="radio metro-radio">
+									<input type="radio" value="test" /><span class='text'>Radio Default</span>
 								</label>
-								<label class="checkbox metro-checkbox">
-									<input type="checkbox" value="test" checked disabled />Option 4
+								<label class="radio metro-radio primary">
+									<input type="radio" value="test" /><span class='text'>Radio Primary</span>
+								</label>
+								<label class="radio metro-radio success">
+									<input type="radio" value="test" /><span class='text'>Radio Success</span>
+								</label>
+								<label class="radio metro-radio info">
+									<input type="radio" value="test" /><span class='text'>Radio Info</span>
+								</label>
+								<label class="radio metro-radio warning">
+									<input type="radio" value="test" /><span class='text'>Radio Warning</span>
+								</label>
+								<label class="radio metro-radio danger">
+									<input type="radio" value="test" /><span class='text'>Radio Danger</span>
+								</label>
+								<label class="radio metro-radio">
+									<input type="radio" value="test" disabled /><span class='text'>Radio Disabled</span>
 								</label>
 							</div>
 						</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel panel-default blue">
-					<div class="panel-heading">
-						<h3 class="panel-title">Radio</h3>
-					</div>
-					<div class="panel-body">
-						<form action="#" method="POST" class="form-horizontal">
-							<div class="form-group">
-								<div class="col-md-3">
-									<label class="radio metro-radio">
-										<input type="radio" name="rdo" value="test" />Option 1
-									</label>
-									<label class="radio metro-radio">
-										<input type="radio" name="rdo" value="test" checked />Option 2
-									</label>
-									<label class="radio metro-radio">
-										<input type="radio" name="rdo" value="test" disabled />Option 3
-									</label>
-									<label class="radio metro-radio">
-										<input type="radio" name="rdo" value="test" checked disabled />Option 4
-									</label>
-								</div>
-							</div>
 						</form>
 					</div>
 				</div>
@@ -640,7 +662,7 @@
 						<input id="create-switch" type="checkbox" checked />
 						<br/>
 						<br/>
-						<div id="btn-create" class="btn btn-grey">Create</div>
+						<div id="btn-create" class="btn btn-default">Create</div>
 						<pre class="prettyprint linenums">$('#create-switch').bootstrapSwitch();</pre>
 					</div>
 				</div>
@@ -657,10 +679,10 @@
 						<input type="checkbox" id="disable-switch" checked>
 						<br/>
 						<br/>
-						<button id="btn-disable-is" class="btn btn-grey">Is disabled?</button>
-						<button id="btn-disable-toggle" class="btn btn-grey">Toggle Disable</button>
-						<button id="btn-disable-set" class="btn btn-grey">Set Disable</button>
-						<button id="btn-disable-remove" class="btn btn-grey">Remove Disable</button>
+						<button id="btn-disable-is" class="btn btn-default">Is disabled?</button>
+						<button id="btn-disable-toggle" class="btn btn-default">Toggle Disable</button>
+						<button id="btn-disable-set" class="btn btn-default">Set Disable</button>
+						<button id="btn-disable-remove" class="btn btn-default">Remove Disable</button>
 						<br/>
 						<br/>
 						<pre class="prettyprint linenums">
@@ -1350,10 +1372,10 @@
 								</label>
 								<div class="col-md-3">
 								 	<select id="select1" class="selectpicker form-control">
-									    <option>Mustard</option>
-									    <option>Ketchup</option>
-									    <option>Relish</option>
-								    </select>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+									</select>
 								</div>
 							</div>
 							<div class="form-group">
@@ -1361,18 +1383,18 @@
 									Option Groups
 								</label>
 								<div class="col-md-3">
-							 	     <select class="selectpicker form-control">
-									    <optgroup label="Picnic">
-										   <option>Mustard</option>
-										   <option>Ketchup</option>
-										   <option>Relish</option>
+							 			<select class="selectpicker form-control">
+										<optgroup label="Picnic">
+											<option>Mustard</option>
+											<option>Ketchup</option>
+											<option>Relish</option>
 									  	</optgroup>
 								    	<optgroup label="Camping">
-										    <option>Tent</option>
-										    <option>Flashlight</option>
-										    <option>Toilet Paper</option>
-									    </optgroup>
-								    </select>
+											<option>Tent</option>
+											<option>Flashlight</option>
+											<option>Toilet Paper</option>
+										</optgroup>
+									</select>
 								</div>
 							</div>
 							<div class="form-group">
@@ -1380,11 +1402,11 @@
 								 	Multiple Select
 								</label>
 								<div class="col-md-6">
-							 	    <select class="selectpicker form-control" multiple>
-									    <option>Mustard</option>
-									    <option>Ketchup</option>
-									    <option>Relish</option>
-								    </select>
+							 		<select class="selectpicker form-control" multiple>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+									</select>
 								</div>
 							</div>
 							<div class="form-group">
@@ -1392,25 +1414,25 @@
 								 	Colors
 								</label>
 								<div class="col-md-3">
-							 	    <select class="selectpicker form-control" data-style="btn-blue">
-									    <option>Mustard</option>
-									    <option>Ketchup</option>
-									    <option>Relish</option>
-								    </select>
+							 		<select class="selectpicker form-control" data-style="btn-blue">
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+									</select>
 								</div>
 								<div class="col-md-3">
-							 	    <select class="selectpicker form-control" data-style="btn-danger">
-									    <option>Mustard</option>
-									    <option>Ketchup</option>
-									    <option>Relish</option>
-								    </select>
+							 		<select class="selectpicker form-control" data-style="btn-danger">
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+									</select>
 								</div>
 								<div class="col-md-3">
-							 	    <select class="selectpicker form-control" data-style="btn-success">
-									    <option>Mustard</option>
-									    <option>Ketchup</option>
-									    <option>Relish</option>
-								    </select>
+							 		<select class="selectpicker form-control" data-style="btn-success">
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+									</select>
 								</div>
 							</div>
 							<div class="form-group">
@@ -1419,10 +1441,10 @@
 								</label>
 								<div class="col-md-3">
 								 	<select class="selectpicker form-control" data-live-search="true">
-									    <option>Mustard</option>
-									    <option>Ketchup</option>
-									    <option>Relish</option>
-								    </select>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+									</select>
 								</div>
 							</div>
 						</form>
@@ -1436,7 +1458,7 @@
 			<div class="col-md-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Chosen</h3>
+						<h3 class="panel-title">Spinner</h3>
 					</div>
 					<div class="panel-body">
 						<form action="#" method="POST" class="form-horizontal">
@@ -1475,8 +1497,30 @@
 		</div>
 	</div>
 </div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
+<!-- chosen -->
+<script src="js/plugins/chosen/chosen.jquery.min.js" type="text/javascript"></script>
+<!-- bootstrap timepicker -->
+<script src="js/plugins/bs-timepicker/bootstrap-timepicker.js" type="text/javascript"></script>
+<!-- bootstrap datepicker -->
+<script src="js/plugins/bs-datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+<!-- bootstrap select -->
+<script src="js/plugins/bs-select/bootstrap-select.min.js" type="text/javascript"></script>
+<!-- inputlimiter -->
+<script src="js/plugins/inputlimiter/jquery.inputlimiter.1.3.1.min.js" type="text/javascript"></script>
+<!-- autogrow textarea -->
+<script src="js/plugins/autogrowtextarea/jquery.autogrowtextarea.min.js" type="text/javascript"></script>
+<!-- bootstrap switch -->
+<script src="js/plugins/bs-switch/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- bootstrap spinner -->
+<script src="js/plugins/bs-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<!-- bootstrap daterange picker -->
+<script src="js/plugins/bs-daterangepicker/moment.min.js" type="text/javascript"></script>
+<script src="js/plugins/bs-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<?php include_once 'applicationscript.php' ?>
 <script>
 	$(function(){
 		$('#timepicker1').timepicker();
@@ -1573,48 +1617,48 @@
 			format: 'MM/DD/YYYY h:mm A'
 		});
 		$('#reportrange').daterangepicker(
-				{
-	                startDate: moment().subtract('days',29),
-	                endDate: moment(),
-	                minDate: '01/01/2012',
-	                maxDate: '12/31/2014',
-	                dateLimit: { days: 60 },
-	                showDropdowns: true,
-	                showWeekNumbers: true,
-	                timePicker: false,
-	                timePickerIncrement: 1,
-	                timePicker12Hour: true,
-	                ranges: {
-	                'Today': [moment(),moment()],
-	                'Yesterday': [moment().subtract('days',1),moment().subtract('days',1)],
-	                'Last 7 Days': [moment().subtract('days',6),moment()],
-	                'Last 30 Days': [moment().subtract('days',29),moment()],
-	                'This Month': [moment().startOf('month'),moment().endOf('month')],
-	                'Last Month': [moment().subtract('month',1).startOf('month'),moment().subtract('month',1).endOf('month')]
-	                },
-	                opens: 'right',
-	                buttonClasses: ['btn btn-grey'],
-	                applyClass: 'btn-small btn-blue',
-	                cancelClass: 'btn-small',
-	                format: 'MM/DD/YYYY',
-	                separator: ' to ',
-	                locale: {
-	                applyLabel: 'Submit',
-	                fromLabel: 'From',
-	                toLabel: 'To',
-	                customRangeLabel: 'Custom Range',
-	                daysOfWeek: ['Su','Mo','Tu','We','Th','Fr','Sa'],
-	                monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
-	                firstDay: 1
-	                }
-	             },
-                function(start,end) {
-	                console.log("Callback has been called!");
-	                $('#reportrange span').html(start.format('MMMM D, YYYY')+' - '+end.format('MMMM D, YYYY'));
-                }
+		{
+	        startDate: moment().subtract('days',29),
+	        endDate: moment(),
+	        minDate: '01/01/2012',
+	        maxDate: '12/31/2014',
+	        dateLimit: { days: 60 },
+	        showDropdowns: true,
+	        showWeekNumbers: true,
+	        timePicker: false,
+	        timePickerIncrement: 1,
+	        timePicker12Hour: true,
+	        ranges: {
+	        'Today': [moment(),moment()],
+	        'Yesterday': [moment().subtract('days',1),moment().subtract('days',1)],
+	        'Last 7 Days': [moment().subtract('days',6),moment()],
+	        'Last 30 Days': [moment().subtract('days',29),moment()],
+	        'This Month': [moment().startOf('month'),moment().endOf('month')],
+	        'Last Month': [moment().subtract('month',1).startOf('month'),moment().subtract('month',1).endOf('month')]
+	        },
+	        opens: 'right',
+	        buttonClasses: ['btn btn-default'],
+	        applyClass: 'btn-small btn-blue',
+	        cancelClass: 'btn-small',
+	        format: 'MM/DD/YYYY',
+	        separator: ' to ',
+	        locale: {
+	        applyLabel: 'Submit',
+	        fromLabel: 'From',
+	        toLabel: 'To',
+	        customRangeLabel: 'Custom Range',
+	        daysOfWeek: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+	        monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+	        firstDay: 1
+	        }
+	        },
+        function(start,end) {
+	        console.log("Callback has been called!");
+	        $('#reportrange span').html(start.format('MMMM D, YYYY')+' - '+end.format('MMMM D, YYYY'));
+        }
 	    );
 		//Set the initial state of the picker label
 		$('#reportrange span').html(moment().subtract('days',29).format('MMMM D, YYYY')+' - '+moment().format('MMMM D, YYYY'));
 	});
 </script>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<?php include_once 'end-page.php' ?>

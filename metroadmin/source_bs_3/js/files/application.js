@@ -3,14 +3,44 @@
     var self=this;
 
     // IE mode
-    this.isIE8=false;
-    this.isIE9=false;
-    this.isIE10=false;
+    this._IsIE8=false;
+    this._IsIE9=false;
+    this._IsIE10=false;
 
-    this.sidebarWidth=225;
-    this.sidebarCollapsedWidth=50;
+    this.isIE8=function() {
+        return self._IsIE8;
+    };
 
-    this.responsiveHandlers=[];
+    this.isIE9=function() {
+        return self._IsIE9;
+    };
+
+    this.isIE10=function() {
+        return self._IsIE10;
+    };
+
+    this._TouchDevice=false;
+    // check for device touch support
+    this.isTouchDevice=function() {
+        return this._TouchDevice;
+    };
+
+
+    this.isExtraSmallDevice=function() {
+        return ($(window).width()<768);
+    };
+
+    this.isSmallDevice=function() {
+        return ($(window).width()>=768&&$(window).width()<992);
+    };
+
+    this.isMediumDevice=function() {
+        return ($(window).width()>=992&&$(window).width()<1200);
+    };
+
+    this.isLargeDevice=function() {
+        return ($(window).width()>=1200);
+    };
 
     this.scrollTo=function(el,offeset) {
         pos=el?el.offset().top:0;
@@ -23,12 +53,17 @@
         self.scrollTo();
     }
 
+    this.responsiveHandlers=[];
     this.runResponsiveHandlers=function() {
         // reinitialize other subscribed elements
         for(var i in self.responsiveHandlers) {
             var each=self.responsiveHandlers[i];
             each.call();
         }
+    };
+
+    this.addResponsiveHandler=function(func) {
+        this.responsiveHandlers.push(func);
     };
 
 
@@ -67,12 +102,12 @@
             $elements=$('.metro-checkbox,.metro-radio');
 
         $elements.each(function() {
-            var $check=$(".check",this);
+            var $this=$(this);
+            var $check=$(".check",$this);
             if(!$check.get(0))
-                $("input",this).after("<span class='check'></span>");
+                $("input",$this).after("<span class='check'></span>");
         });
     };
-
 
 
     this.handleBreadcrumb=function() {
@@ -84,7 +119,7 @@
     };
 
     this.handleFormValidation=function() {
-        if($.validate) {
+        if($.fn.validate) {
             $(".form-validate").validate({
                 ignore: "input[type='text']:hidden"
             });
@@ -93,6 +128,7 @@
 
     this.handleToolTip=function() {
         $("[data-toggle='tooltip']").tooltip();
+        $("[rel='tooltip']").tooltip();
     };
 
     this.handlePopover=function() {
@@ -127,7 +163,7 @@
     };
 
     this.handleBootstrapSelect=function($target) {
-        if($.selectpicker) {
+        if($.fn.selectpicker) {
             var $filter=$('.selectpicker')
             if($target) {
                 $filter=$('.selectpicker',$target);
@@ -137,7 +173,7 @@
     };
 
     this.handleSwitch=function($target) {
-        if($.bootstrapSwitch) {
+        if($.fn.bootstrapSwitch) {
             var $filter=$('.switch')
             if($target) {
                 $filter=$('.switch',$target);
@@ -146,91 +182,82 @@
         }
     };
 
-    this.initScrollTop=function() {
-        $('.footer')
-        .on('click','.go-top',function(e) {
-            APP.scrollTo();
-            e.preventDefault();
-        });
+    this.handleSlider=function($target) {
+        if($.fn.slider) {
+            var $filter=$('.slider')
+            if($target) {
+                $filter=$('.slider',$target);
+            }
+            $filter.slider();
+        }
     };
 
     this.handleFixedSideBar=function() {
         var $body=$("body");
-        var $leftSidebar=$("#left-sidebar");
-        var $menu=$('#page-sidebar-menu',$leftSidebar);
+        var $leftSidebar=$(".page-sidebar-left");
+        var $sidebarContent=$(".sidebar-content",$leftSidebar);
+        var $menu=$('.page-sidebar-menu',$leftSidebar);
         var $header=$(".header");
         var $pageContent=$(".page-content");
 
+        if($body.hasClass("page-sidebar-fixed")&&$body.hasClass("header-fixed")==false) {
+            $leftSidebar.autofix_anything({ "onlyInContainer": false,"manualCSS": true });
+        } else {
+            $leftSidebar.removeClass("autofix_sb").removeClass("fixed");
+        }
+
         if($.fn.slimScroll) {
             var windowHeight=$(window).height();
-            if($menu.parent('.slimScrollDiv').size()===1) { // destroy existing instance before updating the height
-                $menu
+            if($sidebarContent.parent('.slimScrollDiv').size()===1) { // destroy existing instance before updating the height
+                $sidebarContent
                 .slimScroll({
                     destroy: true
                 });
-                $menu.removeAttr('style');
+                $sidebarContent.css({
+                    'height': '','overflow': '','width': ''
+                });
             }
-
-            if($body.hasClass("left-sidebar-fixed")) {
-                var sidebarHeight=windowHeight;
-                $menu
+            if($body.hasClass("page-sidebar-fixed")&&$body.hasClass("page-sidebar-collapse")==false) {
+                var height=windowHeight-$header.outerHeight(true)+1;
+                $sidebarContent
                 .slimScroll({
                     size: '5px',
                     color: '#fff',
                     opacity: .3,
                     position: 'right',
-                    height: sidebarHeight,
+                    height: height,
                     allowPageScroll: false,
                     disableFadeOut: false,
                     alwaysVisible: true
                 });
-            } else {
-                self.handleLeftSidebarMenuHeight();
             }
         }
-    };
-
-    this.handleLeftSidebarMenuHeight=function() {
-        var $body=$("body");
-        var $leftSidebar=$("#left-sidebar");
-        var $menu=$('#page-sidebar-menu',$leftSidebar);
-        var $pageContent=$('.page-content');
-        var windowHeight=$(window).height();
-        var menuHeight=$menu.outerHeight();
-        var pageContentHeight=$pageContent.outerHeight(true);
-        var headerHeight=$(".header").outerHeight(true);
-
-        if($body.hasClass("left-sidebar-fixed")==false) {
-            console.log(windowHeight,headerHeight,pageContentHeight);
-            var minHeight=windowHeight-headerHeight;
-            if(windowHeight<pageContentHeight)
-                minHeight=pageContentHeight;
-            if(minHeight<menuHeight)
-                minHeight=menuHeight;
-            $leftSidebar.css({
-                "min-height": minHeight
-            });
-        }
+        self.resizeContentHeight();
     };
 
     this.resizeContentHeight=function() {
-        var content=$('.page-content');
         var $body=$('body');
 
-        var contentHeight=content.outerHeight(true);
-        var calcHeight=$(window).height();
-        if($body.hasClass("header-fixed"))
-            calcHeight-=$(".header").outerHeight(true);
+        var $header=$('.header');
+        var $footer=$('.footer');
+        var $pageContainer=$('.page-container');
+        var $pageContent=$('.page-content',$pageContainer);
+        var $pageSidebar=$('.page-sidebar-left',$pageContainer);
+        var $menu=$('.page-sidebar-menu',$pageContainer);
 
-        if(contentHeight<calcHeight) {
-            content.css({ 'min-height': calcHeight+'px' });
-        }
+        var windowHeight=$(window).height();
+        var headerHeight=$header.outerHeight(true);
+        var footerHeight=$footer.outerHeight(true);
+        var pageContentHeight=$pageContent.outerHeight(true);
+        var pageSidebarHeight=$pageSidebar.outerHeight(true);
+        var menuHeight=$menu.outerHeight(true);
+
+        var height=windowHeight-headerHeight-footerHeight;
+        pageSidebarHeight=pageSidebarHeight-footerHeight;
+        if(pageSidebarHeight>height)
+            height=pageSidebarHeight;
+        $pageContent.css({ 'min-height': height+'px' });
     };
-
-    this.initSettings=function() {
-        var $body=$("body");
-    };
-
 
     this.responsive=function() {
         self.resizeContentHeight();
@@ -238,50 +265,73 @@
         self.runResponsiveHandlers();
     };
 
-    this.isIE8=function() {
-        return self.isIE8;
-    };
 
-    this.isIE9=function() {
-        return self.isIE9;
-    };
 
-    this.isIE10=function() {
-        return self.isIE10;
-    };
-
-    // check for device touch support
-    this.isTouchDevice=function() {
-        try {
-            document.createEvent("TouchEvent");
-            return true;
-        } catch(e) {
-            return false;
+    this.openSidebar=function() {
+        var $body=$("body");
+        var $sideBar=$('.page-sidebar-left')
+        var $pageContent=$(".page-container");
+        var $header=$(".header");
+        var duration=300;
+        var width=$sideBar.outerWidth(true);
+        if($body.hasClass("page-sidebar-left-open")) {
+            $sideBar.animate({
+                "left": "-"+width+"px"
+            },{ "duration": duration });
+            $body.animate({
+                "padding-left": 0
+            },{ "duration": duration,"complete": function() {
+                $body.removeClass("page-sidebar-left-open");
+            }
+            });
+        } else {
+            $sideBar.css({ "left": "-"+width+"px" }).show().animate({
+                "left": 0
+            },{ "duration": duration });
+            $body.animate({
+                "padding-left": width
+            },{ "duration": duration,"complete": function() {
+                $body.addClass("page-sidebar-left-open");
+            }
+            });
         }
     };
 
-    this.handleLeftSidebarMenu=function() {
-        if($.panelSlider) {
-            $('#left-sidebar-toggle')
-	        .panelSlider(
-            {
-                containers: [
-		        {
-		            "object": $('.header'),"css": [{ "name": "margin-left"}]
-		        },
-		        {
-		            "object": $('.page-content'),"css": [{ "name": "margin-left"}]
-		        }
-	        ],
-                side: 'left'
-	        ,duration: 200
-	        ,clickClose: false
-	        ,onShow: function(panel) { }
-	        ,onShown: function(panel) { $("body").removeClass("page-sidebar-collapse"); }
-	        ,onHide: function() { }
-	        ,onHidden: function() {
-	            $("body").addClass("page-sidebar-collapse");
-	        }
+    this.handleSidebarMenu=function() {
+        $('.page-sidebar-toggle')
+        .on('touchend',function(e) {
+            self.openSidebar();
+            e.preventDefault();
+        })
+        .click(function(e) {
+            self.openSidebar();
+            e.preventDefault();
+            e.stopPropagation();
+        });
+    };
+
+    this.jqValidationSetDefaults=function() {
+        if($.validator) {
+            $.validator.setDefaults({
+                highlight: function(element) {
+                    $(element).closest('.form-group').addClass('has-error');
+                },
+                unhighlight: function(element) {
+                    $(element).closest('.form-group').removeClass('has-error');
+                },
+                errorElement: 'span',
+                errorClass: 'help-block',
+                errorPlacement: function(error,element) {
+                    if(element.closest('.input-group').size()===1) {
+                        error.insertAfter(element.closest('.input-group'));
+                    } else if(element.closest('.input-icon').size()===1) {
+                        error.insertAfter(element.closest('.input-icon'));
+                    } else if(element.closest('.select-group').size()===1) {
+                        error.insertAfter(element.closest('.select-group'));
+                    } else {
+                        error.insertAfter(element);
+                    }
+                }
             });
         }
     };
@@ -289,62 +339,89 @@
     this.handleSettings=function() {
         var $body=$("body");
         var $header=$(".header");
-        var $leftSideBar=$("#left-sidebar");
         $header.removeClass("navbar-fixed-top");
-        if($body.hasClass("header-fixed"))
+        if($body.hasClass("header-fixed")) {
             $header.addClass("navbar-fixed-top");
-
-        self.handleFixedSideBar();
+        }
+        self.responsive();
     };
-
-
 
     this.init=function() {
 
         var $body=$("body");
+        var $header=$(".header");
+        var $frmPepperSettings=$("#frmPepperSettings");
+        var $selectHeader=$("#header",$frmPepperSettings);
+        var $selectSidebar=$("#sidebar",$frmPepperSettings);
+        var $selectLayout=$("#layout",$frmPepperSettings);
 
-        var $fixedHeader=$("#fixed-header");
-        var $fixedLeftSidebar=$("#fixed-left-sidebar");
-        if($body.hasClass("header-fixed"))
-            $fixedHeader.prop("checked",true);
-        if($body.hasClass("left-sidebar-fixed"))
-            $fixedLeftSidebar.prop("checked",true);
+        $header.removeClass("navbar-fixed-top");
+        if($body.hasClass("header-fixed")) {
+            $selectHeader.val("fixed");
+            $header.addClass("navbar-fixed-top");
+        }
+        if($body.hasClass("page-sidebar-fixed")) {
+            $selectSidebar.val("fixed");
+        }
+        if($body.hasClass("page-fluid")) {
+            $selectLayout.val("default");
+        } else {
+            $selectLayout.val("fixed");
+        }
 
-        $fixedHeader
+        $selectLayout
+        .change(function() {
+            var clsName="page-fluid";
+            if(this.value=="default")
+                $body.addClass(clsName);
+            else
+                $body.removeClass(clsName);
+
+            self.handleSettings();
+        });
+
+
+        $selectHeader
         .change(function() {
             var clsName="header-fixed";
-            if(this.checked)
+            if(this.value=="fixed")
                 $body.addClass(clsName);
             else
                 $body.removeClass(clsName);
+
+            $header.removeClass("navbar-fixed-top");
+            if($body.hasClass("header-fixed"))
+                $header.addClass("navbar-fixed-top");
+
             self.handleSettings();
         });
 
-        $fixedLeftSidebar
+        $selectSidebar
         .change(function() {
-            var clsName="left-sidebar-fixed";
-            if(this.checked)
+            var clsName="page-sidebar-fixed";
+            if(this.value=="fixed")
                 $body.addClass(clsName);
             else
                 $body.removeClass(clsName);
             self.handleSettings();
         });
 
-        self.isIE8=!!navigator.userAgent.match(/MSIE 8.0/);
-        self.isIE9=!!navigator.userAgent.match(/MSIE 9.0/);
-        self.isIE10=!!navigator.userAgent.match(/MSIE 10.0/);
+        self._IsIE8=!!navigator.userAgent.match(/MSIE 8.0/);
+        self._IsIE9=!!navigator.userAgent.match(/MSIE 9.0/);
+        self._IsIE10=!!navigator.userAgent.match(/MSIE 10.0/);
 
         if($.fn.sidebarMenu) {
-            $('#page-sidebar-menu').sidebarMenu();
+            $('.page-sidebar-menu').sidebarMenu();
         }
-        var $pageSidebarMenu = $("#page-sidebar-menu")
+        var $pageSidebarMenu=$(".page-sidebar-menu")
 
         $(".sidebar-toggler",$pageSidebarMenu)
         .on("click",function() {
             $("body").toggleClass("page-sidebar-collapse");
+            self.responsive();
         });
 
-        var $pageSidebarSearch = $(".page-sidebar-search");
+        var $pageSidebarSearch=$(".page-sidebar-search");
 
         $("#open-search",$pageSidebarSearch)
         .on("click",function() {
@@ -355,14 +432,11 @@
             $pageSidebarSearch.removeClass("open");
         });
 
-        self.handleSettings();
-
+        self.handleSidebarMenu();
         self.resizeContentHeight();
-        self.initSettings();
-        self.initScrollTop();
+        self.handleFixedSideBar();
 
-        self.handleLeftSidebarMenu();
-
+        self.jqValidationSetDefaults();
         self.handleFormValidation();
         self.handleToolTip();
         self.handlePopover();
@@ -372,41 +446,20 @@
         self.handleDropdowns();
         self.handleBootstrapSelect();
         self.handleSwitch();
+        self.handleSlider();
         self.handleMetroCheck();
-
-
 
     };
 
-}
-
-if($.validator) {
-    $.validator.setDefaults({
-        highlight: function(element) {
-            $(element).closest('.form-group').addClass('has-error');
-        },
-        unhighlight: function(element) {
-            $(element).closest('.form-group').removeClass('has-error');
-        },
-        errorElement: 'span',
-        errorClass: 'help-block',
-        errorPlacement: function(error,element) {
-            if(element.parent('.input-group').length) {
-                error.insertAfter(element.parent());
-            } else {
-                error.insertAfter(element);
-            }
-        }
-    });
 }
 
 var APP=new Application();
 
 $(function() {
     APP.init();
+    $(document.body).one('touchstart',function(e) { APP._TouchDevice=true; });
 });
 
 $(window).resize(function() {
     APP.responsive();
-    APP.handleFixedSideBar();
 });

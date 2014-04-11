@@ -2,7 +2,7 @@
 <div class="header navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<button data-target="#left-sidebar" id="left-sidebar-toggle" type="button" class="navbar-toggle page-sidebar-toggle visible-xs visible-sm">
+			<button data-target=".page-sidebar-left" type="button" class="navbar-toggle page-sidebar-toggle">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -10,15 +10,38 @@
 			<a href="index.php" class="navbar-brand">Pepper</a>
 			<div class="header-nav">
 				<ul class="nav icon-nav">
-					<li class="dropdown visible-md visible-lg">
-						<a href="#" title="Settings" data-toggle="dropdown"><i class="fa fa-cog fa-lg"></i></a>
-						<div class="dropdown-menu dropdown-menu-right hold-on-click dropdown-checkboxes">
-							<label class="checkbox metro-checkbox">
-								<input type="checkbox" id="fixed-header" />Header Fixed
-							</label> 
-							<label class="checkbox metro-checkbox">
-								<input type="checkbox" id="fixed-left-sidebar" />Sidebar Fixed
-							</label> 
+					<li class="dropdown settings">
+						<a href="#" title="Settings" data-toggle="dropdown" rel="tooltip" data-placement="bottom"><i class="fa fa-cog fa-lg"></i></a>
+						<div class="dropdown-menu dropdown-menu-right settings hold-on-click">
+							<form id="frmPepperSettings" class="form-horizontal form-row-separated" onsubmit="return false" role="form">
+								<div class="form-group">
+									<label class="col-md-4 control-label">Layout</label>
+									<div class="col-md-8">
+										<select id="layout" name="layout" class="form-control input-sm">
+											<option value="default">Default</option>
+											<option value="fixed">Fixed</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Header</label>
+									<div class="col-md-8">
+										<select id="header" name="header" class="form-control input-sm">
+											<option value="default">Default</option>
+											<option value="fixed">Fixed</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Sidebar</label>
+									<div class="col-md-8">
+										<select id="sidebar" name="sidebar" class="form-control input-sm">
+											<option value="default">Default</option>
+											<option value="fixed">Fixed</option>
+										</select>
+									</div>
+								</div> 
+							</form>
 						</div>
 					</li>
 					<li class="dropdown">

@@ -1,6 +1,14 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Data Table</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<!-- bootstrap datatable -->
+<link href="css/plugins/datatable/datatable-bs3.css" rel="stylesheet" type="text/css" />
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 <div class="row">
 	<div class="col-md-4">
 		<div class="page-header">
@@ -4024,8 +4032,13 @@
 		</div>
 	</div>
 </div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
+<!-- data-table -->
+<script src="js/plugins/datatable/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="js/plugins/datatable/datatable-bs3.js" type="text/javascript"></script>
 <script type="text/javascript">
 	/* Table initialisation */
 	$(document).ready(function() {
@@ -4056,4 +4069,5 @@
         });
 	});
 </script>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>

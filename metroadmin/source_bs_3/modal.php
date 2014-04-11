@@ -1,6 +1,14 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Modal</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<!-- pepper theme -->
+<link href="css/plugins/bootstrap-modal/bootstrap-modal.min.css" rel="stylesheet" type="text/css" />
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 <div class="page-header">
 	<h1>Modal</h1>
 </div>
@@ -11,7 +19,7 @@
 	<li class="pull-right"><a href="#" class="close">&times</a></li>
 </ul>
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">
@@ -20,48 +28,36 @@
 			<div class="panel-body no-padding">
 				<form action="#" method="POST" class="form-horizontal form-row-separated form-striped">
 				<div class="form-group">
-					<label class="col-md-4 control-label">
+					<label class="col-md-2 control-label">
 						Responsive</label>
 					<div class="col-md-6">
 						<button class="demo btn btn-blue" data-toggle="modal" href="#responsive">View Demo</button>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-md-4 control-label">
+					<label class="col-md-2 control-label">
 						Stackable</label>
 					<div class="col-md-6">
 						<button class="demo btn btn-blue" data-toggle="modal" href="#stack1">View Demo</button>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-md-4 control-label">
+					<label class="col-md-2 control-label">
 						Full Width</label>
 					<div class="col-md-6">
 						<button class="demo btn btn-blue" data-toggle="modal" href="#full-width">View Demo</button>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-md-4 control-label">
+					<label class="col-md-2 control-label">
 						Long modal</label>
 					<div class="col-md-6">
 						<button class="demo btn btn-blue" data-toggle="modal" href="#long">View Demo</button>
 					</div>
 				</div>
-				</form>
-			</div>
-		</div>
-	</div>
- 	<div class="col-md-6">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					Metro Style</h3>
-			</div>
-			<div class="panel-body no-padding">
-				<form action="#" method="POST" class="form-horizontal form-row-separated form-striped">
 				<div class="form-group">
-					<label class="col-md-4 control-label">
-						Default</label>
+					<label class="col-md-2 control-label">
+						Metro Style</label>
 					<div class="col-md-6">
 						<button class="demo btn btn-blue" data-toggle="modal" href="#metro-modal">View Demo</button>
 					</div>
@@ -71,10 +67,10 @@
 		</div>
 	</div>
 </div>
-<div class="row">
-	
-</div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
+
 <!-- Modal Definitions (tabbed over for <pre>) -->
 <div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
   <div class="modal-header">
@@ -270,7 +266,10 @@
 	  </div>
   	</div>
 </div>
-
 <?php include_once 'script.php' ?>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<!-- bootstrap modal --> 
+<script src="js/plugins/bs-modal/bootstrap-modalmanager.js" type="text/javascript"></script>
+<script src="js/plugins/bs-modal/bootstrap-modal.js" type="text/javascript"></script>
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>
 

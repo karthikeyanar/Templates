@@ -1,18 +1,23 @@
 ﻿body {
-    background-color: #F3F5F9 !important;
-    color: #333 !important;
+    margin-top: 80px;
 }
 .login-panel {
     width: 320px;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 5px 0px #ADADAD;
-    -moz-box-shadow: 0px 0px 5px 0px #ADADAD;
-    box-shadow: 0px 0px 5px 0px #ADADAD;
 }
 .login-panel .panel-heading {
-    padding: 20px;
+    padding: 15px 20px;
+}
+.login-panel .panel-heading .panel-title {
+    font-size: 20px;
 }
 .login-panel .panel-body {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px 0 20px;
+}
+.login-panel .form-group.social {
+    margin-bottom: 10px;
+}
+.login-panel .social > a {
+    display: inline-block;
+    margin-left: 10px;
 }

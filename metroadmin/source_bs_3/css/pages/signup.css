@@ -1,0 +1,19 @@
+﻿body {
+    margin-top: 80px;
+}
+.signup-panel .panel-heading {
+    padding: 15px 20px;
+}
+.signup-panel .panel-heading .panel-title {
+    font-size: 20px;
+}
+.signup-panel .panel-body {
+    padding: 20px 20px 0 20px;
+}
+.signup-panel .form-group.social {
+     margin-bottom: 10px;
+}
+.signup-panel .social > a {
+    display: inline-block;
+    margin-left: 10px;
+}

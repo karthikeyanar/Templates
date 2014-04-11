@@ -1,57 +1,25 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Blank</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
-
-<div class="panel">
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
+ <div class="panel panel-default blue">
+	<div class="panel-heading">
+		<h3 class="panel-title">Checkbox</h3>
+	</div>
 	<div class="panel-body">
-		<label class="checkbox metro-checkbox">
-			<input type="checkbox" value="test" checked />Option 1
-		</label> 
-		<label class="checkbox metro-checkbox">
-			<input type="checkbox" value="test" disabled />Option 1
-		</label> 
-		<label class="checkbox metro-checkbox">
-			<input type="checkbox" value="test" checked disabled />Option 1
-		</label> 
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" />Option 1
-		</label>
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" />Option 2
-		</label>
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" checked disabled />Option 3
-		</label>
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" disabled />Option 4
-		</label>
+		<form action="#" method="POST" class="form-horizontal">
+		
+		</form>
 	</div>
 </div>
-<div class="panel bg-black">
-	<div class="panel-body">
-		<label class="checkbox metro-checkbox">
-			<input type="checkbox" value="test" checked />Option 1
-		</label> 
-		<label class="checkbox metro-checkbox">
-			<input type="checkbox" value="test" disabled />Option 1
-		</label> 
-		<label class="checkbox metro-checkbox">
-			<input type="checkbox" value="test" checked disabled />Option 1
-		</label> 
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" />Option 1
-		</label>
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" />Option 2
-		</label>
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" checked disabled />Option 3
-		</label>
-		<label class="radio metro-radio">
-			<input type="radio" name="test" value="test" disabled />Option 4
-		</label>
-	</div>
-</div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<?php include_once 'applicationscript.php' ?>
+<?php include_once 'end-page.php' ?>

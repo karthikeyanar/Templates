@@ -1,6 +1,14 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - Editor</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<!-- bootstrap wysihtml5 -->
+<link href="css/plugins/bootstrap-wysihtml5/wysiwyg-editor.css" rel="stylesheet" type="text/css" />
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 	<div class="page-header">
 		<h1>
 			Editor</h1>
@@ -53,18 +61,23 @@
 			</div>
 		</div>
 	</div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
+<!-- wysihtml5 editor -->
+<script src="js/plugins/bs-wysihtml5/wysihtml5-0.3.0.min.js" type="text/javascript"></script>
+<script src="js/plugins/bs-wysihtml5/bootstrap3-wysihtml5.js" type="text/javascript"></script>
+<!-- ckeditor -->
+<script src="js/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
+<?php include_once 'applicationscript.php' ?>
 <script type="text/javascript">
 		/**** Specific JS for this page ****/
 		$(function () {
-			$('textarea.wysihtml5').wysihtml5({
-				stylesheets: ["./css/wysiwyg-color.css"]
-			});
+			$('textarea.wysihtml5').wysihtml5();
 		});
 </script>
 <script>
-	// Replace the <textarea id="editor1"> with an CKEditor instance.
 	CKEDITOR.replace('ckeditor', {
 		uiColor: '#F5F5F5',
 		on: {
@@ -80,5 +93,5 @@
 			}
 		}
 	});
-</script>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+</script> 
+<?php include_once 'end-page.php' ?>

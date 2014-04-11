@@ -1,6 +1,14 @@
-<?php include_once 'header.php' ?>
+<?php include_once 'start-page.php' ?>
+<title>Pepper - General</title>
+<?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<?php include_once 'startcontainer.php' ?>
+<!-- pepper theme -->
+<link href="css/plugins/bootstrap-modal/bootstrap-modal.min.css" rel="stylesheet" type="text/css" />
+<?php include_once 'body-start.php' ?>
+<?php include_once 'header.php' ?>
+<?php include_once 'start-page-container.php' ?>
+<?php include_once 'sidebar.php' ?>
+<?php include_once 'start-page-content.php' ?>
 <div class="page-header">
 	<h1>General</h1>
 </div>
@@ -23,25 +31,25 @@
 					<div class="panel-body">
 						<h3 class="panel-title">Alert Warning</h3>
 						<code>alert alert-warning</code>
-						<div class="alert alert-warning">
+						<div class="alert alert-warning alert-dismissable">
 							<button type="button" class="close" data-dismiss="alert">&times;</button>
 							<strong>Warning!</strong> Best check yo self, you're not looking too good.
 						</div>
 						<h3 class="panel-title">Alert Error</h3>
 						<code>alert alert-danger</code>
-						<div class="alert alert-danger">
+						<div class="alert alert-danger alert-dismissable">
 							<button data-dismiss="alert" class="close" type="button">&times;</button>
 							<strong>Oh snap!</strong> Change a few things up and try submitting again.
 						</div>
 						<h3 class="panel-title">Alert Success</h3>
 						<code>alert alert-success</code>
-						<div class="alert alert-success">
+						<div class="alert alert-success alert-dismissable">
 							<button data-dismiss="alert" class="close" type="button">&times;</button>
 							<strong>Well done!</strong> You successfully read this important alert message.
 						</div>
 						<h3 class="panel-title">Alert Info</h3>
 						<code>alert alert-info</code>
-						<div class="alert alert-info">
+						<div class="alert alert-info alert-dismissable">
 							<button data-dismiss="alert" class="close" type="button">&times;</button>
 							<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
 						</div>
@@ -608,8 +616,14 @@
 		</div>
 	</div>
 </div>
-<?php include_once 'endcontainer.php' ?>
+<?php include_once 'end-page-content.php' ?>
+<?php include_once 'footer.php' ?>
+<?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
+<!-- bootstrap modal --> 
+<script src="js/plugins/bs-modal/bootstrap-modalmanager.js" type="text/javascript"></script>
+<script src="js/plugins/bs-modal/bootstrap-modal.js" type="text/javascript"></script>
+<?php include_once 'applicationscript.php' ?>
 <script>
 	$(function(){
 		$("#alert").click(function(){
@@ -639,6 +653,6 @@
 		});
  	});
 </script>
-<?php include_once 'applicationscript.php' ?><?php include_once 'footer.php' ?>
+<?php include_once 'end-page.php' ?>
 
 
