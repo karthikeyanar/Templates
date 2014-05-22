@@ -194,9 +194,9 @@
 						</label>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-blue margin-right-10">
+				<button type="submit" class="btn btn-primary margin-right-10">
 					Submit</button>
-				<button type="button" class="btn btn-grey">
+				<button type="button" class="btn btn-default">
 					Cancel</button>
 				</form>
 			</div>
@@ -258,9 +258,9 @@
 						<option>Option 5</option>
 					</select>
 				</div>
-				<button type="submit" class="btn btn-blue margin-right-10">
+				<button type="submit" class="btn btn-primary margin-right-10">
 					Submit</button>
-				<button type="button" class="btn btn-grey">
+				<button type="button" class="btn btn-default">
 					Cancel</button>
 				</form>
 			</div>
@@ -700,9 +700,9 @@
 				</div>
 				<div class="form-group form-actions">
 					<div class="col-md-9 col-md-offset-3">
-						<button type="submit" class="btn btn-blue margin-right-10">
+						<button type="submit" class="btn btn-primary margin-right-10">
 							Submit</button>
-						<button type="button" class="btn btn-grey">
+						<button type="button" class="btn btn-default">
 							Cancel</button>
 					</div>
 				</div>
@@ -780,7 +780,7 @@
 				</div>
 				<div class="form-group form-actions">
 					<div class="col-md-9 col-md-offset-3">
-						<button type="submit" class="btn btn-blue margin-right-10">
+						<button type="submit" class="btn btn-primary margin-right-10">
 							Save</button>
 						<button type="button" class="btn btn-danger">
 							Cancel</button>
@@ -807,8 +807,10 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="input-group">
-							<span class="input-group-addon metro-checkbox">
-								<input type="checkbox" name="chk" />
+							<span class="input-group-addon">
+								<label class="checkbox metro-checkbox">
+									<input type="checkbox" value="test" />
+								</label>
 							</span>
 							<input type="text" class="form-control" />
 						</div>
@@ -816,8 +818,10 @@
 					<div class="col-md-6">
 						<div class="input-group">
 							<input type="text" class="form-control" />
-							<span class="input-group-addon metro-checkbox">
-								<input type="checkbox" name="chk" />
+							<span class="input-group-addon">
+								<label class="metro-checkbox">
+									<input type="checkbox" name="chk" />
+								</label>
 							</span>
 						</div>
 					</div>
@@ -832,7 +836,7 @@
 					<div class="col-md-6">
 						<div class="input-group">
 							<span class="input-group-btn">
-								<button class="btn btn-blue" type="button">
+								<button class="btn btn-primary" type="button">
 									Go!</button>
 							</span>
 							<input type="text" class="form-control" />
@@ -842,7 +846,7 @@
 						<div class="input-group">
 							<input type="text" class="form-control" />
 							<span class="input-group-btn">
-								<button class="btn btn-blue" type="button">
+								<button class="btn btn-primary" type="button">
 									Go!</button>
 							</span>
 						</div>
@@ -858,12 +862,12 @@
 					<div class="col-md-12">
 						<div class="input-group">
 							<span class="input-group-btn">
-								<button class="btn btn-blue" type="button">
+								<button class="btn btn-primary" type="button">
 									Go!</button>
 							</span>
 							<input type="text" class="form-control" />
 							<span class="input-group-btn">
-								<button class="btn btn-blue" type="button">
+								<button class="btn btn-primary" type="button">
 									Go!</button>
 							</span>
 						</div>
@@ -934,7 +938,7 @@
 							</div>
 							<input type="text" class="form-control" />
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-purple dropdown-toggle" data-toggle="dropdown">
+								<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
 									Action <i class="fa fa-angle-down"></i>
 								</button>
 								<ul class="dropdown-menu pull-right">
@@ -958,9 +962,9 @@
 					<div class="col-md-6">
 						<div class="input-group">
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-blue" tabindex="-1">
+								<button type="button" class="btn btn-primary" tabindex="-1">
 									Action</button>
-								<button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown"
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
 									tabindex="-1">
 									<i class="fa fa-angle-down"></i>
 								</button>
@@ -979,9 +983,9 @@
 						<div class="input-group">
 							<input type="text" class="form-control" />
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-blue" tabindex="-1">
+								<button type="button" class="btn btn-primary" tabindex="-1">
 									Action</button>
-								<button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown"
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
 									tabindex="-1">
 									<i class="fa fa-angle-down"></i>
 								</button>
@@ -1021,7 +1025,7 @@
 					Remember me
 				</label>
 			</div>
-			<button type="submit" class="btn btn-grey">
+			<button type="submit" class="btn btn-default">
 				Sign in</button>
 			</form>
 			<hr/>
@@ -1050,7 +1054,7 @@
 					Remember me
 				</label>
 			</div>
-			<button type="submit" class="btn btn-grey">
+			<button type="submit" class="btn btn-default">
 				Sign in</button>
 			</form>
 			<hr/>

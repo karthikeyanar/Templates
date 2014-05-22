@@ -66,8 +66,8 @@
 <?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
 <!-- wysihtml5 editor -->
-<script src="js/plugins/bs-wysihtml5/wysihtml5-0.3.0.min.js" type="text/javascript"></script>
-<script src="js/plugins/bs-wysihtml5/bootstrap3-wysihtml5.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.min.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.js" type="text/javascript"></script>
 <!-- ckeditor -->
 <script src="js/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
 <?php include_once 'applicationscript.php' ?>

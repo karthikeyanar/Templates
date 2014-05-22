@@ -15,7 +15,7 @@
 <!-- inputlimiter -->
 <link href="css/plugins/jquery-inputlimiter/jquery.inputlimiter.1.0.css" rel="stylesheet" type="text/css" />
 <!-- bootstrap switch -->
-<link href="css/plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+<link href="css/plugins/bootstrap-switch/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
 <?php include_once 'body-start.php' ?>
 <?php include_once 'header.php' ?>
 <?php include_once 'start-page-container.php' ?>
@@ -625,9 +625,9 @@
 						<input type="checkbox" checked  id="toggle-state-switch" class="switch" />
 						<br/>
 						<br/>
-						<div id="toggle-state-switch-button-on" class="btn btn-blue">ON!</div>
-						<div id="toggle-state-switch-button" class="btn btn-blue">Toggle me!</div>
-						<div id="toggle-state-switch-button-off" class="btn btn-blue">OFF!</div>
+						<div id="toggle-state-switch-button-on" class="btn btn-primary">ON!</div>
+						<div id="toggle-state-switch-button" class="btn btn-primary">Toggle me!</div>
+						<div id="toggle-state-switch-button-off" class="btn btn-primary">OFF!</div>
 						<pre class="prettyprint linenums">$('#toggle-state-switch').bootstrapSwitch('toggleState');$('#toggle-state-switch').bootstrapSwitch('setState', false); // true || false
 						</pre>
 					</div>
@@ -1414,7 +1414,7 @@
 								 	Colors
 								</label>
 								<div class="col-md-3">
-							 		<select class="selectpicker form-control" data-style="btn-blue">
+							 		<select class="selectpicker form-control" data-style="btn-primary">
 										<option>Mustard</option>
 										<option>Ketchup</option>
 										<option>Relish</option>
@@ -1504,22 +1504,22 @@
 <!-- chosen -->
 <script src="js/plugins/chosen/chosen.jquery.min.js" type="text/javascript"></script>
 <!-- bootstrap timepicker -->
-<script src="js/plugins/bs-timepicker/bootstrap-timepicker.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-timepicker/bootstrap-timepicker.js" type="text/javascript"></script>
 <!-- bootstrap datepicker -->
-<script src="js/plugins/bs-datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
 <!-- bootstrap select -->
-<script src="js/plugins/bs-select/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
 <!-- inputlimiter -->
 <script src="js/plugins/inputlimiter/jquery.inputlimiter.1.3.1.min.js" type="text/javascript"></script>
 <!-- autogrow textarea -->
 <script src="js/plugins/autogrowtextarea/jquery.autogrowtextarea.min.js" type="text/javascript"></script>
 <!-- bootstrap switch -->
-<script src="js/plugins/bs-switch/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-switch/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- bootstrap spinner -->
-<script src="js/plugins/bs-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
 <!-- bootstrap daterange picker -->
-<script src="js/plugins/bs-daterangepicker/moment.min.js" type="text/javascript"></script>
-<script src="js/plugins/bs-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
 <?php include_once 'applicationscript.php' ?>
 <script>
 	$(function(){
@@ -1596,7 +1596,7 @@
 	        boostat: 5,
 	        maxboostedstep: 10,
 	        postfix: '%',
-	        buttondown_class: 'btn btn-blue',
+	        buttondown_class: 'btn btn-primary',
 	        buttonup_class: 'btn btn-success'
 	    });
 		$("#spinner3").TouchSpin({
@@ -1605,7 +1605,7 @@
 	        stepinterval: 50,
 	        maxboostedstep: 10000000,
 	        prefix: '$',
-	        buttondown_class: 'btn btn-blue',
+	        buttondown_class: 'btn btn-primary',
 	        buttonup_class: 'btn btn-success'
 	    });
 		$("#spinner4").TouchSpin();
@@ -1638,7 +1638,7 @@
 	        },
 	        opens: 'right',
 	        buttonClasses: ['btn btn-default'],
-	        applyClass: 'btn-small btn-blue',
+	        applyClass: 'btn-small btn-primary',
 	        cancelClass: 'btn-small',
 	        format: 'MM/DD/YYYY',
 	        separator: ' to ',
@@ -1652,10 +1652,10 @@
 	        firstDay: 1
 	        }
 	        },
-        function(start,end) {
-	        console.log("Callback has been called!");
-	        $('#reportrange span').html(start.format('MMMM D, YYYY')+' - '+end.format('MMMM D, YYYY'));
-        }
+			function(start,end) {
+				console.log("Callback has been called!");
+				$('#reportrange span').html(start.format('MMMM D, YYYY')+' - '+end.format('MMMM D, YYYY'));
+			}
 	    );
 		//Set the initial state of the picker label
 		$('#reportrange span').html(moment().subtract('days',29).format('MMMM D, YYYY')+' - '+moment().format('MMMM D, YYYY'));

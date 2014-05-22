@@ -12,7 +12,7 @@
 				<li class="pull-right"><a href="#" data-dismiss='breadcrumb' class="close">&times</a></li>
 			</ul>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
 							<h3 class="panel-title">Supported controls</h3>
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
 							<h3 class="panel-title">Checkboxes and radios</h3>
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
 							<h3 class="panel-title">Validation states</h3>
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
 							<h3 class="panel-title">Control sizing</h3>
@@ -135,24 +135,24 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
 							<h3 class="panel-title">Column sizing</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
-							  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							    <input type="text" class="form-control" placeholder=".col-xs-2 .col-sm-2 .col-md-2 .col-lg-2">
+							  <div class="col-xs-2 col-sm-2 col-md-2 col-md-2">
+							    <input type="text" class="form-control" placeholder=".col-xs-2 .col-sm-2 .col-md-2 .col-md-2">
 							  </div>
-							  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							    <input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-lg-3">
+							  <div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
+							    <input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-md-3">
 							  </div>
-							  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-							    <input type="text" class="form-control" placeholder=".col-xs-4 .col-sm-4 .col-md-4 .col-lg-4">
+							  <div class="col-xs-4 col-sm-4 col-md-4 col-md-4">
+							    <input type="text" class="form-control" placeholder=".col-xs-4 .col-sm-4 .col-md-4 .col-md-4">
 							  </div>
-							   <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							    <input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-lg-4">
+							   <div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
+							    <input type="text" class="form-control" placeholder=".col-xs-3 .col-sm-3 .col-md-3 .col-md-4">
 							  </div>
 							</div>
 						</div>
@@ -160,7 +160,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
 							<h3 class="panel-title">Help text</h3>
@@ -173,7 +173,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading panel-title">
 							<h3 class="panel-title">Textarea</h3>
@@ -181,23 +181,23 @@
 						<div class="panel-body no-padding">
 							<form method="post" class="form-horizontal form-striped">
 								<div class="form-group">
-									<label class="col-lg-2 control-label font-normal">
+									<label class="col-md-2 control-label font-normal">
 										Textarea</label>
-									<div class="col-lg-10">
+									<div class="col-md-10">
 										<textarea rows="5" cols="80" class="form-control col-xs-2"></textarea>
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-lg-2 control-label">
+									<label class="col-md-2 control-label">
 										Textarea with Auto Resize</label>
-									<div class="col-lg-10">
+									<div class="col-md-10">
 										<textarea rows="5" cols="80" id="textareaAR" class="form-control"></textarea>
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-lg-2 control-label">
+									<label class="col-md-2 control-label">
 										Textarea with Character Count</label>
-									<div class="col-lg-10">
+									<div class="col-md-10">
 										<textarea id="textareaCC" rows="5" cols="80" class="form-control"></textarea>
 									</div>
 								</div>

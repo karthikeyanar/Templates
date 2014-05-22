@@ -179,50 +179,8 @@
 .modal-metro.notification > .modal-dialog {
     width: 50%;
 }
-/* Small devices Phones (>=768px) to all */
-@media (min-width: 768px) {
-    .modal-metro.notification > .modal-dialog {
-        width: 50%;
-    }
-}
-/* Responsive */
 
-@media (min-width: 1200px) {
-}
 
-@media (max-width: 979px) {
-	.modal, 
-	.modal.modal-overflow 	{
-		top: 1%;
-		right: 1%;
-		left: 1%;
-		bottom: auto;
-		width: auto !important;
-		height: auto !important;
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-	
-	.modal.fade.in, 
-	.modal.modal-overflow.fade.in {
-		top: 1%;
-		bottom: auto;
-	}
-	
-	.modal-body,
-	.modal-overflow .modal-body {
-		position: static;
-		margin: 0;
-		height: auto !important;
-		max-height: none !important;
-		overflow: visible !important;
-	}
-	
-	.modal-footer,
-	.modal-overflow .modal-footer {
-		position: static;
-	}
-}
 
 .loading-spinner {
 	position: absolute;
@@ -324,4 +282,49 @@ body.modal-open,
 }
 .modal-header .close {
 	color:inherit;
+}
+/* Small devices Phones (>=768px) to all */
+@media (min-width: 768px) {
+    .modal-metro.notification > .modal-dialog {
+        width: 50%;
+    }
+}
+
+/* Responsive */
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 979px) {
+	.modal, 
+	.modal.modal-overflow 	{
+		top: 1%;
+		right: 1%;
+		left: 1%;
+		bottom: auto;
+		width: auto !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.modal.fade.in, 
+	.modal.modal-overflow.fade.in {
+		top: 1%;
+		bottom: auto;
+	}
+	
+	.modal-body,
+	.modal-overflow .modal-body {
+		position: static;
+		margin: 0;
+		height: auto !important;
+		max-height: none !important;
+		overflow: visible !important;
+	}
+	
+	.modal-footer,
+	.modal-overflow .modal-footer {
+		position: static;
+	}
 }

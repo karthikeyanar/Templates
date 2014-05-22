@@ -3,9 +3,9 @@ Application.prototype.popoverConfirm=function(element,message,callback,option) {
     var $element=$(element);
 
     var defaults={
-        okBtnClass: 'btn btn-blue input-small',
+        okBtnClass: 'btn btn-primary input-small',
         okBtnText: 'OK',
-        cancelBtnClass: 'btn btn-red input-small margin-left-10',
+        cancelBtnClass: 'btn btn-danger input-small margin-left-10',
         cancelBtnText: 'Cancel',
         modalClass: '',
         placement: 'bottom',
@@ -66,7 +66,7 @@ Application.prototype.popoverConfirm=function(element,message,callback,option) {
 Application.prototype.metroAlert=function(message,callback,option) {
 
     var defaults={
-        okBtnClass: 'btn btn-blue input-small',
+        okBtnClass: 'btn btn-primary input-small',
         okBtnText: 'OK',
         modalClass: ''
     }
@@ -115,9 +115,9 @@ Application.prototype.metroAlert=function(message,callback,option) {
 Application.prototype.metroConfirm=function(message,callback,option) {
 
     var defaults={
-        okBtnClass: 'btn btn-blue input-small',
+        okBtnClass: 'btn btn-primary input-small',
         okBtnText: 'OK',
-        cancelBtnClass: 'btn btn-red input-small margin-left-10',
+        cancelBtnClass: 'btn btn-danger input-small margin-left-10',
         cancelBtnText: 'Cancel',
         modalClass: ''
     }

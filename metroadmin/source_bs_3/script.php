@@ -1,15 +1,16 @@
 <!-- jquery -->
-<script src="js/jquery/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script>window.jQuery || document.write('<script src="js/jquery/jquery-1.11.1.min.js"><\/script>')</script>
+<!-- jquery validation -->
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+<script>if(typeof($.fn.validate) === 'undefined') document.write('<script src="js/jquery/jquery.validate.min.js"><\/script>')</script>
 <!-- bootstrap -->
-<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script>if(typeof($.fn.modal) === 'undefined') document.write('<script src="js/bootstrap/bootstrap.min.js"><\/script>')</script>
 <!-- jquery ui 1.10.4 -->
 <script src="js/jquery/jquery-ui-1.10.4.custom.min.js"></script>
-<!-- jquery validation -->
-<script src="js/jquery/jquery.validate.min.js" type="text/javascript"></script>
-<!-- page sidebar menu -->
-<script src="js/plugins/sidebarmenu/jquery.sidebarMenu.js" type="text/javascript"></script>
-<!-- panel slider -->
-<script src="js/plugins/panelslider/jquery.panelSlider.js" type="text/javascript"></script>
+<!-- scrollTo -->
+<script src="js/plugins/scrollTo/jquery.scrollTo.js" type="text/javascript"></script>
 <!-- slim scroll -->
 <script src="js/plugins/slimscroll/jquery.slimscroll.js" type="text/javascript"></script>
 <!-- autofix -->

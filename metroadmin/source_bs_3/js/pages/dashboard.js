@@ -1,9 +1,6 @@
 ﻿$(function() {
 
-    APP.addResponsiveHandler(function() {
-        areaChart.redraw();
-        donutChart.redraw();
-    });
+
 
     var areaChart=Morris.Area({
         element: 'morris-area-chart',
@@ -83,5 +80,10 @@
         redraw: true
     });
 
+
+    APP.addResponsiveHandler(function() {
+        areaChart.redraw();
+        donutChart.redraw();
+    });
 
 });

@@ -66,8 +66,12 @@
 						</h3>
 					</div>
 					<div class="panel-body">
-						<div class="note">
+						<div class="note note-default">
 							<h4>Default</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+						</div>
+						<div class="note note-success">
+							<h4>Success</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 						</div>
 						<div class="note note-danger">
@@ -192,16 +196,15 @@
 									<li class="list-group-item bg-info no-border margin-bottom-5">.bg-info</li>
 									<li class="list-group-item bg-warning no-border margin-bottom-5">.bg-warning</li>
 									<li class="list-group-item bg-danger no-border margin-bottom-5">.bg-danger</li>
-									<li class="list-group-item bg-pink no-border margin-bottom-5">.bg-pink</li>
-									<li class="list-group-item bg-red no-border margin-bottom-5">.bg-red</li>
-									<li class="list-group-item bg-orange no-border margin-bottom-5">.bg-orange</li>
-									<li class="list-group-item bg-green no-border margin-bottom-5">.bg-green</li>
+									<li class="list-group-item bg-danger no-border margin-bottom-5">.bg-danger</li>
+									<li class="list-group-item bg-warning no-border margin-bottom-5">.bg-warning</li>
+									<li class="list-group-item bg-success no-border margin-bottom-5">.bg-success</li>
 									<li class="list-group-item bg-teal no-border margin-bottom-5">.bg-teal</li>
 									<li class="list-group-item bg-purple no-border margin-bottom-5">.bg-purple</li>
-									<li class="list-group-item bg-skyblue no-border margin-bottom-5">.bg-skyblue</li>
+									<li class="list-group-item bg-primary no-border margin-bottom-5">.bg-primary</li>
 									<li class="list-group-item bg-black no-border margin-bottom-5">.bg-black</li>
-									<li class="list-group-item bg-grey no-border margin-bottom-5">.bg-grey</li>
-									<li class="list-group-item bg-cardovan no-border">.bg-cardovan</li>
+									<li class="list-group-item bg-dark-purple no-border margin-bottom-5">.bg-dark-purple</li>
+									<li class="list-group-item bg-primary no-border">.bg-primary</li>
 								</ul>
 							</div>
 						</div>
@@ -220,7 +223,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<ul class="list-group no-margin">
-									<li class="list-group-item bg-black fg-white no-border margin-bottom-5">.fg-white</li>
+									<li class="list-group-item bg-black no-border margin-bottom-5">.fg-white</li>
 									<li class="list-group-item fg-black no-border">.fg-black</li>
 								</ul>
 							</div>
@@ -310,7 +313,7 @@
 								</label>
 								<div class="col-md-8">
 									<a id="alert" class="btn btn-default">View Demo</a>
-									<a id="alert2" class="btn btn-blue margin-left-10">View Demo Blue Color</a>
+									<a id="alert2" class="btn btn-primary margin-left-10">View Demo Blue Color</a>
 								</div>
 							</div>
 							<div class="form-group">
@@ -318,8 +321,8 @@
 									Confirm
 								</label>
 								<div class="col-md-8">
-									<a id="confirm" class="btn btn-blue">View Demo</a>
-									<a id="confirm2" class="btn btn-blue margin-left-10">View Demo Blue Color</a>
+									<a id="confirm" class="btn btn-primary">View Demo</a>
+									<a id="confirm2" class="btn btn-primary margin-left-10">View Demo Blue Color</a>
 								</div>
 							</div>
 						</form>
@@ -621,8 +624,8 @@
 <?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
 <!-- bootstrap modal --> 
-<script src="js/plugins/bs-modal/bootstrap-modalmanager.js" type="text/javascript"></script>
-<script src="js/plugins/bs-modal/bootstrap-modal.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-modal/bootstrap-modalmanager.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-modal/bootstrap-modal.js" type="text/javascript"></script>
 <?php include_once 'applicationscript.php' ?>
 <script>
 	$(function(){
@@ -634,7 +637,7 @@
 		$("#alert2").click(function(){
 			APP.metroAlert("Hello world!", function() {
 				alert("hello callback");
-			}, { "okBtnClass" : "btn btn-default input-small", "modalClass": "bg-skyblue fg-white" });
+			}, { "okBtnClass" : "btn btn-default input-small", "modalClass": "bg-primary" });
 		});
 		$("#confirm").click(function(){
 			APP.metroConfirm("Are you sure?", function(result) {
@@ -644,7 +647,7 @@
 		$("#confirm2").click(function(){
 			APP.metroConfirm("Are you sure?", function(result) {
 				alert("callback result=" + result);
-			}, { "okBtnClass" : "btn btn-default input-small", "modalClass": "bg-skyblue fg-white" });
+			}, { "okBtnClass" : "btn btn-default input-small", "modalClass": "bg-primary" });
 		});
 		$("#popoverconfirm").click(function(){
 			APP.popoverConfirm(this, "Confirm order and use selected payment method?", function(result) {

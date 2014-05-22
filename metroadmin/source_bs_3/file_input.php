@@ -78,6 +78,6 @@
 <?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
 <!-- Bootstrap FileUpload -->
-<script src="js/plugins/bs-fileupload/bootstrap-fileupload.min.js"></script>
+<script src="js/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
 <?php include_once 'applicationscript.php' ?>
 <?php include_once 'end-page.php' ?>

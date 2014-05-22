@@ -1,4 +1,3 @@
-<!-- page sidebar -->
 <?php
 function checkactive_toggle($filename){
 	$path = $_SERVER["REQUEST_URI"];
@@ -50,10 +49,19 @@ function writeclassname($rootname,$classname){
 		{
 			echo $classname;
 		}
+	} else if($rootname=="plugins"){
+		if($file == "colorpicker.php"
+		||$file == "datepicker.php"
+		||$file == "date_range_picker.php"
+		)
+		{
+			echo $classname;
+		}
 	} else if($rootname=="layouts"){
 		if($file == "box_layout.php"
 		|| $file == "sidebar_collapse_layout.php"
 		|| $file == "sidebar_fixed_layout.php"
+		|| $file == "tab_layout.php"
 		)
 		{
 			echo $classname;
@@ -69,17 +77,21 @@ function writeclassname($rootname,$classname){
 		}
 	} else if($rootname=="tables"){
 		if($file == "table.php"
-			|| $file == "data_table.php"
-			|| $file == "table_colors.php"
+			|| $file == "data_table.php" 
 		)
 		{
 			echo $classname;
 		}
 	} else if($rootname=="samples"){
-		if($file == "login.php"
+		if($file == "signup.php"
+			|| $file == "signup.php"
+			|| $file == "lock.php"
+			|| $file == "404.php"
+			|| $file == "500.php"
 			|| $file == "calendar.php"
 			|| $file == "file_manager.php"
-			|| $file == "timesheet.php"
+			|| $file == "timeline.php"
+			|| $file == "inbox.php"
 			|| $file == "invoice.php"
 			|| $file == "shopping_cart.php"
 			|| $file == "products.php"
@@ -91,6 +103,12 @@ function writeclassname($rootname,$classname){
 	}
 }
 ?>
+<?php if($IS_TAB_LAYOUT == "1") { ?>
+<!-- page tab layout -->
+<div class="page-tab-menu">
+	<ul>
+<?php } else { ?>
+<!-- page sidebar -->
 <div id="left-sidebar" class="page-sidebar page-sidebar-left">
 	<div class="sidebar-content">
 		<ul class="nav page-sidebar-menu">
@@ -115,6 +133,7 @@ function writeclassname($rootname,$classname){
 				<a href="javascript:;" id="close-search">&times</a>
 				<a href="javascript:;" id="open-search"><i class="fa fa-search"></i></a>
 			</li>
+<?php } ?>
 			<li class=<?php checkactive_toggle("index.php");?>>
 				<a href="index.php">
 					<i class="fa fa-laptop"></i>
@@ -137,6 +156,9 @@ function writeclassname($rootname,$classname){
 					</li> 
 					<li <?php checkactive("sidebar_fixed_layout.php");?>>
 						<a href="sidebar_fixed_layout.php">Sidebar Fixed Layout</a>
+					</li> 
+					<li <?php checkactive("tab_layout.php");?>>
+						<a href="tab_layout.php">Tab Layout</a>
 					</li> 
 				</ul>
 			</li>
@@ -182,6 +204,24 @@ function writeclassname($rootname,$classname){
 					</li> 
 				</ul>
 			</li>
+			<li class=<?php echo openaccordion("plugins");?>>
+				<a href="javascript:;">
+					<i class="fa fa-cog"></i>
+					<span class="title">Plugins</span>
+					<span class="fa arrow"></span>
+				</a>
+				<ul class="nav sub-menu">
+					<li <?php checkactive("datepicker.php");?>>
+						<a href="datepicker.php">Date Picker</a>
+					</li>
+					<li <?php checkactive("date_range_picker.php");?>>
+						<a href="date_range_picker.php">Date Range Picker</a>
+					</li>
+					<li <?php checkactive("colorpicker.php");?>>
+						<a href="colorpicker.php">Color Picker</a>
+					</li>
+				</ul>
+			</li>
 			<li class=<?php echo openaccordion("forms");?>>
 				<a href="javascript:;">
 					<i class="fa fa-tasks"></i>
@@ -213,9 +253,6 @@ function writeclassname($rootname,$classname){
 					<li <?php checkactive("table.php");?>>
 						<a href="table.php">Basic</a>
 					</li>
-					<li <?php checkactive("table_colors.php");?>>
-						<a href="table_colors.php">Table Colors</a>
-					</li>
 					<li <?php checkactive("data_table.php");?>>
 						<a href="data_table.php">Data Table</a>
 					</li>
@@ -228,33 +265,102 @@ function writeclassname($rootname,$classname){
 					<span class="fa arrow"></span>
 				</a>
 				<ul class="nav sub-menu">
-					<li <?php checkactive("login.php");?>>
-						<a href="login.php">Login</a>
+					<li <?php checkactive("signup.php");?>>
+						<a href="signup.php">Sign In</a>
+					</li>
+					<li <?php checkactive("signup.php");?>>
+						<a href="signup.php">Sign Up</a>
+					</li>
+					<li <?php checkactive("lock.php");?>>
+						<a href="lock.php">Lock Screen</a>
 					</li>
 					<li <?php checkactive("blank.php");?>>
 						<a href="blank.php">Blank</a>
 					</li>
+					<li <?php checkactive("404.php");?>>
+						<a href="404.php">404</a>
+					</li>
+					<li <?php checkactive("500.php");?>>
+						<a href="500.php">500</a>
+					</li>
 					<li <?php checkactive("calendar.php");?>>
 						<a href="calendar.php">Calendar</a>
 					</li>
-					<li <?php checkactive("file_manager.php");?>>
-						<a href="file_manager.php">File Manager</a>
+					<li <?php checkactive("timeline.php");?>>
+						<a href="timeline.php">Timeline</a>
 					</li>
-					<li <?php checkactive("timesheet.php");?>>
-						<a href="timesheet.php">Timesheet</a>
-					</li>
-					<li <?php checkactive("products.php");?>>
-						<a href="products.php">Products</a>
+					<li <?php checkactive("inbox.php");?>>
+						<a href="inbox.php">Inbox</a>
 					</li>
 					<li <?php checkactive("invoice.php");?>>
 						<a href="invoice.php">Invoice</a>
 					</li>
-					<li <?php checkactive("shopping_cart.php");?>>
-						<a href="shopping_cart.php">Shopping Cart</a>
-					</li>
 				</ul>
 			</li>
+			<li class=<?php echo openaccordion("menulevels");?>>
+				<a href="javascript:;">
+					<i class="fa fa-pencil"></i>
+					<span class="title">Menu Levels</span>
+					<span class="fa arrow"></span>
+				</a>
+				<?php if($IS_TAB_LAYOUT == "1") { ?>
+					<ul>
+						<li>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Level 1<span class="caret"></span></a>
+							  <ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+						</li>
+					</ul>
+				<?php } ?>
+				<?php if($IS_TAB_LAYOUT == "0") { ?>
+					<ul class="nav sub-menu">
+						<li>
+							<a href="#">Menu Level 1<span class="fa arrow"></span></a>
+							<ul class="nav sub-menu">
+								<li>
+									<a href="#">Menu Level 2<span class="fa arrow"></span></a>
+									<ul class="nav sub-menu">
+										<li>
+											<a href="#">Menu Level 3</a>
+										</li> 
+										<li>
+											<a href="#">Menu Level 3</a>
+										</li> 
+										<li>
+											<a href="#">Menu Level 3</a>
+										</li> 
+									</ul>
+								</li> 
+								<li>
+									<a href="#">Menu Level 2</a>
+								</li> 
+								<li>
+									<a href="#">Menu Level 2</a>
+								</li> 
+							</ul>
+						</li>
+						<li>
+							<a href="#">Menu Level 1</a>
+						</li>
+						<li>
+							<a href="#">Menu Level 1</a>
+						</li>
+					</ul>
+				<?php } ?>
+			</li>
+<?php if($IS_TAB_LAYOUT == "1") { ?>
+		</ul>
+	</div>
+<!-- end page tab layout -->
+<?php } ?>
+<?php if($IS_TAB_LAYOUT == "0") { ?>
 		</ul>
 	</div>
 </div>
 <!-- end page-sidebar -->
+<?php } ?>

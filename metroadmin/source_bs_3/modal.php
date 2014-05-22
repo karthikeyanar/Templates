@@ -2,8 +2,8 @@
 <title>Pepper - Modal</title>
 <?php include_once 'meta.php' ?>
 <?php include_once 'style.php' ?>
-<!-- pepper theme -->
-<link href="css/plugins/bootstrap-modal/bootstrap-modal.min.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap modal -->
+<link href="css/plugins/bootstrap-modal/bootstrap-modal.css" rel="stylesheet" type="text/css" />
 <?php include_once 'body-start.php' ?>
 <?php include_once 'header.php' ?>
 <?php include_once 'start-page-container.php' ?>
@@ -31,35 +31,35 @@
 					<label class="col-md-2 control-label">
 						Responsive</label>
 					<div class="col-md-6">
-						<button class="demo btn btn-blue" data-toggle="modal" href="#responsive">View Demo</button>
+						<button class="demo btn btn-primary" data-toggle="modal" href="#responsive">View Demo</button>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="col-md-2 control-label">
 						Stackable</label>
 					<div class="col-md-6">
-						<button class="demo btn btn-blue" data-toggle="modal" href="#stack1">View Demo</button>
+						<button class="demo btn btn-primary" data-toggle="modal" href="#stack1">View Demo</button>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="col-md-2 control-label">
 						Full Width</label>
 					<div class="col-md-6">
-						<button class="demo btn btn-blue" data-toggle="modal" href="#full-width">View Demo</button>
+						<button class="demo btn btn-primary" data-toggle="modal" href="#full-width">View Demo</button>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="col-md-2 control-label">
 						Long modal</label>
 					<div class="col-md-6">
-						<button class="demo btn btn-blue" data-toggle="modal" href="#long">View Demo</button>
+						<button class="demo btn btn-primary" data-toggle="modal" href="#long">View Demo</button>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="col-md-2 control-label">
 						Metro Style</label>
 					<div class="col-md-6">
-						<button class="demo btn btn-blue" data-toggle="modal" href="#metro-modal">View Demo</button>
+						<button class="demo btn btn-primary" data-toggle="modal" href="#metro-modal">View Demo</button>
 					</div>
 				</div>
 				</form>
@@ -102,8 +102,8 @@
     </div>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
-    <button type="button" class="btn btn-blue">Save changes</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
   </div>
 </div>
 
@@ -117,8 +117,8 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin ipsum ac ante fermentum suscipit. In ac augue non purus accumsan lobortis id sed nibh. Nunc egestas hendrerit ipsum, et porttitor augue volutpat non. Aliquam erat volutpat. Vestibulum scelerisque lobortis pulvinar. Aenean hendrerit risus neque, eget tincidunt leo. Vestibulum est tortor, commodo nec cursus nec, vestibulum vel nibh. Morbi elit magna, ornare placerat euismod semper, dignissim vel odio. Phasellus elementum quam eu ipsum euismod pretium.</p>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
-    <button type="button" class="btn btn-blue">Save changes</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
   </div>
 </div>
 
@@ -133,11 +133,11 @@
     <p>One fine body...</p>
     <input class="form-control" type="text" data-tabindex="1" />
     <input class="form-control" type="text" data-tabindex="2" />
-    <button class="btn btn-grey" data-toggle="modal" href="#stack2">Launch modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#stack2">Launch modal</button>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
-    <button type="button" class="btn btn-blue">Ok</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+    <button type="button" class="btn btn-primary">Ok</button>
   </div>
 </div>
 
@@ -151,11 +151,11 @@
     <p>One fine body...</p>
     <input class="form-control" type="text" data-tabindex="1" />
     <input class="form-control" type="text" data-tabindex="2" />
-    <button class="btn btn-grey" data-toggle="modal" href="#stack3">Launch modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#stack3">Launch modal</button>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
-    <button type="button" class="btn btn-blue">Ok</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+    <button type="button" class="btn btn-primary">Ok</button>
   </div>
 </div>
 
@@ -170,8 +170,8 @@
     <input class="form-control" type="text" data-tabindex="2" />
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
-    <button type="button" class="btn btn-blue">Ok</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+    <button type="button" class="btn btn-primary">Ok</button>
   </div>
 </div>
 
@@ -180,8 +180,8 @@
     <p>Would you like to continue with some arbitrary task?</p>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Cancel</button>
-    <button type="button" data-dismiss="modal" class="btn btn-blue">Continue Task</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+    <button type="button" data-dismiss="modal" class="btn btn-primary">Continue Task</button>
   </div>
 </div>
 
@@ -191,11 +191,11 @@
     <h4 class="modal-title">A Fairly Long Modal</h4>
   </div>
   <div class="modal-body">
-    <button class="btn btn-grey" data-toggle="modal" href="#notlong" style="position: absolute; top: 50%; right: 12px">Not So Long Modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#notlong" style="position: absolute; top: 50%; right: 12px">Not So Long Modal</button>
     <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg" />
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
   </div>
 </div>
 
@@ -205,13 +205,13 @@
     <h4 class="modal-title">Not That Long</h4>
   </div>
   <div class="modal-body">
-    <button class="btn btn-grey" data-toggle="modal" href="#verylong" style="position: absolute; top: 50%; right: 12px">Very Long Modal</button>
+    <button class="btn btn-default" data-toggle="modal" href="#verylong" style="position: absolute; top: 50%; right: 12px">Very Long Modal</button>
     <div style="height: 400px; overflow: hidden;">
       <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg" />
     </div>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
   </div>
 </div>
 
@@ -226,7 +226,7 @@
     </div>
   </div>
   <div class="modal-footer">
-    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
   </div>
 </div>
 
@@ -261,15 +261,15 @@
 	    </div>
 	  </div>
 	  <div class="modal-footer">
-	    <button type="button" data-dismiss="modal" class="btn btn-grey">Close</button>
-	    <button type="button" class="btn btn-blue">Save</button>
+	    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+	    <button type="button" class="btn btn-primary">Save</button>
 	  </div>
   	</div>
 </div>
 <?php include_once 'script.php' ?>
 <!-- bootstrap modal --> 
-<script src="js/plugins/bs-modal/bootstrap-modalmanager.js" type="text/javascript"></script>
-<script src="js/plugins/bs-modal/bootstrap-modal.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-modal/bootstrap-modalmanager.js" type="text/javascript"></script>
+<script src="js/plugins/bootstrap-modal/bootstrap-modal.js" type="text/javascript"></script>
 <?php include_once 'applicationscript.php' ?>
 <?php include_once 'end-page.php' ?>
 

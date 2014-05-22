@@ -1,0 +1,159 @@
+﻿//
+// Variables
+// --------------------------------------------------
+//== Colors
+//
+@base-color: #002F65; 
+//@base-purple-color: #810489; 
+//@base-green-color: #3E9A3D; 
+//@base-fb-color: #3b5998; 
+//@base-red-color: #931111; 
+@color-black: #000;
+@color-white: #fff;
+@logo-type-color: #FF0741;
+
+body {
+    background: darken(@base-color,25%);
+}
+body.public {
+     background: @base-color;
+}
+/* logo */
+.logo .name {
+	color: @color-white;
+}
+.logo .type {
+	color: @logo-type-color;
+}
+/* lockout */
+.lockout-panel {
+	color: @color-white;
+}
+/* header */
+.header {
+    background: darken(@base-color,3%);
+}
+.header .navbar-brand, 
+.header.navbar-inverse .navbar-nav > li > a {
+    color: darken(@color-white, 5%);
+}
+.header.navbar-inverse .navbar-nav > .active > a {
+	background-color: darken(@base-color, 12%);
+	color: @color-white;
+}
+.header.navbar-inverse .top-menu .navbar-nav > li > a:hover, 
+.header.navbar-inverse .top-menu .navbar-nav > li > a:focus,
+.header.navbar-inverse .navbar-toggle:hover, 
+.header.navbar-inverse .navbar-toggle:focus {
+	background-color: lighten(@base-color, 20%);
+	color: @color-white;
+}
+/* Up to old desktop (<=1024px) to all */
+@media (max-width: 1024px) {
+	.header.navbar-inverse .hor-menu .navbar-nav li a {
+		 border-bottom: 1px solid lighten(@base-color, 10%) !important;
+	}
+	.header.navbar-inverse .hor-menu .navbar-nav > li > ul {
+		 background: darken(@base-color, 5%);
+	}
+	.header.navbar-inverse .hor-menu .navbar-nav li a {
+		color: darken(@color-white, 5%);
+	}
+	.header .hor-menu.navbar-collapse {
+		background: @base-color;
+		color: @color-white;
+	}
+}
+/* page-sidebar */
+.page-container, .page-sidebar {
+    background: @base-color;
+    color: @color-white;
+}
+.page-container .page-content, .page-container .footer {
+    background: @color-white;
+    color: lighten(@color-black, 20%);
+}
+.page-sidebar-collapse .page-sidebar-search.open {
+    background-color: @base-color;
+}
+.page-sidebar-menu.nav li a {
+    color: darken(@color-white, 5%);
+}
+/* page-sidebar first level menu */
+.page-sidebar-menu.nav > li > a {
+    border-bottom: 1px solid lighten(@base-color, 10%) !important;
+}
+.page-sidebar-menu.nav > li > a:hover, 
+.page-sidebar-menu.nav > li > a:focus, 
+.page-sidebar-collapse .page-sidebar-menu > li:hover > a, 
+.page-sidebar-menu.nav > li.active > a {
+    background-color: lighten(@base-color, 10%);
+}
+/* page-sidebar second level menu */
+.page-sidebar-menu.nav > li > .nav {
+    background: darken(@base-color, 5%);
+}
+.page-sidebar-menu.nav > li > .nav li.active > a, 
+.page-sidebar-menu.nav > li > .nav li a:hover, 
+.page-sidebar-menu.nav > li > .nav li a:focus {
+    background-color: darken(@base-color, 12%);
+    color: @color-white;
+}
+.page-sidebar-menu.nav > li > .nav li a {
+    border-bottom: 1px solid lighten(@base-color, 10%) !important;
+}
+.page-sidebar-search .btn.btn-default {
+    background-color: lighten(@base-color, 20%);
+    color: @color-white;
+    border-color: lighten(@base-color, 20%);
+}
+.page-sidebar-menu .navbar-toggle .icon-bar {
+    background-color: @color-white;
+}
+/* header dropdown-menu */
+.header .top-menu .navbar-nav .open .dropdown-menu > li > a:hover,
+.header .top-menu .navbar-nav .open .dropdown-menu > li > a:hover, 
+.header .top-menu .navbar-nav .open .dropdown-menu > li > a:focus, 
+.header .top-menu .navbar-nav .open .dropdown-menu > .active > a, 
+.header .top-menu .navbar-nav .open .dropdown-menu > .active > a:hover, 
+.header .top-menu .navbar-nav .open .dropdown-menu > .active > a:focus,
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > .active > a, 
+.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a:focus {
+	background: lighten(@base-color,30%);
+	color: @color-white;
+}
+/* page tab layout */
+.page-tab-layout {
+	background: @base-color;	
+}
+.page-tab-layout .page-tab-menu  {
+	background: darken(@base-color, 5%);
+  color: @color-white;
+}
+.page-tab-layout .page-tab-menu > ul > li > a:hover {
+	background-color: lighten(@base-color, 12%); 
+}
+.page-tab-layout .page-tab-menu > ul > li.active > a {
+	background-color: lighten(@base-color, 10%);
+}
+.page-tab-layout .page-tab-menu > ul > li.active > ul {
+    background-color: lighten(@base-color, 10%);
+}
+.page-tab-layout .page-tab-menu > ul > li > a {
+	border-right: solid 1px darken(@base-color, 8%);
+}
+.page-tab-layout .page-tab-menu > ul > li.active > ul > li > a { 
+	 color: @color-white; 
+}
+.page-tab-layout .page-tab-menu > ul > li.active > ul > li.open,
+.page-tab-layout .page-tab-menu > ul > li.active > ul > li.active a,
+.page-tab-layout .page-tab-menu > ul > li.active > ul > li > a:hover {
+	background-color: darken(@base-color, 8%);
+    color: @color-white;
+}
+.page-tab-layout .page-container {
+	background: @color-white;
+}

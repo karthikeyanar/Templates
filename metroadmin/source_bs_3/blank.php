@@ -7,16 +7,7 @@
 <?php include_once 'start-page-container.php' ?>
 <?php include_once 'sidebar.php' ?>
 <?php include_once 'start-page-content.php' ?>
- <div class="panel panel-default blue">
-	<div class="panel-heading">
-		<h3 class="panel-title">Checkbox</h3>
-	</div>
-	<div class="panel-body">
-		<form action="#" method="POST" class="form-horizontal">
-		
-		</form>
-	</div>
-</div>
+Content here.
 <?php include_once 'end-page-content.php' ?>
 <?php include_once 'footer.php' ?>
 <?php include_once 'end-page-container.php' ?>

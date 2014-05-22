@@ -116,7 +116,7 @@
 					</div>
 					<div class="form-group form-actions">
 						<div class="col-md-10 col-md-offset-2">
-							<button type="submit" class="btn btn-blue margin-right-10">
+							<button type="submit" class="btn btn-primary margin-right-10">
 								Save
 							</button>
 							<button type="button" class="btn btn-danger">
@@ -219,7 +219,7 @@
 					</div>
 					<div class="form-group form-actions">
 						<div class="col-md-10 col-md-offset-2">
-							<button type="submit" class="btn btn-blue margin-right-10">
+							<button type="submit" class="btn btn-primary margin-right-10">
 								Save
 							</button>
 							<button type="button" class="btn btn-danger">
@@ -322,7 +322,7 @@
 					</div>
 					<div class="form-group form-actions">
 						<div class="col-md-10 col-md-offset-2">
-							<button type="submit" class="btn btn-blue margin-right-10">
+							<button type="submit" class="btn btn-primary margin-right-10">
 								Save
 							</button>
 							<button type="button" class="btn btn-danger">
@@ -452,7 +452,7 @@
 					</div>
 					<div class="form-group form-actions">
 						<div class="col-md-10 col-md-offset-2">
-							<button type="submit" class="btn btn-blue margin-right-10">Save</button>
+							<button type="submit" class="btn btn-primary margin-right-10">Save</button>
 							<button type="button" class="btn btn-danger">Cancel</button>
 						</div>
 					</div>
@@ -467,6 +467,6 @@
 <?php include_once 'end-page-container.php' ?>
 <?php include_once 'script.php' ?>
 <!-- Bootstrap FileUpload -->
-<script src="js/plugins/bs-fileupload/bootstrap-fileupload.min.js"></script>
+<script src="js/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
 <?php include_once 'applicationscript.php' ?>
 <?php include_once 'end-page.php' ?>

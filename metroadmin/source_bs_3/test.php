@@ -919,8 +919,8 @@
 	                'Last Month': [moment().subtract('month',1).startOf('month'),moment().subtract('month',1).endOf('month')]
 	                },
 	                opens: 'right',
-	                buttonClasses: ['btn btn-grey'],
-	                applyClass: 'btn-small btn-blue',
+	                buttonClasses: ['btn btn-default'],
+	                applyClass: 'btn-small btn-primary',
 	                cancelClass: 'btn-small',
 	                format: 'MM/DD/YYYY',
 	                separator: ' to ',

@@ -45,14 +45,14 @@
 				<button class="btn btn-danger" type="button">Danger</button>
 				<button class="btn btn-link" type="button">Link</button>
 				<h4>Color Buttons</h4>
-				<button class="btn btn-grey" type="button">Grey</button>
-				<button class="btn btn-red" type="button">Red</button>
-				<button class="btn btn-blue" type="button">Blue</button>
-				<button class="btn btn-green" type="button">Green</button>
+				<button class="btn btn-default" type="button">Grey</button>
+				<button class="btn btn-danger" type="button">Red</button>
+				<button class="btn btn-primary" type="button">Blue</button>
+				<button class="btn btn-success" type="button">Green</button>
 				<div class="clearfix">&nbsp;</div>
-				<button class="btn btn-purple" type="button">Purple</button>
-				<button class="btn btn-black" type="button">Black</button>
-				<button class="btn btn-orange" type="button">Orange</button>
+				<button class="btn btn-info" type="button">Purple</button>
+				<button class="btn btn-default" type="button">Black</button>
+				<button class="btn btn-warning" type="button">Orange</button>
 				<h4>Split Buttons</h4>
 				<div class="btn-group">
 					<button class="btn btn-default" type="button">Default</button>
@@ -92,46 +92,46 @@
 					</button>
 				</div>
 				<div class="btn-group">
-					<button class="btn btn-grey" type="button">Grey</button>
-					<button type="button" class="btn btn-grey">
+					<button class="btn btn-default" type="button">Grey</button>
+					<button type="button" class="btn btn-default">
 						<span class="caret"></span>
 					</button>
 				</div>
 				<div class="btn-group">
-					<button class="btn btn-red" type="button">Red</button>
-					<button type="button" class="btn btn-red">
-						<span class="caret"></span>
-					</button>
-				</div>
-				<div class="clearfix">&nbsp;</div>
-				<div class="btn-group">
-					<button class="btn btn-blue" type="button">Blue</button>
-					<button type="button" class="btn btn-blue">
-						<span class="caret"></span>
-					</button>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-green" type="button">Green</button>
-					<button type="button" class="btn btn-green">
-						<span class="caret"></span>
-					</button>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-purple" type="button">Purple</button>
-					<button type="button" class="btn btn-purple">
-						<span class="caret"></span>
-					</button>
-				</div>
-				<div class="btn-group">
-					<button class="btn btn-black" type="button">Black</button>
-					<button type="button" class="btn btn-black">
+					<button class="btn btn-danger" type="button">Red</button>
+					<button type="button" class="btn btn-danger">
 						<span class="caret"></span>
 					</button>
 				</div>
 				<div class="clearfix">&nbsp;</div>
 				<div class="btn-group">
-					<button class="btn btn-orange" type="button">Orange</button>
-					<button type="button" class="btn btn-orange">
+					<button class="btn btn-primary" type="button">Blue</button>
+					<button type="button" class="btn btn-primary">
+						<span class="caret"></span>
+					</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-success" type="button">Green</button>
+					<button type="button" class="btn btn-success">
+						<span class="caret"></span>
+					</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-info" type="button">Purple</button>
+					<button type="button" class="btn btn-info">
+						<span class="caret"></span>
+					</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-default" type="button">Black</button>
+					<button type="button" class="btn btn-default">
+						<span class="caret"></span>
+					</button>
+				</div>
+				<div class="clearfix">&nbsp;</div>
+				<div class="btn-group">
+					<button class="btn btn-warning" type="button">Orange</button>
+					<button type="button" class="btn btn-warning">
 						<span class="caret"></span>
 					</button>
 				</div>
@@ -222,17 +222,17 @@
 			<div class="panel-body">
 				<h4>Basic</h4>
 				<div class="btn-group">
-					<button class="btn btn-red" type="button">Left</button>
-					<button class="btn btn-green" type="button">Center</button>
-					<button class="btn btn-blue" type="button">Right</button>
+					<button class="btn btn-danger" type="button">Left</button>
+					<button class="btn btn-success" type="button">Center</button>
+					<button class="btn btn-primary" type="button">Right</button>
 				</div>
 				<h4>Button Toolbar</h4>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<button class="btn btn-red" type="button">1</button>
-						<button class="btn btn-green" type="button">2</button>
-						<button class="btn btn-blue" type="button">3</button>
-						<button class="btn btn-purple" type="button">4</button>
+						<button class="btn btn-danger" type="button">1</button>
+						<button class="btn btn-success" type="button">2</button>
+						<button class="btn btn-primary" type="button">3</button>
+						<button class="btn btn-info" type="button">4</button>
 					</div>
 					<div class="btn-group">
 						<button class="btn btn-primary" type="button">5</button>
@@ -244,30 +244,30 @@
 				<h4>Button Group With Sizing</h4>
 				<div class="btn-toolbar margin-bottom-10">
 					<div class="btn-group">
-						<button class="btn btn-red btn-lg" type="button">Left</button>
-						<button class="btn btn-green btn-lg" type="button">Center</button>
-						<button class="btn btn-blue btn-lg" type="button">Right</button>
+						<button class="btn btn-danger btn-lg" type="button">Left</button>
+						<button class="btn btn-success btn-lg" type="button">Center</button>
+						<button class="btn btn-primary btn-lg" type="button">Right</button>
 					</div>
 				</div>
 				<div class="btn-toolbar margin-bottom-10">
 					<div class="btn-group">
-						<button class="btn btn-red" type="button">Left</button>
-						<button class="btn btn-green" type="button">Center</button>
-						<button class="btn btn-blue" type="button">Right</button>
+						<button class="btn btn-danger" type="button">Left</button>
+						<button class="btn btn-success" type="button">Center</button>
+						<button class="btn btn-primary" type="button">Right</button>
 					</div>
 				</div>
 				<div class="btn-toolbar margin-bottom-10">
 					<div class="btn-group">
-						<button class="btn btn-red btn-sm" type="button">Left</button>
-						<button class="btn btn-green btn-sm" type="button">Center</button>
-						<button class="btn btn-blue btn-sm" type="button">Right</button>
+						<button class="btn btn-danger btn-sm" type="button">Left</button>
+						<button class="btn btn-success btn-sm" type="button">Center</button>
+						<button class="btn btn-primary btn-sm" type="button">Right</button>
 					</div>
 				</div>
 				<div class="btn-toolbar margin-bottom-10">
 					<div class="btn-group">
-						<button class="btn btn-red btn-xs" type="button">Left</button>
-						<button class="btn btn-green btn-xs" type="button">Center</button>
-						<button class="btn btn-blue btn-xs" type="button">Right</button>
+						<button class="btn btn-danger btn-xs" type="button">Left</button>
+						<button class="btn btn-success btn-xs" type="button">Center</button>
+						<button class="btn btn-primary btn-xs" type="button">Right</button>
 					</div>
 				</div>
 				<h4>Nesting Button Group</h4>

@@ -1,0 +1,1 @@
+lessc E:\wamp\www\templates\metroadmin\source_bs_3\less\themes\blue.less > E:\wamp\www\templates\metroadmin\source_bs_3\css\themes\blue.css

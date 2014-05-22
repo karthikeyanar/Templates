@@ -2,9 +2,12 @@
 <?php include_once 'style.php' ?>
 <!-- chosen -->
 <link href="css/plugins/chosen/chosen.css" rel="stylesheet" type="text/css" />
-<link href="css/pages/signup.css" rel="stylesheet" type="text/css" />
-<body>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<body class="public">
 <div class="container">
+	<div class="logo">
+		<span class="name">Pepper</span><span class="type">Admin</span>
+	</div>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
 			<div class="panel panel-white signup-panel">
@@ -357,7 +360,7 @@
 						</div>
 						<div class="form-group">
 							<div class="col-md-12">
-								<button type="submit" class="btn btn-blue margin-right-10">Sign Up</button>
+								<button type="submit" class="btn btn-primary margin-right-10">Sign Up</button>
 							</div>
 						</div>
 					</form>
@@ -367,7 +370,7 @@
 	</div>
 </div>
 <!-- jquery -->
-<script src="js/jquery/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="js/jquery/jquery-1.11.0.min.js" type="text/javascript"></script>
 <!-- bootstrap -->
 <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 <!-- jquery validation -->

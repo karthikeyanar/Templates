@@ -24,6 +24,7 @@
 
             var slideSpeed=200;
             var slideOffeset= -200;
+
             $this.find('li').has('ul').children('a').on('click',function(e) {
                 e.preventDefault();
 

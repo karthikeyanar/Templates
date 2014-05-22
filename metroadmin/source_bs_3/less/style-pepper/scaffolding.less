@@ -1,0 +1,37 @@
+*,*:focus,*:hover{ 
+	outline:none !important;
+}
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-weight: @font-weight;
+}
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+// Links
+a {
+  color: @link-color;
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+  &:focus {
+    .tab-focus();
+  }
+}
+
+// Image thumbnails
+//
+// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
+.img-thumbnail {
+  border: 1px solid @thumbnail-border;
+  border-radius: @thumbnail-border-radius;
+}
