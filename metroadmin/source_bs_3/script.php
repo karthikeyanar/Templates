@@ -1,6 +1,17 @@
 <!-- jquery -->
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <script>window.jQuery || document.write('<script src="js/jquery/jquery-1.11.1.min.js"><\/script>')</script>
+<script>
+	// check bootstrap cdn css
+	$(function() {
+		var $div = $("<div class='hide'></div>");
+		$("body").append($div);
+		if($div.is(':visible')===true) {
+			$('<link href="css/plugins/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />').prependTo('head');
+			$div.remove();
+		}
+	}); 
+</script>
 <!-- jquery validation -->
 <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
 <script>if(typeof($.fn.validate) === 'undefined') document.write('<script src="js/jquery/jquery.validate.min.js"><\/script>')</script>

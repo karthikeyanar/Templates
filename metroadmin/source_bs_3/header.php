@@ -8,16 +8,11 @@
 				</span>
 			</button>
 			<a href="index.php" class="navbar-brand">Pepper</a>
-			<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed pull-right"
-				type="button">
-				<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
-					class="icon-bar"></span><span class="icon-bar"></span>
-			</button>
 		</div>
 		<!-- end navbar-header -->
 		<!-- navbar-header -->
 		<div class="navbar-header top-menu">
-			<ul class="nav navbar-nav">
+			<ul>
 				<li class="dropdown settings"><a href="#" title="Settings" data-toggle="dropdown"
 					rel="tooltip" data-placement="bottom"><i class="fa fa-cog fa-lg"></i></a>
 					<div class="dropdown-menu dropdown-menu-right settings hold-on-click">
@@ -67,8 +62,10 @@
 					</ul>
 				</li>
 			</ul>
-			<div class="clearfix">
-			</div>
+			<button data-target=".hor-menu" data-toggle="collapse" class="navbar-toggle hor-menu-toggle" type="button">
+				<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+					class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
 		</div>
 		<!-- end navbar-header -->
 		<!-- navbar-collapse -->

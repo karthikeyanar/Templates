@@ -322,8 +322,8 @@ a.list-group-item > i {
 	background-color: #FFFFFF;
 	border: 1px solid #BBBBBB;
 	display: inline-block;
-	height: 18px;
-	width: 18px;
+	height: 17px;
+	width: 17px;
 	line-height: 14px;
 	margin: 0 5px 0 -20px;
 	padding: 0;
@@ -1367,11 +1367,17 @@ pre {
 	float:left;
 }
 .chat-body > .datetime {
-	margin-left:10px; font-size: 12px;
+	margin-left:10px; font-size: 12px; float:right;
 }
 .chat-body > .message {
-	 display: block;
+	display: block;
     margin: 5px 0 0;
+    clear:both;
+}
+.chat-body > .message:before {
+	clear:both;
+	content: "";
+	display:table;
 }
 .chat-content > .chat-list > .chat > .chat-body:after {
     top: 10px;

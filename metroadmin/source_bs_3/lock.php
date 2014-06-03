@@ -11,7 +11,7 @@
 			<form method="post" action="index.php">
 			<div class="form-group">
 				 <div class="login-user">
-					<img src="http://placehold.it/100X100" alt="..." class='margin' />
+					<img src="img/avatars/1.jpg" alt="..." class='margin' />
 				 </div>
 			</div>
 			<div class="form-group text-center">

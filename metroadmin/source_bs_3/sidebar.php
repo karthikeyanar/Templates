@@ -19,6 +19,9 @@ function selected_ul_menu($rootname){
 function openaccordion($rootname){
 	writeclassname($rootname," active");
 }
+function openaccordionsubmenu($rootname){
+	writeclassname($rootname," in");
+}
 function openaccordionbody($rootname){
 	writeclassname($rootname," in");
 }
@@ -123,9 +126,9 @@ function writeclassname($rootname,$classname){
 			</li>
 			<li class="page-sidebar-search">
 				<div class="input-group custom-search-form">
-					<input type="text" class="form-control" placeholder="Search..." />
+					<input type="text" class="form-control input-sm" placeholder="Search..." />
 					<span class="input-group-btn">
-						<button class="btn btn-default" type="button">
+						<button class="btn btn-default btn-sm" type="button">
 							<i class="fa fa-search"></i>
 						</button>
 					</span>
@@ -147,7 +150,7 @@ function writeclassname($rootname,$classname){
 					<span class="title">Layouts</span>
 					<span class="fa arrow"></span>
 				</a>
-				<ul class="nav sub-menu">
+				<ul class="nav sub-menu collapse<?php echo openaccordionsubmenu("layouts");?>">
 					<li <?php checkactive("box_layout.php");?>>
 						<a href="box_layout.php">Box Layout</a>
 					</li> 
@@ -168,7 +171,7 @@ function writeclassname($rootname,$classname){
 					<span class="title">UI Features</span>
 					<span class="fa arrow"></span>
 				</a>
-				<ul class="nav sub-menu">
+				<ul class="nav sub-menu collapse<?php echo openaccordionsubmenu("components");?>">
 					<li <?php checkactive("general.php");?>>
 						<a href="general.php">General</a>
 					</li>
@@ -210,7 +213,7 @@ function writeclassname($rootname,$classname){
 					<span class="title">Plugins</span>
 					<span class="fa arrow"></span>
 				</a>
-				<ul class="nav sub-menu">
+				<ul class="nav sub-menu collapse<?php echo openaccordionsubmenu("plugins");?>">
 					<li <?php checkactive("datepicker.php");?>>
 						<a href="datepicker.php">Date Picker</a>
 					</li>
@@ -228,7 +231,7 @@ function writeclassname($rootname,$classname){
 					<span class="title">Forms</span>
 					<span class="fa arrow"></span>
 				</a>
-				<ul class="nav sub-menu">
+				<ul class="nav sub-menu collapse<?php echo openaccordionsubmenu("forms");?>">
 					<li <?php checkactive("form_controls.php");?>>
 						<a href="form_controls.php">Form Controls</a>
 					</li>
@@ -249,7 +252,7 @@ function writeclassname($rootname,$classname){
 					<span class="title">Tables</span>
 					<span class="fa arrow"></span>
 				</a>
-				<ul class="nav sub-menu">
+				<ul class="nav sub-menu collapse<?php echo openaccordionsubmenu("tables");?>">
 					<li <?php checkactive("table.php");?>>
 						<a href="table.php">Basic</a>
 					</li>
@@ -258,13 +261,13 @@ function writeclassname($rootname,$classname){
 					</li>
 				</ul>
 			</li>
-			<li class=<?php echo openaccordion("samples");?>>
+			<li class=<?php echo openaccordion("tables");?>>
 				<a href="javascript:;">
 					<i class="fa fa-pencil"></i>
 					<span class="title">Samples</span>
 					<span class="fa arrow"></span>
 				</a>
-				<ul class="nav sub-menu">
+				<ul class="nav sub-menu collapse<?php echo openaccordionsubmenu("tables");?>">
 					<li <?php checkactive("signup.php");?>>
 						<a href="signup.php">Sign In</a>
 					</li>
@@ -318,37 +321,27 @@ function writeclassname($rootname,$classname){
 					</ul>
 				<?php } ?>
 				<?php if($IS_TAB_LAYOUT == "0") { ?>
-					<ul class="nav sub-menu">
+					<ul class="nav sub-menu collapse<?php echo openaccordionsubmenu("menulevels");?>">
+						<li><a href="#">Menu Level 1.1</a>
+						<li><a href="#">Menu Level 1.2</a>
 						<li>
-							<a href="#">Menu Level 1<span class="fa arrow"></span></a>
-							<ul class="nav sub-menu">
+							<a href="#">Menu Level 1.3<span class="fa arrow"></span></a>
+							<ul class="nav sub-menu collapse">
+								<li><a href="#">Menu Level 2.1</a>
 								<li>
-									<a href="#">Menu Level 2<span class="fa arrow"></span></a>
-									<ul class="nav sub-menu">
-										<li>
-											<a href="#">Menu Level 3</a>
+									<a href="#">Menu Level 2.2<span class="fa arrow"></span></a>
+									<ul class="nav sub-menu collapse">
+										<li><a href="#">Menu Level 3.1</a>
+											<ul class="nav sub-menu collapse">
+												<li><a href="#">Menu Level 4.1</a></li> 
+												<li><a href="#">Menu Level 4.2</a></li> 
+											</ul>
 										</li> 
-										<li>
-											<a href="#">Menu Level 3</a>
-										</li> 
-										<li>
-											<a href="#">Menu Level 3</a>
-										</li> 
+										<li><a href="#">Menu Level 3.2</a></li> 
 									</ul>
 								</li> 
-								<li>
-									<a href="#">Menu Level 2</a>
-								</li> 
-								<li>
-									<a href="#">Menu Level 2</a>
-								</li> 
+								<li><a href="#">Menu Level 2.3</a>
 							</ul>
-						</li>
-						<li>
-							<a href="#">Menu Level 1</a>
-						</li>
-						<li>
-							<a href="#">Menu Level 1</a>
 						</li>
 					</ul>
 				<?php } ?>

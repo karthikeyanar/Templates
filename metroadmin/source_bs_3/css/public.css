@@ -41,9 +41,9 @@
 	text-align:center;
 }
 .lockout-panel .login-user img {
-	width:100px;
-	height:100px;
-	border-radius:100px;
+	width:120px;
+	height:120px;
+	border-radius:100%;
 }
 /* page-error */
 h1.page-error {

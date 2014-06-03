@@ -1,6 +1,9 @@
 *,*:focus,*:hover{ 
 	outline:none !important;
 }
+html {
+	height: 100%;
+}
 body {
   font-family: @font-family-base;
   font-size: @font-size-base;
@@ -26,12 +29,4 @@ a {
   &:focus {
     .tab-focus();
   }
-}
-
-// Image thumbnails
-//
-// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
-.img-thumbnail {
-  border: 1px solid @thumbnail-border;
-  border-radius: @thumbnail-border-radius;
 }

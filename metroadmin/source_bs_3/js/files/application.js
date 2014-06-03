@@ -41,12 +41,12 @@
 		return ($(window).width()>=1200);
 	};
 
-	this.isMobileView=function() {
+	this.isLTSmallDevice=function() {
 		return ($(window).width()<=1024);
 	};
 
-	this.isDesktopView=function() {
-		return ($(window).width()>1024);
+	this.isGTSmallDevice=function() {
+		return ($(window).width()>992);
 	};
 
 	this.scrollTo=function(el,offeset) {
@@ -213,7 +213,7 @@
 			$leftSidebar.removeClass("autofix_sb").removeClass("fixed");
 		}
 
-		if($.fn.slimScroll&&self.isDesktopView()) {
+		if($.fn.slimScroll&&self.isGTSmallDevice()) {
 			var windowHeight=$(window).height();
 			if($sidebarContent.parent('.slimScrollDiv').size()===1) { // destroy existing instance before updating the height
 				$sidebarContent
@@ -258,7 +258,7 @@
 
 		var height=windowHeight-headerHeight-footerHeight;
 
-		if(self.isDesktopView()) {
+		if(self.isGTSmallDevice()) {
 			pageSidebarHeight=pageSidebarHeight-footerHeight;
 			if(pageSidebarHeight>height)
 				height=pageSidebarHeight;
@@ -310,8 +310,15 @@
 
 		$(".sidebar-toggler",$pageSidebarMenu)
         .on("click",function() {
-        	$("body").toggleClass("page-sidebar-collapse");
-        	self.responsive();
+        	$("body")
+			.addClass("layout-change")
+			.toggleClass("page-sidebar-collapse");
+        	setTimeout(function() {
+        		self.responsive();
+        	},500);
+        	setTimeout(function() {
+        		$("body").removeClass("dynamic-change");
+        	},1000);
         });
 
 		var $pageSidebarSearch=$(".page-sidebar-search");
@@ -340,14 +347,14 @@
                     	$(this).addClass("in").css({
                     		"display": ""
                     	});
-                    	if(self.isDesktopView()) {
+                    	if(self.isGTSmallDevice()) {
                     		if($body.hasClass("page-sidebar-fixed")==false) {
                     			self.scrollTo($currentUL,slideOffeset);
                     		}
                     	} else {
                     		$pageSidebar.scrollTo($currentUL);
                     	}
-                    	self.handleFixedSideBar();
+                    	self.resizeContentHeight();
                     });
 			} else {
 				$currentUL
@@ -355,7 +362,7 @@
                     	$(this).removeClass("in").css({
                     		"display": ""
                     	});
-                    	self.handleFixedSideBar();
+                    	self.resizeContentHeight();
                     });
 			}
 
@@ -366,7 +373,7 @@
                 	$(this).removeClass("in").css({
                 		"display": ""
                 	});
-                	self.handleFixedSideBar();
+                	self.resizeContentHeight();
                 });
 			}
 
@@ -488,11 +495,14 @@
 		self._IsIE9=!!navigator.userAgent.match(/MSIE 9.0/);
 		self._IsIE10=!!navigator.userAgent.match(/MSIE 10.0/);
 
+		window.console.log("init");
+
+
 		self.initSettings();
 		self.handleSidebarMenu();
-		self.resizeContentHeight();
 		self.handleFixedSideBar();
 		self.handleTabLayOutMenu();
+
 
 		self.jqValidationSetDefaults();
 		self.handleFormValidation();
@@ -506,6 +516,7 @@
 		self.handleSwitch();
 		self.handleSlider();
 		self.handleMetroCheck();
+		self.resizeContentHeight();
 
 	};
 

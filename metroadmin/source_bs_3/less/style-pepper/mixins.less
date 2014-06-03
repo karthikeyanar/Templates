@@ -113,10 +113,10 @@
      border-top-left-radius: @radius;
 }
 
-.no-border-radius() {
-	border-radius: 0;
+.border-radius(@radius) {
+	border-radius: @radius;
 }
-
+ 
 // Drop shadows
 //
 // Note: Deprecated `.box-shadow()` as of v3.1.0 since all of Bootstrap's
@@ -618,9 +618,7 @@
 // -------------------------
 .progress-bar-variant(@color) {
   background-color: @color;
-  .progress-striped & {
-    #gradient > .striped();
-  }
+  background-image: none;
 }
 
 // Responsive utilities

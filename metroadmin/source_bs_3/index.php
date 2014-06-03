@@ -14,7 +14,7 @@
 		</h1>
 	</div>
 	<div class="row">
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
             <div class="box bg-primary">
                 <div class="icon">
                     <i class="fa fa-calendar"></i>
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
             <div class="box bg-danger">
                 <div class="big-text">
                     3.28%
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
             <div class="box bg-success">
                 <div class="icon">
                     <i class="fa fa-user"></i>
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
             <div class="box bg-warning">
                 <div class="big-text">
                     +512
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
             <div class="box bg-purple">
                 <div class="icon">
                     <i class="fa fa-shopping-cart"></i>
@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
             <div class="box bg-primary">
                 <div class="big-text">
                     6.42%
@@ -79,7 +79,7 @@
         </div>
     </div>
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-9">
 			<div class="panel panel-white">
 				<div class="panel-heading">
 					<h3 class="panel-title">
@@ -91,7 +91,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="panel panel-white">
 				<div class="panel-heading">
 					<h3 class="panel-title">Donut Chart Example</h3>
@@ -117,50 +117,50 @@
 								<a href="#" class="img">
 									<img class="chat-img" src="img/avatars/1.jpg">
 								</a>
-								<div class="chat-body note note-success">
-									<h4 class="name">Jarge</h4><span class="datetime">May 25, 2013 10:00 AM</span>
-									<span class="message">
+								<div class="chat-body bg-primary">
+									<div class="name">Jarge</div><div class="datetime">May 25, 2013 10:00 AM</div>
+									<p class="message">
 										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 										commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-									</span>
-								</div>
+									</p>
+								</div> 
 							</li>
 							<li class="chat out">
 								<a href="#" class="img">
 									<img class="chat-img" src="img/avatars/2.jpg">
 								</a>
-								<div class="chat-body note note-right note-danger">
-									<h4 class="name">Roy</h4><span class="datetime">May 25, 2013 10:02 AM</span>
-									<span class="message">
+								<div class="chat-body bg-purple">
+									<div class="name">Roy</div><div class="datetime">May 25, 2013 10:02 AM</div>
+									<p class="message">
 										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 										commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-									</span>
-								</div>
+									</p>
+								</div> 
 							</li>
 							<li class="chat in">
 								<a href="#" class="img">
 									<img class="chat-img" src="img/avatars/1.jpg">
 								</a>
-								<div class="chat-body note note-success">
-									<h4 class="name">Jarge</h4><span class="datetime">May 25, 2013 10:05 AM</span>
-									<span class="message">
+								<div class="chat-body bg-primary">
+									<div class="name">Jarge</div><div class="datetime">May 25, 2013 10:05 AM</div>
+									<p class="message">
 										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 										commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-									</span>
+									</p>
 								</div>
 							</li>
 							<li class="chat out">
 								<a href="#" class="img">
 									<img class="chat-img" src="img/avatars/2.jpg">
 								</a>
-								<div class="chat-body note note-right note-danger">
-									<h4 class="name">Roy</h4><span class="datetime">May 25, 2013 10:10 AM</span>
-									<span class="message">
+								<div class="chat-body bg-purple">
+									<div class="name">Roy</div><div class="datetime">May 25, 2013 10:10 AM</div>
+									<p class="message">
 										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 										commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-									</span>
+									</p>
 								</div>
-							</li> 
+							</li>
 						</ul>
 					</div>
 					<div class="chat-send">
@@ -174,7 +174,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<i class="fa fa-bell fa-fw"></i>Notifications

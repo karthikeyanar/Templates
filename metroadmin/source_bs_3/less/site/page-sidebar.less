@@ -1,0 +1,116 @@
+.page-sidebar {
+	position: absolute;
+	padding-left: 0;
+	padding-right: 0;
+	top: 0;
+	width: @page-sidebar-width;
+}
+.layout-change .page-sidebar {
+	.transition();
+	.transition_property(width);
+}
+.page-sidebar-fixed .page-sidebar-left {
+	position: fixed;
+	top: 50px;
+	bottom: 0;
+}
+.page-sidebar-fixed .page-sidebar-left.autofix_sb.fixed {
+	top: 0;
+}
+.page-sidebar .page-sidebar-search {
+	padding: 0 15px 10px;
+}
+.page-sidebar-menu.nav > li > a {
+	display: block;
+	padding: @menu-padding;
+	position: relative;
+	.sidebar_menu_transition();
+}
+.page-sidebar-menu.nav > li > .nav {
+	margin: 0;
+}
+.page-sidebar-menu li a .fa {
+	padding-right: 5px;
+}
+.page-sidebar-menu li a .arrow {
+	float: right;
+}
+.page-sidebar-menu .fa.arrow:before {
+	content: "\f104";
+}
+.page-sidebar-menu .active > a > .fa.arrow:before {
+	content: "\f107";
+}
+.page-sidebar-menu.nav li a {
+	.sidebar_menu_transition();
+}
+.page-sidebar-menu.nav > li > .nav > li > a {
+	padding: @second-level-menu-padding;
+}
+.page-sidebar-menu.nav > li > .nav > li > .nav > li > a {
+	padding: @third-level-menu-padding;
+}
+.page-sidebar-menu.nav > li > .nav > li > .nav > li > .nav > li > a {
+	padding: @fourth-level-menu-padding;
+}
+.page-sidebar-menu.nav > li > .nav > li > .nav > li > .nav > li > .nav > li > a {
+	padding: @fifth-level-menu-padding;
+}
+.page-sidebar-search #open-search, .page-sidebar-search #close-search {
+	display: none;
+}
+.page-sidebar-menu .sidebar-toggler-wrapper {
+	display: block;
+	margin: 10px;
+}
+.page-sidebar-menu .sidebar-toggler-wrapper:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+.page-sidebar-menu .navbar-toggle {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 6px;
+	.border-radius(0);
+}
+.page-sidebar .navbar-toggle .icon-bar {
+	width: 20px;
+}
+.page-sidebar-search #close-search, .page-sidebar-search #open-search {
+	display: none;
+}
+@media (max-width: @screen-sm-max) {
+	.page-sidebar {
+		display: block;
+		top: @header-min-height;
+	}
+	.page-sidebar.page-sidebar-left {
+		left: -@page-sidebar-width;
+		bottom: 0;
+		overflow: auto;
+		position: fixed;
+		z-index:999;
+	}
+	.page-sidebar.page-sidebar-left {
+		.transition();
+		.transition_property(left);
+	}
+	.page-sidebar-left-open .page-container .page-content-overlay {
+		display: block;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+	.page-sidebar-left-open .page-container .page-sidebar-left {
+		left: 0;
+	}
+	.page-sidebar-menu .sidebar-toggler-wrapper {
+		display: none;
+	}
+}
+@media (min-width: @screen-md) {
+	.page-sidebar {
+		display: block !important;
+	}
+}
